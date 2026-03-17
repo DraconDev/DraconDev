@@ -1,57 +1,35 @@
-# 👹 THE DRACON SOVEREIGN STACK
+# DraconDev
 
-**"Build for yourself. Own your tools. Automate your life."**
-
-Welcome to the **Sovereign Developer's Workspace**. This isn't just a collection of repositories—it's a unified, local-first ecosystem designed to replace the modern SaaS-heavy, cloud-dependent engineering loop with an autonomous, high-performance alternative.
+**Local-first tooling. High-performance Rust. Build your own stack.**
 
 ---
 
-## 🏛️ THE CORE PILLARS
+## Projects
 
-### 1. 🧠 THE BRAIN: [dracon-code](./SOVEREIGN_CORE.md)
-The autonomous engineering runtime where the **Blueprint is the single source of truth**.
-- **The Engine:** Plans, executes, verifies, and reports.
-- **The GUI:** A dark, operator-focused Tauri dashboard for supervising multiple autonomous runs.
+### [dracon-terminal-engine](https://github.com/DraconDev/dracon-terminal-engine)
+High-performance TUI runtime with z-indexed compositing. Think game engine for the terminal.
 
-### 2. 💓 THE HEARTBEAT: [dracon-utilities](./SOVEREIGN_UTILITIES.md)
-The essential background daemons for a deterministic developer lifestyle.
-- **dracon-sync:** Background git automation with deterministic payloads. No noise, just history.
-- **dracon-warden:** The security guardian. Enforces policies, scrubs secrets, and handles transparent encryption-at-rest.
+- Full z-indexed layering (planes, overlays, modals)
+- Kitty Keyboard Protocol — chords, modifiers, release events, discrete mouse
+- In-terminal image rendering, procedural geometry, truecolor
+- Syntax-highlighted editor with fuzzy filters, undo/redo, multi-selection
 
-### 3. 🖥️ THE SOVEREIGN INTERFACE: [dracon-terminal-engine](https://github.com/DraconDev/dracon-terminal-engine)
-A high-performance, z-indexed, event-driven TUI runtime — a **game engine for the terminal**.
-- **The Compositor:** Full z-indexed layering. Spawn planes, float overlays, render modals — think layers, not print statements.
-- **God-Tier Input:** Full Kitty Keyboard Protocol. Detects chords, modifiers, release events, and discrete mouse tracking.
-- **Visual Supremacy:** In-terminal image rendering (PNG/JPG), procedural geometry, truecolor by default.
-- **The Editor:** Syntax highlighting, smart fuzzy filters, unlimited undo/redo, multi-selection — not just an input box.
+### [dracon-code](./SOVEREIGN_CORE.md)
+Autonomous engineering runtime. Plans, executes, verifies, and reports against a Blueprint spec. Ships with a Tauri dashboard for supervising runs.
 
-### 4. 🛸 THE SIMULATION: [Junk-Runner](./SOVEREIGN_SIMULATION.md)
-A real-time, procedural space-sim built with **Bevy 0.18**.
-- **100% Procedural:** Zero traditional 3D assets. Everything is rendered via Gizmos and math.
-- **Custom UI:** Showcasing the high-performance `BRICKS` framework.
+### [dracon-utilities](./SOVEREIGN_UTILITIES.md)
+Background daemons for deterministic workflows — git automation, secret scrubbing, encryption-at-rest.
 
-### 5. 🧬 THE DNA: [dracon-libs](./SOVEREIGN_ENGINEERING.md)
-The underlying toolkit that powers everything else. High-performance crates for AI routing, memory (SQLite/ONNX), TUI compositing, and secure git operations.
+### [Junk-Runner](./SOVEREIGN_SIMULATION.md)
+Procedural space sim built with Bevy 0.18. Zero traditional 3D assets — everything rendered via gizmos and math.
+
+### [dracon-libs](./SOVEREIGN_ENGINEERING.md)
+Shared toolkit: AI routing, SQLite/ONNX memory, TUI compositing primitives, secure git operations.
 
 ---
 
-## 🧩 DOMAIN-SPECIFIC CAPABILITIES
+## Principles
 
-Our ecosystem extends into specialized domains through a modular extension system:
-
-- **[CREATOR STACK](./CREATOR_STACK.md):** AI Video Editor + Warehouse (Media Registry).
-- **[FLEET STACK](./FLEET_STACK.md):** Spark + Director (Autonomous Infrastructure).
-- **[INTERFACE LAYER](./SOVEREIGN_ENGINEERING.md):** Tiles (Data Commander) + Axiom UI (AI-First UI).
-
----
-
-## 📜 THE MANIFESTO
-
-1. **Local-First:** If it doesn't run offline, it doesn't belong here.
-2. **Deterministic:** Your tools should behave the same way every time.
-3. **Autonomous:** Humans supervise; machines execute.
-4. **Sovereign:** You own your data, your secrets, and your history.
-
----
-
-_Built for the Agent Director Era. Owned by you._
+- **Local-first** — runs offline
+- **Deterministic** — same input, same output
+- **Sovereign** — your data, your history
