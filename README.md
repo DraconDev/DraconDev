@@ -32,4 +32,4 @@ Shared toolkit: AI routing, SQLite/ONNX memory, TUI compositing primitives, secu
 
 - **Local-first** — runs offline
 - **Deterministic** — same input, same output
-- **Sovereign** — your data, your history
+- **Ownership** — your data, your history
