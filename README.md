@@ -1,35 +1,21 @@
 # DraconDev
 
-**Local-first tooling. High-performance Rust. Build your own stack.**
+Rust tooling for people who want to own their stack.
 
 ---
 
-## Projects
+**[dracon-terminal-engine](https://github.com/DraconDev/dracon-terminal-engine)** — TUI runtime with z-indexed compositing, rich input handling, and a built-in code editor.
 
-### [dracon-terminal-engine](https://github.com/DraconDev/dracon-terminal-engine)
-High-performance TUI runtime with z-indexed compositing. Think game engine for the terminal.
+**[azumi](https://github.com/DraconDev/azumi)** — Full-stack Rust UI framework. Compiler-driven optimistic rendering, zero hydration, CSS-HTML co-validation. ~16kb runtime.
 
-- Full z-indexed layering (planes, overlays, modals)
-- Kitty Keyboard Protocol — chords, modifiers, release events, discrete mouse
-- In-terminal image rendering, procedural geometry, truecolor
-- Syntax-highlighted editor with fuzzy filters, undo/redo, multi-selection
+**[tiles](https://github.com/DraconDev/tiles)** — Terminal file manager. Dual-pane nav, text editor, git integration, SSH browsing, system monitor.
 
-### [dracon-code](./SOVEREIGN_CORE.md)
-Autonomous engineering runtime. Plans, executes, verifies, and reports against a Blueprint spec. Ships with a Tauri dashboard for supervising runs.
+**[dracon-code](https://github.com/DraconDev/dracon-code)** — Autonomous dev runtime. Blueprint-driven plan → execute → verify loop. *(in progress)*
 
-### [dracon-utilities](./SOVEREIGN_UTILITIES.md)
-Background daemons for deterministic workflows — git automation, secret scrubbing, encryption-at-rest.
+**[dracon-utilities](https://github.com/DraconDev/dracon-utilities)** — Background daemons for git automation and secret management. *(in progress)*
 
-### [Junk-Runner](./SOVEREIGN_SIMULATION.md)
-Procedural space sim built with Bevy 0.18. Zero traditional 3D assets — everything rendered via gizmos and math.
-
-### [dracon-libs](./SOVEREIGN_ENGINEERING.md)
-Shared toolkit: AI routing, SQLite/ONNX memory, TUI compositing primitives, secure git operations.
+**[dracon-libs](https://github.com/DraconDev/dracon-libs)** — Shared crates: AI routing, TUI primitives, SQLite/ONNX memory, secure git. *(in progress)*
 
 ---
 
-## Principles
-
-- **Local-first** — runs offline
-- **Deterministic** — same input, same output
-- **Ownership** — your data, your history
+*More coming.*
