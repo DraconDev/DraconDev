@@ -10,6 +10,8 @@ Rust tooling for people who want to own their stack.
 
 **[tiles](https://github.com/DraconDev/tiles)** — Terminal file manager. Dual-pane nav, text editor, git integration, SSH browsing, system monitor.
 
+**[ai-vid-editor](https://github.com/DraconDev/ai-vid-editor)** — AI video editor. Drop raw footage, get polished results — silence removal, auto-reframe, audio enhancement, watch folders.
+
 **[dracon-code](https://github.com/DraconDev/dracon-code)** — Autonomous dev runtime. Blueprint-driven plan → execute → verify loop. *(in progress)*
 
 **[dracon-utilities](https://github.com/DraconDev/dracon-utilities)** — Background daemons for git automation and secret management. *(in progress)*
