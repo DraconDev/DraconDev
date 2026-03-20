@@ -1,8 +1,4 @@
-# DraconDev
-
-Rust tooling for people who want to own their stack.
-
----
+# Projects
 
 **[dracon-terminal-engine](https://github.com/DraconDev/dracon-terminal-engine)** — TUI runtime with z-indexed compositing, rich input handling, and a built-in code editor.
 
@@ -14,12 +10,6 @@ Rust tooling for people who want to own their stack.
 
 **[api-debugger](https://github.com/DraconDev/api-debugger)** — Chrome extension. Debug HTTP requests without an account. Auto-capture, replay, modify, import from Postman/Insomnia/OpenAPI.
 
-**[dracon-code](https://github.com/DraconDev/dracon-code)** — Autonomous dev runtime. Blueprint-driven plan → execute → verify loop. *(in progress)*
-
-**[dracon-utilities](https://github.com/DraconDev/dracon-utilities)** — Background daemons for git automation and secret management. *(in progress)*
-
-**[dracon-libs](https://github.com/DraconDev/dracon-libs)** — Shared crates: AI routing, TUI primitives, SQLite/ONNX memory, secure git. *(in progress)*
-
 ---
 
-*More coming.*
+**In progress:** [dracon-code](https://github.com/DraconDev/dracon-code) · [dracon-utilities](https://github.com/DraconDev/dracon-utilities) · [dracon-libs](https://github.com/DraconDev/dracon-libs)
