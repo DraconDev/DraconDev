@@ -17,6 +17,7 @@ Building software that doesn't break in production.
 | **[dracon-libs](https://github.com/DraconDev/dracon-libs)** | Shared Rust libraries: git operations, system monitoring, media processing, AI routing. |
 | **[ai-vid-editor](https://github.com/DraconDev/ai-vid-editor)** | Automated video editing. Silence removal, auto-reframe, audio enhancement, watch folders. |
 | **[api-debugger](https://github.com/DraconDev/api-debugger)** | Chrome extension for debugging HTTP requests. Capture, replay, modify. No account required. |
+| **[opencode-auto-review-completed-todos](https://github.com/DraconDev/opencode-auto-review-completed-todos)** | OpenCode plugin that auto-reviews completed sessions. Tracks todos, detects completion, summarizes work. |
 
 ## Experiments
 
