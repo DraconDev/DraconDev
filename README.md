@@ -2,7 +2,7 @@
 
 > **Rust-first tools. Compile-time guarantees.**
 
-Building a sovereign toolchain where the compiler is the first line of defense.
+Building software where the compiler is the first line of defense.
 
 No runtime surprises. No "works on my machine." Just software that ships correct.
 
@@ -14,13 +14,7 @@ No runtime surprises. No "works on my machine." Just software that ships correct
 
 **[dracon-terminal-engine](https://github.com/DraconDev/dracon-terminal-engine)** — Ship a TUI app in a single binary. 35 widgets, 15 themes, z-indexed compositing. [crates.io](https://crates.io/crates/dracon-terminal-engine)
 
-## In Progress
-
-**[dracon-code](https://github.com/DraconDev/dracon-code)** *(private)* — Autonomous engineering runtime. Set the objective, the system plans and executes. Dark GUI + CLI.
-
-**[dracon-rust-ui](https://github.com/DraconDev/dracon-rust-ui)** *(private)* — GPU-native UI engine. ECS architecture, Vello rendering. 44 interactive showcases.
-
-## Public Tools
+## Tools
 
 | Project | What it does |
 |:---|:---|
