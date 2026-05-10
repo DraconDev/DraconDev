@@ -23,7 +23,7 @@ No runtime surprises. No "works on my machine." Just software that ships correct
 | **[ai-vid-editor](https://github.com/DraconDev/ai-vid-editor)** | Automated video editing. Drop footage, get results. |
 | **[api-debugger](https://github.com/DraconDev/api-debugger)** | Debug HTTP in Chrome. No account. |
 | **[opencode-auto-review-completed-todos](https://github.com/DraconDev/opencode-auto-review-completed-todos)** | Auto-review sessions when todos finish. |
-| **[opencode-auto-force-resume](https://github.com/DraconDev/opencode-auto-force-resume)** | Recover stalled AI sessions. |
+| **[opencode-auto-continue](https://github.com/DraconDev/opencode-auto-continue)** | Auto-recover, nudge, and review OpenCode sessions. |
 | **[kittentts-showcase](https://github.com/DraconDev/kittentts-showcase)** | Text-to-speech demo. |
 
 ## License
