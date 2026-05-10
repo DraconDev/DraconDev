@@ -13,7 +13,7 @@ No runtime surprises. No "works on my machine." Just software that ships correct
 | # | Project | What it does |
 |---|:---|:---|
 | 1 | **[azumi](https://github.com/DraconDev/azumi)** | Compile-time CSS validation. Zero hydration, ~3KB runtime. |
-| 2 | **[dracon-terminal-engine](https://github.com/DraconDev/dracon-terminal-engine)** | 35-widget TUI framework. Ship in a single binary. [crates.io](https://crates.io/crates/dracon-terminal-engine) |
+| 2 | **[dracon-terminal-engine](https://github.com/DraconDev/dracon-terminal-engine)** | 35-widget TUI framework. Ship in a single binary. |
 | 3 | **[tiles](https://github.com/DraconDev/tiles)** | Terminal file manager. Edit, browse, sync. |
 | 4 | **[ai-vid-editor](https://github.com/DraconDev/ai-vid-editor)** | Automated video editing. Drop footage, get results. |
 
