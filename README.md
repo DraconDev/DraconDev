@@ -8,22 +8,23 @@ No runtime surprises. No "works on my machine." Just software that ships correct
 
 ---
 
-## Flagship
+## Start Here
 
-**[azumi](https://github.com/DraconDev/azumi)** — Web framework that validates your CSS at compile time. Catch typos before they hit production. Zero hydration, ~3KB runtime.
+| # | Project | What it does |
+|---|:---|:---|
+| 1 | **[azumi](https://github.com/DraconDev/azumi)** | Compile-time CSS validation. Zero hydration, ~3KB runtime. |
+| 2 | **[dracon-terminal-engine](https://github.com/DraconDev/dracon-terminal-engine)** | 35-widget TUI framework. Ship in a single binary. [crates.io](https://crates.io/crates/dracon-terminal-engine) |
+| 3 | **[tiles](https://github.com/DraconDev/tiles)** | Terminal file manager. Edit, browse, sync. |
+| 4 | **[ai-vid-editor](https://github.com/DraconDev/ai-vid-editor)** | Automated video editing. Drop footage, get results. |
 
-**[dracon-terminal-engine](https://github.com/DraconDev/dracon-terminal-engine)** — Ship a TUI app in a single binary. 35 widgets, 15 themes, z-indexed compositing. [crates.io](https://crates.io/crates/dracon-terminal-engine)
-
-## Tools
+## More Tools
 
 | Project | What it does |
 |:---|:---|
-| **[tiles](https://github.com/DraconDev/tiles)** | Terminal file manager. Edit, browse, sync. |
-| **[dracon-libs](https://github.com/DraconDev/dracon-libs)** | Shared Rust: git, system, media, AI. |
-| **[ai-vid-editor](https://github.com/DraconDev/ai-vid-editor)** | Automated video editing. Drop footage, get results. |
-| **[api-debugger](https://github.com/DraconDev/api-debugger)** | Debug HTTP in Chrome. No account. |
-| **[opencode-auto-review-completed-todos](https://github.com/DraconDev/opencode-auto-review-completed-todos)** | Auto-review sessions when todos finish. |
 | **[opencode-auto-continue](https://github.com/DraconDev/opencode-auto-continue)** | Auto-recover, nudge, and review OpenCode sessions. |
+| **[api-debugger](https://github.com/DraconDev/api-debugger)** | Debug HTTP in Chrome. No account. |
+| **[dracon-libs](https://github.com/DraconDev/dracon-libs)** | Shared Rust: git, system, media, AI. |
+| **[opencode-auto-review-completed-todos](https://github.com/DraconDev/opencode-auto-review-completed-todos)** | Auto-review sessions when todos finish. |
 | **[kittentts-showcase](https://github.com/DraconDev/kittentts-showcase)** | Text-to-speech demo. |
 
 ## License
