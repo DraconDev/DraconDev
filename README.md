@@ -2,76 +2,70 @@
 
 > **Rust-first tools. Compile-time guarantees.**
 
-Building software where the compiler is the first line of defense.
+Building a sovereign toolchain where the compiler is the first line of defense.
 
 No runtime surprises. No "works on my machine." Just software that ships correct.
 
 ---
 
-## Flagship
+## Flagship Projects
 
-| # | Project | What it does |
-|---|:---|:---|
-| 1 | **[azumi](https://github.com/DraconDev/azumi)** | Compile-time CSS validation. Zero hydration, ~3KB runtime. |
-| 2 | **[dracon-terminal-engine](https://github.com/DraconDev/dracon-terminal-engine)** | 35-widget TUI framework. Ship in a single binary. |
-| 3 | **[tiles](https://github.com/DraconDev/tiles)** | Terminal file manager. Edit, browse, sync. |
-| 4 | **[dracon-libs](https://github.com/DraconDev/dracon-libs)** | Shared Rust: git, system, media, AI. |
+### [azumi](https://github.com/DraconDev/azumi) — Web Framework
+Compile-time CSS validation. Zero hydration, ~3KB runtime.
+- CSS-HTML co-validation at compile time
+- No JavaScript runtime overhead
+- [crates.io](https://crates.io/crates/azumi)
 
----
+### [dracon-terminal-engine](https://github.com/DraconDev/dracon-terminal-engine) — TUI Framework
+35-widget TUI framework. Ship in a single binary.
+- 15 themes, 60FPS rendering
+- Zero external dependencies
+- [crates.io](https://crates.io/crates/dracon-terminal-engine)
 
-## More Tools
+### [tiles](https://github.com/DraconDev/tiles) — Terminal File Manager
+Terminal file manager with editor integration and git awareness.
+- 60FPS grid rendering
+- Seamless editor/preview transitions
+- SSH and sync capabilities
 
-| Project | Description |
-|:---|:---|
-| [ai-vid-editor](https://github.com/DraconDev/ai-vid-editor) | Automated video editing. Drop footage, get results. |
-| [opencode-auto-continue](https://github.com/DraconDev/opencode-auto-continue) | Auto-recover, nudge, and review OpenCode sessions. |
-| [opencode-auto-review-completed-todos](https://github.com/DraconDev/opencode-auto-review-completed-todos) | Auto-review sessions when todos finish. |
-| [kittentts-showcase](https://github.com/DraconDev/kittentts-showcase) | Text-to-speech demo. |
-| [browser-extensions-shared](https://github.com/DraconDev/browser-extensions-shared) | Chrome extensions: API debugger, SamAI, and more. |
-| [dracon-utilities](https://github.com/DraconDev/dracon-utilities) | Background sync, security, system maintenance. |
-| [dracon-platform](https://github.com/DraconDev/dracon-platform) | Core platform services and APIs. |
-
----
-
-## Architecture
-
-```
-┌─────────────────────────────────────────────────────┐
-│                   Dracon Stack                       │
-├─────────────────────────────────────────────────────┤
-│  Interface Layer                                     │
-│  ├── azumi (Web)                                    │
-│  ├── dracon-terminal-engine (TUI)                   │
-│  └── tiles (File Manager)                           │
-├─────────────────────────────────────────────────────┤
-│  Core Engine                                        │
-│  ├── dracon-libs (Shared Rust)                     │
-│  ├── dracon-code (Autonomous Runtime)              │
-│  └── dracon-rust-ui (GPU UI)                       │
-├─────────────────────────────────────────────────────┤
-│  Infrastructure                                     │
-│  ├── dracon-utilities (Sync, Security, System)      │
-│  ├── dracon-spark-and-director (Fleet Management)   │
-│  └── dracon-platform (Platform Services)             │
-└─────────────────────────────────────────────────────┘
-```
+### [dracon-libs](https://github.com/DraconDev/dracon-libs) — Shared Foundations
+Shared Rust crates for the entire Dracon ecosystem.
+- `*-kit`: Infrastructure (caching, rate-limiting, retries)
+- `dracon-*`: Domain tools (git, system, media, AI routing)
+- Contracts: Pure traits enforcing the Dracon Protocol
 
 ---
 
-## Principles
+## Complete Toolset
 
-**Correct by construction, not tested into correctness.**
+| Project | Language | Description |
+|:--------|:---------|:------------|
+| [ai-vid-editor](https://github.com/DraconDev/ai-vid-editor) | Rust | Automated video editing. Silence removal, auto-reframe. |
+| [opencode-auto-continue](https://github.com/DraconDev/opencode-auto-continue) | JS | Auto-recover, nudge, and review OpenCode sessions. |
+| [opencode-auto-review-completed-todos](https://github.com/DraconDev/opencode-auto-review-completed-todos) | JS | Auto-review sessions when todos finish. |
+| [kittentts-showcase](https://github.com/DraconDev/kittentts-showcase) | JS | Real-time text-to-speech demo. |
+| [browser-extensions-shared](https://github.com/DraconDev/browser-extensions-shared) | TS | Chrome extensions: API debugger, SamAI, and more. |
+| [dracon-utilities](https://github.com/DraconDev/dracon-utilities) | Rust | Background sync, security, system maintenance. |
+| [dracon-platform](https://github.com/DraconDev/dracon-platform) | Rust | Core platform services and APIs. |
+| [Junk-Runner-bevy](https://github.com/DraconDev/Junk-Runner-bevy) | Rust | 100% procedural space roguelike on Bevy 0.18. |
 
-- The compiler is the first line of defense
-- Deterministic behavior, no hidden state
-- Single binary, no runtime dependencies
+---
+
+## Architecture Principles
+
+1. **Correct by construction** — The compiler is the first line of defense
+2. **Zero surprises** — Deterministic behavior, no hidden state
+3. **Single binary** — No runtime dependencies, no environment drift
+4. **Source available** — Transparency with commercial protection
 
 ---
 
 ## License
 
-Source-available: [Dracon License](https://github.com/DraconDev/azumi/blob/master/LICENSE).
+Source-available under the [Dracon License](https://github.com/DraconDev/azumi/blob/master/LICENSE).
 
-Free for small teams. Paid for organizations. Some tools MIT.
+- **Free**: Small teams (Indie Tier)
+- **Paid**: Larger organizations (Startup and above)
+- **MIT**: Some individual tools
 
 [dracon.uk](https://dracon.uk)
