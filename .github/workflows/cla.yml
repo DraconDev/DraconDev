@@ -1,0 +1,48 @@
+name: "CLA Assistant"
+
+on:
+  pull_request:
+    types: [opened, closed, synchronize]
+  issue_comment:
+    types: [created]
+
+jobs:
+  CLA:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "CLA Assistant"
+        if: (github.event.comment.body | lower | contains('sign cla')) || (github.event.pull_request.body | lower | contains('sign cla'))
+        uses: contributor-assistant/cla-assistant-action@v1.1.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Organization-level secret containing the list of users who are whitelisted
+          # For org-level: create a secret with the GitHub login of whitelisted users
+          PERSONAL_ACCESS_TOKEN: ${{ secrets.CLA_ACCESS_TOKEN }}
+        with:
+          path-to-document: https://github.com/DraconDev/DraconDev/blob/main/CLA.md
+          allow-list: ""
+          # Set to true if corporate CLA - leave false for individual grant-back CLA
+          corporate: false
+          # Branch to commit the signed CLA to (optional)
+          branch: main
+          # The name of the user group that can sign CLAs (optional)
+          user-group: ""
+          # Additional payload data to pass (optional)
+          # Example: '{"key": "value"}'
+          additional-payload: ""
+
+# -----------------------------------------------------------
+# NOTE: For this to work, you need to create a
+# PERSONAL_ACCESS_TOKEN secret in your repo/org settings.
+#
+# Go to GitHub Settings → Developer settings → Personal access tokens
+# Generate a new token (classic) with "repo:status" scope.
+# Add it as a secret named CLA_ACCESS_TOKEN in your repo or org.
+# -----------------------------------------------------------
+
+# -----------------------------------------------------------
+# Alternatively, use the bot-based approach (no token needed):
+# Install CLA Assistant GitHub App instead:
+# https://github.com/apps/cla-assistant
+# Then this workflow can be simplified to just rely on the App.
+# -----------------------------------------------------------
