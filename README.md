@@ -36,18 +36,65 @@ Shared Rust crates for the entire Dracon ecosystem.
 
 ---
 
-## Complete Toolset
+## Public Projects
 
-| Project | Language | Description |
-|:--------|:---------|:------------|
-| [ai-vid-editor](https://github.com/DraconDev/ai-vid-editor) | Rust | Automated video editing. Silence removal, auto-reframe. |
-| [opencode-auto-continue](https://github.com/DraconDev/opencode-auto-continue) | JS | Auto-recover, nudge, and review OpenCode sessions. |
-| [opencode-auto-review-completed-todos](https://github.com/DraconDev/opencode-auto-review-completed-todos) | JS | Auto-review sessions when todos finish. |
-| [kittentts-showcase](https://github.com/DraconDev/kittentts-showcase) | JS | Real-time text-to-speech demo. |
-| [browser-extensions-shared](https://github.com/DraconDev/browser-extensions-shared) | TS | Chrome extensions: API debugger, SamAI, and more. |
-| [dracon-utilities](https://github.com/DraconDev/dracon-utilities) | Rust | Background sync, security, system maintenance. |
-| [dracon-platform](https://github.com/DraconDev/dracon-platform) | Rust | Core platform services and APIs. |
-| [Junk-Runner-bevy](https://github.com/DraconDev/Junk-Runner-bevy) | Rust | 100% procedural space roguelike on Bevy 0.18. |
+### AI & Media
+| Project | Description |
+|:--------|:------------|
+| [ai-vid-editor](https://github.com/DraconDev/ai-vid-editor) | Automated video editing. Silence removal, auto-reframe, watch folders. |
+| [volume-and-video-pro](https://github.com/DraconDev/volume-and-video-pro) | Advanced audio and video browser controls. |
+
+### Developer Tools
+| Project | Description |
+|:--------|:------------|
+| [opencode-auto-continue](https://github.com/DraconDev/opencode-auto-continue) | Auto-recover stalled OpenCode sessions. |
+| [opencode-auto-force-resume](https://github.com/DraconDev/opencode-auto-force-resume) | Detect and recover stalled AI sessions. |
+| [opencode-auto-review-completed-todos](https://github.com/DraconDev/opencode-auto-review-completed-todos) | Auto-review sessions when all todos complete. |
+
+### Browser Extensions
+| Project | Description |
+|:--------|:------------|
+| [browser-extensions-shared](https://github.com/DraconDev/browser-extensions-shared) | Chrome extensions: API debugger, SamAI, and more. |
+| [SamAI](https://github.com/DraconDev/SamAI) | AI-powered web experience: search, scraping, chat, forms. |
+
+### Runtimes & Engines
+| Project | Description |
+|:--------|:------------|
+| [dracon-terminal-engine-2](https://github.com/DraconDev/dracon-terminal-engine-2) | TUI runtime with z-indexed compositing, code editor. |
+| [dracon-rust-ui](https://github.com/DraconDev/dracon-rust-ui) | ECS-based GPU UI engine. Vello rendering, 10 themes. |
+| [dracon-code](https://github.com/DraconDev/dracon-code) | Autonomous engineering runtime. Blueprint-first execution. |
+
+### Platform Services
+| Project | Description |
+|:--------|:------------|
+| [dracon-demons](https://github.com/DraconDev/dracon-demons) | Service daemons: auth, billing, email, AI routing. |
+| [dracon-platform](https://github.com/DraconDev/dracon-platform) | Web apps, AI API gateway, dashboard. |
+| [dracon-utilities](https://github.com/DraconDev/dracon-utilities) | Background sync, security hardening. |
+| [dracon-spark-and-director](https://github.com/DraconDev/dracon-spark-and-director) | Pull-based fleet management for VPS nodes. |
+
+### Games
+| Project | Description |
+|:--------|:------------|
+| [Junk-Runner-bevy](https://github.com/DraconDev/Junk-Runner-bevy) | 100% procedural space roguelike on Bevy 0.18. |
+
+### Meta
+| Project | Description |
+|:--------|:------------|
+| [DraconDev](https://github.com/DraconDev/DraconDev) | Public showcase of the Dracon ecosystem. |
+
+---
+
+## Private & Internal Projects
+
+DraconDev hosts numerous private/internal projects including:
+- `dracon-code-*` — Numbered variants for fleet scaling
+- `dracon-demons-*` — Service daemon variants
+- `dracon-libs-*` — Library variant development
+- `dracon-terminal-engine-*` — TUI framework variants
+- `test-repo-*` — Experimental repositories
+- `tiles-*`, `browser-extensions-shared-*` — Version variants
+
+These follow the same AGPLv3 + CLA licensing when public.
 
 ---
 
