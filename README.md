@@ -58,14 +58,11 @@ Shared Rust crates for the entire Dracon ecosystem.
 3. **Single binary** — No runtime dependencies, no environment drift
 4. **Source available** — Transparency with commercial protection
 
----
-
 ## License
 
-Source-available under the [Dracon License](https://github.com/DraconDev/azumi/blob/master/LICENSE).
+All Dracon projects are licensed under **AGPLv3** with a Contributor License Agreement (CLA). This ensures:
+- The entire ecosystem remains open and copyleft
+- Competitive forks must contribute back or purchase a commercial license
+- Contributors retain rights while granting relicense rights to Dracon
 
-- **Free**: Small teams (Indie Tier)
-- **Paid**: Larger organizations (Startup and above)
-- **MIT**: Some individual tools
-
-[dracon.uk](https://dracon.uk)
+Commercial licenses available for proprietary use. Contact: **license@dracon.uk**
