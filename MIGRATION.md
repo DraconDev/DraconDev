@@ -82,20 +82,23 @@ Non-git repos (skipped): sqlite-embedded-continuous-wal-backup-to-object-storage
 # Adjust paths as needed
 
 REPOS=(
-  "~/Dev/azumi"
-  "~/Dev/dracon-terminal-engine"
-  "~/Dev/tiles"
-  "~/Dev/dracon-libs"
+  "~/Dev/ai-auto-writer"
   "~/Dev/ai-vid-editor"
-  "~/Dev/dracon-utilities"
+  "~/Dev/azumi"
+  "~/Dev/browser-extensions-shared"
+  "~/Dev/dracon-code"
+  "~/Dev/dracon-demons"
+  "~/Dev/dracon-libs"
   "~/Dev/dracon-platform"
+  "~/Dev/dracon-rust-ui"
+  "~/Dev/dracon-spark-and-director"
+  "~/Dev/dracon-terminal-engine"
+  "~/Dev/dracon-utilities"
   "~/Dev/Junk-Runner-bevy"
   "~/Dev/opencode-auto-continue"
   "~/Dev/opencode-auto-review-completed-todos"
-  "~/Dev/kittentts-showcase"
-  "~/Dev/browser-extensions-shared"
-  "~/Dev/dracon-code"
-  "~/Dev/SamAI"
+  "~/Dev/tiles"
+  "~/Dev/video-uploader"
 )
 
 for repo in "${REPOS[@]}"; do
