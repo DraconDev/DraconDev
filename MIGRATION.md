@@ -1,4 +1,4 @@
-# Dracon License Migration — Checklist
+# License Migration — Checklist
 
 **Goal:** Standardize AGPLv3 + CLA across all Dracon projects.
 

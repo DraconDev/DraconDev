@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "CLA Assistant"
-        if: (github.event.comment.body | lower | contains('sign cla')) || (github.event.pull_request.body | lower | contains('sign cla'))
+        if: ${{ github.event.comment.body != '' && github.event.comment.body != null && contains(github.event.comment.body, 'sign cla') }}
         uses: contributor-assistant/cla-assistant-action@v1.1.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
