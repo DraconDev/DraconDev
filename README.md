@@ -56,7 +56,7 @@ Shared Rust crates for the entire Dracon ecosystem.
 1. **Correct by construction** — The compiler is the first line of defense
 2. **Zero surprises** — Deterministic behavior, no hidden state
 3. **Single binary** — No runtime dependencies, no environment drift
-4. **Source available** — Transparency with commercial protection
+4. **Open source (AGPLv3)** — Transparency with commercial protection
 
 ## License
 
