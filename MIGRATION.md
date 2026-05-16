@@ -40,58 +40,40 @@ git commit -m "docs: adopt AGPLv3 + CLA license stack
 git push origin main && git push codeberg main && git push gitlab main
 ```
 
-## Repos to Update
+## Repos Updated (2026-05-16)
+
+All 18 DraconDev repositories have been migrated to AGPLv3 + CLA:
 
 ```
-azumi                          → https://github.com/DraconDev/azumi
-dracon-terminal-engine         → https://github.com/DraconDev/dracon-terminal-engine
-tiles                          → https://github.com/DraconDev/tiles
-dracon-libs                    → https://github.com/DraconDev/dracon-libs
-ai-vid-editor                 → https://github.com/DraconDev/ai-vid-editor
-dracon-utilities               → https://github.com/DraconDev/dracon-utilities
+ai-auto-writer                  → https://github.com/DraconDev/ai-auto-writer
+ai-vid-editor                   → https://github.com/DraconDev/ai-vid-editor
+azumi                           → https://github.com/DraconDev/azumi
+browser-extensions-shared        → https://github.com/DraconDev/browser-extensions-shared
+dracon-code                     → https://github.com/DraconDev/dracon-code
+dracon-demons                   → https://github.com/DraconDev/dracon-demons
+dracon-libs                     → https://github.com/DraconDev/dracon-libs
 dracon-platform                → https://github.com/DraconDev/dracon-platform
-Junk-Runner-bevy               → https://github.com/DraconDev/Junk-Runner-bevy
-opencode-auto-continue         → https://github.com/DraconDev/opencode-auto-continue
+dracon-rust-ui                 → https://github.com/DraconDev/dracon-rust-ui
+dracon-spark-and-director       → https://github.com/DraconDev/dracon-spark-and-director
+dracon-terminal-engine          → https://github.com/DraconDev/dracon-terminal-engine
+dracon-utilities                → https://github.com/DraconDev/dracon-utilities
+Junk-Runner-bevy                → https://github.com/DraconDev/Junk-Runner-bevy
+opencode-auto-continue          → https://github.com/DraconDev/opencode-auto-continue
 opencode-auto-review-completed-todos → https://github.com/DraconDev/opencode-auto-review-completed-todos
-kittentts-showcase             → https://github.com/DraconDev/kittentts-showcase
-browser-extensions-shared       → https://github.com/DraconDev/browser-extensions-shared
-dracon-code                    → https://github.com/DraconDev/dracon-code
-SamAI                          → https://github.com/DraconDev/SamAI
+tiles                           → https://github.com/DraconDev/tiles
+video-uploader                  → https://github.com/DraconDev/video-uploader
+DraconDev (meta-repo)           → https://github.com/DraconDev/DraconDev
 ```
 
-## GitHub: Enable CLA Assistant Bot
+Non-git repos (skipped): sqlite-embedded-continuous-wal-backup-to-object-storage, video-factory
 
-For GitHub repos, enable CLA enforcement:
+## Post-Migration Checklist
 
-1. Go to **Settings → Apps** for each repo
-2. Search for **CLA Assistant** (or use `assistor` bot)
-3. Install and configure with DraconDev/DraconDev as the org-level app
-4. Add a `.claire` file to each repo root:
-
-```yaml
-# .claire — CLA configuration
-cla:
-  github:
-    label: "cla"
-    bot: "cla-assistant[bot]"
-  CONTRIBUTOR:
-    name: "individual"
-    min-contributions: 1
-  SIGN:
-    individual:
-      by-email: false
-      by-github: true
-```
-
-Alternatively, use the GitHub Action version (see `.github/workflows/cla.yml` in DraconDev).
-
-## After Migration
-
-- [ ] Verify LICENSE appears on GitHub repo page (shows as AGPL-3.0)
-- [ ] Verify PRs require CLA check to pass
-- [ ] Update each project's `package.json` / `Cargo.toml` with SPDX license identifier
-- [ ] Add `SPDX-License-Identifier: AGPL-3.0` to all Rust `lib.rs` / `main.rs` file headers
-- [ ] Announce migration in project docs / release notes
+- [x] Verify LICENSE appears on GitHub repo page (shows as AGPL-3.0)
+- [x] Verify PRs require CLA check to pass (CLA-pr job in cla.yml)
+- [x] Update each project's `package.json` / `Cargo.toml` with SPDX license identifier
+- [ ] Add `SPDX-License-Identifier: AGPL-3.0` to all Rust `lib.rs` / `main.rs` file headers (optional — not yet done)
+- [ ] Announce migration in project docs / release notes (optional)
 
 ## One-Shot Bash (from DraconDev root)
 
