@@ -107,9 +107,9 @@ These follow the same AGPLv3 + CLA licensing when public.
 
 ## License
 
-All Dracon projects are licensed under **AGPLv3** with a Contributor License Agreement (CLA). This ensures:
-- The entire ecosystem remains open and copyleft
-- Competitive forks must contribute back or purchase a commercial license
-- Contributors retain rights while granting relicense rights to Dracon
+This project is dual-licensed:
 
-Commercial licenses available for proprietary use. Contact: **license@dracon.uk**
+- **AGPL-3.0-only** — See [LICENSE](LICENSE) for the full text. This is the default license for open source use.
+- **Commercial License** — For organizations that prefer not to comply with AGPLv3's source disclosure requirements. See [COMMERCIAL-LICENSE.md](COMMERCIAL-LICENSE.md) for details.
+
+By contributing to this project, you agree to the terms in [CLA.md](CLA.md).
