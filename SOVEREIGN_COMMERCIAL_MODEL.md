@@ -2,31 +2,31 @@
 
 **"Visibility for Trust. Availability for Value. Proprietary for Sauce."**
 
-The Dracon ecosystem rejects the "Open Source or Nothing" binary. We use a tiered source policy that protects the developer's IP while giving the user absolute transparency.
+The Dracon ecosystem uses a unified AGPLv3 license stack across all projects, with a commercial licensing tier for proprietary use.
 
-## 🏛️ The Dracon License (Unified)
-Most core Dracon software is **Source Available**. You can see the code, audit it, and build with it locally.
+## 🏛️ The License Stack (Unified)
 
-- **The Deal:** Free for small teams (Indie Tier). Paid for larger organizations (Startup and above).
+All Dracon software is **AGPLv3 + Contributor License Agreement (CLA)**. You can see the code, audit it, and build with it under AGPL terms.
+
+- **The Deal:** Free for open source / non-commercial use. Paid for proprietary commercial use.
 - **The Value:** You get the transparency of open source with the commercial stability of a professional product.
+- **The Mechanism:** The CLA gives Dracon the right to relicense contributions under commercial terms, enabling a clean dual-licensing model.
 
-## 🎟️ The Service Model (Managed & Closed)
-For projects that are "Factories" or "Services," we keep the source closed to protect our unique AI recipes and niche-analysis math.
+## 🎟️ The Commercial Tier
 
-- **ai-auto-writer:** Proprietary prompting strategies and author-profiling logic.
-- **Warehouse:** Proprietary content-addressed distribution logic.
-- **Service Subscriptions:** Unlock the **Managed** versions of these tools, where Dracon handles the "Cost-to-Serve" (AI tokens, bandwidth, storage).
+For organizations that want to use Dracon software in proprietary products or services without AGPL obligations:
 
-## 🌊 Leaky Clients (Extensions)
-For browser extensions like **SamAI**, we acknowledge that the source code is visible to the user.
+- **Indie Tier:** Free for individual developers and teams up to 3 engineers.
+- **Startup Tier:** Paid, for teams building commercial products.
+- **Scale Tier:** Paid, for organizations with 11+ engineers or revenue-based usage.
 
-- **Strategy:** We don't apply an open-source license. We provide the tool for usage but reserve the rights to the logic. 
-- **The Win:** Users get a powerful tool; Dracon retains control of the platform evolution.
+Contact: **license@dracon.uk**
 
-## 🚀 The Steam Anchor Strategy
+## 🌊 The Steam Anchor Strategy
+
 We use external platforms (Steam, Epic) as a **Billboard**.
 - **On Steam:** High-fidelity "Manifestations" (like Junk-Runner) are sold for a fixed price.
-- **On Nexus:** Those same games are included in your subscription, alongside the **Source Code** via the Dracon License. 
+- **On Nexus:** Those same games are included in your subscription, alongside the **Source Code** via the AGPLv3 license.
 
 ---
 
