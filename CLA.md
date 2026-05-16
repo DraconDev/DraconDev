@@ -19,9 +19,9 @@ You grant to the Project Owner and to recipients of this Project's software a pe
 
 You grant to the Project Owner and to recipients of this Project's software a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable patent license to make, have made, use, offer to sell, sell, import, and otherwise transfer Your Contributions and such derivative works, in any manner consistent with the Project's open source license (AGPLv3).
 
-###络 License (Grant-Back)
+### Grant-Back License
 
-You grant to the Project Owner an exclusive, royalty-free, irrevocable, worldwide license to use, modify, and sublicense Your Contributions under any license terms of the Project Owner's choosing, **including commercial and proprietary licenses**. This grant-back license enables the Project Owner to relicense Your Contributions in connection with the Project's commercial activities, including but not limited to dual-licensing under AGPLv3 and a commercial license.
+You grant to the Project Owner a non-exclusive, royalty-free, irrevocable, worldwide license to use, modify, and sublicense Your Contributions under any license terms of the Project Owner's choosing, **including commercial and proprietary licenses**. This grant-back license enables the Project Owner to relicense Your Contributions in connection with the Project's commercial activities, including but not limited to dual-licensing under AGPLv3 and a commercial license.
 
 ## 3. You Retain Copyright
 
