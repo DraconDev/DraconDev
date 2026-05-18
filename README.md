@@ -1,9 +1,3 @@
-# DraconDev
-
-> **Performance-first tools. Compile-time guarantees.**
-
----
-
 ## Featured
 
 - [obs-wayland-hotkey](https://github.com/DraconDev/obs-wayland-hotkey) — OBS hotkeys on Wayland (7★)
