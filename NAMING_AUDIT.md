@@ -1,247 +1,163 @@
 # DraconDev Project Naming Audit
 
-Deep analysis of every project — each examined via README, source code, Cargo.toml, and actual behavior.
+Every project examined via README, source, Cargo.toml, and actual behavior.
+Names judged by one test: **would you click on it in a GitHub search?**
+
+Your best names already prove the pattern:
+- `obs-wayland-hotkey` → "OBS hotkeys on Wayland? Yes please"
+- `git-ai-committer` → "AI commits for me? Yes please"
+
+**3-5 words. Name the problem + hook. Make them want it.**
 
 ---
 
-## OPAQUE — Name gives zero clue what it is
+## Final Recommendations
 
-### azumi → KEEP (always pair with subtitle)
-**What it is:** Full-stack Rust web framework. Server-rendered HTML with client-side interactivity. Zero custom JS. 41 widgets. Compile-time CSS validation. ~16kb runtime. The "HTMX but instant" answer.
-
-**Why opaque:** "Azumi" is a Japanese surname/manga character. Zero hint it is a web framework.
-
-**Options considered:**
-- `azumi-web` — Brand + domain, searchable / ✗ Crate rename on crates.io is disruptive
-- `keep azumi` — Brand established on crates.io, README subtitle solves discoverability / ✗ GitHub search alone won't find it
-
-**→ KEEP** — Always pair with subtitle "azumi — Rust web framework". Renaming a published crate on crates.io hurts more than it helps.
-
----
-
-### tiles → tiles-fm
-**What it is:** Terminal dual-pane file manager. Built-in text editor (syntect), git integration, SSH browsing, system monitor. Vim-style. Smart terminal spawning. 60FPS.
-
-**Why opaque:** Could be a game, a tile renderer, a grid layout library, a window manager...
-
-**Options considered:**
-- `tiles-fm` — Brand + domain. `fm` is universal terminal file manager abbreviation (like lf, nnn) / ✗ Minor crate rename
-- `tiles-file-manager` — Fully explicit / ✗ Long. crates.io name is already this and it's too long
-
-**→ tiles-fm** — Retains brand, instantly tells you the domain. The crates.io name `tiles-tui-file-manager` is already too long.
+| Current | → Proposed | Words | Why |
+|:--------|:----------|:------|:----|
+| `azumi` | **`zero-js-web`** | 3 | "Zero JS" is the irresistible hook. You get SSR + interactivity without writing JavaScript. Sounds impossible → they click. |
+| `tiles` | **`terminal-file-workspace`** | 3 | "File" = findable in search. "Workspace" = tempting (it's more than a file manager — editor, git, SSH, monitor). |
+| `terma` | **`layered-terminal-engine`** | 3 | "Layered" is the hook. Z-indexed rendering in a terminal? TUI devs click. |
+| `SamAI` | **`ai-web-agent`** | 3 | "AI" = how, "web" = where, "agent" = what. It acts on the web for you. |
+| `Junk-Runner-bevy` | **`junk-runner`** | 2 | Games are the rare 2-word case. "Junk Runner" IS the game. Drop the engine suffix. |
+| `dracon-demons` | **`backend-service-daemons`** | 3 | Ready-made backend: auth, billing, email, AI routing, storage. "Daemons" = long-running services. "Backend service" = what they are. |
+| `dracon-utilities` | **`system-guard-daemons`** | 3 | "Guard" is the hook. Sync guards your work, disk guard guards your machine, warden guards your secrets. |
+| `dracon-platform` | **`platform-web-apps`** | 3 | It's the web apps of the platform. Public site + products + dashboard + AI hub. Clear. |
+| `dracon-code` | **`auto-ai-agent`** | 3 | 🔥 "AI agent that runs itself?" — `auto` = autonomous, `ai` = the hook, `agent` = the what. Not pigeonholed as coding-only. |
+| `dracon-rust-ui` | **`ai-app-engine`** | 3 | 🔥 "AI builds my app??" — the project already renamed itself to "Dracon App Engine" internally. "AI" is the hook. |
+| `dracon-spark-and-director` | **`vps-fleet-manager`** | 3 | You have VPS nodes? You click. "Fleet" is evocative. Spark & director stay as internal component names. |
+| `volume-and-video-pro` | **`tab-volume-video`** | 3 | "Tab" is the differentiator. Per-tab volume + video controls = why this exists. |
+| `video-uploader` | **`youtube-uploader`** | 2 | 2-word rare case. YouTube is the target. Be specific. |
+| `opencode-auto-review-completed-todos` | **`opencode-todo-review`** | 3 | "Completed-todos" was the trigger condition, not the name. What it does: review when todos are done. |
+| `browser-extensions-shared` | **`browser-extensions`** | 2 | 2-word rare case. It IS the extensions. "-shared" was an implementation detail. |
+| `video-factory` | **`automated-video-pipeline`** | 3 | "Automated" is the hook. Drop video in, processed product comes out. |
+| `opencode-auto-force-resume` | **keep repo, remove from README** | — | Older/simpler version (v6) of auto-continue (v7). Still useful, just not the flagship. |
 
 ---
 
-### terma → terma-tui
-**What it is:** Low-level terminal compositor/rendering engine. Z-indexed layers, TrueColor, SGR mouse, Kitty keyboard protocol. Drop-in Ratatui support. The rendering layer UNDER dracon-terminal-engine.
+## Detailed Reasoning
 
-**Why opaque:** Could be a terminal emulator, multiplexer, theme pack...
+### azumi → zero-js-web
+**What it is:** Server-rendered HTML + client interactivity, all Rust. 41 widgets. Compile-time CSS validation. ~16kb runtime. The "HTMX but instant" answer.
 
-**Options considered:**
-- `terma-tui` — Brand + domain. Pairs with tiles-fm pattern / ✗ None significant
-- `terma-compositor` — More specific about rendering role / ✗ "Compositor" is jargon for non-TUI devs
+**Why not the other options:**
+- `azumi` — Brand only works if you already know it. Crates.io name stays `azumi` but the REPO should be findable.
+- `compile-time-web` — Accurate but sounds like a build tool, not a framework.
+- `zero-js-web` — "Zero JavaScript? In a web framework? How??" → they click. That's the irresistible hook.
 
-**→ terma-tui** — Consistent with tiles-fm pattern. Short. Domain-clear.
-
----
-
-### SamAI → samai-web-assistant
-**What it is:** Browser extension: summarize any page, chat with websites, extract content, fill forms. Multi-provider AI (Mistral, NVIDIA, OpenRouter). Also has a CLI component. Lives inside browser-extensions monorepo.
-
-**Why opaque:** "Sam" could be a person, SAM file format, AWS SAM... The "AI" suffix helps but not enough.
-
-**Options considered:**
-- `samai-web-assistant` — Brand + domain. "Web assistant" captures browser + AI / ✗ Longer but justified
-- `sam-assistant` — Shorter, drops brand awkwardness / ✗ Loses the SamAI brand
-
-**→ samai-web-assistant** — Brand + domain. Being inside the monorepo means the repo name matters less, but the extension name should be clearer.
+**Note:** The crate on crates.io stays `azumi`. The repo name becomes `zero-js-web`. README opens with "zero-js-web (formerly azumi)" or "zero-js-web — the framework previously known as azumi."
 
 ---
 
-### Junk-Runner-bevy → junk-runner
-**What it is:** Procedural space trading roguelike. Dark economy — no heroes, no redemption, just credits. Crew management, haggling, bribes, contraband. Neural terminal aesthetic. Full name is "Junk Runner // Neural Terminal".
+### tiles → terminal-file-workspace
+**What it is:** Dual-pane file manager + text editor + git integration + SSH browsing + system monitor. Vim-style. 60FPS.
 
-**Why opaque:** "Junk Runner" is actually a good game name. The problem is `-bevy` suffix — that's the engine, not the game. No game names itself after its engine.
-
-**Options considered:**
-- `junk-runner` — Clean game name. Bevy is implementation detail / ✗ Cargo crate would need rename
-- `junk-runner-roguelike` — Genre tag for discoverability / ✗ Unnecessary
-
-**→ junk-runner** — Drop the engine suffix. The game IS "Junk Runner". The "Neural Terminal" subtitle goes in the tagline.
+**Why not the other options:**
+- `tiles` — Opaque. Could be a game, a tile renderer, a window manager.
+- `tiles-fm` — "fm" is jargon. Also loses the "more than files" hook.
+- `terminal-workspace` — Tempting but not FINDABLE. You search "file manager" and miss it.
+- `terminal-file-workspace` — "File" = findable. "Workspace" = tempting. Best of both.
 
 ---
 
-## VAGUE — Name hints at domain but doesn't say what it DOES
+### terma → layered-terminal-engine
+**What it is:** Low-level terminal rendering engine. Z-indexed layers, TrueColor, SGR mouse, Kitty keyboard. Drop-in Ratatui support. The rendering layer underneath dracon-terminal-engine.
 
-### dracon-demons → dracon-services
-**What it is:** 5 platform microservice daemons: auth-daemon, billing-daemon, email-daemon, ai-daemon, bucket-daemon. Connected via tarpc over Unix sockets. README calls them "Internal service-to-service daemons for the Dracon platform."
-
-**Why vague:** "Demons" is a cute Unix spelling of daemons, but tells you nothing about WHICH services. Are they system daemons? Game daemons? Service daemons for what platform?
-
-**Options considered:**
-- `dracon-services` — Standard, clear, immediately understood / ✗ Generic — could be confused with dracon-utilities (also services)
-- `dracon-platform-services` — Explicit about being the platform layer / ✗ Long. "platform" is already in dracon-platform
-- `dracon-microservices` — Accurate about architecture / ✗ "Microservices" is jargon, not identity
-
-**→ dracon-services** — Clean, standard. Pairs with `dracon-system-services` for the local daemons. The cute "demons" spelling can be a subtitle in the README.
+**Why not the other options:**
+- `terma` — Opaque.
+- `terma-tui` — "tui" is jargon.
+- `terminal-compositor` — "Compositor" is Wayland jargon.
+- `layered-terminal-engine` — "Layered" is the hook. Z-indexed rendering in a terminal? TUI devs are instantly curious.
 
 ---
 
-### dracon-utilities → dracon-system-services
-**What it is:** 3 LOCAL system daemons: dracon-sync (invisible git auto-commit + 3-mirror sync), dracon-system/dracon-system-guard (disk space watcher + process renicer), dracon-warden (secret encryption in git repos). All systemd user services.
+### SamAI → ai-web-agent
+**What it is:** Browser extension: summarize any page, chat with websites, extract content, fill forms. Multi-provider AI (Mistral, NVIDIA, OpenRouter).
 
-**Why vague:** "Utilities" is a junk drawer word. These are NOT arbitrary scripts — they are 3 specific local system daemons. And they are LOCAL (your machine), not platform (the Dracon service layer).
-
-**Options considered:**
-- `dracon-system-services` — Clear scope: local system daemons. Distinguishes from dracon-services (platform) / ✗ Long-ish
-- `dracon-local-services` — Explicit about local scope / ✗ "Local" is ambiguous (localhost? local network?)
-- `dracon-guard` — Evocative — all three services are protective (sync guards your work, system guards your machine, warden guards your secrets) / ✗ Abstract — loses the "services" framing
-
-**→ dracon-system-services** — Clean pairing with dracon-services. One is platform services (auth, billing, email), the other is system services (sync, guard, warden). The scope difference is immediate.
+**Why not the other options:**
+- `samai-web-assistant` — "Assistant" is diluted in 2026. Everything is an assistant.
+- `smart-web-agent` — "Smart" is weaker than "AI" as a search term.
+- `ai-web-agent` — Direct. AI = how, web = where, agent = what. It acts on the web for you.
 
 ---
 
-### dracon-platform → dracon-portal
-**What it is:** User-facing web apps: public-site-app (landing pages), products-app (pricing/licensing), dashboard-app (authenticated user dashboard), ai-api-gateway (external AI API proxy), ai-hub (provider rankings/plans). Uses azumi + Axum + Caddy. README says "This repo owns what users see."
+### dracon-code → auto-ai-agent
+**What it is:** Blueprint-driven autonomous execution runtime. Write `plan/blueprint.toml`, it executes slices, runs verifiers, checkpoints, recovers, escalates. Headless CLI. NOT just code — the verifiers happen to be `fmt/clippy/test` today, but the architecture is objective-in, result-out. Deployments, content, infrastructure — anything.
 
-**Why vague:** "Platform" = everything and nothing. Is it infrastructure? API? SDK? It's specifically the web UI layer that users interact with.
+**Why this works:** `auto` = it runs itself (the hook — you walk away). `ai` = how it achieves things (the #1 search term in 2026). `agent` = what it is (acts on your behalf). Not pigeonholed as coding-only.
 
-**Options considered:**
-- `dracon-portal` — Captures the multi-app gateway nature. Public site + products + dashboard + AI hub = portal / ✗ "Portal" has corporate intranet vibes
-- `dracon-web-apps` — Literal, clear / ✗ Dry, generic
-- `dracon-dashboard` — The primary app IS the dashboard / ✗ Misses the public site and products apps
-- `dracon-site` — Short / ✗ Too simple — implies just one site
-
-**→ dracon-portal** — It IS a portal: multiple apps behind one gateway. "What users see" = portal. Better than dashboard (which is only one section).
-
----
-
-### dracon-code → dracon-agent
-**What it is:** Autonomous engineering runtime. Blueprint-driven: you write `plan/blueprint.toml`, it executes slices, runs gate verifiers (fmt/clippy/test), checkpoints progress, recovers automatically, escalates with outcome report. Headless CLI. "No chat-driven step execution. The blueprint is the only source of truth."
-
-**Why vague:** "Code" = editor? IDE? LSP? Code review? Code generator? It is specifically an autonomous agent that executes engineering plans from blueprints.
-
-**Options considered:**
-- `dracon-agent` — It IS an agent. Blueprint-driven, autonomous. The word "agent" in 2026 means exactly this / ✗ "Agent" is overloaded (AI agent, secret agent...)
-- `dracon-runner` — Part of its identity (`dracon run`) / ✗ "Run" is just one command, not the identity
-- `dracon-runtime` — README says "execution runtime" / ✗ Too generic — runtime of what?
-
-**→ dracon-agent** — It acts autonomously on blueprints. The README literally says "autonomous execution runtime." That is an agent. The blueprint model is exactly what "agent" means in the current landscape.
+**Why not the other options:**
+- `autonomous-code-agent` — too narrow. Pigeonholes as coding-only. But it can execute ANY objective.
+- `autonomous-objective-agent` — "objective" is corporate jargon. Nobody clicks on that.
+- `autonomous-ai-agent` — same meaning but "autonomous" is 10 letters vs "auto" is 4.
+- `self-driving-agent` — great metaphor but overloaded with automotive.
+- `blueprint-driven-agent` — the differentiator, but "blueprint" isn't a search term.
 
 ---
 
-### volume-and-video-pro → vidpro
-**What it is:** Chrome extension: per-tab volume and video playback controls. Already named "vidpro-extension" (v1.13.634) inside the browser-extensions monorepo.
+### dracon-rust-ui → ai-app-engine
+**What it is:** Already renamed itself to "Dracon App Engine" internally. ECS-based UI + Vello GPU. 6 shell archetypes. 10 themes. 44 showcases. AI styling contract.
 
-**Why vague:** Two things crammed together (volume AND video). "Pro" is a meaningless suffix. The REAL product name is already "VidPro" inside the monorepo.
-
-**Options considered:**
-- `vidpro` — Its actual product name already. Short, memorable / ✗ Drops "volume" but volume IS part of video controls
-- `browser-media-controls` — Fully descriptive / ✗ Generic, no brand identity
-
-**→ vidpro** — Use the real product name. VidPro is already what it's called inside the monorepo. No reason to have a different repo-level name.
+**Why this works:** "AI app engine" → "AI builds my app??" The AI-first design IS the differentiator. The project already renamed itself — just sync the repo name.
 
 ---
 
-### video-uploader → youtube-uploader
-**What it is:** Rust library + CLI for uploading videos to YouTube via Data API v3. Resumable chunked uploads (308 resume), encrypted credential storage, multi-channel workspaces, batch processing via CSV manifest. Published on crates.io as video-uploader v0.2.
+### dracon-spark-and-director → vps-fleet-manager
+**What it is:** Pull-based fleet management. Spark = node agent (runs on each VPS). Director = control plane. Contracts = shared types.
 
-**Why vague:** Upload to WHERE? Vimeo? S3? Custom server? It's YouTube-specific. The name hides the most important detail.
+**Why this works:** You have VPS nodes? You click. "Fleet" is evocative without being abstract. "Manager" is clear.
 
-**Options considered:**
-- `youtube-uploader` — Exact. No ambiguity about target / ✗ Crate rename on crates.io needed
-- `yt-uploader` — Short, uses common YT abbreviation / ✗ Less professional
-
-**→ youtube-uploader** — Be specific. If you add Vimeo later, rename then. Generic names for specific tools help nobody. Crate is v0.2 — early enough to rename.
+**Why not `dracon-fleet`:** Too vague. Fleet of what? Ships? Kubernetes? VPS nodes specifically.
 
 ---
 
-## STALE NAME — Project already renamed itself
+### dracon-utilities → system-guard-daemons
+**What it is:** 3 local daemons: dracon-sync (auto git commit + 3-mirror sync), dracon-system (disk guard + process renicer), dracon-warden (secret encryption in repos).
 
-### dracon-rust-ui → dracon-app-engine
-**What it is:** ALREADY RENAMED internally to "Dracon App Engine". AI-first app engine. ECS-based UI with Vello GPU rendering. 6 shell archetypes (launcher, workspace, detail, dashboard, editor, media). Bounded theme system (10 themes). 44 showcases. 406 tests. App catalog with manifests.
+**Why this works:** "Guard" is the hook. These three daemons all GUARD something — your work (sync), your machine (disk/process), your secrets (warden). You see "system-guard-daemons" and think "what are they guarding?" → click.
 
-**Why stale:** The project already calls itself "Dracon App Engine" in its own README. The repo name `dracon-rust-ui` is from an earlier era when it was just a UI toolkit. Now it's a full app engine with shells, capabilities, and an AI styling contract.
-
-**→ dracon-app-engine** — The project already renamed itself. Just sync the repo name to match. This is a no-brainer.
+**Why not `dracon-system-services`:** Boring. "Services" could be anything. "Guard daemons" tells you they PROTECT.
 
 ---
 
-## UNWIELDY — Two concepts crammed into one name
+### dracon-demons → backend-service-daemons
+**What it is:** 5 platform daemons: auth, billing, email, AI routing, object storage. tarpc + Unix sockets.
 
-### dracon-spark-and-director → dracon-fleet
-**What it is:** Pull-based fleet management for VPS nodes. Spark = node agent (runs on each VPS, pulls desired state from git, reports health). Director = control plane (manages desired state, assigns nodes, deploys services, syncs DNS to Cloudflare). Contracts = shared types.
+**Why this works:** "Backend service daemons" = ready-made backend. If you need auth + billing + email, you click. "Daemons" = long-running services (the Unix spelling is fine when qualified).
 
-**Why unwieldy:** Two nouns joined by "and". Repos shouldn't list their internal components in their name. The system IS a fleet manager — spark and director are just its parts.
-
-**Options considered:**
-- `dracon-fleet` — What the system IS. Clean. Spark & director are components OF the fleet / ✗ None significant
-- `dracon-fleet-manager` — Unambiguous / ✗ Redundant — fleet already implies management
-
-**→ dracon-fleet** — Clean, evocative. The system manages a fleet of VPS nodes. Spark and director stay as component names inside the repo.
+**Pairing with system-guard-daemons:** One is backend (platform-facing), one is system (machine-facing). Clear distinction.
 
 ---
 
-## OVERLONG — Name includes trigger condition, not identity
+## The Naming Pattern
 
-### opencode-auto-review-completed-todos → opencode-auto-review
-**What it is:** OpenCode plugin: listens for todo.updated events. When all todos are completed/cancelled, sends a review message. Debounced. Pairs with opencode-todo-reminder.
+Your best names follow: **[domain]-[hook]-[qualifier]**
 
-**Why overlong:** 36 characters. "completed-todos" is the TRIGGER condition, not the name. What it does is: auto-review.
+| Word | Purpose | Examples |
+|:-----|:--------|:---------|
+| Domain | WHERE it operates | terminal, vps, youtube, tab, web, browser |
+| Hook | WHY you want it | zero-js, autonomous, ai, guard, layered, fleet |
+| Qualifier | WHAT it is | engine, agent, daemons, manager, workspace |
 
-**→ opencode-auto-review** — The trigger condition belongs in the description, not the name.
-
----
-
-## WRONG SUFFIX — Implementation detail in the name
-
-### browser-extensions-shared → browser-extensions
-**What it is:** Monorepo of 17 Chrome extensions: SamAI, api-debugger, calmweb, custom-history, auto-form-filler, ai-ats, bugkit, web-automator, full-page-screenshot, dark-mode-themes, custom-search, youtube-dislike, death-note-typing-practice, cursor-style, live-reload-pro, vidpro-extension, volume-and-video-pro. WXT + React + TypeScript.
-
-**Why wrong:** "-shared" implies shared code/utilities between extensions. It's NOT a shared-utilities repo — it's the EXTENSIONS MONOREPO. The extensions ARE the product, not the shared code.
-
-**→ browser-extensions** — Drop "-shared". The shared code is an implementation detail. The repo IS the extensions.
+The hook is the word that makes someone click. Everything else is searchable context.
 
 ---
 
-## OLDER SUBSET — Keep repo, remove from README promotion
+## What Stays the Same
 
-### opencode-auto-force-resume → KEEP REPO, remove from README
-**What it is:** OpenCode plugin v6.0.6. Detects stalled sessions, aborts, sends continue. Stall recovery + todo context + review on completion + nudger + auto-compaction + terminal timer + progress bar.
+These names already follow the pattern:
 
-**Why not in README:** opencode-auto-continue (v7.21.0) does everything this does PLUS 4-layer compaction, question auto-answer, plan-aware continue, hallucination loop detection, tool-text recovery, prompt guard, custom prompts, session monitor. Force-resume is the earlier, simpler version. Still useful for simpler setups — just shouldn't be promoted as a peer.
-
-**→ Keep the repo, remove from README.** Auto-continue is the current flagship. No rename needed.
-
----
-
-## NEEDS README — Can't name what you can't describe
-
-### video-factory → likely video-pipeline
-**What it is:** Video processing pipeline service. Worker does: FFmpeg processing, S3 uploads, Whisper transcription, thumbnail generation, title generation. API server: auth, DB (PostgreSQL), S3 integration, SSE for progress, YouTube integration. No README, no git remote.
-
-**→ video-pipeline** — It IS a pipeline: ingest → process → transcribe → thumbnail → upload → notify. "Factory" implies creation; "pipeline" implies processing stages. But write a README first.
-
----
-
-## SUMMARY TABLE
-
-| Current | Recommended | Category |
-|:--------|:-----------|:---------|
-| `azumi` | **keep** (always subtitle) | OPAQUE |
-| `tiles` | **`tiles-fm`** | OPAQUE |
-| `terma` | **`terma-tui`** | OPAQUE |
-| `SamAI` | **`samai-web-assistant`** | OPAQUE |
-| `Junk-Runner-bevy` | **`junk-runner`** | OPAQUE |
-| `dracon-demons` | **`dracon-services`** | VAGUE |
-| `dracon-utilities` | **`dracon-system-services`** | VAGUE |
-| `dracon-platform` | **`dracon-portal`** | VAGUE |
-| `dracon-code` | **`dracon-agent`** | VAGUE |
-| `volume-and-video-pro` | **`vidpro`** | VAGUE |
-| `video-uploader` | **`youtube-uploader`** | VAGUE |
-| `dracon-rust-ui` | **`dracon-app-engine`** | STALE |
-| `dracon-spark-and-director` | **`dracon-fleet`** | UNWIELDY |
-| `opencode-auto-review-completed-todos` | **`opencode-auto-review`** | OVERLONG |
-| `browser-extensions-shared` | **`browser-extensions`** | WRONG SUFFIX |
-| `opencode-auto-force-resume` | **keep repo, remove from README** | OLDER SUBSET |
-| `video-factory` | **`video-pipeline`** (needs README) | NEEDS README |
+| Repo | Words | Why it works |
+|:-----|:------|:------------|
+| `obs-wayland-hotkey` | 3 | Domain + problem + solution |
+| `git-ai-committer` | 3 | Domain + hook + what |
+| `chrome-auto-fullscreen` | 3 | Domain + hook + what |
+| `css-peek-pro` | 3 | Domain + hook + qualifier |
+| `api-debugger` | 2 | Rare 2-word direct case |
+| `ai-vid-editor` | 3 | Hook + domain + what |
+| `git-seal` | 2 | Domain + hook (seal=encrypt) |
+| `opencode-auto-continue` | 3 | Domain + hook + what |
+| `wal-backup` | 2 | Domain + what |
+| `ai-auto-writer` | 3 | Hook + hook + what |
+| `dracon-terminal-engine` | 3 | Brand + domain + what |
+| `dracon-libs` | 2 | Brand + what |
