@@ -4,6 +4,8 @@
 
 ---
 
+## Featured
+
 - [obs-wayland-hotkey](https://github.com/DraconDev/obs-wayland-hotkey) — OBS hotkeys on Wayland (7★)
 - [git-ai-committer](https://github.com/DraconDev/git-ai-committer) — AI auto-commits while you code (6★)
 - [git-seal](https://github.com/DraconDev/git-seal) — Transparent encryption filter for Git (2★)
