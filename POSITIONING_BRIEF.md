@@ -2,7 +2,8 @@
 **Goal:** Turn the GitHub profile into a revenue-generating sales funnel.
 
 > *Last updated from user Q&A — see §6 for confirmed answers, §7 for open decisions.*
-> *Additional research added: 5 additional profiles analyzed (§1.3), GitHub trending demand signal (§2.2).*
+> *Extended research: 13 total profiles analyzed (web search + GitHub API + direct fetch). See §1 for full analysis.*
+> *⚠️ Open: Reconcile with SOVEREIGN_COMMERCIAL_MODEL.md (AGPL+CLA tier model vs GitHub Sponsors+Open Core recommendation — see §7, Decision 5).*
 > *User approved moving to README work (goal conversation, 2026-05-31). Open decisions deferred to README iteration phase.*
 
 ---
@@ -27,7 +28,7 @@
 3. **No hard sell.** Let the work speak. CTAs are soft.
 4. **Open source builds credibility, products pay the bills.** Mix is ~70% open source, ~30% commercial.
 
-### Additional Profiles Analyzed (via GitHub API + web search)
+### Additional Profiles Analyzed (13 total — web search + GitHub API + direct fetch)
 
 **emilk (Emil Ernerfeldt)** — Creator of egui (29k★), co-founder of Rerun (10.9k★). Strategy: product-first with company backing. No personal CTA — products do the talking. Bluesky for news. Position: developer tooling with commercial company support.
 
@@ -35,15 +36,48 @@
 
 **yyx990803 (Evan You)** — Creator of Vue.js (210k★), Vite (80k★), Rolldown (13.6k★, Rust). Strategy: massive open source presence → GitHub Sponsors + patronage. The ecosystem IS the product. CTA: GitHub Sponsors. Position: frontend framework ecosystem maintainer.
 
-**seyfallah** — GitHub Star, popular content creator. Active YouTube + Discord community. Strategy: community-building as conversion path. Content-first, repos as proof points.
+**raysan5 (Ray San)** — Creator of raylib (33.2k★), raygui (4.9k★). Strategy: "simple and easy-to-use" positioning, community-driven with Discord, sponsors page, GitHub Sponsors. raylibtech.com for commercial tools. Position: game dev library with ecosystem + paid tools + community sponsors.
+
+**mitsuhiko (Armin Ronacher)** — Creator of Flask (71.6k★), author of many Python/Rust tools. Strategy: minimal personal profile, products do the work. Also ships MiniJinja (Rust, 2.6k★) and agent-stuff (2.6k★). Position: legendary open source maintainer, credibility via products.
+
+**anomalyco/opencode** — Creator of OpenCode (167k★), the open source coding agent. Strategy: enterprise positioning, desktop app (DMG/EXE/AppImage), multi-language README (20+ languages). opencode.ai for the product page, Discord for community. Position: enterprise AI coding agent, open core model.
+
+**Kuberwastaken** — Builder of Claurst (9.7k★), a Rust TUI coding agent. Strategy: creative personal brand, "ADHD-pilled" personality, fun GitHub profile, personal site (kuber.studio), builds in public. Position: indie hacker / student, building in public with personality.
+
+**Belkins (Vlad Podoliako)** — Founder of Belkins (B2B outreach SaaS) + Folderly (email deliverability). Pinned repo: Vlad's Playbook — 43 chapters on AI coding agents as an interactive HTML book (dive.vladyslavpodoliako.com). Strategy: content-as-funnel. The book converts readers into B2B service customers. Position: B2B SaaS founder, content marketing to drive agency leads.
+
+**sorairolake** — Rust developer with qrtool (281★), abcrypt (25★), sysexits-rs (32★). Strategy: niche utility builder, consistent Rust focus, multi-language projects. Position: niche Rust developer with specialized tools in specific domains.
+
+**nicholasjackson** — Developer Advocate at HashiCorp, author of "Building Microservices in Go" (1.2k★). YouTube-driven traffic, pinned course repo. Position: technical author + developer advocate, community + book as the funnel.
+
+**kas-gui** — Rust GUI toolkit (kas, 1k★). Strategy: minimal personal presence, clean pinned repos, focused on one domain. Position: domain expert in Rust GUI.
+
+**seyfallah** — GitHub Star, popular content creator. YouTube + Discord community. Strategy: community-building as conversion path. Content-first, repos as proof points.
 
 **blyxyas** — GitHub Star, Rust tooling contributor (oxc, cargo). Profile emphasizes contribution graph + community involvement.
 
-**Key competitive patterns:**
-- Top profiles lead with a clear product/ecosystem, not a flat repo list.
-- Pinned repos are the main story on every profile.
-- Social links (Twitter, Bluesky, YouTube) are universal — they drive traffic back to the profile.
-- GitHub Sponsors is the lowest-friction monetization across all of them.
+**nicknisi** — DevEx at WorkOS. Strategy: "What I'm Building" section, current role + AI exploration, community organizer (NebraskaJS, NEJS Conf, TSConf). Personal site + Bluesky + Mastodon. Position: developer advocate with community credentials.
+
+### Positioning Archetypes (from all 13 profiles)
+
+| Archetype | Who it fits | Key example |
+|:---------|:-----------|:------------|
+| **Massive credibility** | High star count, many repos | steipete, yyx990803 |
+| **Product-first** | Clear commercial products to sell | t3dotgg, raysan5, anomalyco |
+| **B2B services funnel** | Content converts to agency/SaaS leads | Belkins |
+| **Building in public** | Personality, narrative, community | Kuberwastaken, nicknisi |
+| **Niche utility builder** | Focused domain, specialized tools | sorairolake, kas-gui, tyt2y3 |
+| **Technical author** | Books, courses, YouTube | nicholasjackson |
+| **Minimal** | Products speak for themselves | mitsuhiko, emilk |
+
+**Universal patterns across ALL 13 profiles:**
+1. **Pinned repos are the main story** — not a flat list. Every profile uses pinning strategically.
+2. **Social links are universal** — Twitter, Bluesky, YouTube, Discord all drive traffic back to the profile.
+3. **GitHub Sponsors is the default CTA** — lowest-friction monetization for every tier.
+4. **Hero statement = name + role + current focus** — immediate context.
+5. **No hard sell** — the work speaks. CTAs are soft: "Star if useful", "Follow for updates", "Check out X".
+6. **Open source builds credibility, products/services pay** — the mix varies, but the dynamic is universal.
+7. **Personal site or blog is the conversion destination** — GitHub is the hub, dracon.uk (or equivalent) is the destination.
 
 ---
 
@@ -244,6 +278,9 @@ t3dotgg drives traffic via YouTube. steipete drives via his blog and TED talk. H
 - YouTube videos?
 - Hacker News posts?
 - Nothing yet — just build?
+
+### Decision 5: Reconcile the commercial model
+`SOVEREIGN_COMMERCIAL_MODEL.md` documents a dual-licensing model (AGPLv3 + CLA, Indie/Startup/Scale tiers, Steam/Nexus as billboard). The positioning brief recommends GitHub Sponsors + Open Core. These aren't mutually exclusive — the dual licensing can be the commercial layer while GitHub Sponsors is the indie layer. But we need to align on one coherent model or document both as complementary.
 
 ---
 
