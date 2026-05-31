@@ -328,26 +328,52 @@ Based on confirmed decisions, here's the immediate action plan:
 
 ---
 
-## Appendix: Current Public Repos by Traction
+## Public Repos — All 93 (by Stars)
 
-| Repo | Stars | Notes |
-|:-----|:------|:------|
-| obs-wayland-hotkey | 8★ | Flagship. Rust daemon, OBS hotkeys. Ready to feature. |
-| git-ai-committer | 6★ | Flagship. VS Code extension, AI commits. Ready to feature. |
-| azumi | 1★ | Live SSR for Rust. Strong product story. Needs better name. |
-| tiles | 1★ | TUI file manager. Strong tech. Name too opaque. |
-| git-seal | 2★ | Git encryption. Niche but solid. |
-| chrome-auto-fullscreen | 2★ | Browser extension. Simple, clear. |
-| api-debugger | 1★ | Chrome extension. Not cloned locally. Clone it. |
-| opencode plugins | 1★ | Auto-continue, auto-review. Niche but growing. |
-| dracon-libs | 1★ | Library collection. Boring but important. |
-| terminal-engine | 1★ | TUI framework. Strong. |
-| terma | 0★ | Not pushed to GitHub. Push it — it's strong. |
-| agave | 1★ | AI video editor. Strong story but needs polish. |
+| Stars | GitHub Repo | Status |
+|:------|:-----------|:-------|
+| 8★ | [obs-wayland-hotkey](https://github.com/DraconDev/obs-wayland-hotkey) | ✅ Featured in README |
+| 6★ | [git-ai-committer](https://github.com/DraconDev/git-ai-committer) | ✅ Featured in README |
+| 2★ | [tiles-tui-file-manager](https://github.com/DraconDev/tiles-tui-file-manager) | ✅ Featured in README |
+| 2★ | [git-seal](https://github.com/DraconDev/git-seal) | ✅ Featured in README |
+| 2★ | [chrome-auto-fullscreen](https://github.com/DraconDev/chrome-auto-fullscreen) | ✅ Featured in README |
+| 1★ | [dracon-terminal-engine](https://github.com/DraconDev/dracon-terminal-engine) | ✅ Featured in README |
+| 1★ | [opencode-auto-review-completed](https://github.com/DraconDev/opencode-auto-review-completed) | ⚠️ Name mismatch (local: opencode-todo-review) |
+| 1★ | [youtube-video-uploader](https://github.com/DraconDev/youtube-video-uploader) | ✅ Featured in README |
+| 1★ | [opencode-auto-continue](https://github.com/DraconDev/opencode-auto-continue) | ✅ Featured in README |
+| 1★ | [dracon-libs](https://github.com/DraconDev/dracon-libs) | ✅ Featured in README |
+| 1★ | [azumi-live-ssr-framework](https://github.com/DraconDev/azumi-live-ssr-framework) | ⚠️ Name mismatch (local: azumi) |
+| 1★ | [ai-gui-auto-video-editor](https://github.com/DraconDev/ai-gui-auto-video-editor) | ⚠️ Name mismatch (local: agave) |
+| 1★ | [api-debugger](https://github.com/DraconDev/api-debugger) | ✅ Featured in README |
+| 1★ | [terma](https://github.com/DraconDev/terma) | ✅ Featured in README (push needed) |
+| 1★ | [css-peek-pro](https://github.com/DraconDev/css-peek-pro) | ✅ Featured in README |
+| 0★ | [DraconDev](https://github.com/DraconDev/DraconDev) (profile repo) | ✅ Source of truth |
+| 0★ | [volume-and-video-pro](https://github.com/DraconDev/volume-and-video-pro) | ✅ Featured in README |
+| 0★ | [pi-auto-review](https://github.com/DraconDev/pi-auto-review) | ✅ Featured in README (Pi-specific) |
+| 0★ | [kittentts-showcase](https://github.com/DraconDev/kittentts-showcase) | ❌ Graveyard (one-off showcase) |
+| 0★ | [opencode-auto-force-resume](https://github.com/DraconDev/opencode-auto-force-resume) | ❌ Graveyard (superseded by auto-continue) |
+| 0★ | [respec-spec-reconciler](https://github.com/DraconDev/respec-spec-reconciler) | ✅ Featured in README |
+| 0★ | [stripe-payment-with-nextjs](https://github.com/DraconDev/stripe-payment-with-nextjs) | ❌ Graveyard (abandoned experiment) |
 
-**Private repos with commercial potential:**
-| Repo | What it is | Commercial? |
-|:-----|:-----------|:-------------|
-| auto-ai-agent | Autonomous engineering runtime | ✅ Flagship, not ready yet |
-| ai-app-engine | ECS-based GPU UI engine | ✅ Strong, niche |
-| ai-web-agent | Browser extension AI | ✅ Solid, Chrome extension market |
+## Name Mismatches to Fix
+
+| GitHub Name | Local Name | Should Be | Action |
+|:-----------|:-----------|:-----------|:-------|
+| opencode-auto-review-completed | opencode-todo-review | opencode-todo-review | Rename GitHub repo |
+| azumi-live-ssr-framework | azumi | azumi | Rename GitHub repo |
+| ai-gui-auto-video-editor | agave | agave | Rename GitHub repo |
+| tiles-tui-file-manager | tiles | tiles | Rename locally + GitHub |
+
+## Repos Not Yet Pushed
+
+| Local Name | Notes | Action |
+|:-----------|:------|:-------|
+| terma | Strong next-gen terminal compositor engine. 0★ on GitHub (not pushed). | Push to GitHub |
+| azumi | Live SSR framework, ~10KB gzipped | Rename GitHub repo first |
+| agave | AI video editor (AGAVE product name) | Rename GitHub repo first |
+
+## Graveyard (Not Featured in README)
+
+See [GRAVEYARD.md](./GRAVEYARD.md) for full list. 65+ repos archived: abandoned experiments, one-off demos, learning exercises. Not deleted — preserved for reference.
+
+---

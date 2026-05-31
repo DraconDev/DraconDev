@@ -21,7 +21,7 @@ The projects people use and remember.
 CLI tools, editor extensions, automation.
 
 * **[opencode-auto-continue](https://github.com/DraconDev/opencode-auto-continue)** — OpenCode plugin. Stall recovery, todo nudging, session analysis.
-* **[opencode-todo-review](https://github.com/DraconDev/opencode-auto-review-completed-todos)** — OpenCode plugin. Auto-detect completed todos, trigger review.
+* **[opencode-auto-review-completed](https://github.com/DraconDev/opencode-auto-review-completed)** — OpenCode plugin. Auto-detect completed todos, trigger review.
 * **[respec-spec-reconciler](https://github.com/DraconDev/respec-spec-reconciler)** — Spec reconciler for AI agents. Reads SPEC.md, loops until all invariants pass.
 * **[css-peek-pro](https://github.com/DraconDev/css-peek-pro)** — VS Code extension, smart CSS scoping for large projects.
 * **[youtube-video-uploader](https://github.com/DraconDev/youtube-video-uploader)** — Rust CLI for YouTube Data API v3, resumable uploads.
