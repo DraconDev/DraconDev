@@ -2,6 +2,8 @@
 **Goal:** Turn the GitHub profile into a revenue-generating sales funnel.
 
 > *Last updated from user Q&A — see §6 for confirmed answers, §7 for open decisions.*
+> *Additional research added: 5 additional profiles analyzed (§1.3), GitHub trending demand signal (§2.2).*
+> *User approved moving to README work (goal conversation, 2026-05-31). Open decisions deferred to README iteration phase.*
 
 ---
 
@@ -25,6 +27,24 @@
 3. **No hard sell.** Let the work speak. CTAs are soft.
 4. **Open source builds credibility, products pay the bills.** Mix is ~70% open source, ~30% commercial.
 
+### Additional Profiles Analyzed (via GitHub API + web search)
+
+**emilk (Emil Ernerfeldt)** — Creator of egui (29k★), co-founder of Rerun (10.9k★). Strategy: product-first with company backing. No personal CTA — products do the talking. Bluesky for news. Position: developer tooling with commercial company support.
+
+**tyt2y3 (Chris Tsang)** — Founder of SeaQL, maintainer of SeaORM (9.5k★), VTracer (5.7k★). Strategy: indie hacker, open source as business foundation. GitHub Sponsors active. Position: database tooling for Rust developers.
+
+**yyx990803 (Evan You)** — Creator of Vue.js (210k★), Vite (80k★), Rolldown (13.6k★, Rust). Strategy: massive open source presence → GitHub Sponsors + patronage. The ecosystem IS the product. CTA: GitHub Sponsors. Position: frontend framework ecosystem maintainer.
+
+**seyfallah** — GitHub Star, popular content creator. Active YouTube + Discord community. Strategy: community-building as conversion path. Content-first, repos as proof points.
+
+**blyxyas** — GitHub Star, Rust tooling contributor (oxc, cargo). Profile emphasizes contribution graph + community involvement.
+
+**Key competitive patterns:**
+- Top profiles lead with a clear product/ecosystem, not a flat repo list.
+- Pinned repos are the main story on every profile.
+- Social links (Twitter, Bluesky, YouTube) are universal — they drive traffic back to the profile.
+- GitHub Sponsors is the lowest-friction monetization across all of them.
+
 ---
 
 ## 2. Market Opportunity
@@ -43,6 +63,28 @@ Unique angles most competitors don't have:
 - **Multi-repository management** — fleet-wide view.
 
 Position: **"AI agents for engineers who want control, not magic."**
+
+### GitHub Trending Demand Signal (live query, 2025)
+
+**Rust ecosystem top repos by stars (500+ stars, pushed 2025):**
+| Repo | Stars | What it signals |
+|:-----|:------|:----------------|
+| ultraworkers/claw-code | 193k★ | AI coding agents massive demand (193k in months) |
+| rustdesk/rustdesk | 115k★ | Self-hosting / privacy demand |
+| tauri-apps/tauri | 107k★ | Tauri is mainstream, growing fast |
+| openai/codex | 87k★ | Terminal-based AI agents are hot |
+| farion1231/cc-switch | 86k★ | Cross-platform AI agent CLI tooling (desktop assistant) |
+| astral-sh/uv | 85k★ | Rust-based developer tools have huge adoption |
+| zed-industries/zed | 84k★ | AI-native editors + Rust = strong signal |
+
+**TypeScript ecosystem — AI agent platforms:**
+| Repo | Stars | What it signals |
+|:-----|:------|:----------------|
+| openclaw/openclaw | 375k★ | OpenClaw is massive; agent ecosystem is thriving |
+| anomalyco/opencode | 167k★ | OpenCode is the biggest open coding agent |
+| langgenius/dify | 143k★ | Agentic workflow platforms are hot |
+
+**Key insight:** The Rust + AI agent combination (claw-code, codex, cc-switch, zed, tauri) is a high-demand intersection. DraconDev sits at this intersection with Rust core + AI agents + Tauri desktop GUI. The demand signal is strong.
 
 ### Open Source Monetization Landscape
 | Model | Best For DraconDev? |
