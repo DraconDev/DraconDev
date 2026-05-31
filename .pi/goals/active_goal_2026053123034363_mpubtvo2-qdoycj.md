@@ -5,12 +5,12 @@
   "status": "active",
   "autoContinue": true,
   "usage": {
-    "tokensUsed": 387053,
-    "activeSeconds": 540
+    "tokensUsed": 394963,
+    "activeSeconds": 554
   },
   "sisyphus": false,
   "createdAt": "2026-05-31T22:03:43.634Z",
-  "updatedAt": "2026-05-31T22:13:36.582Z",
+  "updatedAt": "2026-05-31T22:13:51.884Z",
   "activePath": ".pi/goals/active_goal_2026053123034363_mpubtvo2-qdoycj.md",
   "taskList": {
     "tasks": [
@@ -64,8 +64,8 @@ Consolidate all DraconDev docs into one unified direction, finalize the GitHub R
 - Status: running
 - Auto-continue: on
 - Sisyphus mode: no
-- Time spent: 9m00s
-- Tokens used: 387K (387,053) tokens
+- Time spent: 9m14s
+- Tokens used: 395K (394,963) tokens
 ## Tasks
 
 <!-- blockCompletion: false -->
