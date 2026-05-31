@@ -2,7 +2,7 @@
 **Goal:** Turn the GitHub profile into a revenue-generating sales funnel.
 
 > *Last updated from user Q&A — see §6 for confirmed answers, §7 for open decisions.*
-> *Extended research: 13 total profiles analyzed (web search + GitHub API + direct fetch). See §1 for full analysis.*
+> *Extended research: 20+ profiles analyzed (web search + GitHub API + direct fetch). 0xNyk identified as closest competitor. See §1 for full analysis.*
 > *⚠️ Open: Reconcile with SOVEREIGN_COMMERCIAL_MODEL.md (AGPL+CLA tier model vs GitHub Sponsors+Open Core recommendation — see §7, Decision 5).*
 > *User approved moving to README work (goal conversation, 2026-05-31). Open decisions deferred to README iteration phase.*
 
@@ -28,7 +28,7 @@
 3. **No hard sell.** Let the work speak. CTAs are soft.
 4. **Open source builds credibility, products pay the bills.** Mix is ~70% open source, ~30% commercial.
 
-### Additional Profiles Analyzed (13 total — web search + GitHub API + direct fetch)
+### Additional Profiles Analyzed (20+ total — web search + GitHub API + direct fetch)
 
 **emilk (Emil Ernerfeldt)** — Creator of egui (29k★), co-founder of Rerun (10.9k★). Strategy: product-first with company backing. No personal CTA — products do the talking. Bluesky for news. Position: developer tooling with commercial company support.
 
@@ -44,7 +44,7 @@
 
 **Kuberwastaken** — Builder of Claurst (9.7k★), a Rust TUI coding agent. Strategy: creative personal brand, "ADHD-pilled" personality, fun GitHub profile, personal site (kuber.studio), builds in public. Position: indie hacker / student, building in public with personality.
 
-**Belkins (Vlad Podoliako)** — Founder of Belkins (B2B outreach SaaS) + Folderly (email deliverability). Pinned repo: Vlad's Playbook — 43 chapters on AI coding agents as an interactive HTML book (dive.vladyslavpodoliako.com). Strategy: content-as-funnel. The book converts readers into B2B service customers. Position: B2B SaaS founder, content marketing to drive agency leads.
+**Belkins (Vlad Podoliako)** — Minimal GitHub profile (1 pinned repo, 476★). The pinned repo is an interactive 43-chapter field manual on AI coding agents. Strategy: unknown from profile alone — external brand drives the funnel. ⚠️ Profile too thin to derive strategy from.
 
 **sorairolake** — Rust developer with qrtool (281★), abcrypt (25★), sysexits-rs (32★). Strategy: niche utility builder, consistent Rust focus, multi-language projects. Position: niche Rust developer with specialized tools in specific domains.
 
@@ -58,26 +58,46 @@
 
 **nicknisi** — DevEx at WorkOS. Strategy: "What I'm Building" section, current role + AI exploration, community organizer (NebraskaJS, NEJS Conf, TSConf). Personal site + Bluesky + Mastodon. Position: developer advocate with community credentials.
 
-### Positioning Archetypes (from all 13 profiles)
+**0xNyk (nyk)** — ⭐ Most relevant competitor for DraconDev. "I build operator systems for AI agents." Founder at splitlabs, Co-Founder at Builderz. Pinned: Mission Control (5.1k★) — agent fleet dashboard with task orchestration, quality gates, cost tracking. LACP (Local Agent Control Plane) — policy gates, 5-layer memory, hook pipeline for Claude/Codex/Hermes. Strategy: open source fleet infrastructure → drives to splitlabs + builderz commercial services. CTA: "If you are building agent infrastructure — builderz.dev." Position: operator systems for AI agents. This is DraconDev's closest direct competitor.
+
+**seanmonstar (Sean McArthur)** — Maintainer of reqwest (11.6k★), warp (10k★), hyper (7.8k★). 3.3k followers. Strategy: minimal profile, products do the work. Position: Rust networking infrastructure expert.
+
+**dtolnay (David Tolnay)** — 9.4k followers. Maintainer of anyhow, serde, cargo-expand, many Rust toolchain essentials. Strategy: zero personal branding, pure technical impact. GitHub Sponsors active. Position: Rust toolchain infrastructure legend.
+
+**jonhoo (Jon Gjengset)** — 14k followers. Rust educator, YouTube streamer (Hundreds of videos). At Helsing AI, previously AWS. Strategy: educational content as the funnel, consulting + GitHub Sponsors. Position: Rust educator with enterprise credibility.
+
+**fasterthanlime (Amos Wenger)** — 4.7k followers. Educator, video maker, software mercenary. Co-host of a self-directed research podcast. Strategy: content + personality → GitHub Sponsors. Position: developer educator with strong personal brand.
+
+**sindresorhus (Sindre Sorhus)** — 79k followers. Full-time open sourcerer, Swift + JavaScript. Makes macOS apps, CLI tools, npm packages. type-fest (17k★), ky (16.9k★), awesome list (472k★). Strategy: massive ecosystem + GitHub Sponsors. Position: legendary OSS prolific maintainer.
+
+**tiangolo (Sebastián Ramírez)** — 31k followers. Creator of FastAPI (76k★), Typer, SQLModel. Based in Germany from Colombia. Strategy: FastAPI as the flagship → FastAPI Cloud (commercial) + GitHub Sponsors. Position: Python API framework creator with commercial cloud product.
+
+**antfu (Anthony Fu)** — 39k followers. Vue/Nuxt contributor, creator of Vitesse. At voidzero.dev (Vue team, Vite/Rollup core). Strategy: OSS contributor + company backing + GitHub Sponsors. Position: Vue ecosystem core contributor.
+
+**Key insight — 0xNyk is the north star:** His profile is the clearest example of "DraconDev's angle" in the wild. Fleet dashboard + policy gates + local agent control plane = exactly what DraconDev is building (auto-ai-agent, Tauri GUI, blueprint-driven). The differentiation is that 0xNyk uses TypeScript and web-stack; DraconDev uses Rust + Tauri + SolidJS. The B2B positioning (enterprise + ops, not indie dev) is identical.
+
+### Positioning Archetypes (from 20+ profiles)
 
 | Archetype | Who it fits | Key example |
 |:---------|:-----------|:------------|
-| **Massive credibility** | High star count, many repos | steipete, yyx990803 |
-| **Product-first** | Clear commercial products to sell | t3dotgg, raysan5, anomalyco |
-| **B2B services funnel** | Content converts to agency/SaaS leads | Belkins |
-| **Building in public** | Personality, narrative, community | Kuberwastaken, nicknisi |
-| **Niche utility builder** | Focused domain, specialized tools | sorairolake, kas-gui, tyt2y3 |
-| **Technical author** | Books, courses, YouTube | nicholasjackson |
-| **Minimal** | Products speak for themselves | mitsuhiko, emilk |
+| **Operator systems builder** ⭐ | Fleet orchestration, policy gates, agent ops | 0xNyk, anomalyco/opencode |
+| **Product-first** | Clear commercial products to sell | t3dotgg, raysan5, tiangolo |
+| **Massive credibility** | High star count, many repos | sindresorhus, yyx990803, steipete |
+| **Building in public** | Personality, narrative, community | Kuberwastaken, fasterthanlime, nicknisi |
+| **Niche utility builder** | Focused domain, specialized tools | sorairolake, kas-gui, tyt2y3, dtolnay |
+| **Technical author** | Books, courses, YouTube | nicholasjackson, jonhoo |
+| **Minimal** | Products speak for themselves | mitsuhiko, emilk, seanmonstar |
 
-**Universal patterns across ALL 13 profiles:**
+**Universal patterns across ALL 20+ profiles:**
 1. **Pinned repos are the main story** — not a flat list. Every profile uses pinning strategically.
 2. **Social links are universal** — Twitter, Bluesky, YouTube, Discord all drive traffic back to the profile.
 3. **GitHub Sponsors is the default CTA** — lowest-friction monetization for every tier.
-4. **Hero statement = name + role + current focus** — immediate context.
+4. **Hero statement = name + role + current focus** — immediate context for every top profile.
 5. **No hard sell** — the work speaks. CTAs are soft: "Star if useful", "Follow for updates", "Check out X".
 6. **Open source builds credibility, products/services pay** — the mix varies, but the dynamic is universal.
-7. **Personal site or blog is the conversion destination** — GitHub is the hub, dracon.uk (or equivalent) is the destination.
+7. **Personal site or blog is the conversion destination** — GitHub is the hub, external site is the destination.
+8. **B2B angle emerging** — 0xNyk, anomalyco, tiangolo all target teams/enterprise, not indie hackers.
+9. **Fleet/ops positioning** — The strongest AI coding agent profiles (0xNyk, anomalyco/opencode) lead with fleet management and operations, not "coding agent" as a chatbot.
 
 ---
 
