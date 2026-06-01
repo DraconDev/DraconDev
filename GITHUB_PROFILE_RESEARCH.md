@@ -145,14 +145,16 @@ Four independent scores, each 0–100:
 
 ---
 
-### Pattern 2: Short READMEs. Let pinned repos do the work.
-**Finding:** Of the top-15 MES profiles, 9 have NO profile README (readme_size=0KB). The remaining 6 have READMEs of 1–20KB. The median README size among top-15 is under 3KB.
+### Pattern 2: READMEs are short, not absent — pinned repos still lead.
+**Finding:** All 15 top-MES profiles have READMEs — but the sizes are small. Range: 89 bytes to 20,777 bytes. Median: 1,548 bytes (~1.5KB, approximately 5–10 lines of text). The largest READMEs belong to profiles like BEPb (20KB) and jrohitofficial (20KB); the smallest are under 1KB.
 
-**What it means:** The profile README is optional and often counterproductive if it pushes pinned repos below the fold. The most effective profiles use pinned repos as their primary signal, not a wall of text. Writing a long README is not what separates top profiles.
+**What it means:** A profile README is near-universal among top performers, but it is kept SHORT. A README of 1–3KB is the norm, not the exception. Writing a long README is not what separates top profiles — the README exists as a lightweight signal, not as the primary content.
 
-**Counterintuitive insight:** Most top MES profiles have NO profile README at all. They rely entirely on pinned repos + bio + website. steipete is the exception (15KB README + 3 pinned repos) — but steipete is also the outlier, not the norm.
+**The pinned repo hierarchy:** Pinned repos appear at the top of a GitHub profile, ABOVE the profile README in the visual hierarchy on github.com. A short README (or none) keeps pinned repos above the fold. A long README scrolls them off the top of the page. This is the key tradeoff.
 
-**Recommendation for DraconDev:** Don't write a 70-line README. Write a 10–15 line README or none at all. Let pinned repos carry the signal. Pinned repos appear above the fold; a long README pushes them down.
+**The 20KB outliers:** BEPb and jrohitofficial have 20KB READMEs and still rank in the top 15 by MES — but they also have very high repo counts and may be using the README as a curated content index rather than a narrative. For most developers, this approach is overkill.
+
+**Recommendation for DraconDev:** Don't write a 70-line README. Write a 10–15 line README (under 2KB) or none at all. If you write one: name + one-line value prop + links to top 3 repos + website CTA. Do NOT list every repo you've made — that pushes pinned repos below the fold.
 
 ---
 
@@ -175,9 +177,9 @@ Four independent scores, each 0–100:
 ---
 
 ### Anti-Pattern 2: Long README pushing pinned repos below fold
-**Finding:** 4 out of top-15 MES profiles have no README at all. Those with large READMEs (BEPb: 20KB, jrohitofficial: 19KB) score slightly lower on MES than those with small or no READMEs, despite having comparable follower counts.
+**Finding:** All top-15 MES profiles have READMEs, but sizes vary widely: 89 bytes to 20KB. Profiles with very large READMEs (BEPb: 20KB, jrohitofficial: 20KB) still score in the top 15 — but their README quality scores are not meaningfully higher than those with 1–2KB READMEs.
 
-**Why it matters:** Pinned repos are the first thing a visitor sees on a profile. They appear before the profile README in the visual hierarchy. A README that scrolls for 100 lines hides the pinned repos.
+**Why it matters:** Pinned repos appear at the TOP of a GitHub profile, ABOVE the profile README in the visual layout. A README that requires scrolling pushes pinned repos below the visible fold on shorter viewports. The README should be short enough that pinned repos remain visible.
 
 ---
 
