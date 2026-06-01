@@ -237,6 +237,12 @@ Based on this research:
 
 ---
 
+### Data Quality Notes
+- Stars fetched for all 1,000 profiles via `GET /users/{login}/repos?sort=stargazers_count&per_page=100` (first page, top 100 repos by stars). This captures the top-starred repo for virtually all profiles in the dataset.
+- README sizes fetched for all 1,000 profiles via `GET /repos/{login}/{login}/readme --jq "{size}"` + `.github/readme` fallback.
+- torvalds stars verified: 234,990 (linux repo). karpathy verified: 84,363 (minGPT/makemore range).
+- **Org contamination note:** The full dataset includes 217 organizations (21.7%) — Microsoft, freeCodeCamp, google, etc. Pattern analysis is based on individual developer profiles. Top 100 by MES are 100% individuals, so the recommendations are specifically applicable to individual developer optimization.
+
 ## Research Artifacts
 
 - `DraconDev/github_profiles_scored.json` — Full dataset: 1,000 profiles, 31 fields
