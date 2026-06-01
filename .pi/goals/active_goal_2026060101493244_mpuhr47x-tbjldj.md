@@ -5,12 +5,12 @@
   "status": "active",
   "autoContinue": true,
   "usage": {
-    "tokensUsed": 225606,
-    "activeSeconds": 421
+    "tokensUsed": 230541,
+    "activeSeconds": 429
   },
   "sisyphus": false,
   "createdAt": "2026-06-01T00:49:32.445Z",
-  "updatedAt": "2026-06-01T00:56:40.094Z",
+  "updatedAt": "2026-06-01T00:56:48.302Z",
   "activePath": ".pi/goals/active_goal_2026060101493244_mpuhr47x-tbjldj.md",
   "taskList": {
     "tasks": [
@@ -59,8 +59,8 @@ Research and score 1,000 GitHub profiles to determine what makes a developer pro
 - Status: running
 - Auto-continue: on
 - Sisyphus mode: no
-- Time spent: 7m01s
-- Tokens used: 226K (225,606) tokens
+- Time spent: 7m09s
+- Tokens used: 231K (230,541) tokens
 ## Tasks
 
 <!-- blockCompletion: false -->
