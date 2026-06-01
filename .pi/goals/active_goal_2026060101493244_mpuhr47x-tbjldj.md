@@ -5,12 +5,12 @@
   "status": "active",
   "autoContinue": true,
   "usage": {
-    "tokensUsed": 744698,
-    "activeSeconds": 2577
+    "tokensUsed": 837515,
+    "activeSeconds": 2894
   },
   "sisyphus": false,
   "createdAt": "2026-06-01T00:49:32.445Z",
-  "updatedAt": "2026-06-01T01:33:00.075Z",
+  "updatedAt": "2026-06-01T01:38:21.985Z",
   "activePath": ".pi/goals/active_goal_2026060101493244_mpuhr47x-tbjldj.md",
   "taskList": {
     "tasks": [
@@ -24,25 +24,29 @@
       {
         "id": "research-metrics",
         "title": "Define the scoring rubric (15+ metrics)",
-        "status": "pending",
+        "status": "complete",
+        "completedAt": "2026-06-01T01:34:15.450Z",
         "verificationContract": "Rubric documented and agreed before scoring begins"
       },
       {
         "id": "research-deep-dive",
         "title": "Deep-dive top 100 profiles (15+ data points each)",
-        "status": "pending",
+        "status": "complete",
+        "completedAt": "2026-06-01T01:34:26.851Z",
         "verificationContract": "100 profiles scored, all fields populated"
       },
       {
         "id": "research-medium-scan",
         "title": "Medium-scan remaining 900 profiles (quick scan metrics)",
-        "status": "pending",
+        "status": "complete",
+        "completedAt": "2026-06-01T01:34:41.778Z",
         "verificationContract": "900 profiles scanned, core fields populated"
       },
       {
         "id": "research-analyze",
         "title": "Analyze patterns and write summary",
-        "status": "pending",
+        "status": "complete",
+        "completedAt": "2026-06-01T01:35:02.351Z",
         "verificationContract": "Summary identifies top 3 patterns, bottom 3 anti-patterns, specific recommendations for DraconDev"
       }
     ],
@@ -60,14 +64,14 @@ Research and score 1,000 GitHub profiles to determine what makes a developer pro
 - Status: running
 - Auto-continue: on
 - Sisyphus mode: no
-- Time spent: 42m57s
-- Tokens used: 745K (744,698) tokens
+- Time spent: 48m14s
+- Tokens used: 838K (837,515) tokens
 ## Tasks
 
 <!-- blockCompletion: false -->
 - [x] research-gather: Gather 1,000 GitHub profile handles via search API
-- [ ] research-metrics: Define the scoring rubric (15+ metrics) — contract: Rubric documented and agreed before scoring begins
-- [ ] research-deep-dive: Deep-dive top 100 profiles (15+ data points each) — contract: 100 profiles scored, all fields populated
-- [ ] research-medium-scan: Medium-scan remaining 900 profiles (quick scan metrics) — contract: 900 profiles scanned, core fields populated
-- [ ] research-analyze: Analyze patterns and write summary — contract: Summary identifies top 3 patterns, bottom 3 anti-patterns, specific recommendations for DraconDev
+- [x] research-metrics: Define the scoring rubric (15+ metrics)
+- [x] research-deep-dive: Deep-dive top 100 profiles (15+ data points each)
+- [x] research-medium-scan: Medium-scan remaining 900 profiles (quick scan metrics)
+- [x] research-analyze: Analyze patterns and write summary
 
