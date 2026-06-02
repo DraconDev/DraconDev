@@ -77,10 +77,12 @@ You have the same assets:
 > DraconDev
 
 ### Pinned repos (3-4 max)
-1. **SamAI** — "AI browser companion — summarize, chat, fill forms. BYOK."
-2. **rust-ai-web-auto** — "Enterprise AI browser automation. CDP-powered."
-3. **dracon-terminal-engine** — "Terminal framework for Rust. Composable widgets, z-indexed layers."
-4. **obs-wayland-hotkey** or **tiles-tui-file-manager** — "Rust. 8★."
+1. **dracon-terminal-engine** — "Terminal framework for Rust. Composable widgets, z-indexed layers." (144K lines, most impressive Rust project)
+2. **pully-fully** (if published) — "Fleet reconciler for 5-100 VPS. Git recipes, auto-provisioning."
+3. **tiles-tui-file-manager** — "Dual-pane TUI file manager. Vim-style, git, SSH, system monitor."
+4. **obs-wayland-hotkey** — "OBS hotkey daemon for Wayland/X11. 8★."
+
+**NOT pinned:** SamAI (closed source product, link instead), rust-ai-web-auto (link if published)
 
 ### README (short, 5-10 lines)
 ```markdown
@@ -89,10 +91,8 @@ You have the same assets:
 I build AI-powered tools for the browser and terminal.
 
 🚀 **Products:**
-- [SamAI](link) — AI browser companion
-- [rust-ai-web-auto](link) — Enterprise browser automation
-
-🎥 [YouTube](link) — I demo my tools and build in public
+- [SamAI](Chrome Web Store link) — AI browser companion
+- [YouTube](link) — I demo my tools and build in public
 
 🌐 [dracon.uk](https://dracon.uk)
 ```
@@ -121,7 +121,7 @@ I build AI-powered tools for the browser and terminal.
 1. **Package SamAI for Chrome Web Store** — it has 149 src files, it's the most complete
 2. **Add pricing to dracon.uk** — freemium: free tier + paid tier with more AI features
 3. **YouTube video: "I built an AI browser extension"** — demo SamAI, link to download
-4. **Pin SamAI on GitHub** — it's the first thing visitors see
+4. **Link SamAI in README** — don't pin (closed source), link to Chrome Web Store
 
 5. **Package vidpro-extension** — you use YouTube, you built a YouTube tool, demo it on your channel
 6. **vidpro = "YouTube tool for YouTubers"** — perfect product-market fit with your audience
