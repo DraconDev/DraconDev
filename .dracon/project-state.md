@@ -38,3 +38,8 @@ The README.md was updated to better organize and highlight the project's compone
 # sequential test 1780463941
 # python test 1780464086925781650
 # final simple test 1780464197924390891
+# parallel python test 1780464302838056592
+# all-parallel test 1780464412056841421
+# no-daemon test 1780464540454242713
+# clean test 1780464650982823231
+# individual test 1780476280
