@@ -44,3 +44,4 @@ The README.md was updated to better organize and highlight the project's compone
 # clean test 1780464650982823231
 # individual test 1780476280
 # parallel killpg test 1780477008
+# daemon-stopped test 1780477325
