@@ -58,7 +58,7 @@ A **terminal application framework** for Rust. Not a TUI library — a complete 
 |--------|-------|
 | **Lines** | 21K |
 | **Files** | 29 |
-| **Tests** | Not counted (daemon, harder to grep) |
+| **Tests** | 341 `#[test]` annotations |
 | **Language** | Rust |
 | **License** | TBD |
 | **On crates.io** | No |
@@ -202,9 +202,9 @@ A **contextual directory dashboard** — not a drop-in `ls` replacement. Shows g
 
 | Metric | Value |
 |--------|-------|
-| **Lines** | 37K |
+| **Lines** | 27.6K |
 | **Files** | 44 |
-| **Tests** | 1,463 (338 core + 68 property-based + integration) |
+| **Tests** | 1,393 `#[test]` annotations |
 | **Language** | Rust |
 | **License** | AGPL-3.0 |
 | **On crates.io** | No (needs publishing) |
@@ -223,7 +223,7 @@ A **pull-based server fleet reconciler**. Write desired state in git (TOML files
 
 ### Code Quality: ⭐⭐⭐⭐ (4/5)
 - **27.6K lines** of Rust — substantial codebase
-- README claims 1,463 tests (workspace-level integration/property tests)
+- 1,393 tests across 25 files (935 in rules/mod.rs alone)
 - Comprehensive documentation (11 docs)
 - Security model documented
 - Operations guide with troubleshooting
@@ -251,7 +251,7 @@ A **pull-based server fleet reconciler**. Write desired state in git (TOML files
 |--------|-------|
 | **Lines** | 2K |
 | **Files** | 7 |
-| **Tests** | Minimal |
+| **Tests** | 36 |
 | **Language** | Rust |
 | **License** | GPL-3.0 |
 | **On crates.io** | Yes |
@@ -269,7 +269,7 @@ A **lightweight Rust daemon** for controlling OBS Studio with global hotkeys on 
 
 ### Code Quality: ⭐⭐⭐ (3/5)
 - Small, focused codebase
-- Minimal tests (alpha maturity)
+- 36 tests — decent coverage for 2K lines
 - Clean architecture for its size
 
 ### README Readiness: ⭐⭐⭐⭐ (4/5)
