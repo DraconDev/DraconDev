@@ -337,12 +337,12 @@ A **lightweight Rust daemon** for controlling OBS Studio with global hotkeys on 
 | Repo | Lines | Tests | README | Uniqueness | Audience Size | Profile Impact |
 |------|------:|------:|--------|------------|---------------|----------------|
 | **terminal-engine** | 143K | 3,658 | ⭐⭐⭐⭐ | High (framework) | Large (Rust devs) | 🔥🔥🔥🔥🔥 |
-| **pully-fully** | 37K | 1,463 | ⭐⭐⭐⭐⭐ | Very High (no competitor) | Medium (DevOps) | 🔥🔥🔥🔥🔥 |
-| **dracon-sync** | 21K | N/A | ⭐⭐⭐⭐⭐ | High (AI+git) | Large (AI devs) | 🔥🔥🔥🔥 |
+| **pully-fully** | 27.6K | 1,393 | ⭐⭐⭐⭐ | Very High (no competitor) | Medium (DevOps) | 🔥🔥🔥🔥🔥 |
+| **dracon-sync** | 21K | 341 | ⭐⭐⭐⭐⭐ | High (AI+git) | Large (AI devs) | 🔥🔥🔥🔥 |
 | **dracon-warden** | 9K | 171 | ⭐⭐⭐⭐ | Medium (git-crypt exists) | Medium (security) | 🔥🔥🔥 |
 | **folder-auto-banner** | 8K | 108 | ⭐⭐⭐⭐ | Medium (ls alternative) | Large (terminal users) | 🔥🔥🔥 |
 | **dracon-system** | 6K | Moderate | ⭐⭐⭐⭐ | Low (monitoring) | Small (sysadmins) | 🔥🔥 |
-| **obs-wayland-hotkey** | 2K | Minimal | ⭐⭐⭐⭐ | High (Wayland niche) | Small (streamers) | 🔥🔥🔥 |
+| **obs-wayland-hotkey** | 2K | 36 | ⭐⭐⭐⭐ | High (Wayland niche) | Small (streamers) | 🔥🔥🔥 |
 
 ### Quality Ranking
 1. **terminal-engine** — 3,658 tests, clippy clean, massive codebase
@@ -372,8 +372,8 @@ A **lightweight Rust daemon** for controlling OBS Studio with global hotkeys on 
    - Why: Most impressive project by size. 3,658 tests. On crates.io. Frameworks get stars.
    - Hook: "Rust's terminal framework — 43 widgets, 20 themes, one import"
 
-2. **pully-fully** (37K lines)
-   - Why: Solves a real problem with no good alternative. 1,463 tests. Excellent README.
+2. **pully-fully** (27.6K lines)
+   - Why: Solves a real problem with no good alternative. 1,393 tests. Excellent README.
    - Hook: "GitOps for small fleets — the gap between Ansible and Kubernetes"
 
 3. **dracon-sync** (21K lines)
