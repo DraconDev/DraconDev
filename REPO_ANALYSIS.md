@@ -95,6 +95,7 @@ An **invisible git sync daemon** that watches repos, auto-commits every change w
 - **Differentiator:** Only tool combining auto-commit + multi-mirror + AI messages
 - **Competitors:** git-auto-sync, gitea-mirror, git-bridge, swarf
 - **Hook:** "Your AI agent makes 50 commits/hour. This keeps them all synced to 3 providers."
+- **Note:** README claims AI Scribe but code explicitly removed AI messages ("hallucinate context"), uses mechanical blast-radius instead
 
 ---
 
@@ -240,7 +241,7 @@ A **pull-based server fleet reconciler**. Write desired state in git (TOML files
 - **Audience:** DevOps teams managing 5-100 VPS servers
 - **Differentiator:** Pull-based (no control plane), autonomous nodes, git as source of truth
 - **Competitors:** Ansible (push-based, can't self-heal), Kubernetes (overkill for small fleets), Coolify
-- **Hook:** "1,463 tests. 17K-line rules engine. No control plane. Git is your database."
+- **Hook:** "27.6K lines. 9K-line rules engine. No control plane. Git is your database."
 
 ---
 
@@ -398,8 +399,8 @@ A **lightweight Rust daemon** for controlling OBS Studio with global hotkeys on 
 - Can be mentioned in the README text without pinning
 
 ### Profile Impact Assessment
-- **Impressive scale:** terminal-engine (143K) + pully-fully (37K) = 180K lines of Rust
+- **Impressive scale:** terminal-engine (143K) + pully-fully (27.6K) = 170K lines of Rust
 - **Breadth:** TUI framework + DevOps + git tools + system tools + Wayland
-- **Quality signal:** 5,000+ tests across pinned repos
+- **Quality signal:** 3,658+ tests across pinned repos (terminal-engine alone)
 - **Real users:** obs-wayland-hotkey has 8 stars already
 - **AI relevance:** dracon-sync speaks to the current AI development wave
