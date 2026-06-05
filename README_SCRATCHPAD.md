@@ -64,25 +64,26 @@ Building Rust tools for developers who'd rather write code than manage servers.
 - **Competitors:** ratatui (lower-level), crossterm (raw terminal)
 - **Hook:** "143K lines of Rust. 43 widgets. 20 themes. One import."
 
-### 2. pully-fully (37K lines, 1,463 tests)
+### 2. pully-fully (27.6K lines)
 - **What:** Pull-based server fleet reconciler — write desired state in git, nodes reconcile autonomously
-- **Lines:** 36,660 | **Files:** 44 | **Tests:** 1,463 (338 core + 68 property-based + integration)
-- **Architecture:** Control repo (git) → Pully (per-node agent) + Fully (fleet manager) → 17K-line rules engine
-- **Quality:** ⭐⭐⭐⭐⭐ — property-based testing, comprehensive docs (11 files), security model
+- **Lines:** 27,627 | **Files:** 44 | **Tests:** README claims 1,463 (workspace-level)
+- **Architecture:** Control repo (git) → Pully (per-node agent) + Fully (fleet manager) → 9K-line rules engine
+- **Quality:** ⭐⭐⭐⭐ — 27.6K lines, comprehensive docs (11 files), security model
 - **Angle:** "GitOps for small fleets — the gap between Ansible and Kubernetes"
 - **README:** ⭐⭐⭐⭐⭐ — architecture diagram, competitor comparison, bootstrap guide
 - **Competitors:** Ansible (push-based), Kubernetes (overkill), Coolify
-- **Hook:** "1,463 tests. 17K-line rules engine. No control plane. Git is your database."
+- **Hook:** "27.6K lines. 9K-line rules engine. No control plane. Git is your database."
 
 ### 3. dracon-sync (21K lines)
-- **What:** Invisible git sync daemon — auto-commit, multi-mirror (GitHub/GitLab/Codeberg), AI commit messages
+- **What:** Invisible git sync daemon — auto-commit, multi-mirror (GitHub/GitLab/Codeberg), mechanical blast-radius messages
 - **Lines:** 21,504 | **Files:** 29
-- **Architecture:** Daemon (systemd) → watch_roots → deterministic sync → multi-mirror push → AI scribe
+- **Architecture:** Daemon (systemd) → watch_roots → deterministic sync → multi-mirror push → mechanical blast-radius messages
 - **Quality:** ⭐⭐⭐⭐ — self-healing, push failure decision tree, startup cleanup
 - **Angle:** "Invisible git sync for AI-powered development"
 - **README:** ⭐⭐⭐⭐⭐ — competitor table, push failure decision tree, daemon reliability
 - **Competitors:** git-auto-sync, gitea-mirror, git-bridge, swarf
 - **Hook:** "Your AI agent makes 50 commits/hour. This keeps them all synced to 3 providers."
+- **Note:** README claims AI Scribe but code explicitly removed AI messages ("hallucinate context"), uses mechanical blast-radius instead
 
 ### 4. dracon-warden (9K lines, 171 tests)
 - **What:** Git filter + repo hardening — encrypts secrets at rest with age encryption
