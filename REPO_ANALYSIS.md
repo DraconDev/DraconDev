@@ -345,8 +345,8 @@ A **lightweight Rust daemon** for controlling OBS Studio with global hotkeys on 
 | **obs-wayland-hotkey** | 2K | Minimal | ⭐⭐⭐⭐ | High (Wayland niche) | Small (streamers) | 🔥🔥🔥 |
 
 ### Quality Ranking
-1. **pully-fully** — 1,463 tests, property-based testing, comprehensive docs
-2. **terminal-engine** — 3,658 tests, clippy clean, massive codebase
+1. **terminal-engine** — 3,658 tests, clippy clean, massive codebase
+2. **pully-fully** — 1,393 tests, 27.6K lines, comprehensive docs
 3. **dracon-warden** — 171 security-focused tests, ReDoS prevention
 4. **folder-auto-banner** — 108 tests, benchmarks, daemon architecture
 5. **dracon-sync** — Excellent README, self-healing daemon
