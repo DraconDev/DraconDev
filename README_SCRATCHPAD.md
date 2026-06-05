@@ -53,48 +53,65 @@ Building Rust tools for developers who'd rather write code than manage servers.
 
 ## Pinned Repos (detailed notes)
 
-### 1. dracon-terminal-engine
+### 1. dracon-terminal-engine (143K lines, 3,658 tests)
 - **What:** Terminal application framework for Rust — app lifecycle, widgets, event handling, styles
-- **Lines:** 143,089 | **Files:** 325 | **Tests:** 112
+- **Lines:** 143,089 | **Files:** 325 | **Tests:** 3,658 | **Clippy:** Clean
 - **On crates.io:** Yes
+- **Architecture:** App/Ctx entry point → Compositor (Plane layers) → 43 widgets → Command-driven (AI can enumerate/trigger actions)
+- **Quality:** ⭐⭐⭐⭐⭐ — massive test suite, clippy clean, proper RAII, feature-gated modules
 - **Angle:** "Rust's terminal framework — build TUIs with proper architecture"
-- **README:** Good (badges, architecture, code examples)
+- **README:** ⭐⭐⭐⭐ — badges, architecture, code examples. Missing: screenshots/GIFs
+- **Competitors:** ratatui (lower-level), crossterm (raw terminal)
+- **Hook:** "143K lines of Rust. 43 widgets. 20 themes. One import."
 
-### 2. dracon-sync
-- **What:** Invisible git sync daemon for AI-powered development
-- **Lines:** 21,504 | **Files:** 29
-- **Features:** Auto-commit, multi-mirror (GitHub/GitLab/Codeberg), AI commit messages, self-healing git
-- **Angle:** "The only tool that combines auto-commit + multi-mirror + AI messages"
-- **README:** Excellent (competitor comparison table, install guide, architecture)
-- **Competitors:** git-auto-sync, gitea-mirror, git-bridge, swarf
-
-### 3. folder-auto-banner
-- **What:** Directory listing with instant context (git status, TODO count, ports, build status)
-- **Lines:** 8,005 | **Files:** 28 | **Tests:** 93
-- **Angle:** "ls on steroids — see your project context at a glance"
-- **README:** Good (competitor comparison vs lsd/eza, install guide)
-- **Competitors:** lsd, eza, exa
-
-### 4. obs-wayland-hotkey
-- **What:** Lightweight Rust daemon for controlling OBS Studio with global hotkeys on Wayland/X11
-- **Lines:** 2,200 | **Files:** 7 | **Stars:** 8
-- **Angle:** "OBS hotkeys that actually work on Wayland"
-- **README:** Good (badges, install guide)
-
-### 5. dracon-warden
-- **What:** Git filter + repo hardening — encrypts secrets at rest in git
-- **Lines:** 9,156 | **Files:** 27
-- **Features:** Age-based encryption, secret scanning (AWS/GCP/Azure/GitHub), clean/smudge filter pipeline
-- **Angle:** "Your .env files are encrypted in git, plaintext in your working tree"
-- **README:** Good (architecture, install guide)
-
-### 6. pully-fully
-- **What:** Pull-based server fleet reconciler — write recipes in git, Pully enforces them
-- **Lines:** 36,660 | **Files:** 44
-- **Target:** 5-100 VPSes where Kubernetes is overkill, Ansible can't self-heal
+### 2. pully-fully (37K lines, 1,463 tests)
+- **What:** Pull-based server fleet reconciler — write desired state in git, nodes reconcile autonomously
+- **Lines:** 36,660 | **Files:** 44 | **Tests:** 1,463 (338 core + 68 property-based + integration)
+- **Architecture:** Control repo (git) → Pully (per-node agent) + Fully (fleet manager) → 17K-line rules engine
+- **Quality:** ⭐⭐⭐⭐⭐ — property-based testing, comprehensive docs (11 files), security model
 - **Angle:** "GitOps for small fleets — the gap between Ansible and Kubernetes"
-- **README:** Excellent (architecture diagram, competitor comparison, install guide)
-- **Competitors:** Ansible, Kubernetes, Coolify
+- **README:** ⭐⭐⭐⭐⭐ — architecture diagram, competitor comparison, bootstrap guide
+- **Competitors:** Ansible (push-based), Kubernetes (overkill), Coolify
+- **Hook:** "1,463 tests. 17K-line rules engine. No control plane. Git is your database."
+
+### 3. dracon-sync (21K lines)
+- **What:** Invisible git sync daemon — auto-commit, multi-mirror (GitHub/GitLab/Codeberg), AI commit messages
+- **Lines:** 21,504 | **Files:** 29
+- **Architecture:** Daemon (systemd) → watch_roots → deterministic sync → multi-mirror push → AI scribe
+- **Quality:** ⭐⭐⭐⭐ — self-healing, push failure decision tree, startup cleanup
+- **Angle:** "Invisible git sync for AI-powered development"
+- **README:** ⭐⭐⭐⭐⭐ — competitor table, push failure decision tree, daemon reliability
+- **Competitors:** git-auto-sync, gitea-mirror, git-bridge, swarf
+- **Hook:** "Your AI agent makes 50 commits/hour. This keeps them all synced to 3 providers."
+
+### 4. dracon-warden (9K lines, 171 tests)
+- **What:** Git filter + repo hardening — encrypts secrets at rest with age encryption
+- **Lines:** 9,156 | **Files:** 27 | **Tests:** 171 (16 security test files)
+- **Architecture:** Clean/smudge filter pipeline → age encryption (x25519) → secret scanner → team keys
+- **Quality:** ⭐⭐⭐⭐⭐ — ReDoS prevention, atomic writes, leak prevention tests, proptest regressions
+- **Angle:** "Your .env files are encrypted in git, plaintext in your working tree"
+- **README:** ⭐⭐⭐⭐ — mental model section, key hierarchy, recovery tools
+- **Competitors:** git-crypt, git-secret, SOPS, BlackBox
+- **Hook:** "171 security tests. ReDoS prevention. Atomic writes. Git encryption done right."
+
+### 5. folder-auto-banner (8K lines, 108 tests)
+- **What:** Contextual directory dashboard — git status, TODO count, ports, Docker, build status, code metrics
+- **Lines:** 8,005 | **Files:** 28 | **Tests:** 108 | **Benchmarks:** Criterion
+- **Architecture:** CLI + Daemon (Unix socket) → inotify caching → modules (git/todo/ports/docker/build/code_metrics)
+- **Quality:** ⭐⭐⭐⭐ — benchmarks, daemon architecture, release profile optimized
+- **Angle:** "ls on steroids — see your project context at a glance"
+- **README:** ⭐⭐⭐⭐ — competitor table (vs lsd/eza), config reference, env vars
+- **Competitors:** lsd, eza, exa
+- **Hook:** "Run `f` in any project. See git status, TODO count, open ports, and build status instantly."
+
+### 6. obs-wayland-hotkey (2K lines, 8★)
+- **What:** Lightweight Rust daemon for OBS global hotkeys on Wayland/X11
+- **Lines:** 2,200 | **Files:** 7 | **Stars:** 8 (highest)
+- **Architecture:** evdev input → OBS WebSocket → systemd service → TOML config
+- **Quality:** ⭐⭐⭐ — small, focused, alpha maturity
+- **Angle:** "OBS hotkeys that actually work on Wayland"
+- **README:** ⭐⭐⭐⭐ — badges, install guide, hotkey customization
+- **Hook:** "8 stars. The only way to get OBS hotkeys working on Wayland."
 
 ---
 
