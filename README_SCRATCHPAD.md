@@ -5,8 +5,8 @@
 | # | Repo | Lines | Tests | Why it's strong | Hook | Status |
 |:-:|:-----|------:|------:|:----------------|:-----|:-------|
 | 1 | dracon-terminal-engine | 143K | 3,658 | TUI framework, 43 widgets, on crates.io | "Rust's terminal framework — 43 widgets, 20 themes, one import" | ✓ On GitHub |
-| 2 | pully-fully | 27.6K | 1,463* | Fleet reconciler, 9K-line rules engine | "GitOps for small fleets — the gap between Ansible and Kubernetes" | ✗ Needs publishing |
-| 3 | dracon-sync | 21K | N/A | Auto-commit, multi-mirror daemon (mechanical messages, not AI) | "Invisible git sync for AI-powered development" | ✗ Needs publishing |
+| 2 | pully-fully | 27.6K | 1,393 | Fleet reconciler, 9K-line rules engine | "GitOps for small fleets — the gap between Ansible and Kubernetes" | ✗ Needs publishing |
+| 3 | dracon-sync | 21K | 341 | Auto-commit, multi-mirror daemon (mechanical messages, not AI) | "Invisible git sync for AI-powered development" | ✗ Needs publishing |
 | 4 | dracon-warden | 9K | 171 | Git encryption, secret scanning, team keys | "Your .env files are encrypted in git, plaintext in your working tree" | ✗ Needs publishing |
 | 5 | folder-auto-banner | 8K | 108 | Contextual directory dashboard | "Run `f` — see git status, TODOs, ports, and build status instantly" | ✓ On GitHub, 1★ |
 | 6 | obs-wayland-hotkey | 2K | 36 | OBS hotkeys on Wayland | "OBS hotkeys that actually work on Wayland" | ✓ On GitHub, 8★ |
@@ -66,7 +66,7 @@ Building Rust tools for developers who'd rather write code than manage servers.
 
 ### 2. pully-fully (27.6K lines)
 - **What:** Pull-based server fleet reconciler — write desired state in git, nodes reconcile autonomously
-- **Lines:** 27,627 | **Files:** 44 | **Tests:** README claims 1,463 (workspace-level)
+- **Lines:** 27,627 | **Files:** 44 | **Tests:** 1,393 `#[test]` annotations across 25 files
 - **Architecture:** Control repo (git) → Pully (per-node agent) + Fully (fleet manager) → 9K-line rules engine
 - **Quality:** ⭐⭐⭐⭐ — 27.6K lines, comprehensive docs (11 files), security model
 - **Angle:** "GitOps for small fleets — the gap between Ansible and Kubernetes"
