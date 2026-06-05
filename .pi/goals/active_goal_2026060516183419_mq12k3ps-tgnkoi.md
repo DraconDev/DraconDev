@@ -5,12 +5,12 @@
   "status": "active",
   "autoContinue": true,
   "usage": {
-    "tokensUsed": 1844889,
-    "activeSeconds": 6737
+    "tokensUsed": 2042489,
+    "activeSeconds": 6767
   },
   "sisyphus": false,
   "createdAt": "2026-06-05T15:18:34.192Z",
-  "updatedAt": "2026-06-05T17:11:32.736Z",
+  "updatedAt": "2026-06-05T17:12:03.645Z",
   "activePath": ".pi/goals/active_goal_2026060516183419_mq12k3ps-tgnkoi.md",
   "taskList": {
     "tasks": [
@@ -220,8 +220,8 @@ Deep-dive analysis of all 7 candidate repos for the GitHub profile README — un
 - Status: running
 - Auto-continue: on
 - Sisyphus mode: no
-- Time spent: 1h52m17s
-- Tokens used: 1.8M (1,844,889) tokens
+- Time spent: 1h52m47s
+- Tokens used: 2M (2,042,489) tokens
 ## Tasks
 
 <!-- blockCompletion: false -->

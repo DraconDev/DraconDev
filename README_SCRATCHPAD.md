@@ -109,7 +109,7 @@ Building Rust tools for developers who'd rather write code than manage servers.
 - **What:** Lightweight Rust daemon for OBS global hotkeys on Wayland/X11
 - **Lines:** 2,200 | **Files:** 7 | **Stars:** 8 (highest)
 - **Architecture:** evdev input → OBS WebSocket → systemd service → TOML config
-- **Quality:** ⭐⭐⭐ — small, focused, alpha maturity
+- **Quality:** ⭐⭐⭐ — small, focused, 36 tests for 2K lines
 - **Angle:** "OBS hotkeys that actually work on Wayland"
 - **README:** ⭐⭐⭐⭐ — badges, install guide, hotkey customization
 - **Hook:** "8 stars. The only way to get OBS hotkeys working on Wayland."
