@@ -5,11 +5,11 @@
 | # | Repo | Lines | Tests | Why it's strong | Hook | Status |
 |:-:|:-----|------:|------:|:----------------|:-----|:-------|
 | 1 | dracon-terminal-engine | 143K | 3,658 | TUI framework, 43 widgets, on crates.io | "Rust's terminal framework — 43 widgets, 20 themes, one import" | ✓ On GitHub |
-| 2 | pully-fully | 37K | 1,463 | Fleet reconciler, 17K-line rules engine | "GitOps for small fleets — the gap between Ansible and Kubernetes" | ✗ Needs publishing |
-| 3 | dracon-sync | 21K | N/A | AI auto-commit, multi-mirror daemon | "Invisible git sync for AI-powered development" | ✗ Needs publishing |
+| 2 | pully-fully | 27.6K | 1,463* | Fleet reconciler, 9K-line rules engine | "GitOps for small fleets — the gap between Ansible and Kubernetes" | ✗ Needs publishing |
+| 3 | dracon-sync | 21K | N/A | Auto-commit, multi-mirror daemon (mechanical messages, not AI) | "Invisible git sync for AI-powered development" | ✗ Needs publishing |
 | 4 | dracon-warden | 9K | 171 | Git encryption, secret scanning, team keys | "Your .env files are encrypted in git, plaintext in your working tree" | ✗ Needs publishing |
 | 5 | folder-auto-banner | 8K | 108 | Contextual directory dashboard | "Run `f` — see git status, TODOs, ports, and build status instantly" | ✓ On GitHub, 1★ |
-| 6 | obs-wayland-hotkey | 2K | Minimal | OBS hotkeys on Wayland | "OBS hotkeys that actually work on Wayland" | ✓ On GitHub, 8★ |
+| 6 | obs-wayland-hotkey | 2K | 36 | OBS hotkeys on Wayland | "OBS hotkeys that actually work on Wayland" | ✓ On GitHub, 8★ |
 
 **Reorder rationale:** terminal-engine first (impressive scale), pully-fully second (best quality + unique positioning), sync third (AI-relevant timing), warden fourth (security mindset), folder-banner fifth (memorable pitch), obs sixth (already has stars).
 
