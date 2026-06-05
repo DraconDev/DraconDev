@@ -65,13 +65,13 @@ A **terminal application framework** for Rust. Not a TUI library — a complete 
 | **README** | Excellent — competitor table, install guide, architecture |
 
 ### What It Does
-An **invisible git sync daemon** that watches repos, auto-commits every change with AI-generated messages, and pushes to GitHub, GitLab, and Codeberg simultaneously. Designed for AI-powered development where agents make frequent changes.
+An **invisible git sync daemon** that watches repos, auto-commits every change with mechanical blast-radius messages, and pushes to GitHub, GitLab, and Codeberg simultaneously. Designed for AI-powered development where agents make frequent changes.
 
 ### Architecture
 - **Daemon mode** — Systemd service, watches `watch_roots` for git repos
 - **Deterministic sync** — Monitors for changes, commits/pulls/pushes based on policy
 - **Multi-mirror** — Pushes to GitHub + GitLab + Codeberg simultaneously
-- **AI Scribe** — Generates meaningful commit messages via configurable AI providers
+- **AI Scribe** — README claims AI commit messages, but code explicitly removed them ("hallucinate context"); uses mechanical blast-radius messages instead
 - **Self-healing** — Repairs stale locks, broken tracking refs, stuck pushes
 - **Push failure decision tree** — Handles stuck pushes, timeouts, force-push safety
 
@@ -217,13 +217,13 @@ A **pull-based server fleet reconciler**. Write desired state in git (TOML files
 - **Control repo** — Git repo with `desired/` (human-written) and `observed/` (node-written) branches
 - **Pully** (per-node agent) — Pulls, reconciles, builds, deploys, health-checks, auto-rolls back
 - **Fully** (fleet manager) — Reads all observed branches, writes desired state
-- **Reconcile loop** — 17K-line rules engine with circuit breaker, rollback, health checks
+- **Reconcile loop** — 9K-line rules engine (`fully-core/src/rules/mod.rs`) with circuit breaker, rollback, health checks
 - **Auto-provisioning** — Caddy, Litestream, Nix, Git, Warden
 - **Per-node branches** — Each node pushes to `observed/<node>` branch
 
-### Code Quality: ⭐⭐⭐⭐⭐ (5/5)
-- **1,463 tests** — massive test coverage
-- **68 property-based tests** (proptest)
+### Code Quality: ⭐⭐⭐⭐ (4/5)
+- **27.6K lines** of Rust — substantial codebase
+- README claims 1,463 tests (workspace-level integration/property tests)
 - Comprehensive documentation (11 docs)
 - Security model documented
 - Operations guide with troubleshooting
