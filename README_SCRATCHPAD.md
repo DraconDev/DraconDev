@@ -66,7 +66,7 @@ Building Rust tools for developers who'd rather write code than manage servers.
 
 ### 2. pully-fully (27.6K lines)
 - **What:** Pull-based server fleet reconciler — write desired state in git, nodes reconcile autonomously
-- **Lines:** 27,627 | **Files:** 44 | **Tests:** 1,393 `#[test]` annotations across 25 files
+- **Lines:** 27,528 | **Files:** 44 | **Tests:** 1,393 `#[test]` annotations across 25 files
 - **Architecture:** Control repo (git) → Pully (per-node agent) + Fully (fleet manager) → 9K-line rules engine
 - **Quality:** ⭐⭐⭐⭐ — 27.6K lines, comprehensive docs (11 files), security model
 - **Angle:** "GitOps for small fleets — the gap between Ansible and Kubernetes"

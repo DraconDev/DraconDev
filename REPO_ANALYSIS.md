@@ -202,7 +202,7 @@ A **contextual directory dashboard** — not a drop-in `ls` replacement. Shows g
 
 | Metric | Value |
 |--------|-------|
-| **Lines** | 27.6K |
+| **Lines** | 27.5K |
 | **Files** | 44 |
 | **Tests** | 1,393 `#[test]` annotations |
 | **Language** | Rust |
@@ -222,7 +222,7 @@ A **pull-based server fleet reconciler**. Write desired state in git (TOML files
 - **Per-node branches** — Each node pushes to `observed/<node>` branch
 
 ### Code Quality: ⭐⭐⭐⭐ (4/5)
-- **27.6K lines** of Rust — substantial codebase
+- **27.5K lines** of Rust — substantial codebase
 - 1,393 tests across 25 files (935 in rules/mod.rs alone)
 - Comprehensive documentation (11 docs)
 - Security model documented
@@ -241,7 +241,7 @@ A **pull-based server fleet reconciler**. Write desired state in git (TOML files
 - **Audience:** DevOps teams managing 5-100 VPS servers
 - **Differentiator:** Pull-based (no control plane), autonomous nodes, git as source of truth
 - **Competitors:** Ansible (push-based, can't self-heal), Kubernetes (overkill for small fleets), Coolify
-- **Hook:** "27.6K lines. 9K-line rules engine. No control plane. Git is your database."
+- **Hook:** "27.5K lines. 9K-line rules engine. No control plane. Git is your database."
 
 ---
 
@@ -337,7 +337,7 @@ A **lightweight Rust daemon** for controlling OBS Studio with global hotkeys on 
 | Repo | Lines | Tests | README | Uniqueness | Audience Size | Profile Impact |
 |------|------:|------:|--------|------------|---------------|----------------|
 | **terminal-engine** | 143K | 3,658 | ⭐⭐⭐⭐ | High (framework) | Large (Rust devs) | 🔥🔥🔥🔥🔥 |
-| **pully-fully** | 27.6K | 1,393 | ⭐⭐⭐⭐ | Very High (no competitor) | Medium (DevOps) | 🔥🔥🔥🔥🔥 |
+| **pully-fully** | 27.5K | 1,393 | ⭐⭐⭐⭐ | Very High (no competitor) | Medium (DevOps) | 🔥🔥🔥🔥🔥 |
 | **dracon-sync** | 21K | 341 | ⭐⭐⭐⭐⭐ | High (AI+git) | Large (AI devs) | 🔥🔥🔥🔥 |
 | **dracon-warden** | 9K | 171 | ⭐⭐⭐⭐ | Medium (git-crypt exists) | Medium (security) | 🔥🔥🔥 |
 | **folder-auto-banner** | 8K | 108 | ⭐⭐⭐⭐ | Medium (ls alternative) | Large (terminal users) | 🔥🔥🔥 |
@@ -346,7 +346,7 @@ A **lightweight Rust daemon** for controlling OBS Studio with global hotkeys on 
 
 ### Quality Ranking
 1. **terminal-engine** — 3,658 tests, clippy clean, massive codebase
-2. **pully-fully** — 1,393 tests, 27.6K lines, comprehensive docs
+2. **pully-fully** — 1,393 tests, 27.5K lines, comprehensive docs
 3. **dracon-warden** — 171 security-focused tests, ReDoS prevention
 4. **folder-auto-banner** — 108 tests, benchmarks, daemon architecture
 5. **dracon-sync** — Excellent README, self-healing daemon
@@ -372,7 +372,7 @@ A **lightweight Rust daemon** for controlling OBS Studio with global hotkeys on 
    - Why: Most impressive project by size. 3,658 tests. On crates.io. Frameworks get stars.
    - Hook: "Rust's terminal framework — 43 widgets, 20 themes, one import"
 
-2. **pully-fully** (27.6K lines)
+2. **pully-fully** (27.5K lines)
    - Why: Solves a real problem with no good alternative. 1,393 tests. Excellent README.
    - Hook: "GitOps for small fleets — the gap between Ansible and Kubernetes"
 
@@ -399,7 +399,7 @@ A **lightweight Rust daemon** for controlling OBS Studio with global hotkeys on 
 - Can be mentioned in the README text without pinning
 
 ### Profile Impact Assessment
-- **Impressive scale:** terminal-engine (143K) + pully-fully (27.6K) = 170K lines of Rust
+- **Impressive scale:** terminal-engine (143K) + pully-fully (27.5K) = 170K lines of Rust
 - **Breadth:** TUI framework + DevOps + git tools + system tools + Wayland
 - **Quality signal:** 3,658+ tests across pinned repos (terminal-engine alone)
 - **Real users:** obs-wayland-hotkey has 8 stars already
