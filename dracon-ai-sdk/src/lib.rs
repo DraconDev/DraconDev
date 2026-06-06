@@ -169,63 +169,68 @@ impl DraconAi {
         }
 
         // Parse SSE: events separated by blank lines, payload in `data: <json>` lines.
-        // Skip event-type lines; tolerate comment lines starting with `:`.
-        // The server emits each chunk as a complete SSE event; the final frame
-        // has no content and is dropped (the stream simply ends when the body ends).
-        let byte_stream = resp.bytes_stream();
-        let event_stream = byte_stream
-            .map(|chunk_result| {
-                chunk_result.map_err(|e| SdkError::Http(e.to_string()))
-            })
-            .map(|chunk_result| match chunk_result {
-                Ok(bytes) => Ok(String::from_utf8_lossy(&bytes).to_string()),
-                Err(e) => Err(e),
-            })
-            .scan(String::new(), |buffer, line_result: Result<String>| {
-                let out = match line_result {
-                    Ok(line) => {
-                        buffer.push_str(&line);
-                        // Split on either \r\n or \n so we get one line at a time.
-                        let mut events = Vec::new();
+        // The server emits one SSE event per chunk; we parse incrementally over
+        // an internal buffer that holds any partial line between byte chunks.
+        // We tolerate both `\n` and `\r\n` separators, and skip `event:`, `id:`,
+        // `retry:`, and `:` comment lines. `data: [DONE]` is the end sentinel
+        // and is filtered out before items reach the consumer.
+        let byte_stream = resp
+            .bytes_stream()
+            .map(|chunk_result| chunk_result.map_err(|e| SdkError::StreamTransport(e.to_string())));
+
+        // Step 1: turn byte chunks into String chunks, erroring on transport failures.
+        let string_stream = byte_stream.map(|res| {
+            res.map(|bytes| String::from_utf8_lossy(&bytes).to_string())
+        });
+
+        // Step 2: scan accumulating any partial lines, emit a Vec of SSE `data:`
+        // payloads each time a blank line (event boundary) is encountered.
+        // Each emitted item is one `data:` payload string.
+        let payload_stream = string_stream
+            .scan(String::new(), |buffer, line_res| {
+                let mut out: Vec<std::result::Result<String, SdkError>> = Vec::new();
+                match line_res {
+                    Ok(text) => {
+                        buffer.push_str(&text);
+                        // Drain complete lines (split on \n; tolerate \r\n).
                         while let Some(idx) = buffer.find('\n') {
                             let line: String = buffer.drain(..=idx).collect();
-                            let trimmed = line.trim_end_matches(&['\r', '\n'][..]).to_string();
+                            let trimmed =
+                                line.trim_end_matches(&['\r', '\n'][..]).to_string();
                             if trimmed.is_empty() {
-                                // Blank line = end of one SSE event.
-                                                if !buffer.is_empty() {
-                                                    events.push(std::mem::take(buffer));
-                                                }
+                                // Blank line = event boundary. Nothing to emit
+                                // (the data: lines are emitted immediately below).
                             } else if let Some(data) = trimmed.strip_prefix("data:") {
                                 let payload = data.trim();
                                 if !payload.is_empty() {
-                                    events.push(payload.to_string());
+                                    out.push(Ok(payload.to_string()));
                                 }
                             }
                             // Skip "event:", "id:", "retry:", and ":" comment lines.
                         }
-                        futures_util::stream::iter(events.into_iter().map(Ok))
                     }
-                    Err(e) => futures_util::stream::iter(std::iter::once(Err(e))),
-                };
-                Box::new(out) as std::pin::Pin<Box<dyn Stream<Item = Result<String, SdkError>> + Send>>
+                    Err(e) => out.push(Err(e)),
+                }
+                futures_util::stream::iter(out)
             })
             .flatten();
 
-        // Map raw JSON strings into ChatChunk values.
-        let chunk_stream = event_stream.map(|raw| -> Result<ChatChunk> {
-            match raw {
-                Ok(json) => {
-                    // SSE `data: [DONE]` signals end-of-stream.
-                    if json.trim() == "[DONE]" {
-                        return Err(SdkError::StreamEnd);
+        // Step 3: map each payload string into a ChatChunk, treating `[DONE]`
+        // as a StreamEnd marker that is filtered out below.
+        let chunk_stream = payload_stream
+            .map(|raw| -> std::result::Result<ChatChunk, SdkError> {
+                match raw {
+                    Ok(json) => {
+                        if json.trim() == "[DONE]" {
+                            Err(SdkError::StreamEnd)
+                        } else {
+                            serde_json::from_str::<ChatChunk>(&json).map_err(SdkError::from)
+                        }
                     }
-                    serde_json::from_str::<ChatChunk>(&json).map_err(SdkError::from)
+                    Err(e) => Err(e),
                 }
-                Err(e) => Err(e),
-            }
-        })
-        // Filter out the end-of-stream marker so consumers just see natural end.
-        .filter(|res| !matches!(res, Err(SdkError::StreamEnd)));
+            })
+            .filter(|res| !matches!(res, Err(SdkError::StreamEnd)));
 
         Ok(chunk_stream)
     }
