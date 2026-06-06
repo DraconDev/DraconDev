@@ -284,3 +284,105 @@ impl DraconAi {
         Ok(resp.json::<R>().await?)
     }
 }
+
+/// Internal SSE-aware parser that converts a stream of raw response chunks
+/// into a stream of parsed `ChatChunk` values.
+///
+/// Each input item is the latest slice of bytes received from the upstream
+/// (already converted to `String` for the caller). We buffer partial lines
+/// between byte chunks and emit one `ChatChunk` per complete SSE event whose
+/// `data:` line holds a JSON payload matching `ChatChunk`.
+///
+/// `data: [DONE]` is the SSE end-of-stream sentinel; we skip it and let the
+/// stream return `None` naturally when the underlying body stream ends.
+struct SseChunkStream {
+    inner: std::pin::Pin<Box<dyn Stream<Item = std::result::Result<String, SdkError>> + Send>>,
+    buffer: String,
+}
+
+impl SseChunkStream {
+    fn new(
+        inner: std::pin::Pin<Box<dyn Stream<Item = std::result::Result<String, SdkError>> + Send>>,
+    ) -> Self {
+        Self {
+            inner,
+            buffer: String::new(),
+        }
+    }
+
+    /// Try to pull the next payload from the buffer. Returns:
+    /// - `Some(Ok(payload))` if a `data:` line is complete (payload is the JSON after `data:`).
+    /// - `Some(Err(SdkError::StreamEnd))` if the payload is `[DONE]` (sentinel).
+    /// - `None` if we need more bytes.
+    fn try_parse_buffer(&mut self) -> Option<std::result::Result<String, SdkError>> {
+        while let Some(idx) = self.buffer.find('\n') {
+            let line: String = self.buffer.drain(..=idx).collect();
+            let trimmed = line.trim_end_matches(&['\r', '\n'][..]).to_string();
+            if trimmed.is_empty() {
+                // Blank line = event boundary. The next `data:` line (if any)
+                // continues the current event. We don't emit anything yet.
+                continue;
+            }
+            if let Some(data) = trimmed.strip_prefix("data:") {
+                let payload = data.trim();
+                if !payload.is_empty() {
+                    if payload == "[DONE]" {
+                        return Some(Err(SdkError::StreamEnd));
+                    }
+                    return Some(Ok(payload.to_string()));
+                }
+            }
+            // Skip "event:", "id:", "retry:", and ":" comment lines.
+        }
+        None
+    }
+}
+
+impl Stream for SseChunkStream {
+    type Item = std::result::Result<ChatChunk, SdkError>;
+
+    fn poll_next(
+        mut self: std::pin::Pin<&mut Self>,
+        cx: &mut std::task::Context<'_>,
+    ) -> std::task::Poll<Option<Self::Item>> {
+        loop {
+            // First, try to produce a complete event from the buffer.
+            match self.try_parse_buffer() {
+                Some(Ok(payload)) => {
+                    return std::task::Poll::Ready(Some(
+                        serde_json::from_str::<ChatChunk>(&payload).map_err(SdkError::from),
+                    ));
+                }
+                Some(Err(SdkError::StreamEnd)) => {
+                    // Skip the sentinel and continue looking for a real event.
+                    // If the body stream has already ended we'll return None below.
+                    continue;
+                }
+                Some(Err(other)) => return std::task::Poll::Ready(Some(Err(other))),
+                None => {}
+            }
+
+            // Need more bytes — pull the next item from the underlying stream.
+            match self.inner.as_mut().poll_next(cx) {
+                std::task::Poll::Ready(Some(Ok(text))) => {
+                    self.buffer.push_str(&text);
+                    continue;
+                }
+                std::task::Poll::Ready(Some(Err(e))) => {
+                    return std::task::Poll::Ready(Some(Err(e)));
+                }
+                std::task::Poll::Ready(None) => {
+                    // Underlying stream ended. The parser already drained complete
+                    // events, so any leftover buffer would be a malformed event.
+                    if self.buffer.trim().is_empty() {
+                        return std::task::Poll::Ready(None);
+                    }
+                    return std::task::Poll::Ready(Some(Err(SdkError::StreamTransport(
+                        "stream ended mid-event".to_string(),
+                    ))));
+                }
+                std::task::Poll::Pending => return std::task::Poll::Pending,
+            }
+        }
+    }
+}
