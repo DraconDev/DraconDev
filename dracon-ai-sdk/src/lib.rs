@@ -112,6 +112,124 @@ impl DraconAi {
         Ok(resp.json::<ChatResponse>().await?)
     }
 
+    /// Send a chat completion request and stream the response as SSE chunks.
+    ///
+    /// Returns a `Stream<Item = Result<ChatChunk, SdkError>>` of incremental
+    /// tokens from the upstream provider. The stream ends when the server
+    /// closes the SSE connection.
+    ///
+    /// # Example
+    ///
+    /// ```no_run
+    /// use dracon_ai_sdk::DraconAi;
+    /// use futures_util::StreamExt;
+    ///
+    /// # async fn run() -> Result<(), Box<dyn std::error::Error>> {
+    /// let ai = DraconAi::new("http://localhost:3001", "my-api-key");
+    /// let messages = vec![dracon_ai_sdk::ChatMessage::user("Hi!")];
+    /// let mut stream = ai.chat_stream("free", "my-app", messages).await?;
+    /// while let Some(chunk) = stream.next().await {
+    ///     print!("{}", chunk?.content);
+    /// }
+    /// # Ok(()) }
+    /// ```
+    pub async fn chat_stream(
+        &self,
+        lane: &str,
+        project_id: &str,
+        messages: Vec<ChatMessage>,
+    ) -> Result<impl Stream<Item = Result<ChatChunk>> + Send + 'static> {
+        let req = ChatRequest {
+            lane: lane.to_string(),
+            project_id: project_id.to_string(),
+            messages,
+            model: None,
+            max_tokens: None,
+        };
+        self.chat_stream_with_options(req).await
+    }
+
+    /// Streaming chat with full request options.
+    pub async fn chat_stream_with_options(
+        &self,
+        req: ChatRequest,
+    ) -> Result<impl Stream<Item = Result<ChatChunk>> + Send + 'static> {
+        let url = self.url("/v1/ai/chat/stream");
+        let resp = self
+            .http
+            .post(&url)
+            .header("x-api-key", &self.api_key)
+            .json(&req)
+            .send()
+            .await?;
+        let status = resp.status();
+        if !status.is_success() {
+            let body = resp.text().await.unwrap_or_default();
+            return Err(SdkError::from_status(status.as_u16(), &body));
+        }
+
+        // Parse SSE: events separated by blank lines, payload in `data: <json>` lines.
+        // Skip event-type lines; tolerate comment lines starting with `:`.
+        // The server emits each chunk as a complete SSE event; the final frame
+        // has no content and is dropped (the stream simply ends when the body ends).
+        let byte_stream = resp.bytes_stream();
+        let event_stream = byte_stream
+            .map(|chunk_result| {
+                chunk_result.map_err(|e| SdkError::Http(e.to_string()))
+            })
+            .map(|chunk_result| match chunk_result {
+                Ok(bytes) => Ok(String::from_utf8_lossy(&bytes).to_string()),
+                Err(e) => Err(e),
+            })
+            .scan(String::new(), |buffer, line_result: Result<String>| {
+                let out = match line_result {
+                    Ok(line) => {
+                        buffer.push_str(&line);
+                        // Split on either \r\n or \n so we get one line at a time.
+                        let mut events = Vec::new();
+                        while let Some(idx) = buffer.find('\n') {
+                            let line: String = buffer.drain(..=idx).collect();
+                            let trimmed = line.trim_end_matches(&['\r', '\n'][..]).to_string();
+                            if trimmed.is_empty() {
+                                // Blank line = end of one SSE event.
+                                                if !buffer.is_empty() {
+                                                    events.push(std::mem::take(buffer));
+                                                }
+                            } else if let Some(data) = trimmed.strip_prefix("data:") {
+                                let payload = data.trim();
+                                if !payload.is_empty() {
+                                    events.push(payload.to_string());
+                                }
+                            }
+                            // Skip "event:", "id:", "retry:", and ":" comment lines.
+                        }
+                        futures_util::stream::iter(events.into_iter().map(Ok))
+                    }
+                    Err(e) => futures_util::stream::iter(std::iter::once(Err(e))),
+                };
+                Box::new(out) as std::pin::Pin<Box<dyn Stream<Item = Result<String, SdkError>> + Send>>
+            })
+            .flatten();
+
+        // Map raw JSON strings into ChatChunk values.
+        let chunk_stream = event_stream.map(|raw| -> Result<ChatChunk> {
+            match raw {
+                Ok(json) => {
+                    // SSE `data: [DONE]` signals end-of-stream.
+                    if json.trim() == "[DONE]" {
+                        return Err(SdkError::StreamEnd);
+                    }
+                    serde_json::from_str::<ChatChunk>(&json).map_err(SdkError::from)
+                }
+                Err(e) => Err(e),
+            }
+        })
+        // Filter out the end-of-stream marker so consumers just see natural end.
+        .filter(|res| !matches!(res, Err(SdkError::StreamEnd)));
+
+        Ok(chunk_stream)
+    }
+
     /// Generate an image.
     pub async fn image(
         &self,
