@@ -1,4 +1,5 @@
-use dracon_ai_sdk::{ChatMessage, DraconAi, Role};
+use dracon_ai_sdk::{ChatMessage, ChatRequest, DraconAi, Role};
+use futures_util::StreamExt;
 
 #[test]
 fn chat_message_constructors() {
