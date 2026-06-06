@@ -9,7 +9,11 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let ai = DraconAi::from_env()?;
 
     let response = ai
-        .chat("free", "sdk-example", vec![ChatMessage::user("Hello, world!")])
+        .chat(
+            "free",
+            "sdk-example",
+            vec![ChatMessage::user("Hello, world!")],
+        )
         .await?;
 
     println!("Model: {}", response.model_used);

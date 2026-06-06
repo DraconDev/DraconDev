@@ -30,8 +30,8 @@ pub mod types;
 
 pub use error::{Result, SdkError};
 pub use types::{
-    AudioResponse, ChatChunk, ChatMessage, ChatRequest, ChatResponse, HealthResponse,
-    ImageRequest, ImageResponse, MusicRequest, Role, SoundFxRequest, TtsRequest, UsageStats,
+    AudioResponse, ChatChunk, ChatMessage, ChatRequest, ChatResponse, HealthResponse, ImageRequest,
+    ImageResponse, MusicRequest, Role, SoundFxRequest, TtsRequest, UsageStats,
 };
 
 use reqwest::Client as HttpClient;
@@ -68,8 +68,8 @@ impl DraconAi {
     pub fn from_env() -> Result<Self> {
         let api_key = std::env::var("AI_API_KEY")
             .map_err(|_| SdkError::MissingEnv("AI_API_KEY".to_string()))?;
-        let base_url = std::env::var("AI_API_URL")
-            .unwrap_or_else(|_| "http://localhost:3001".to_string());
+        let base_url =
+            std::env::var("AI_API_URL").unwrap_or_else(|_| "http://localhost:3001".to_string());
         Ok(Self::new(base_url, api_key))
     }
 
@@ -175,21 +175,14 @@ impl DraconAi {
         // stream when the server closes the connection.
         let string_stream = resp
             .bytes_stream()
-            .map(|chunk_result| {
-                chunk_result.map_err(|e| SdkError::StreamTransport(e.to_string()))
-            })
+            .map(|chunk_result| chunk_result.map_err(|e| SdkError::StreamTransport(e.to_string())))
             .map(|res| res.map(|bytes| String::from_utf8_lossy(&bytes).to_string()));
 
         Ok(SseChunkStream::new(Box::pin(string_stream)))
     }
 
     /// Generate an image.
-    pub async fn image(
-        &self,
-        lane: &str,
-        project_id: &str,
-        prompt: &str,
-    ) -> Result<ImageResponse> {
+    pub async fn image(&self, lane: &str, project_id: &str, prompt: &str) -> Result<ImageResponse> {
         let url = self.url("/v1/ai/image");
         let req = ImageRequest {
             lane: lane.to_string(),
@@ -201,12 +194,7 @@ impl DraconAi {
     }
 
     /// Generate music.
-    pub async fn music(
-        &self,
-        lane: &str,
-        project_id: &str,
-        prompt: &str,
-    ) -> Result<AudioResponse> {
+    pub async fn music(&self, lane: &str, project_id: &str, prompt: &str) -> Result<AudioResponse> {
         let url = self.url("/v1/ai/music");
         let req = MusicRequest {
             lane: lane.to_string(),
@@ -235,12 +223,7 @@ impl DraconAi {
     }
 
     /// Synthesize speech from text.
-    pub async fn tts(
-        &self,
-        lane: &str,
-        project_id: &str,
-        text: &str,
-    ) -> Result<AudioResponse> {
+    pub async fn tts(&self, lane: &str, project_id: &str, text: &str) -> Result<AudioResponse> {
         let url = self.url("/v1/ai/tts");
         let req = TtsRequest {
             lane: lane.to_string(),

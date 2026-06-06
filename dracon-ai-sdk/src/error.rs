@@ -11,10 +11,7 @@ pub enum SdkError {
 
     /// The API returned an unexpected status code.
     #[error("HTTP {status}: {message}")]
-    Http {
-        status: u16,
-        message: String,
-    },
+    Http { status: u16, message: String },
 
     /// Authentication failed (401).
     #[error("authentication failed: invalid or missing API key")]
