@@ -34,9 +34,8 @@ pub use types::{
     ImageRequest, ImageResponse, MusicRequest, Role, SoundFxRequest, TtsRequest, UsageStats,
 };
 
-use futures::Stream;
 use reqwest::Client as HttpClient;
-use std::pin::Pin;
+use std::time::Duration;
 
 /// The main AI client. Holds a base URL, API key, and an HTTP client.
 #[derive(Debug, Clone)]
@@ -53,7 +52,7 @@ impl DraconAi {
             base_url: base_url.into().trim_end_matches('/').to_string(),
             api_key: api_key.into(),
             http: HttpClient::builder()
-                .timeout(std::time::Duration::from_secs(120))
+                .timeout(Duration::from_secs(120))
                 .build()
                 .expect("reqwest client should build"),
         }
@@ -111,39 +110,6 @@ impl DraconAi {
         Ok(resp.json::<ChatResponse>().await?)
     }
 
-    /// Send a streaming chat completion request. Returns a stream of chunks.
-    pub async fn chat_stream(
-        &self,
-        lane: &str,
-        project_id: &str,
-        messages: Vec<ChatMessage>,
-    ) -> Result<Pin<Box<dyn Stream<Item = Result<ChatChunk>> + Send>>> {
-        let req = ChatRequest {
-            lane: lane.to_string(),
-            project_id: project_id.to_string(),
-            messages,
-            model: None,
-            max_tokens: None,
-        };
-        let url = self.url("/v1/ai/chat/stream");
-        let resp = self
-            .http
-            .post(&url)
-            .header("x-api-key", &self.api_key)
-            .json(&req)
-            .send()
-            .await?;
-        let status = resp.status();
-        if !status.is_success() {
-            let body = resp.text().await.unwrap_or_default();
-            return Err(SdkError::from_status(status.as_u16(), &body));
-        }
-        // Parse SSE stream
-        let stream = resp.bytes_stream();
-        let sse_stream = parse_sse_stream(stream);
-        Ok(Box::pin(sse_stream))
-    }
-
     /// Generate an image.
     pub async fn image(
         &self,
@@ -158,19 +124,7 @@ impl DraconAi {
             prompt: prompt.to_string(),
             model: None,
         };
-        let resp = self
-            .http
-            .post(&url)
-            .header("x-api-key", &self.api_key)
-            .json(&req)
-            .send()
-            .await?;
-        let status = resp.status();
-        if !status.is_success() {
-            let body = resp.text().await.unwrap_or_default();
-            return Err(SdkError::from_status(status.as_u16(), &body));
-        }
-        Ok(resp.json::<ImageResponse>().await?)
+        self.post_json(&url, &req).await
     }
 
     /// Generate music.
@@ -187,19 +141,7 @@ impl DraconAi {
             prompt: prompt.to_string(),
             model: None,
         };
-        let resp = self
-            .http
-            .post(&url)
-            .header("x-api-key", &self.api_key)
-            .json(&req)
-            .send()
-            .await?;
-        let status = resp.status();
-        if !status.is_success() {
-            let body = resp.text().await.unwrap_or_default();
-            return Err(SdkError::from_status(status.as_u16(), &body));
-        }
-        Ok(resp.json::<AudioResponse>().await?)
+        self.post_json(&url, &req).await
     }
 
     /// Generate sound effects.
@@ -216,19 +158,7 @@ impl DraconAi {
             prompt: prompt.to_string(),
             model: None,
         };
-        let resp = self
-            .http
-            .post(&url)
-            .header("x-api-key", &self.api_key)
-            .json(&req)
-            .send()
-            .await?;
-        let status = resp.status();
-        if !status.is_success() {
-            let body = resp.text().await.unwrap_or_default();
-            return Err(SdkError::from_status(status.as_u16(), &body));
-        }
-        Ok(resp.json::<AudioResponse>().await?)
+        self.post_json(&url, &req).await
     }
 
     /// Synthesize speech from text.
@@ -245,19 +175,7 @@ impl DraconAi {
             text: text.to_string(),
             model: None,
         };
-        let resp = self
-            .http
-            .post(&url)
-            .header("x-api-key", &self.api_key)
-            .json(&req)
-            .send()
-            .await?;
-        let status = resp.status();
-        if !status.is_success() {
-            let body = resp.text().await.unwrap_or_default();
-            return Err(SdkError::from_status(status.as_u16(), &body));
-        }
-        Ok(resp.json::<AudioResponse>().await?)
+        self.post_json(&url, &req).await
     }
 
     /// Check API health.
@@ -271,44 +189,25 @@ impl DraconAi {
         }
         Ok(resp.json::<HealthResponse>().await?)
     }
-}
 
-/// Parse a Server-Sent Events byte stream into a stream of ChatChunk results.
-fn parse_sse_stream(
-    byte_stream: impl Stream<Item = Result<bytes::Bytes, reqwest::Error>> + Send + 'static,
-) -> impl Stream<Item = Result<ChatChunk>> + Send {
-    use futures::stream::{StreamExt, TryStreamExt};
-
-    // Convert to a stream of Strings by buffering lines
-    async_stream::stream! {
-        let mut buffer = String::new();
-        let mut stream = byte_stream.map_err(|e| SdkError::Transport(e));
-
-        while let Some(chunk_result) = stream.next().await {
-            let chunk = match chunk_result {
-                Ok(c) => c,
-                Err(e) => {
-                    yield Err(e);
-                    continue;
-                }
-            };
-            buffer.push_str(&String::from_utf8_lossy(&chunk));
-
-            // Process complete SSE events (lines ending with \n\n)
-            while let Some(idx) = buffer.find("\n\n") {
-                let event: String = buffer.drain(..idx + 2).collect();
-                for line in event.lines() {
-                    if let Some(data) = line.strip_prefix("data: ") {
-                        if data.trim().is_empty() {
-                            continue;
-                        }
-                        match serde_json::from_str::<ChatChunk>(data) {
-                            Ok(chunk) => yield Ok(chunk),
-                            Err(e) => yield Err(SdkError::Parse(e)),
-                        }
-                    }
-                }
-            }
+    /// Internal helper: POST JSON, check status, parse response.
+    async fn post_json<B: serde::Serialize, R: serde::de::DeserializeOwned>(
+        &self,
+        url: &str,
+        body: &B,
+    ) -> Result<R> {
+        let resp = self
+            .http
+            .post(url)
+            .header("x-api-key", &self.api_key)
+            .json(body)
+            .send()
+            .await?;
+        let status = resp.status();
+        if !status.is_success() {
+            let body = resp.text().await.unwrap_or_default();
+            return Err(SdkError::from_status(status.as_u16(), &body));
         }
+        Ok(resp.json::<R>().await?)
     }
 }
