@@ -37,6 +37,8 @@ pub use types::{
 use reqwest::Client as HttpClient;
 use std::time::Duration;
 
+use futures_util::stream::{Stream, StreamExt};
+
 /// The main AI client. Holds a base URL, API key, and an HTTP client.
 #[derive(Debug, Clone)]
 pub struct DraconAi {
