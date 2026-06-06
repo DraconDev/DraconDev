@@ -51,6 +51,16 @@ pub enum SdkError {
     /// Bad request (400).
     #[error("bad request: {0}")]
     BadRequest(String),
+
+    /// Network/transport error during streaming.
+    #[error("transport error: {0}")]
+    Http(String),
+
+    /// Internal sentinel — `data: [DONE]` from SSE. Consumers never see this
+    /// because `chat_stream` filters it out before yielding items.
+    #[doc(hidden)]
+    #[error("stream ended")]
+    StreamEnd,
 }
 
 impl SdkError {
