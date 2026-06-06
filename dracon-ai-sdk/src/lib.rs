@@ -168,71 +168,19 @@ impl DraconAi {
             return Err(SdkError::from_status(status.as_u16(), &body));
         }
 
-        // Parse SSE: events separated by blank lines, payload in `data: <json>` lines.
-        // The server emits one SSE event per chunk; we parse incrementally over
-        // an internal buffer that holds any partial line between byte chunks.
-        // We tolerate both `\n` and `\r\n` separators, and skip `event:`, `id:`,
-        // `retry:`, and `:` comment lines. `data: [DONE]` is the end sentinel
-        // and is filtered out before items reach the consumer.
-        let byte_stream = resp
+        // Wrap reqwest's byte stream in our SSE-aware parser. We do all parsing
+        // inside `SseChunkStream` so that the public return type is just
+        // `Result<ChatChunk>` per item — no `StreamEnd` sentinel leaks through
+        // because the parser skips `data: [DONE]` and returns `None` from the
+        // stream when the server closes the connection.
+        let string_stream = resp
             .bytes_stream()
-            .map(|chunk_result| chunk_result.map_err(|e| SdkError::StreamTransport(e.to_string())));
-
-        // Step 1: turn byte chunks into String chunks, erroring on transport failures.
-        let string_stream = byte_stream.map(|res| {
-            res.map(|bytes| String::from_utf8_lossy(&bytes).to_string())
-        });
-
-        // Step 2: scan accumulating any partial lines, emit a Vec of SSE `data:`
-        // payloads each time a blank line (event boundary) is encountered.
-        // Each emitted item is one `data:` payload string.
-        let payload_stream = string_stream
-            .scan(String::new(), |buffer, line_res| {
-                let mut out: Vec<std::result::Result<String, SdkError>> = Vec::new();
-                match line_res {
-                    Ok(text) => {
-                        buffer.push_str(&text);
-                        // Drain complete lines (split on \n; tolerate \r\n).
-                        while let Some(idx) = buffer.find('\n') {
-                            let line: String = buffer.drain(..=idx).collect();
-                            let trimmed =
-                                line.trim_end_matches(&['\r', '\n'][..]).to_string();
-                            if trimmed.is_empty() {
-                                // Blank line = event boundary. Nothing to emit
-                                // (the data: lines are emitted immediately below).
-                            } else if let Some(data) = trimmed.strip_prefix("data:") {
-                                let payload = data.trim();
-                                if !payload.is_empty() {
-                                    out.push(Ok(payload.to_string()));
-                                }
-                            }
-                            // Skip "event:", "id:", "retry:", and ":" comment lines.
-                        }
-                    }
-                    Err(e) => out.push(Err(e)),
-                }
-                futures_util::stream::iter(out)
+            .map(|chunk_result| {
+                chunk_result.map_err(|e| SdkError::StreamTransport(e.to_string()))
             })
-            .flatten();
+            .map(|res| res.map(|bytes| String::from_utf8_lossy(&bytes).to_string()));
 
-        // Step 3: map each payload string into a ChatChunk, treating `[DONE]`
-        // as a StreamEnd marker that is filtered out below.
-        let chunk_stream = payload_stream
-            .map(|raw| -> std::result::Result<ChatChunk, SdkError> {
-                match raw {
-                    Ok(json) => {
-                        if json.trim() == "[DONE]" {
-                            Err(SdkError::StreamEnd)
-                        } else {
-                            serde_json::from_str::<ChatChunk>(&json).map_err(SdkError::from)
-                        }
-                    }
-                    Err(e) => Err(e),
-                }
-            })
-            .filter(|res| !matches!(res, Err(SdkError::StreamEnd)));
-
-        Ok(chunk_stream)
+        Ok(SseChunkStream::new(Box::pin(string_stream)))
     }
 
     /// Generate an image.
