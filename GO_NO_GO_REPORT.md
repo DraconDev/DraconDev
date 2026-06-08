@@ -8,20 +8,28 @@
 
 ## Executive Summary
 
+**Audit scope:** Profile README candidates from `REPO_FINAL_LIST.md`: 4 already-public pins, 6 publish/mention/hold candidates, plus the 2 public "maybe" repos that appeared in the final list. Skipped public repos are intentionally out of publish scope.
+
+**Verification note:** Public repos were verified live with GitHub API, GitHub pages, `curl`, and a shallow clone for `azumi-live-ssr-framework`. Private/unpublished repos were audited from the available audit artifacts and GitHub visibility; local source was not present in this workspace.
+
 **Audit verdict:** Repos are NOT all ready to publish.
 
 **Ready to publish:** 0 repos
-**Need fixes before publish:** 2 repos (pully-fully, kiki)
+**Need fixes before publish:** 3 repos (pully-fully, kiki, azumi-live-ssr-framework)
 **On hold:** 1 repo (rust-ai-web-auto)
+**Unverified / 404:** 1 repo (ai-auto-repo-rot-scanner)
 **Blocked by monorepo:** 3 repos (sync, warden, system)
-**Already public:** 4 repos
+**Already public:** 5 repos (terminal-engine, tiles, folder-auto-banner, obs-wayland-hotkey, azumi-live-ssr-framework)
 
-**Fixes applied during audit:**
-- ✅ `pully-fully` README broken links fixed (7 internal + 2 external)
+**Fixes and readiness actions during audit:**
+- ✅ `pully-fully` README broken-link findings corrected (7 internal + 2 external)
 - ✅ `kiki` CI workflow added (`.github/workflows/ci.yml`)
-- ✅ `README_DRAFT.md` corrected to show only working links (12 lines, 4 public repos)
+- ✅ `README_DRAFT.md` corrected to show only working links (15 lines, 4 public repos)
+- ✅ Additional maybe-repo check added for `azumi-live-ssr-framework` and `ai-auto-repo-rot-scanner`
 
 **Remaining blockers:**
+- ⚠️ `azumi-live-ssr-framework` README links are broken (`COMMERCIAL-LICENSE.md`, `CLA.md` missing; `dracon.dev` DNS failed during audit)
+- ⚠️ `ai-auto-repo-rot-scanner` GitHub page/API returned 404, so it cannot be verified or published as-is
 - ⚠️ `obs-wayland-hotkey` license mismatch (GitHub says AGPL-3.0, Cargo.toml/README/crates.io say MIT) - repo not cloned locally
 - ⚠️ `kiki` cargo check environment-dependent (audit env missing alsa.pc / alsa-sys)
 - ⚠️ `SamAI` Chrome Web Store link redirects to generic store homepage
@@ -44,8 +52,10 @@
 - rust-ai-web-auto (on hold)
 - dracon-sync/warden/system (private monorepo)
 - SamAI (Chrome Web Store link redirects to generic store homepage)
+- azumi-live-ssr-framework (already public but README has broken links)
+- ai-auto-repo-rot-scanner (404 / not verifiable)
 
-**Line count:** 12 lines (very compact, scannable)
+**Line count:** 15 lines (very compact, scannable)
 
 **Link verification:** All 9 links in README_DRAFT.md return 200 status.
 
@@ -53,7 +63,7 @@
 
 ## Repository Audit Results
 
-### ✅ Already Public (4 repos)
+### ✅ Already Public (5 repos)
 
 | Repo | Status | License | Notes |
 |:-----|:-------|:--------|:------|
@@ -61,6 +71,7 @@
 | `tiles-tui-file-manager` | ✅ Public | AGPL-3.0 | 22K lines, dual-pane file manager |
 | `folder-auto-banner` | ✅ Public | MIT | 8K lines, 108 tests |
 | `obs-wayland-hotkey` | ✅ Public | ⚠️ License mismatch | 2.2K lines, 36 tests |
+| `azumi-live-ssr-framework` | ⚠️ Public but README links broken | AGPL-3.0 | 209-line README, 79 test files, cargo test no-run succeeded
 
 ### ⏸️ Needs fixes before publish (1 repo)
 
@@ -112,6 +123,27 @@
 - 1 WIP mention (in audit-report.md, outdated)
 - **Verdict:** On hold per user decision
 
+### ⚠️ Additional public "maybe" repo audit (2 repos)
+
+| Repo | Status | License | README | Source | Tests | TODO/FIXME | Build | Verdict |
+|:-----|:-------|:--------|:-------|:-------|:------|:-----------|:------|:--------|
+| `azumi-live-ssr-framework` | ⚠️ Public but not publish-clean | AGPL-3.0 | 209 lines | 5,614 files | 79 test files | 0 in source | `cargo test --locked --no-run` succeeded with warnings | **NO-GO until README links are fixed** |
+| `ai-auto-repo-rot-scanner` | ⚠️ 404 / not verifiable | Unknown | Not accessible | Not accessible | Not accessible | Unknown | Unknown | **NO-GO until repo is accessible** |
+
+**azumi-live-ssr-framework findings:**
+- ✅ Public repo; GitHub API reports AGPL-3.0 license.
+- ✅ `cargo metadata --no-deps --format-version 1` succeeded: 4 packages, 67 targets.
+- ✅ `cargo test --locked --no-run` succeeded; warnings only.
+- ⚠️ README local links `COMMERCIAL-LICENSE.md` and `CLA.md` are missing.
+- ⚠️ External README link `https://dracon.dev` failed DNS during audit.
+- **Verdict:** Not ready for profile/publish promotion until README links are corrected.
+
+**ai-auto-repo-rot-scanner findings:**
+- ⚠️ GitHub page and API returned 404 during audit.
+- **Verdict:** Cannot verify license, README, tests, or publish readiness; keep out of README until accessible or renamed.
+
+---
+
 ### ⚠️ Blocked by Monorepo (3 repos)
 
 | Repo | Status | License | README | Source | Tests | TODO/FIXME | Verdict |
@@ -149,6 +181,8 @@
 
 | Link | Status | Notes |
 |:-----|:-------|:------|
+| `azumi-live-ssr-framework` | ⚠️ Not publish-clean | README local links broken; `dracon.dev` DNS failed | Already public but should not be promoted until links are fixed |
+| `ai-auto-repo-rot-scanner` | ⚠️ Unverified | GitHub/API 404 | Not ready until repo is accessible or renamed |
 | `pully-fully-pull-based-fleet-reconciler` | ⏸️ Ready after fixes | README broken links fixed |
 | `kiki-sassy-desktop-announcer` | ⏸️ Ready after fixes | CI workflow added |
 | `rust-ai-web-auto` | ⏸️ On hold | Per user decision |
@@ -173,6 +207,8 @@
 | `dracon-system` | AGPL-3.0 (inherited) | Monorepo root | ✅ |
 | `rust-ai-web-auto` | AGPL-3.0 | GitHub API | ✅ |
 | `kiki-sassy-desktop-announcer` | MIT | GitHub API | ✅ |
+| `azumi-live-ssr-framework` | AGPL-3.0 | GitHub API | ✅ |
+| `ai-auto-repo-rot-scanner` | Unknown | GitHub page/API 404 | ⚠️ Unverified |
 
 **Verdict:** License audit corrected. `obs-wayland-hotkey` has a license mismatch that needs investigation.
 
@@ -184,6 +220,8 @@
 
 | Repo | Count | Severity | Notes |
 |:-----|:------|:---------|:------|
+| `azumi` | 0 in source | None | Clean; warnings only in cargo test no-run |
+| `ai-auto-repo-rot-scanner` | Unknown | Unknown | Not accessible |
 | `pully-fully` | 0 | None | Clean |
 | `kiki` | 3 | Low | Future improvements (ERR-4, spawn_local, TriggerType) |
 | `dracon-sync` | 0 | None | Clean |
@@ -194,6 +232,7 @@
 
 | Repo | Count | Notes |
 |:-----|:------|:------|
+| `azumi-live-ssr-framework` | 0 | No WIP markers; historical audit notes only |
 | `pully-fully` | 1 | Says "No active work in progress" |
 | `rust-ai-web-auto` | 1 | Outdated audit-report.md |
 
@@ -245,15 +284,20 @@
 ### Phase 2: Add CI workflow (1 repo) ✅ DONE
 2. ✅ Add CI workflow to `kiki`
 
-### Phase 3: Publish ready repos (2 repos)
-3. ⏸️ Publish `pully-fully-pull-based-fleet-reconciler`
-4. ⏸️ Publish `kiki-sassy-desktop-announcer`
+### Phase 2b: Audit public "maybe" repos ✅ DONE
+3. ✅ Audit `azumi-live-ssr-framework`; found broken README links
+4. ✅ Audit `ai-auto-repo-rot-scanner`; found 404 / not verifiable
 
-### Phase 4: On hold (1 repo)
-5. ⏸️ Hold `rust-ai-web-auto` until AI lib decision is made
+### Phase 3: Publish ready repos (2 repos)
+5. ⏸️ Publish `pully-fully-pull-based-fleet-reconciler`
+6. ⏸️ Publish `kiki-sassy-desktop-announcer`
+
+### Phase 4: On hold / unverified (2 repos)
+7. ⏸️ Hold `rust-ai-web-auto` until AI lib decision is made
+8. ⚠️ Resolve `ai-auto-repo-rot-scanner` 404 before considering it
 
 ### Phase 5: Monorepo decision (3 repos)
-6. ⚠️ Decide on monorepo approach:
+9. ⚠️ Decide on monorepo approach:
    - Option A: Make `dracon-utilities` public and update README links
    - Option B: Split into 3 standalone repos
    - Option C: Remove from README
@@ -274,6 +318,8 @@ Given the user's preference for **tangible things only**:
 - Shows only tangible, shipped work
 
 **When to add more repos:**
+- Add `azumi-live-ssr-framework` only after README links are fixed and verified
+- Keep `ai-auto-repo-rot-scanner` out until the 404 is resolved
 - Add `pully-fully` after publishing
 - Add `kiki` after publishing
 - Add monorepo sub-repos after deciding on monorepo approach
