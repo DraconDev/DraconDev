@@ -44,6 +44,7 @@
 - License distribution from the public inventory: **86 no-license/unknown**, **41 AGPL-3.0**, **6 MIT**, **2 NOASSERTION**, **1 Apache-2.0**, **1 MPL-2.0**.
 - The profile/publish audit scope is narrower than the full public inventory: the final profile list selects **12 named repos** for publish/README consideration (4 existing pins, 6 publish/mention/hold candidates, and 2 public "maybe" repos). The remaining public repos are intentionally skipped for the profile README because they are practice, old, internal-ish, too small, or not strategic per `REPO_FINAL_LIST.md`.
 - This means the go/no-go table covers every repo that should be considered for the profile README/publish decision, while the public inventory confirms that the broader GitHub account is **not** universally publish-ready.
+- Full per-public-repo inventory: [`ALL_REPOS_INVENTORY.md`](ALL_REPOS_INVENTORY.md) — 137 public repos plus the non-repo `SamAI` link entry, each with license, last pushed date, and go/no-go/skip verdict.
 
 ---
 
@@ -335,8 +336,9 @@ Given the user's preference for **tangible things only**:
 ---
 
 ## Files Referenced
-- `README_DRAFT.md` — Corrected README (12 lines, only working links)
+- `README_DRAFT.md` — Corrected README (15 lines, only working links)
 - `REPO_FINAL_LIST.md` — Final repo list
 - `REPO_ANALYSIS.md` — Repo analysis
 - `GITHUB_PROFILE_RESEARCH.md` — Profile research
 - `EXPERT_VALIDATION.md` — Expert validation
+- `ALL_REPOS_INVENTORY.md` — Full public repo inventory with go/no-go/skip verdicts
