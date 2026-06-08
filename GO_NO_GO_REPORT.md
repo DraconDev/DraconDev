@@ -13,25 +13,31 @@
 **Blocked by monorepo:** 3 repos
 **Already public:** 4 repos
 
+**Corrected from prior audit:**
+- `folder-auto-banner` license is **MIT** (not AGPL-3.0)
+- `kiki-sassy-desktop-announcer` license is **MIT**
+- `kiki` cargo check **passes** (0 errors, 7 warnings)
+- `dracon-sync`, `dracon-warden`, `dracon-system` have **NO LICENSE** on GitHub (they're in private monorepo)
+
 ---
 
 ## Repository Audit Results
 
 ### ✅ Already Public (4 repos)
 
-| Repo | Status | Notes |
-|:-----|:-------|:------|
-| `dracon-terminal-engine` | ✅ Public | 139K lines, 3,658 tests, on crates.io |
-| `tiles-tui-file-manager` | ✅ Public | 22K lines, dual-pane file manager |
-| `folder-auto-banner` | ✅ Public | 8K lines, 108 tests, on crates.io |
-| `obs-wayland-hotkey` | ✅ Public | 2.2K lines, 36 tests, on crates.io |
+| Repo | Status | License | Notes |
+|:-----|:-------|:--------|:------|
+| `dracon-terminal-engine` | ✅ Public | AGPL-3.0 | 139K lines, 3,658 tests, on crates.io |
+| `tiles-tui-file-manager` | ✅ Public | AGPL-3.0 | 22K lines, dual-pane file manager |
+| `folder-auto-banner` | ✅ Public | MIT | 8K lines, 108 tests, on crates.io |
+| `obs-wayland-hotkey` | ✅ Public | AGPL-3.0 | 2.2K lines, 36 tests, on crates.io |
 
 ### ✅ Ready to Publish (2 repos)
 
-| Repo | Status | License | README | Source | Tests | TODO/FIXME | Verdict |
-|:-----|:-------|:--------|:-------|:-------|:------|:-----------|:--------|
-| `pully-fully-pull-based-fleet-reconciler` | ✅ Ready | AGPL-3.0 | 367 lines | 58 files | 9 test files | 0 | **GO** |
-| `kiki-sassy-desktop-announcer` | ✅ Ready | MIT | 268 lines | 14 files | 7 test files | 3 (low) | **GO** |
+| Repo | Status | License | README | Source | Tests | TODO/FIXME | Build | Verdict |
+|:-----|:-------|:--------|:-------|:-------|:------|:-----------|:------|:--------|
+| `pully-fully-pull-based-fleet-reconciler` | ✅ Ready | AGPL-3.0 | 367 lines | 58 files | 9 test files | 0 | Not checked | **GO** |
+| `kiki-sassy-desktop-announcer` | ✅ Ready | MIT | 268 lines | 14 files | 7 test files | 3 (low) | ✅ Pass (0 errors, 7 warnings) | **GO** |
 
 **pully-fully notes:**
 - Workspace with sub-crates (pully, fully, pully-types)
@@ -45,6 +51,7 @@
 - 391 commits in last 30 days
 - 3 TODOs (all low priority, future improvements)
 - 0 WIP mentions
+- **cargo check --locked:** ✅ 0 errors, 7 warnings
 - **Verdict:** Ready to publish
 
 ### ⏸️ On Hold (1 repo)
@@ -64,9 +71,9 @@
 
 | Repo | Status | License | README | Source | Tests | TODO/FIXME | Verdict |
 |:-----|:-------|:--------|:-------|:-------|:------|:-----------|:--------|
-| `dracon-sync` | ⚠️ In monorepo | AGPL-3.0 | 351 lines | 32 files | 4 test files | 0 | **BLOCKED** |
-| `dracon-warden` | ⚠️ In monorepo | AGPL-3.0 | 306 lines | 29 files | 24 test files | 1 (test) | **BLOCKED** |
-| `dracon-system` | ⚠️ In monorepo | AGPL-3.0 | 311 lines | 12 files | 4 test files | 0 | **BLOCKED** |
+| `dracon-sync` | ⚠️ In monorepo | NO LICENSE (on GitHub) | 351 lines | 32 files | 4 test files | 0 | **BLOCKED** |
+| `dracon-warden` | ⚠️ In monorepo | NO LICENSE (on GitHub) | 306 lines | 29 files | 24 test files | 1 (test) | **BLOCKED** |
+| `dracon-system` | ⚠️ In monorepo | NO LICENSE (on GitHub) | 311 lines | 12 files | 4 test files | 0 | **BLOCKED** |
 
 **Monorepo situation:**
 - All 3 are in `DraconDev/dracon-utilities` (PRIVATE monorepo)
@@ -97,22 +104,22 @@
 
 ---
 
-## License Audit
+## License Audit (Corrected)
 
-| Repo | License | Status |
-|:-----|:--------|:-------|
-| `dracon-terminal-engine` | AGPL-3.0 | ✅ |
-| `tiles-tui-file-manager` | AGPL-3.0 | ✅ |
-| `folder-auto-banner` | AGPL-3.0 | ✅ |
-| `obs-wayland-hotkey` | AGPL-3.0 | ✅ |
-| `pully-fully-pull-based-fleet-reconciler` | AGPL-3.0 | ✅ |
-| `dracon-sync` | AGPL-3.0 (inherited) | ✅ |
-| `dracon-warden` | AGPL-3.0 (inherited) | ✅ |
-| `dracon-system` | AGPL-3.0 (inherited) | ✅ |
-| `rust-ai-web-auto` | AGPL-3.0 | ✅ |
-| `kiki-sassy-desktop-announcer` | MIT | ✅ |
+| Repo | License | Source | Status |
+|:-----|:--------|:-------|:-------|
+| `dracon-terminal-engine` | AGPL-3.0 | GitHub API | ✅ |
+| `tiles-tui-file-manager` | AGPL-3.0 | GitHub API | ✅ |
+| `folder-auto-banner` | MIT | GitHub API | ✅ |
+| `obs-wayland-hotkey` | AGPL-3.0 | GitHub API | ✅ |
+| `pully-fully-pull-based-fleet-reconciler` | AGPL-3.0 | GitHub API | ✅ |
+| `dracon-sync` | NO LICENSE | GitHub API (private monorepo) | ⚠️ |
+| `dracon-warden` | NO LICENSE | GitHub API (private monorepo) | ⚠️ |
+| `dracon-system` | NO LICENSE | GitHub API (private monorepo) | ⚠️ |
+| `rust-ai-web-auto` | AGPL-3.0 | GitHub API | ✅ |
+| `kiki-sassy-desktop-announcer` | MIT | GitHub API | ✅ |
 
-**Verdict:** All licenses are correct. User confirmed AGPL-3.0 for infrastructure tools, MIT for kiki.
+**Verdict:** License audit corrected. The monorepo sub-repos have no license on GitHub because they're in a private monorepo.
 
 ---
 
