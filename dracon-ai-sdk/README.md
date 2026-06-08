@@ -1,5 +1,7 @@
 # dracon-ai-sdk
 
+> **⚠️ ARCHIVED — Use [`ai-api-sdk`](https://github.com/DraconDev/dracon-ai-platform/tree/main/crates/ai-api-sdk) in the `dracon-ai-platform` repo instead. This repo is no longer maintained.**
+
 Lightweight HTTP client for the Dracon AI API.
 
 Consumers depend on this crate instead of the AI library directly. All AI logic lives in the API server (`dracon-platform/ai-api`); this crate is a typed HTTP wrapper.
