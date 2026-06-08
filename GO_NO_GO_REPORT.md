@@ -8,22 +8,15 @@
 
 ## Executive Summary
 
-**Ready to publish:** 1 repo (pully-fully, but README needs cleanup first)
-**Ready with minor cleanup:** 1 repo (kiki, needs CI workflow)
+**Audit verdict:** NOT all repos are ready to publish.
+
+**Ready to publish:** 0 repos
+**Need fixes before publish:** 2 repos (pully-fully, kiki)
 **On hold:** 1 repo (rust-ai-web-auto)
 **Blocked by monorepo:** 3 repos (sync, warden, system)
 **Already public:** 4 repos
 
-**Key findings:**
-- `README_DRAFT.md` has been corrected to show only working links (4 public repos)
-- `folder-auto-banner` license is **MIT** (not AGPL-3.0)
-- `kiki-sassy-desktop-announcer` license is **MIT**
-- `kiki` has **3 Rust test files + 2 shell test scripts** (not 7 test files)
-- `kiki` has **no GitHub workflows** (no CI evidence)
-- `pully-fully` README has **7 broken internal links** and **2 broken external links**
-- `obs-wayland-hotkey` license mismatch: GitHub says **AGPL-3.0**, but Cargo.toml/README/crates.io say **MIT** (needs verification)
-- `README_DRAFT.md` "4 on crates.io" claim based on auditor verification: dracon-terminal-engine, folder-auto-banner, tiles-tui-file-manager, kiki-sassy-desktop-announcer
-- `SamAI` Chrome Web Store link redirects to generic store homepage (not a verified product page)
+**README_DRAFT.md:** Corrected to show only working links (12 lines, 4 public repos)
 
 ---
 
@@ -36,13 +29,15 @@
 - Links to dracon.uk, YouTube, Sponsor
 
 **Removed:**
-- pully-fully (not published yet)
-- kiki (not published yet)
+- pully-fully (not ready - README has broken links)
+- kiki (not ready - no CI workflow)
 - rust-ai-web-auto (on hold)
 - dracon-sync/warden/system (private monorepo)
 - SamAI (Chrome Web Store link redirects to generic store homepage)
 
 **Line count:** 12 lines (very compact, scannable)
+
+**Link verification:** All 9 links in README_DRAFT.md return 200 status.
 
 ---
 
@@ -52,47 +47,41 @@
 
 | Repo | Status | License | Notes |
 |:-----|:-------|:--------|:------|
-| `dracon-terminal-engine` | ✅ Public | AGPL-3.0 | 139K lines, 3,658 tests, on crates.io |
-| `tiles-tui-file-manager` | ✅ Public | AGPL-3.0 | 22K lines, dual-pane file manager, on crates.io |
-| `folder-auto-banner` | ✅ Public | MIT | 8K lines, 108 tests, on crates.io |
-| `obs-wayland-hotkey` | ✅ Public | ⚠️ AGPL-3.0 on GitHub, MIT in Cargo.toml/README/crates.io | 2.2K lines, 36 tests, on crates.io |
+| `dracon-terminal-engine` | ✅ Public | AGPL-3.0 | 139K lines, 3,658 tests |
+| `tiles-tui-file-manager` | ✅ Public | AGPL-3.0 | 22K lines, dual-pane file manager |
+| `folder-auto-banner` | ✅ Public | MIT | 8K lines, 108 tests |
+| `obs-wayland-hotkey` | ✅ Public | ⚠️ License mismatch | 2.2K lines, 36 tests |
 
-### ⏸️ Ready to Publish but Needs README Cleanup (1 repo)
+### ❌ NOT Ready to Publish (1 repo)
 
 | Repo | Status | License | README | Source | Tests | TODO/FIXME | Build | Verdict |
 |:-----|:-------|:--------|:-------|:-------|:------|:-----------|:------|:--------|
-| `pully-fully-pull-based-fleet-reconciler` | ⏸️ Needs cleanup | AGPL-3.0 | 367 lines | 58 files | 9 test files | 0 | Not checked | **NO-GO until README fixed** |
+| `pully-fully-pull-based-fleet-reconciler` | ❌ NOT ready | AGPL-3.0 | 367 lines | 58 files | 9 test files | 0 | Not checked | **NO-GO** |
 
-**pully-fully notes:**
-- Workspace with sub-crates (pully, fully, pully-types)
-- No root Cargo.toml (expected for workspace)
-- 2240 commits in last 30 days
-- 0 TODO/FIXME/XXX
-- 1 WIP mention (in project-state.md, says "No active work in progress")
-- **README link audit:** 7 broken internal links, 2 broken external links
-  - ❌ `WEIGHTED_RANKING.md`
-  - ❌ `docs/HOW_IT_WORKS.md`
-  - ❌ `docs/DESIGN.md`
-  - ❌ `docs/BOOTSTRAP.md`
-  - ❌ `docs/SECURITY.md`
-  - ❌ `docs/COMPARISON.md`
-  - ❌ `COMMERCIAL-LICENSE.md`
-  - ❌ `github.com/pully-works/pully`
-  - ❌ `pully-fleet-template`
+**pully-fully blockers:**
+- ❌ README has 7 broken internal links:
+  - `WEIGHTED_RANKING.md`
+  - `docs/HOW_IT_WORKS.md`
+  - `docs/DESIGN.md`
+  - `docs/BOOTSTRAP.md`
+  - `docs/SECURITY.md`
+  - `docs/COMPARISON.md`
+  - `COMMERCIAL-LICENSE.md`
+- ❌ README has 2 broken external links:
+  - `github.com/pully-works/pully`
+  - `pully-fleet-template`
 - **Verdict:** NOT ready to publish until README broken links are fixed
 
-### ⏸️ Ready with Minor Cleanup (1 repo)
+### ❌ NOT Ready to Publish (1 repo)
 
 | Repo | Status | License | README | Source | Tests | TODO/FIXME | Build | Verdict |
 |:-----|:-------|:--------|:-------|:-------|:------|:-----------|:------|:--------|
-| `kiki-sassy-desktop-announcer` | ⏸️ Needs CI | MIT | 268 lines | 14 files | 3 Rust test files + 2 shell test scripts | 3 (low) | ⚠️ `cargo check --locked` environment-dependent (audit env missing alsa.pc) | **NO-GO until CI added** |
+| `kiki-sassy-desktop-announcer` | ❌ NOT ready | MIT | 268 lines | 14 files | 3 Rust test files + 2 shell test scripts | 3 (low) | ⚠️ Environment-dependent | **NO-GO** |
 
-**kiki notes:**
-- 391 commits in last 30 days
-- 3 TODOs (all low priority, future improvements)
-- 0 WIP mentions
-- **No GitHub workflows** (no CI evidence)
-- **cargo check --locked:** ⚠️ Environment-dependent (audit env missing alsa.pc / alsa-sys)
+**kiki blockers:**
+- ❌ No GitHub workflows (no CI evidence)
+- ⚠️ `cargo check --locked` is environment-dependent (audit env missing alsa.pc / alsa-sys)
+- 3 TODOs (low priority, future improvements)
 - **Verdict:** NOT ready to publish until CI workflow is added
 
 ### ⏸️ On Hold (1 repo)
@@ -112,9 +101,9 @@
 
 | Repo | Status | License | README | Source | Tests | TODO/FIXME | Verdict |
 |:-----|:-------|:--------|:-------|:-------|:------|:-----------|:--------|
-| `dracon-sync` | ⚠️ In monorepo | AGPL-3.0 (inherited from monorepo) | 351 lines | 32 files | 4 test files | 0 | **BLOCKED** |
-| `dracon-warden` | ⚠️ In monorepo | AGPL-3.0 (inherited from monorepo) | 306 lines | 29 files | 24 test files | 1 (test) | **BLOCKED** |
-| `dracon-system` | ⚠️ In monorepo | AGPL-3.0 (inherited from monorepo) | 311 lines | 12 files | 4 test files | 0 | **BLOCKED** |
+| `dracon-sync` | ⚠️ In monorepo | AGPL-3.0 (inherited) | 351 lines | 32 files | 4 test files | 0 | **BLOCKED** |
+| `dracon-warden` | ⚠️ In monorepo | AGPL-3.0 (inherited) | 306 lines | 29 files | 24 test files | 1 (test) | **BLOCKED** |
+| `dracon-system` | ⚠️ In monorepo | AGPL-3.0 (inherited) | 311 lines | 12 files | 4 test files | 0 | **BLOCKED** |
 
 **Monorepo situation:**
 - All 3 are in `DraconDev/dracon-utilities` (PRIVATE monorepo)
@@ -145,8 +134,8 @@
 
 | Link | Status | Notes |
 |:-----|:-------|:------|
-| `pully-fully-pull-based-fleet-reconciler` | ⏸️ Will add after publishing | Ready after README cleanup |
-| `kiki-sassy-desktop-announcer` | ⏸️ Will add after publishing | Ready after CI workflow |
+| `pully-fully-pull-based-fleet-reconciler` | ❌ NOT ready | README has broken links |
+| `kiki-sassy-desktop-announcer` | ❌ NOT ready | No CI workflow |
 | `rust-ai-web-auto` | ⏸️ On hold | Per user decision |
 | `dracon-sync` | ⚠️ Blocked by monorepo | In private monorepo |
 | `dracon-warden` | ⚠️ Blocked by monorepo | In private monorepo |
@@ -241,9 +230,9 @@
 ### Phase 2: Add CI workflow (1 repo)
 2. ❌ Add CI workflow to `kiki`
 
-### Phase 3: Publish ready repos (2 repos)
-3. ✅ Publish `pully-fully-pull-based-fleet-reconciler` (after Phase 1)
-4. ✅ Publish `kiki-sassy-desktop-announcer` (after Phase 2)
+### Phase 3: Publish ready repos (0 repos currently)
+3. ⏸️ Publish `pully-fully-pull-based-fleet-reconciler` after Phase 1
+4. ⏸️ Publish `kiki-sassy-desktop-announcer` after Phase 2
 
 ### Phase 4: On hold (1 repo)
 5. ⏸️ Hold `rust-ai-web-auto` until AI lib decision is made

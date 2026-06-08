@@ -5,12 +5,12 @@
   "status": "active",
   "autoContinue": true,
   "usage": {
-    "tokensUsed": 4167892,
-    "activeSeconds": 5010
+    "tokensUsed": 4301685,
+    "activeSeconds": 5123
   },
   "sisyphus": false,
   "createdAt": "2026-06-08T19:55:33.909Z",
-  "updatedAt": "2026-06-08T21:39:54.173Z",
+  "updatedAt": "2026-06-08T21:41:47.337Z",
   "activePath": ".pi/goals/active_goal_2026060820553390_mq5mrvkl-uhwogf.md",
   "taskList": {
     "tasks": [
@@ -57,8 +57,8 @@ Run a full audit to verify all repos are ready to publish and the README links a
 - Status: running
 - Auto-continue: on
 - Sisyphus mode: no
-- Time spent: 1h23m30s
-- Tokens used: 4.2M (4,167,892) tokens
+- Time spent: 1h25m23s
+- Tokens used: 4.3M (4,301,685) tokens
 ## Tasks
 
 <!-- blockCompletion: false -->
