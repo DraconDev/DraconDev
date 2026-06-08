@@ -8,16 +8,20 @@
 
 ## Executive Summary
 
-**Ready to publish:** 2 repos
-**On hold:** 1 repo
-**Blocked by monorepo:** 3 repos
+**Ready to publish:** 1 repo (pully-fully)
+**Ready with minor cleanup:** 1 repo (kiki)
+**On hold:** 1 repo (rust-ai-web-auto)
+**Blocked by monorepo:** 3 repos (sync, warden, system)
 **Already public:** 4 repos
 
-**Corrected from prior audit:**
+**Key corrections from prior audit:**
 - `folder-auto-banner` license is **MIT** (not AGPL-3.0)
 - `kiki-sassy-desktop-announcer` license is **MIT**
-- `kiki` cargo check **passes** (0 errors, 7 warnings)
-- `dracon-sync`, `dracon-warden`, `dracon-system` have **NO LICENSE** on GitHub (they're in private monorepo)
+- `kiki` has **3 Rust test files + 2 shell test scripts** (not 7 test files)
+- `kiki` has **no GitHub workflows** (no CI evidence)
+- `pully-fully` README has **7 broken internal links** and **2 broken external links**
+- `obs-wayland-hotkey` license mismatch: GitHub says **AGPL-3.0**, but Cargo.toml/README/crates.io say **MIT** (needs verification)
+- `README_DRAFT.md` "2 on crates.io" claim **cannot be verified** with crates.io API (all checked crates return NOT on crates.io)
 
 ---
 
@@ -27,17 +31,16 @@
 
 | Repo | Status | License | Notes |
 |:-----|:-------|:--------|:------|
-| `dracon-terminal-engine` | ✅ Public | AGPL-3.0 | 139K lines, 3,658 tests, on crates.io |
+| `dracon-terminal-engine` | ✅ Public | AGPL-3.0 | 139K lines, 3,658 tests |
 | `tiles-tui-file-manager` | ✅ Public | AGPL-3.0 | 22K lines, dual-pane file manager |
-| `folder-auto-banner` | ✅ Public | MIT | 8K lines, 108 tests, on crates.io |
-| `obs-wayland-hotkey` | ✅ Public | AGPL-3.0 | 2.2K lines, 36 tests, on crates.io |
+| `folder-auto-banner` | ✅ Public | MIT | 8K lines, 108 tests |
+| `obs-wayland-hotkey` | ✅ Public | ⚠️ AGPL-3.0 on GitHub, MIT in Cargo.toml/README/crates.io | 2.2K lines, 36 tests |
 
-### ✅ Ready to Publish (2 repos)
+### ✅ Ready to Publish (1 repo)
 
 | Repo | Status | License | README | Source | Tests | TODO/FIXME | Build | Verdict |
 |:-----|:-------|:--------|:-------|:-------|:------|:-----------|:------|:--------|
 | `pully-fully-pull-based-fleet-reconciler` | ✅ Ready | AGPL-3.0 | 367 lines | 58 files | 9 test files | 0 | Not checked | **GO** |
-| `kiki-sassy-desktop-announcer` | ✅ Ready | MIT | 268 lines | 14 files | 7 test files | 3 (low) | ✅ Pass (0 errors, 7 warnings) | **GO** |
 
 **pully-fully notes:**
 - Workspace with sub-crates (pully, fully, pully-types)
@@ -45,14 +48,31 @@
 - 2240 commits in last 30 days
 - 0 TODO/FIXME/XXX
 - 1 WIP mention (in project-state.md, says "No active work in progress")
-- **Verdict:** Ready to publish
+- **README link audit:** 7 broken internal links, 2 broken external links
+  - ❌ `WEIGHTED_RANKING.md`
+  - ❌ `docs/HOW_IT_WORKS.md`
+  - ❌ `docs/DESIGN.md`
+  - ❌ `docs/BOOTSTRAP.md`
+  - ❌ `docs/SECURITY.md`
+  - ❌ `docs/COMPARISON.md`
+  - ❌ `COMMERCIAL-LICENSE.md`
+  - ❌ `github.com/pully-works/pully`
+  - ❌ `pully-fleet-template`
+- **Verdict:** Ready to publish, but README needs link cleanup first
+
+### ✅ Ready with Minor Cleanup (1 repo)
+
+| Repo | Status | License | README | Source | Tests | TODO/FIXME | Build | Verdict |
+|:-----|:-------|:--------|:-------|:-------|:------|:-----------|:------|:--------|
+| `kiki-sassy-desktop-announcer` | ✅ Ready | MIT | 268 lines | 14 files | 3 Rust test files + 2 shell test scripts | 3 (low) | ✅ `cargo check --locked`: 0 errors, 7 warnings | **GO (with cleanup)** |
 
 **kiki notes:**
 - 391 commits in last 30 days
 - 3 TODOs (all low priority, future improvements)
 - 0 WIP mentions
+- **No GitHub workflows** (no CI evidence)
 - **cargo check --locked:** ✅ 0 errors, 7 warnings
-- **Verdict:** Ready to publish
+- **Verdict:** Ready to publish, but should add CI workflow and clean up 3 low-priority TODOs
 
 ### ⏸️ On Hold (1 repo)
 
@@ -71,15 +91,17 @@
 
 | Repo | Status | License | README | Source | Tests | TODO/FIXME | Verdict |
 |:-----|:-------|:--------|:-------|:-------|:------|:-----------|:--------|
-| `dracon-sync` | ⚠️ In monorepo | NO LICENSE (on GitHub) | 351 lines | 32 files | 4 test files | 0 | **BLOCKED** |
-| `dracon-warden` | ⚠️ In monorepo | NO LICENSE (on GitHub) | 306 lines | 29 files | 24 test files | 1 (test) | **BLOCKED** |
-| `dracon-system` | ⚠️ In monorepo | NO LICENSE (on GitHub) | 311 lines | 12 files | 4 test files | 0 | **BLOCKED** |
+| `dracon-sync` | ⚠️ In monorepo | AGPL-3.0 (inherited from monorepo) | 351 lines | 32 files | 4 test files | 0 | **BLOCKED** |
+| `dracon-warden` | ⚠️ In monorepo | AGPL-3.0 (inherited from monorepo) | 306 lines | 29 files | 24 test files | 1 (test) | **BLOCKED** |
+| `dracon-system` | ⚠️ In monorepo | AGPL-3.0 (inherited from monorepo) | 311 lines | 12 files | 4 test files | 0 | **BLOCKED** |
 
 **Monorepo situation:**
 - All 3 are in `DraconDev/dracon-utilities` (PRIVATE monorepo)
 - They are NOT standalone repos
 - README links to `DraconDev/dracon-sync`, `DraconDev/dracon-warden`, `DraconDev/dracon-system` will 404
 - The monorepo is configured as a workspace with members: `dracon-sync`, `dracon-system`, `dracon-warden`
+- Root monorepo has AGPL-3.0 license
+- Subcrate `Cargo.toml` files declare AGPL licenses
 - **Verdict:** Need to either make the monorepo public or split into standalone repos
 
 ---
@@ -111,15 +133,15 @@
 | `dracon-terminal-engine` | AGPL-3.0 | GitHub API | ✅ |
 | `tiles-tui-file-manager` | AGPL-3.0 | GitHub API | ✅ |
 | `folder-auto-banner` | MIT | GitHub API | ✅ |
-| `obs-wayland-hotkey` | AGPL-3.0 | GitHub API | ✅ |
+| `obs-wayland-hotkey` | ⚠️ AGPL-3.0 on GitHub, MIT in Cargo.toml/README/crates.io | GitHub API + Cargo.toml + README + crates.io | ⚠️ Mismatch |
 | `pully-fully-pull-based-fleet-reconciler` | AGPL-3.0 | GitHub API | ✅ |
-| `dracon-sync` | NO LICENSE | GitHub API (private monorepo) | ⚠️ |
-| `dracon-warden` | NO LICENSE | GitHub API (private monorepo) | ⚠️ |
-| `dracon-system` | NO LICENSE | GitHub API (private monorepo) | ⚠️ |
+| `dracon-sync` | AGPL-3.0 (inherited) | Monorepo root | ✅ |
+| `dracon-warden` | AGPL-3.0 (inherited) | Monorepo root | ✅ |
+| `dracon-system` | AGPL-3.0 (inherited) | Monorepo root | ✅ |
 | `rust-ai-web-auto` | AGPL-3.0 | GitHub API | ✅ |
 | `kiki-sassy-desktop-announcer` | MIT | GitHub API | ✅ |
 
-**Verdict:** License audit corrected. The monorepo sub-repos have no license on GitHub because they're in a private monorepo.
+**Verdict:** License audit corrected. `obs-wayland-hotkey` has a license mismatch that needs investigation.
 
 ---
 
@@ -156,6 +178,8 @@
   - `dracon-warden`
 - These are NOT standalone repos
 - README links to standalone repos will 404
+- Root monorepo has AGPL-3.0 license
+- Subcrate `Cargo.toml` files declare AGPL licenses
 
 ### Options
 
@@ -182,14 +206,16 @@
 
 ## Publish Plan
 
-### Phase 1: Ready now (2 repos)
-1. ✅ Publish `pully-fully-pull-based-fleet-reconciler`
-2. ✅ Publish `kiki-sassy-desktop-announcer`
+### Phase 1: Ready now (1 repo)
+1. ✅ Publish `pully-fully-pull-based-fleet-reconciler` (but fix README broken links first)
 
-### Phase 2: On hold (1 repo)
+### Phase 2: Ready with cleanup (1 repo)
+2. ✅ Publish `kiki-sassy-desktop-announcer` (add CI workflow, clean up 3 TODOs)
+
+### Phase 3: On hold (1 repo)
 3. ⏸️ Hold `rust-ai-web-auto` until AI lib decision is made
 
-### Phase 3: Monorepo decision (3 repos)
+### Phase 4: Monorepo decision (3 repos)
 4. ⚠️ Decide on monorepo approach:
    - Option A: Make `dracon-utilities` public and update README links
    - Option B: Split into 3 standalone repos
@@ -203,14 +229,17 @@ Given the user's preference for **tangible things only**:
 
 **Current README has 10 Rust repos listed.** After audit:
 - 4 are already public ✅
-- 2 are ready to publish ✅
+- 1 is ready to publish (but README needs cleanup) ⏸️
+- 1 is ready with minor cleanup ⏸️
 - 1 is on hold ⏸️
 - 3 are in private monorepo ⚠️
 
 **Recommended action:**
-1. Publish the 2 ready repos (pully, kiki)
-2. Remove `rust-ai-web-auto` from README until AI lib decision is made
-3. Either:
+1. Fix `pully-fully` README broken links
+2. Add CI workflow to `kiki`
+3. Publish the 2 ready repos (pully, kiki)
+4. Remove `rust-ai-web-auto` from README until AI lib decision is made
+5. Either:
    - Make monorepo public and update links to `/dracon-utilities/...`
    - Or remove the 3 monorepo sub-repos from README
 
