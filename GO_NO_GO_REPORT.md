@@ -38,7 +38,14 @@
 
 ---
 
-## README_DRAFT.md Status
+## GitHub Public Inventory Check
+
+- GitHub API listed **137 public repos** for `DraconDev`.
+- License distribution from the public inventory: **86 no-license/unknown**, **41 AGPL-3.0**, **6 MIT**, **2 NOASSERTION**, **1 Apache-2.0**, **1 MPL-2.0**.
+- The profile/publish audit scope is narrower than the full public inventory: the final profile list selects **12 named repos** for publish/README consideration (4 existing pins, 6 publish/mention/hold candidates, and 2 public "maybe" repos). The remaining public repos are intentionally skipped for the profile README because they are practice, old, internal-ish, too small, or not strategic per `REPO_FINAL_LIST.md`.
+- This means the go/no-go table covers every repo that should be considered for the profile README/publish decision, while the public inventory confirms that the broader GitHub account is **not** universally publish-ready.
+
+---
 
 **Current state:** Corrected to show only working links.
 
