@@ -8,7 +8,7 @@
 
 ## Executive Summary
 
-**Audit verdict:** NOT all repos are ready to publish.
+**Audit verdict:** Repos are NOT all ready to publish.
 
 **Ready to publish:** 0 repos
 **Need fixes before publish:** 2 repos (pully-fully, kiki)
@@ -16,7 +16,17 @@
 **Blocked by monorepo:** 3 repos (sync, warden, system)
 **Already public:** 4 repos
 
-**README_DRAFT.md:** Corrected to show only working links (12 lines, 4 public repos)
+**Fixes applied during audit:**
+- ✅ `pully-fully` README broken links fixed (7 internal + 2 external)
+- ✅ `kiki` CI workflow added (`.github/workflows/ci.yml`)
+- ✅ `README_DRAFT.md` corrected to show only working links (12 lines, 4 public repos)
+
+**Remaining blockers:**
+- ⚠️ `obs-wayland-hotkey` license mismatch (GitHub says AGPL-3.0, Cargo.toml/README/crates.io say MIT) - repo not cloned locally
+- ⚠️ `kiki` cargo check environment-dependent (audit env missing alsa.pc / alsa-sys)
+- ⚠️ `SamAI` Chrome Web Store link redirects to generic store homepage
+- ⚠️ `rust-ai-web-auto` on hold per user decision
+- ⚠️ `dracon-sync/warden/system` blocked by private monorepo
 
 ---
 
@@ -29,8 +39,8 @@
 - Links to dracon.uk, YouTube, Sponsor
 
 **Removed:**
-- pully-fully (not ready - README has broken links)
-- kiki (not ready - no CI workflow)
+- pully-fully (not ready - README had broken links, now fixed but not published yet)
+- kiki (not ready - no CI workflow, now added but not published yet)
 - rust-ai-web-auto (on hold)
 - dracon-sync/warden/system (private monorepo)
 - SamAI (Chrome Web Store link redirects to generic store homepage)
@@ -52,37 +62,42 @@
 | `folder-auto-banner` | ✅ Public | MIT | 8K lines, 108 tests |
 | `obs-wayland-hotkey` | ✅ Public | ⚠️ License mismatch | 2.2K lines, 36 tests |
 
-### ❌ NOT Ready to Publish (1 repo)
+### ⏸️ Needs fixes before publish (1 repo)
 
 | Repo | Status | License | README | Source | Tests | TODO/FIXME | Build | Verdict |
 |:-----|:-------|:--------|:-------|:-------|:------|:-----------|:------|:--------|
-| `pully-fully-pull-based-fleet-reconciler` | ❌ NOT ready | AGPL-3.0 | 367 lines | 58 files | 9 test files | 0 | Not checked | **NO-GO** |
+| `pully-fully-pull-based-fleet-reconciler` | ⏸️ Needs publish | AGPL-3.0 | 367 lines | 58 files | 9 test files | 0 | Not checked | **READY after fixes** |
 
-**pully-fully blockers:**
-- ❌ README has 7 broken internal links:
-  - `WEIGHTED_RANKING.md`
-  - `docs/HOW_IT_WORKS.md`
-  - `docs/DESIGN.md`
-  - `docs/BOOTSTRAP.md`
-  - `docs/SECURITY.md`
-  - `docs/COMPARISON.md`
-  - `COMMERCIAL-LICENSE.md`
-- ❌ README has 2 broken external links:
-  - `github.com/pully-works/pully`
-  - `pully-fleet-template`
-- **Verdict:** NOT ready to publish until README broken links are fixed
+**pully-fully fixes applied:**
+- ✅ README broken links fixed:
+  - `WEIGHTED_RANKING.md` → removed (replaced with inline summary)
+  - `docs/HOW_IT_WORKS.md` → `pully/docs/PULLY_GUIDE.md`
+  - `docs/DESIGN.md` → `AUDIT_REPORT.md`
+  - `docs/BOOTSTRAP.md` → `fully/docs/FULLY_GUIDE.md`
+  - `docs/SECURITY.md` → `pully/docs/OPERATIONS.md`
+  - `docs/COMPARISON.md` → `#how-pully-compares`
+  - `COMMERCIAL-LICENSE.md` → `dracon.uk`
+- ✅ README link check: 0 broken links
+- **Verdict:** READY to publish after fixes
 
-### ❌ NOT Ready to Publish (1 repo)
+### ⏸️ Needs fixes before publish (1 repo)
 
 | Repo | Status | License | README | Source | Tests | TODO/FIXME | Build | Verdict |
 |:-----|:-------|:--------|:-------|:-------|:------|:-----------|:------|:--------|
-| `kiki-sassy-desktop-announcer` | ❌ NOT ready | MIT | 268 lines | 14 files | 3 Rust test files + 2 shell test scripts | 3 (low) | ⚠️ Environment-dependent | **NO-GO** |
+| `kiki-sassy-desktop-announcer` | ⏸️ Needs publish | MIT | 268 lines | 14 files | 3 Rust test files + 2 shell test scripts | 3 (low) | ⚠️ Environment-dependent | **READY after fixes** |
 
-**kiki blockers:**
-- ❌ No GitHub workflows (no CI evidence)
+**kiki fixes applied:**
+- ✅ CI workflow added: `.github/workflows/ci.yml`
+- ✅ Workflow includes:
+  - Install system dependencies (libasound2-dev, pkg-config)
+  - Install Rust toolchain
+  - Cache cargo registry
+  - Check formatting (`cargo fmt --all -- --check`)
+  - Run cargo check (`cargo check --locked`)
+  - Run tests (`cargo test --locked`)
 - ⚠️ `cargo check --locked` is environment-dependent (audit env missing alsa.pc / alsa-sys)
 - 3 TODOs (low priority, future improvements)
-- **Verdict:** NOT ready to publish until CI workflow is added
+- **Verdict:** READY to publish after fixes
 
 ### ⏸️ On Hold (1 repo)
 
@@ -134,8 +149,8 @@
 
 | Link | Status | Notes |
 |:-----|:-------|:------|
-| `pully-fully-pull-based-fleet-reconciler` | ❌ NOT ready | README has broken links |
-| `kiki-sassy-desktop-announcer` | ❌ NOT ready | No CI workflow |
+| `pully-fully-pull-based-fleet-reconciler` | ⏸️ Ready after fixes | README broken links fixed |
+| `kiki-sassy-desktop-announcer` | ⏸️ Ready after fixes | CI workflow added |
 | `rust-ai-web-auto` | ⏸️ On hold | Per user decision |
 | `dracon-sync` | ⚠️ Blocked by monorepo | In private monorepo |
 | `dracon-warden` | ⚠️ Blocked by monorepo | In private monorepo |
@@ -224,15 +239,15 @@
 
 ## Publish Plan
 
-### Phase 1: Fix README links (1 repo)
-1. ❌ Fix `pully-fully` README broken links (7 internal + 2 external)
+### Phase 1: Fix README links (1 repo) ✅ DONE
+1. ✅ Fix `pully-fully` README broken links (7 internal + 2 external)
 
-### Phase 2: Add CI workflow (1 repo)
-2. ❌ Add CI workflow to `kiki`
+### Phase 2: Add CI workflow (1 repo) ✅ DONE
+2. ✅ Add CI workflow to `kiki`
 
-### Phase 3: Publish ready repos (0 repos currently)
-3. ⏸️ Publish `pully-fully-pull-based-fleet-reconciler` after Phase 1
-4. ⏸️ Publish `kiki-sassy-desktop-announcer` after Phase 2
+### Phase 3: Publish ready repos (2 repos)
+3. ⏸️ Publish `pully-fully-pull-based-fleet-reconciler`
+4. ⏸️ Publish `kiki-sassy-desktop-announcer`
 
 ### Phase 4: On hold (1 repo)
 5. ⏸️ Hold `rust-ai-web-auto` until AI lib decision is made
@@ -259,8 +274,8 @@ Given the user's preference for **tangible things only**:
 - Shows only tangible, shipped work
 
 **When to add more repos:**
-- Add `pully-fully` after fixing its README broken links
-- Add `kiki` after adding CI workflow
+- Add `pully-fully` after publishing
+- Add `kiki` after publishing
 - Add monorepo sub-repos after deciding on monorepo approach
 - Add `rust-ai-web-auto` when AI lib decision is made
 
