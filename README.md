@@ -2,7 +2,7 @@
 
 I build infrastructure in Rust — terminal engines, fleet reconcilers, git daemons. I teach what I build on [YouTube](https://youtube.com/@DraconDev), and I sell what I make on [dracon.uk](https://dracon.uk).
 
-**239K+** lines of Rust · **5,600+** tests · **4** on crates.io
+**239K+** lines of Rust · **5,600+** tests · [**4** on crates.io](https://crates.io/users/DraconDev)
 
 ---
 
