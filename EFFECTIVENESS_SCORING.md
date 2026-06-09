@@ -155,6 +155,7 @@ The goal is not to find the "best" peer. The goal is to find the **best factor f
 The best factors from each peer, combined:
 
 ### GitHub Profile
+- **Sidebar fields** (from profile funnel pattern): Name `DraconDev`, website `https://dracon.uk`, company `DraconDev`, bio `Rust infrastructure for fleets, git, and terminals. 239K+ LOC, 5,600+ tests, 24 crates on crates.io.`
 - **Hero line / bio name-drop** (from mitsuhiko): "Rust infrastructure for fleets, git, and terminals. 239K+ LOC, 5,600+ tests, 24 crates on crates.io."
 - **Bio depth / killer stats** (from dtolnay): Expand the Sponsors page bio with concrete stats.
 - **README presence** (from yoshuawuyts): Keep the 15-line README; don't shorten to 8 lines.
