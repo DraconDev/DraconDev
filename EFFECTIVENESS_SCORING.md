@@ -160,6 +160,7 @@ The best factors from each peer, combined:
 - **Bio depth / killer stats** (from dtolnay): Expand the Sponsors page bio with concrete stats.
 - **README presence** (from yoshuawuyts): Keep the 15-line README; don't shorten to 8 lines.
 - **Pinned repo selection** (from BurntSushi): Keep the 4-repo pin list; don't add more until a stronger candidate surfaces.
+- **Collapsed `<details>` toggles** (from isair): Future-only pattern for hiding secondary categories without cluttering the first screen.
 - **Sponsor button presence** (from all 5): Keep the Sponsor link in the README footer.
 - **Sponsor page bio quality** (from dtolnay): Expand the Sponsors page bio with concrete stats.
 - **Sponsor page tier structure** (from all 5): Custom amount + monthly/one-time, no tier names.
@@ -184,7 +185,7 @@ The best factors from each peer, combined:
 The most effective strategy is not to copy any single peer. It's to **combine the best factor from each peer** into a coherent funnel:
 1. **GitHub profile bio** name-drops the killer work (mitsuhiko)
 2. **Sponsors page bio** uses killer stats (dtolnay)
-3. **README** keeps the 15-line, 4-repo pin list (yoshuawuyts + BurntSushi)
+3. **README** keeps the 15-line, 4-repo pin list (yoshuawuyts + BurntSushi); future secondary categories can use collapsed `<details>` toggles (isair)
 4. **YouTube description** uses the Fireship 5+1 structure with sponsor at top (Fireship + Theo)
 5. **YouTube channel nav** has 5 links (Theo)
 6. **Content cadence** is weekly (antfu)
@@ -223,6 +224,7 @@ This is the combined strategy. It takes the best factor from each peer and synth
    - Do not add Ko-fi to YouTube descriptions by default while the strategy is premium subscriptions
    - Add a GitHub profile bio name-drop (mitsuhiko pattern)
    - Do not add WIP `DraconDev/dracon-platform` to the profile README or pin list until it has public, tangible value
+   - Do not expand the README into a long portfolio; use future-only collapsed `<details>` toggles only if secondary work becomes tangible
 
 **Next actionable step:** Use `CROSS_PLATFORM_ACTION_PLAN.md` as the execution checklist, then use `EXTERNAL_PLATFORM_UPDATE_SNIPPETS.md` for the exact copy/templates when the relevant platform access is available.
 

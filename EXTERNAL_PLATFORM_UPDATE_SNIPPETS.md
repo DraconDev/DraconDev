@@ -5,6 +5,8 @@
 
 **Ko-fi positioning note:** Ko-fi is **not** part of the default premium YouTube funnel. It can stay on `dracon.uk` as optional low-friction support, but it should not lead YouTube channel nav or descriptions unless we are deliberately selling small-ticket products.
 
+**README toggle note:** `@isair` uses collapsed `<details>` toggles to hide secondary project categories. This is a good pattern, but it is future-only for DraconDev; the current README is already short and concrete.
+
 ## 1. GitHub Profile Sidebar
 
 **Asset:** GitHub profile sidebar fields: name, bio, website, company, location.
@@ -68,7 +70,7 @@
 
 Ko-fi is intentionally **not** included by default because the current YouTube positioning is premium subscriptions, not small tips.
 
-**Why this copy:** This is the Theo pattern: a 5-link ecosystem map.
+**Why this copy:** This is the Theo pattern: a compact ecosystem map focused on premium products and support.
 
 **Verification:** Channel page screenshot or YouTube Studio export showing the links.
 
@@ -90,11 +92,10 @@ Thank you [Sponsor] for sponsoring! Check them out at: [sponsor link]
 - [Topic 2]
 
 Find more of my stuff on: https://dracon.uk
-Find more of my stuff on: https://dracon.uk
 Support the OSS work: https://github.com/sponsors/DraconDev
 ```
 
-**Why this structure:** Sponsor at the top, social links at the bottom, recurring CTA at the end. This is the Fireship/Theo pattern.
+**Why this structure:** Sponsor at the top, social links at the bottom, recurring CTA at the end. This is the Fireship/Theo pattern without making Ko-fi lead the premium funnel.
 
 **Verification:** Published video description screenshot or exported description text.
 
@@ -108,7 +109,29 @@ Support the OSS work: https://github.com/sponsors/DraconDev
 **Why:** The profile README is for current, tangible proof. A WIP platform repo should not dilute the 4-repo pin list or create a broken funnel.
 **Verification needed:** Public repo URL, rendered README screenshot, or deployed landing page showing the platform has enough substance to support a Ko-fi/product CTA.
 
-## 8. Content Cadence / Format
+---
+
+## 8. Collapsed `<details>` README Toggles (Future Only)
+
+**Asset:** Profile README secondary-category toggles.
+**Status:** Future-only; do not add now.
+**Pattern source:** `@isair` uses `<details><summary>...</summary>` toggles to hide secondary project categories while keeping the first screen short.
+**Candidate future toggle:**
+```markdown
+<details>
+  <summary>Products / AI tools</summary>
+
+  - [SamAI](https://dracon.uk) — AI browser companion, BYOK.
+  - [rust-ai-web-auto](https://dracon.uk) — AI-driven browser automation.
+
+</details>
+```
+**Why not now:** The current README is already short and concrete. The trending-developer audit found many profiles write too much, so we should not turn the README into a second portfolio.
+**Verification needed:** Only add a toggle after the linked products have public, tangible surfaces strong enough to support the profile funnel.
+
+---
+
+## 9. Content Cadence / Format
 
 **Asset:** Publishing workflow
 **Recommended cadence:** Weekly shorts or weekly live streams
@@ -120,17 +143,16 @@ Support the OSS work: https://github.com/sponsors/DraconDev
 
 ---
 
-## 9. Execution Order
+## 10. Execution Order
 
 1. GitHub profile sidebar
 2. GitHub profile bio
 3. GitHub Sponsors page bio
 4. `dracon.uk` footer
 5. `DraconDev/dracon-platform` README, only after public release
-6. YouTube channel nav
-7. YouTube description template
-
-Ko-fi remains on `dracon.uk` as optional low-friction support; it is not a default YouTube CTA while the strategy is premium subscriptions.
-8. Content cadence / format
+6. Collapsed `<details>` README toggles, only if future secondary categories need hiding
+7. YouTube channel nav
+8. YouTube description template
+9. Content cadence / format
 
 **Reason:** Start with the assets that convert warm visitors first (GitHub profile + Sponsors page), then expand the funnel outward (site footer, YouTube nav, descriptions, cadence).
