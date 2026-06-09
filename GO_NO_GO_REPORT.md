@@ -160,18 +160,19 @@
 
 | Repo | Status | License | README | Source | Tests | TODO/FIXME | Verdict |
 |:-----|:-------|:--------|:-------|:-------|:------|:-----------|:--------|
-| `dracon-sync` | ⚠️ In monorepo | AGPL-3.0 (inherited) | 351 lines | 32 files | 4 test files | 0 | **BLOCKED** |
-| `dracon-warden` | ⚠️ In monorepo | AGPL-3.0 (inherited) | 306 lines | 29 files | 24 test files | 1 (test) | **BLOCKED** |
-| `dracon-system` | ⚠️ In monorepo | AGPL-3.0 (inherited) | 311 lines | 12 files | 4 test files | 0 | **BLOCKED** |
+| `dracon-sync` | ⚠️ In monorepo | AGPL-3.0 (inherited) | 351 lines | 32 files | 4 test files | 0 | **Release candidate; blocked from profile until parent is public/clean** |
+| `dracon-warden` | ⚠️ In monorepo | AGPL-3.0 (inherited) | 306 lines | 29 files | 24 test files | 1 (test) | **Release candidate; component tests pass** |
+| `dracon-system` | ⚠️ In monorepo | AGPL-3.0 (inherited) | 311 lines | 12 files | 4 test files | 0 | **Release candidate; component tests pass** |
 
 **Monorepo situation:**
-- All 3 are in `DraconDev/dracon-utilities` (PRIVATE monorepo)
-- They are NOT standalone repos
-- README links to `DraconDev/dracon-sync`, `DraconDev/dracon-warden`, `DraconDev/dracon-system` will 404
+- All 3 are in `DraconDev/dracon-utilities` (currently private, locally accessible)
+- They are NOT standalone repos; standalone links will 404 until changed
 - The monorepo is configured as a workspace with members: `dracon-sync`, `dracon-system`, `dracon-warden`
 - Root monorepo has AGPL-3.0 license
 - Subcrate `Cargo.toml` files declare AGPL licenses
-- **Verdict:** Need to either make the monorepo public or split into standalone repos
+- Root README already separates the three components with links to `dracon-sync/README.md`, `dracon-system/README.md`, and `dracon-warden/README.md`
+- `UTILITY_BOUNDARIES.md` already defines component ownership and non-overlapping roles
+- **Verdict:** Keep the parent monorepo simple, make components distinct, and do not add profile links until the parent repo is public, clean, and verified
 
 ---
 
@@ -198,9 +199,9 @@
 | `pully-fully-pull-based-fleet-reconciler` | ⏸️ Ready after fixes | README broken links fixed |
 | `kiki-sassy-desktop-announcer` | ⏸️ Ready after fixes | CI workflow added |
 | `rust-ai-web-auto` | ⏸️ On hold | Per user decision |
-| `dracon-sync` | ⚠️ Blocked by monorepo | In private monorepo |
-| `dracon-warden` | ⚠️ Blocked by monorepo | In private monorepo |
-| `dracon-system` | ⚠️ Blocked by monorepo | In private monorepo |
+| `dracon-sync` | ⏳ Monorepo release gate | Use `dracon-utilities/tree/main/dracon-sync` after public/clean/verified |
+| `dracon-warden` | ⏳ Monorepo release gate | Use `dracon-utilities/tree/main/dracon-warden` after public/clean/verified |
+| `dracon-system` | ⏳ Monorepo release gate | Use `dracon-utilities/tree/main/dracon-system` after public/clean/verified |
 | `SamAI` | ⚠️ Link redirects to generic store homepage | Not a verified product page |
 
 ---
