@@ -7,6 +7,8 @@
 
 **README toggle note:** `@isair` uses collapsed `<details>` toggles to hide secondary project categories. This is a good pattern, but it is future-only for DraconDev; the current README is already short and concrete.
 
+**Utilities monorepo note:** `DraconDev/dracon-utilities` can stay as the simple parent repo. Make `dracon-sync`, `dracon-system`, and `dracon-warden` distinct through component READMEs, config examples, service/hook docs, and profile subpath links. Do not split into standalone repos unless explicitly requested later.
+
 ## 1. GitHub Profile Sidebar
 
 **Asset:** GitHub profile sidebar fields: name, bio, website, company, location.
@@ -111,7 +113,28 @@ Support the OSS work: https://github.com/sponsors/DraconDev
 
 ---
 
-## 8. Collapsed `<details>` README Toggles (Future Only)
+## 8. `DraconDev/dracon-utilities` Monorepo Release Snippet
+
+**Asset:** Parent monorepo release and profile README links.
+**Status:** Release-readiness gate; do not add to profile README until public, clean, and verified.
+**Recommended structure:** Keep `dracon-utilities` as the simple parent repo; make these components distinct:
+- `dracon-sync` — Git auto-commit, multi-mirror daemon
+- `dracon-system` — disk/process monitoring and cleanup
+- `dracon-warden` — git encryption, secret scanning, repo hardening
+
+**Candidate profile README snippet after public release:**
+```markdown
+**Infrastructure**
+• [dracon-sync](https://github.com/DraconDev/dracon-utilities/tree/main/dracon-sync) — Git auto-commit, multi-mirror
+• [dracon-system](https://github.com/DraconDev/dracon-utilities/tree/main/dracon-system) — system monitor, SSH, notifications
+• [dracon-warden](https://github.com/DraconDev/dracon-utilities/tree/main/dracon-warden) — encryption, team keys, secret scanning
+```
+
+**Release gate:** public repo, clean secret scan, subcomponent READMEs, passing component tests, and verified links before adding to the profile README.
+
+---
+
+## 9. Collapsed `<details>` README Toggles (Future Only)
 
 **Asset:** Profile README secondary-category toggles.
 **Status:** Future-only; do not add now.
@@ -131,7 +154,7 @@ Support the OSS work: https://github.com/sponsors/DraconDev
 
 ---
 
-## 9. Content Cadence / Format
+## 10. Content Cadence / Format
 
 **Asset:** Publishing workflow
 **Recommended cadence:** Weekly shorts or weekly live streams
@@ -143,16 +166,17 @@ Support the OSS work: https://github.com/sponsors/DraconDev
 
 ---
 
-## 10. Execution Order
+## 11. Execution Order
 
 1. GitHub profile sidebar
 2. GitHub profile bio
 3. GitHub Sponsors page bio
 4. `dracon.uk` footer
 5. `DraconDev/dracon-platform` README, only after public release
-6. Collapsed `<details>` README toggles, only if future secondary categories need hiding
-7. YouTube channel nav
-8. YouTube description template
-9. Content cadence / format
+6. `DraconDev/dracon-utilities` monorepo release, only after public/clean/verified
+7. Collapsed `<details>` README toggles, only if future secondary categories need hiding
+8. YouTube channel nav
+9. YouTube description template
+10. Content cadence / format
 
 **Reason:** Start with the assets that convert warm visitors first (GitHub profile + Sponsors page), then expand the funnel outward (site footer, YouTube nav, descriptions, cadence).

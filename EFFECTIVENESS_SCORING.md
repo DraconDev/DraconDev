@@ -181,6 +181,9 @@ The best factors from each peer, combined:
 - **Social proof visibility** (from jam1garner): Live transaction feed.
 - **Cross-platform CTA consistency** (from Theo): One link to rule them all.
 
+### Utilities monorepo
+- **Simple parent + distinct components** (from `dracon-utilities` audit): Keep `dracon-utilities` as the parent repo, but make `dracon-sync`, `dracon-system`, and `dracon-warden` distinct through separate READMEs, config examples, service/hook docs, and profile subpath links.
+
 ### Summary
 The most effective strategy is not to copy any single peer. It's to **combine the best factor from each peer** into a coherent funnel:
 1. **GitHub profile bio** name-drops the killer work (mitsuhiko)
@@ -224,6 +227,7 @@ This is the combined strategy. It takes the best factor from each peer and synth
    - Do not add Ko-fi to YouTube descriptions by default while the strategy is premium subscriptions
    - Add a GitHub profile bio name-drop (mitsuhiko pattern)
    - Do not add WIP `DraconDev/dracon-platform` to the profile README or pin list until it has public, tangible value
+   - Do not add `DraconDev/dracon-utilities` links to the profile README until the parent monorepo is public, clean, and verified
    - Do not expand the README into a long portfolio; use future-only collapsed `<details>` toggles only if secondary work becomes tangible
 
 **Next actionable step:** Use `CROSS_PLATFORM_ACTION_PLAN.md` as the execution checklist, then use `EXTERNAL_PLATFORM_UPDATE_SNIPPETS.md` for the exact copy/templates when the relevant platform access is available.
