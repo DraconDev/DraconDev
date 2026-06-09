@@ -284,7 +284,7 @@
 - Pros: No broken links
 - Cons: Hides 3 significant repos
 
-**Recommendation:** Option A (make monorepo public) is simplest if you want to keep the monorepo structure. Option B (split) is cleanest but more work.
+**Decision update (2026-06-09):** Keep the parent monorepo simple and make the three components distinct; do **not** split into standalone repos unless explicitly requested later. Option A remains the release path: make `DraconDev/dracon-utilities` public, keep root README concise, and link each component through subdirectory paths. Option B is no longer the default.
 
 ---
 
@@ -308,11 +308,12 @@
 7. ⏸️ Hold `rust-ai-web-auto` until AI lib decision is made
 8. ⚠️ Resolve `ai-auto-repo-rot-scanner` 404 before considering it
 
-### Phase 5: Monorepo decision (3 repos)
-9. ⚠️ Decide on monorepo approach:
-   - Option A: Make `dracon-utilities` public and update README links
-   - Option B: Split into 3 standalone repos
-   - Option C: Remove from README
+### Phase 5: Monorepo release (3 repos)
+9. ⏳ Release `dracon-utilities` as one simple parent monorepo with distinct component pages:
+   - Keep parent repo simple: root README, install, boundaries, docs index
+   - Keep components distinct: `dracon-sync`, `dracon-system`, `dracon-warden` each have their own README, config, service/hook docs, and subdirectory link target
+   - Do not split into standalone repos unless explicitly requested later
+   - Update profile README links only after the monorepo is public and verified
 
 ---
 
