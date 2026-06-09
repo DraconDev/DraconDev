@@ -19,7 +19,7 @@ This is **not just a README change**. The README is one asset in a broader cross
 | YouTube descriptions | Reusable 5+1 template for each video | ⏳ Needs YouTube Studio access | Hook → sponsor if any → body → topic index → social links → evergreen CTA |
 | Content cadence / format | Weekly volume into the funnel | ⏳ Needs publishing workflow | Weekly shorts or weekly live streams; short-form hooks + long-form deep-dives |
 
-The detailed plan, constraints, and verification checklist are in `CROSS_PLATFORM_ACTION_PLAN.md`.
+The detailed plan, constraints, and verification checklist are in `CROSS_PLATFORM_ACTION_PLAN.md`; exact copy/templates for the external updates are in `EXTERNAL_PLATFORM_UPDATE_SNIPPETS.md`.
 
 ---
 
@@ -376,7 +376,8 @@ The most effective strategy is not to copy any single peer. It's to **combine th
 
 ### Cross-References
 
-- Cross-platform action plan: `CROSS_PLATFORM_ACTION_PLAN.md` (6.2KB, 2026-06-09)
+- Cross-platform action plan: `CROSS_PLATFORM_ACTION_PLAN.md` (6.4KB, 2026-06-09)
+- External platform snippets: `EXTERNAL_PLATFORM_UPDATE_SNIPPETS.md` (3.4KB, 2026-06-09)
 - Effectiveness scoring: `EFFECTIVENESS_SCORING.md` (18.6KB, 226 lines)
 - YouTube & monetization research: `YOUTUBE_AND_MONETIZATION_RESEARCH.md` (22KB, 2026-06-09)
 - GitHub profile research: `GITHUB_PROFILE_RESEARCH.md` — original 131-profile analysis (2026-06-06) + 2026 Refresh section (2026-06-09)

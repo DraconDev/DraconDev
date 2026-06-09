@@ -3,6 +3,8 @@
 **Date:** 2026-06-09
 **Purpose:** Turn the effectiveness-scoring findings into concrete updates across the DraconDev funnel. This is not just a README change; the README is one asset in a broader cross-platform strategy.
 
+Exact copy/templates for the remaining external updates are in `EXTERNAL_PLATFORM_UPDATE_SNIPPETS.md`.
+
 ## Decision Summary
 
 The README should **not** become the place where every funnel update lives. The effectiveness scoring showed that the strongest strategies use each platform for a specific job:

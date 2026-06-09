@@ -222,5 +222,5 @@ This is the combined strategy. It takes the best factor from each peer and synth
    - Add Ko-fi to YouTube descriptions (when active)
    - Add a GitHub profile bio name-drop (mitsuhiko pattern)
 
-**Next actionable step:** Use `CROSS_PLATFORM_ACTION_PLAN.md` as the execution checklist. It separates in-repo documentation updates from external platform updates and lists the exact access needed for each remaining action.
+**Next actionable step:** Use `CROSS_PLATFORM_ACTION_PLAN.md` as the execution checklist, then use `EXTERNAL_PLATFORM_UPDATE_SNIPPETS.md` for the exact copy/templates when the relevant platform access is available.
 
