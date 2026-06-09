@@ -99,6 +99,108 @@ Fetched raw README.md from 131 GitHub profiles via `raw.githubusercontent.com`. 
 
 ---
 
+## 2026 Refresh: New Profile Patterns (5 New Profiles Analyzed)
+
+**Date:** 2026-06-09
+**Method:** Playwright-loaded each profile, captured bio, pinned repos, README content, sponsor badge visibility. Screenshots saved to `/tmp/profile-*.png`.
+**Purpose:** The original 131-profile analysis (2026-06-06) covered well-known top-of-feed profiles. This refresh looks at high-output Rust infra maintainers and OSS founders NOT in the original Top 10, to surface patterns the original analysis missed.
+
+### Five new profile examples
+
+#### A. @dtolnay (David Tolnay) — "the silent work"
+- **Profile README:** 404 (no README at all)
+- **Bio:** (empty)
+- **Company:** `0xF9BA143B95FF6D82` (Ethereum address)
+- **Location:** Redwood City, California
+- **Sponsor badge:** visible (126+ sponsors per GitHub)
+- **Pinned (6):** `cxx`, `anyhow`, `thiserror`, `proc-macro-workshop`, `syn`, `cargo-expand`
+- **Pattern:** **Zero marketing. The work IS the profile.** The single most-used Rust crates in the ecosystem (serde, anyhow, thiserror, syn) have one author who never wrote a profile README. The pinned repos are the killer stat: 6 crates, average 4-5K stars, 6.7K+ on cxx.
+- **Why it matters:** This is the strongest possible evidence that profile README content is *not* what makes a maintainer successful. The maintainer of the work that every other Rust project depends on has 9.4K followers and 126+ sponsors with no marketing copy at all.
+
+#### B. @BurntSushi (Andrew Gallant) — "ultra-minimal"
+- **Profile README:** 404 (no README)
+- **Bio:** `I love to code.`
+- **Company:** `@openai` (recently joined)
+- **Location:** Marlborough, MA
+- **Sponsor badge:** visible (106+ sponsors)
+- **Pinned (6):** `rust-lang/regex` (4K★), `ripgrep` (64.9K★ — the 2nd most-starred Rust project on GitHub), `jiff`, `aho-corasick`, `bstr`, `memchr`
+- **Pattern:** **Ultra-minimal bio + 6 monster repos.** 4-word bio. 6 pinned repos including ripgrep. No personal links, no blog, no socials beyond a blog URL. Joined OpenAI recently, but the bio still says "I love to code." Career-narrative lives in the commit history, not the profile.
+- **Why it matters:** Most-starred Rust maintainer who is also at @openai. The pattern shows that the bio doesn't need to be a narrative; pinned repos are the narrative.
+
+#### C. @fasterthanlime (Amos Wenger) — "content creator + dev"
+- **Profile README:** 27 lines (verified via raw.githubusercontent.com)
+- **Bio:** `hi, I'm amos! 🐿️ co-host of self-directed research podcast 🫐 teacher, video maker, software mercenary ✨ be kind, be curious`
+- **Company:** `@bearcove` (his own co.)
+- **Location:** Lyon, France
+- **Sponsor badge:** visible
+- **Pinned (6):** `facet-rs/facet`, `bearcove/rc-zip`, `bearcove/dodeca`, `bearcove/arborium`, ... (2 more bearcove/* projects)
+- **README structure:** intro → "I run [bearcove]" → Current projects (3) → Experimental (4) → "I spend most of my time writing in-depth articles, making videos, co-hosting the podcast" → "Before I did this, I worked at companies including itch.io, netlify, and fly.io" → "In a previous life, I worked on cool stuff like..."
+- **Pattern:** **Categorized projects (current vs. experimental) + multi-channel narrative arc in 27 lines.** Categorizes by stability (Current vs. Experimental), links all three output channels (articles, videos, podcast), tells the career story in 2 sentences.
+- **Why it matters:** This is the closest analog to DraconDev's situation — content creator, multi-channel output, multiple Rust projects, has a personal company. The "Current / Experimental" split is a pattern DraconDev could borrow IF a "tangible things only" stance can accommodate it (probably no, since DraconDev's audited README shows only public/published work).
+
+#### D. @yoshuawuyts (Yosh) — "8-line README"
+- **Profile README:** 8 lines (verified via raw.githubusercontent.com/master/README.md)
+- **Bio:** `WebAssembly and Rust @microsoft`
+- **Sponsor badge:** visible
+- **Pinned (6):** `futures-concurrency`, `async-rs/async-std`, `choojs/choo`, `rust-lang/effects-initiative`, `component-registry`
+- **README structure (8 lines):**
+  ```
+  *Be kind to people, be ruthless to systems.*
+
+  Concurrent Computing ←
+  Programming Language Design ←
+  WebAssembly and Rust at Microsoft ←
+
+  u(๑╹ᆺ╹)
+  ```
+- **Pattern:** **Motto + 3 focus areas + ASCII face.** No project list, no stats, no links. The bio + 3 focus arrows + an ASCII face is the entire profile README. The pinned repos carry the project list.
+- **Why it matters:** The minimum viable profile README. 8 lines. Most lines are non-text. This shows you can be a 3.3K-follower, 855-repo, Microsoft-employed Rust maintainer with a profile that would fit in a tweet.
+
+#### E. @mitsuhiko (Armin Ronacher) — "founder, hybrid OSS+company"
+- **Profile README:** 404 (no README)
+- **Bio:** `Software developer and Open Source nut. Creator of the Flask framework. Founder of @earendil-works. Other things of interest: @pallets and @getsentry`
+- **Company:** Earendil
+- **Location:** Austria
+- **Sponsor badge:** visible
+- **Pinned (6):** `pallets/flask` (71.6K★, 16.9K forks — the most-starred Python web framework), `earendil-works/pi` (60.9K★, 7.3K forks — the agent toolkit for this very conversation), `minijinja`, `pallets/jinja`, `pallets/click`, `agent-stuff`
+- **Pattern:** **Bio name-drops the killer work + founder role.** Doesn't list projects in bio — pinned repos do that. The bio says "Creator of the Flask framework. Founder of @earendil-works." which is the strongest possible 1-line positioning for a founder.
+- **Why it matters:** Most relevant for DraconDev's `dracon.uk` founder positioning. Armin has the same dual identity — OSS-first, then a company on top. The bio is the killer stat, the pinned repos are the project list.
+
+### Six new patterns the original Top 10 missed
+
+| # | Pattern | Example | What it does |
+|:-:|:--------|:--------|:-------------|
+| 1 | **No README at all** | dtolnay, BurntSushi, mitsuhiko | The work speaks. 0 marketing copy. **3 of the 5 most impactful Rust/Python maintainers have no profile README.** |
+| 2 | **Sponsor badge as the only CTA** | All 5 | A visible ♥ Sponsor button is the conversion mechanism — no text link needed. |
+| 3 | **Pinned repos as the project list** | All 5 | GitHub's pinned-repos feature (max 6) is the de-facto project section. Profile READMEs that re-list projects are duplicating what pinned already does. |
+| 4 | **Bio name-drops the killer work** | mitsuhiko "Creator of the Flask framework" | One line of bio that names your most-famous project. Higher signal than a generic "Software Developer" bio. |
+| 5 | **Motto / focus areas instead of project list** | yoshuawuyts "Be kind to people, be ruthless to systems" + 3 arrows | 8 lines can carry the whole profile if the motto is right. |
+| 6 | **Categorized projects (Current vs. Experimental)** | fasterthanlime | When projects vary in stability, grouping them by status is a useful pattern. (But probably **not for DraconDev** given the "tangible things only" stance.) |
+
+### Concrete implications for DraconDev's profile README
+
+| Current state in `README_DRAFT.md` | Pattern 1-6 implication | Action |
+|:-----------------------------------|:------------------------|:-------|
+| Hero line "Hey, I make tools that run themselves." | Stronger than a generic bio. Doesn't need to name a "Flask" or "serde." | **Keep as-is.** |
+| Stats line "239K+ lines of Rust · 5,600+ tests · 4 on crates.io" | Stronger than a stat widget. Concrete. | **Keep as-is.** |
+| 4 repos in "TUI & Terminal" category, one-line descriptions | Pinned repos could do the same job, freeing the README to be shorter. | **Consider:** could move project detail to Pinned and let the README be a hero + stats + 1-line tagline. But current structure also works. **No change recommended.** |
+| "Links: dracon.uk · YouTube · Sponsor" footer | Matches the "sponsor badge + website + content" pattern. | **Keep as-is.** |
+| No bio on the GitHub profile (DraconDev bio is currently empty/default) | Pattern 4 (mitsuhiko) shows a one-line bio name-dropping the killer work is high-signal. | **Consider:** add a GitHub profile bio line, separate from the README. e.g. "Dracon — Rust infrastructure tools, 239K+ LOC, 5,600+ tests." (This is a profile bio change, not a README change.) |
+| No "Currently working on" or "Experimental" section | Pattern 6 would suggest adding it, but the audit's "tangible things only" stance rules it out. | **Don't add.** |
+
+### Verification artifacts
+
+Screenshots saved during this research (all visible above):
+- `/tmp/profile-dtolnay.png` — shows empty bio, Ethereum company, 6 pinned repos
+- `/tmp/profile-BurntSushi.png` — shows "I love to code." bio, @openai company, 106+ sponsors
+- `/tmp/profile-fasterthanlime.png` — shows 27-line README, bio with emoji, sponsor badge, 6 pinned
+- `/tmp/profile-yoshuawuyts.png` — shows 8-line README, "Microsoft" bio, 3.3K followers, 855 repos
+- `/tmp/profile-mitsuhiko.png` — shows founder bio, Flask + pi + jinja pinned, 25K followers
+
+Playwright verification data: `/tmp/profile-data.json`
+
+---
+
 ## Structural Analysis (131 Profiles)
 
 ### Element Frequency

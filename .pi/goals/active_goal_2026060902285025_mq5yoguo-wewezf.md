@@ -5,19 +5,21 @@
   "status": "active",
   "autoContinue": true,
   "usage": {
-    "tokensUsed": 881322,
-    "activeSeconds": 263
+    "tokensUsed": 1458567,
+    "activeSeconds": 408
   },
   "sisyphus": false,
   "createdAt": "2026-06-09T01:28:50.256Z",
-  "updatedAt": "2026-06-09T01:33:18.721Z",
+  "updatedAt": "2026-06-09T01:35:47.265Z",
   "activePath": ".pi/goals/active_goal_2026060902285025_mq5yoguo-wewezf.md",
   "taskList": {
     "tasks": [
       {
         "id": "research-github",
         "title": "Research GitHub profile patterns (refresh 131-profile analysis)",
-        "status": "pending",
+        "status": "complete",
+        "completedAt": "2026-06-09T01:35:47.260Z",
+        "evidence": "Added new section \"2026 Refresh: New Profile Patterns (5 New Profiles Analyzed)\" to GITHUB_PROFILE_RESEARCH.md (file grew 18KB→27KB). Section covers 5 Playwright-verified profile examples NOT in the o",
         "verificationContract": "Add a \"2026 refresh\" section to GITHUB_PROFILE_RESEARCH.md with ≥3 new/updated profile examples not in the original Top 10, citing specific patterns (link structure, hero line, sponsor placement, stat formatting). Verified via Playwright where possible."
       },
       {
@@ -84,12 +86,12 @@ If blocked: stop and ask the user.
 - Status: running
 - Auto-continue: on
 - Sisyphus mode: no
-- Time spent: 4m23s
-- Tokens used: 881K (881,322) tokens
+- Time spent: 6m48s
+- Tokens used: 1.5M (1,458,567) tokens
 ## Tasks
 
 <!-- blockCompletion: false -->
-- [ ] research-github: Research GitHub profile patterns (refresh 131-profile analysis) — contract: Add a "2026 refresh" section to GITHUB_PROFILE_RESEARCH.md with ≥3 new/updated profile examples not in the original Top 10, citing specific patterns (link structure, hero line, sponsor placement, stat formatting). Verified via Playwright where possible.
+- [x] research-github: Research GitHub profile patterns (refresh 131-profile analysis) — evidence: Added new section "2026 Refresh: New Profile Patterns (5 New Profiles Analyzed)" to GITHUB_PROFILE_RESEARCH.md (file grew 18KB→27KB). Section covers 5 Playwright-verified profile examples NOT in the o
 - [ ] research-youtube: Research YouTube + content-creator patterns (dev YouTubers: Prime, Theo, antfu, etc.) — contract: YOUTUBE_RESEARCH.md (or section) exists with ≥3 named dev YouTubers, their video description patterns (tip links, sponsor links, repos, social), and their cross-platform funnel (YouTube → GitHub → Sponsor/Ko-fi). Verified via Playwright on at least one channel's recent video.
 - [ ] research-monetization: Research monetization & sponsorship patterns (real GitHub Sponsors + Ko-fi accounts) — contract: MONETIZATION_RESEARCH.md (or section) exists with ≥3 named GitHub Sponsors accounts and ≥2 named Ko-fi pages, each with: tier structure, bio, monthly/one-time, "first supporter" status, and what converts. Verified via Playwright on at least one of each.
 - [ ] apply-findings: Apply concrete updates to PROFILE_STRATEGY.md, GITHUB_PROFILE_RESEARCH.md, and README_DRAFT.md — contract: PROFILE_STRATEGY.md has new sections referencing research findings; README_DRAFT.md has at least one concrete change (link, hero line, CTA, or stat format) justified by the new research; all README_DRAFT.md links still return HTTP 200; root README.md stays in sync with README_DRAFT.md.
