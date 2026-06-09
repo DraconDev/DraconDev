@@ -3,7 +3,7 @@
 **Date:** 2026-06-09
 **Purpose:** Provide exact copy/templates for the remaining external platform updates identified in `CROSS_PLATFORM_ACTION_PLAN.md`. These snippets are ready to paste once the relevant platform access is available.
 
-**Note on `DraconDev/dracon-platform`:** currently WIP, so it is **not** added to the profile README, pin list, or Ko-fi funnel yet. Revisit only when it has public, tangible value.
+**Ko-fi positioning note:** Ko-fi is **not** part of the default premium YouTube funnel. It can stay on `dracon.uk` as optional low-friction support, but it should not lead YouTube channel nav or descriptions unless we are deliberately selling small-ticket products.
 
 ## 1. GitHub Profile Sidebar
 
@@ -64,8 +64,9 @@
 1. `https://dracon.uk`
 2. `https://github.com/DraconDev`
 3. `https://github.com/sponsors/DraconDev`
-4. `https://ko-fi.com/adamdracon`
-5. Discord, if active
+4. Discord, if active
+
+Ko-fi is intentionally **not** included by default because the current YouTube positioning is premium subscriptions, not small tips.
 
 **Why this copy:** This is the Theo pattern: a 5-link ecosystem map.
 
@@ -89,7 +90,8 @@ Thank you [Sponsor] for sponsoring! Check them out at: [sponsor link]
 - [Topic 2]
 
 Find more of my stuff on: https://dracon.uk
-Support what I build: https://github.com/sponsors/DraconDev · https://ko-fi.com/adamdracon
+Find more of my stuff on: https://dracon.uk
+Support the OSS work: https://github.com/sponsors/DraconDev
 ```
 
 **Why this structure:** Sponsor at the top, social links at the bottom, recurring CTA at the end. This is the Fireship/Theo pattern.
@@ -127,6 +129,8 @@ Support what I build: https://github.com/sponsors/DraconDev · https://ko-fi.com
 5. `DraconDev/dracon-platform` README, only after public release
 6. YouTube channel nav
 7. YouTube description template
+
+Ko-fi remains on `dracon.uk` as optional low-friction support; it is not a default YouTube CTA while the strategy is premium subscriptions.
 8. Content cadence / format
 
 **Reason:** Start with the assets that convert warm visitors first (GitHub profile + Sponsors page), then expand the funnel outward (site footer, YouTube nav, descriptions, cadence).

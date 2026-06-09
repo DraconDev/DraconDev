@@ -19,7 +19,7 @@ The README should **not** become the place where every funnel update lives. The 
 | GitHub Sponsors page bio | Convert warm visitors with concrete stats | External platform update; requires GitHub Sponsors access |
 | `dracon.uk` footer | Route product/tip traffic without diluting the README | External platform update; requires site repo access |
 | `DraconDev/dracon-platform` README | Future platform/product landing page | ⏳ Needs public release; currently WIP |
-| YouTube channel nav | 5-link ecosystem map | External platform update; requires YouTube Studio access |
+| YouTube channel nav | Premium funnel map: site, GitHub, Sponsor, optional community | External platform update; requires YouTube Studio access |
 | YouTube descriptions | Reusable 5+1 template for each video | External platform update; requires YouTube Studio access |
 
 ## In-Repo Updates
@@ -98,8 +98,8 @@ The README should **not** become the place where every funnel update lives. The 
 ### 6. YouTube channel nav
 **Status:** ⏳ Needs YouTube Studio access.
 **Asset:** YouTube channel links
-**Recommended links:** `dracon.uk`, GitHub, Sponsor, Ko-fi, Discord (if active)
-**Why:** This is the Theo pattern: a 5-link ecosystem map.
+**Recommended links:** `dracon.uk`, GitHub, Sponsor, Discord (if active). Ko-fi is **not** included by default because the current positioning is premium subscriptions, not small tips.
+**Why:** This keeps the YouTube funnel focused on subscriptions/products. Ko-fi can stay on `dracon.uk` as an optional low-friction support path, but it should not lead the YouTube funnel unless we are deliberately selling small-ticket products.
 **Verification needed:** Channel page screenshot or YouTube Studio export showing the links.
 
 ### 7. YouTube descriptions
@@ -121,7 +121,7 @@ The README should **not** become the place where every funnel update lives. The 
 
 - Keep the 4-repo pin list.
 - Keep the 239K+ lines / 5,600+ tests stat unless a verified stronger stat replaces it.
-- Keep Ko-fi off the profile README.
+- Keep Ko-fi off the profile README and off the default YouTube premium funnel.
 - Do not add the WIP `DraconDev/dracon-platform` repo to the profile README or pin list until it has public, tangible value.
 - Keep the 3-link README footer density.
 - Do not add WIP, working-on, or experimental sections.
@@ -138,3 +138,4 @@ Before marking the goal complete, verify:
 6. Any missing external update is explicitly marked as blocked by access, not deferred silently.
 7. The WIP `DraconDev/dracon-platform` repo is not added to the public profile README or pin list unless it has a public landing/demo/pricing surface.
 8. The GitHub profile sidebar fields match the README positioning and do not add unsupported social links.
+9. Ko-fi is treated as optional/secondary support, not as a primary YouTube CTA while the strategy is premium subscriptions.
