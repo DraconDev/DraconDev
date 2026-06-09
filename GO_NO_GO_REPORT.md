@@ -48,11 +48,15 @@
 
 ---
 
-**Current state:** Corrected to show only working links.
+## README_DRAFT.md / README.md Status
+
+**Current state:** Corrected README content has been deployed to root `README.md` from `README_DRAFT.md`; both files now contain the same link set.
 
 **Shows:**
 - 4 already public repos (terminal-engine, tiles, folder-auto-banner, obs-wayland-hotkey)
 - Links to dracon.uk, YouTube, Sponsor
+
+**Crates.io verification:** crates.io API confirmed 4 crates matching the README stat: `dracon-terminal-engine`, `folder-auto-banner`, `tiles-tui-file-manager`, and `kiki-sassy-desktop-announcer`.
 
 **Removed:**
 - pully-fully (not ready - README had broken links, now fixed but not published yet)
@@ -65,7 +69,7 @@
 
 **Line count:** 15 lines (very compact, scannable)
 
-**Link verification:** All 9 links in README_DRAFT.md return 200 status.
+**Link verification:** All 9 links in `README_DRAFT.md` and root `README.md` return 200 status.
 
 ---
 
@@ -336,7 +340,8 @@ Given the user's preference for **tangible things only**:
 ---
 
 ## Files Referenced
-- `README_DRAFT.md` — Corrected README (15 lines, only working links)
+- `README_DRAFT.md` — Corrected README source (15 lines, only working links)
+- `README.md` — Deployed root README copied from `README_DRAFT.md`
 - `REPO_FINAL_LIST.md` — Final repo list
 - `REPO_ANALYSIS.md` — Repo analysis
 - `GITHUB_PROFILE_RESEARCH.md` — Profile research
