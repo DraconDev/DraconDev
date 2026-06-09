@@ -3,6 +3,8 @@
 **Date:** 2026-06-09
 **Purpose:** Provide exact copy/templates for the remaining external platform updates identified in `CROSS_PLATFORM_ACTION_PLAN.md`. These snippets are ready to paste once the relevant platform access is available.
 
+**Note on `DraconDev/dracon-platform`:** currently WIP, so it is **not** added to the profile README, pin list, or Ko-fi funnel yet. Revisit only when it has public, tangible value.
+
 ## 1. GitHub Profile Bio
 
 **Asset:** GitHub profile bio field
@@ -80,7 +82,15 @@ Support what I build: https://github.com/sponsors/DraconDev · https://ko-fi.com
 
 ---
 
-## 6. Content Cadence / Format
+## 6. `DraconDev/dracon-platform` README (Future Only)
+
+**Asset:** Platform repo README, only if/when `dracon-platform` becomes public-facing.
+**Status:** WIP; do not add yet.
+**Recommended decision:** Do **not** add Ko-fi to the profile README while the platform is WIP. If the platform repo later has a real landing page, public demo, pricing, or install path, add a low-friction support/product link there.
+**Why:** The profile README is for current, tangible proof. A WIP platform repo should not dilute the 4-repo pin list or create a broken funnel.
+**Verification needed:** Public repo URL, rendered README screenshot, or deployed landing page showing the platform has enough substance to support a Ko-fi/product CTA.
+
+## 7. Content Cadence / Format
 
 **Asset:** Publishing workflow
 **Recommended cadence:** Weekly shorts or weekly live streams
@@ -97,8 +107,9 @@ Support what I build: https://github.com/sponsors/DraconDev · https://ko-fi.com
 1. GitHub profile bio
 2. GitHub Sponsors page bio
 3. `dracon.uk` footer
-4. YouTube channel nav
-5. YouTube description template
-6. Content cadence / format
+4. `DraconDev/dracon-platform` README, only after public release
+5. YouTube channel nav
+6. YouTube description template
+7. Content cadence / format
 
 **Reason:** Start with the assets that convert warm visitors first (GitHub profile + Sponsors page), then expand the funnel outward (site footer, YouTube nav, descriptions, cadence).

@@ -17,6 +17,7 @@ The README should **not** become the place where every funnel update lives. The 
 | GitHub profile bio | Name-drop the killer work above the README | External platform update; requires GitHub profile access |
 | GitHub Sponsors page bio | Convert warm visitors with concrete stats | External platform update; requires GitHub Sponsors access |
 | `dracon.uk` footer | Route product/tip traffic without diluting the README | External platform update; requires site repo access |
+| `DraconDev/dracon-platform` README | Future platform/product landing page | ⏳ Needs public release; currently WIP |
 | YouTube channel nav | 5-link ecosystem map | External platform update; requires YouTube Studio access |
 | YouTube descriptions | Reusable 5+1 template for each video | External platform update; requires YouTube Studio access |
 
@@ -74,21 +75,28 @@ The README should **not** become the place where every funnel update lives. The 
 **Why:** Ko-fi is the digital-product/tip layer; the README is the OSS profile layer.
 **Verification needed:** Rendered site screenshot or deployed URL showing the footer link.
 
-### 4. YouTube channel nav
+### 4. `DraconDev/dracon-platform` README
+**Status:** ⏳ Needs public release; currently WIP.
+**Asset:** Platform repo README, only if/when `dracon-platform` becomes public-facing.
+**Recommended decision:** Do **not** add Ko-fi to the profile README while the platform is WIP. If the platform repo later has a real landing page, public demo, pricing, or install path, add a low-friction support/product link there.
+**Why:** The profile README is for current, tangible proof. A WIP platform repo should not dilute the 4-repo pin list or create a broken funnel.
+**Verification needed:** Public repo URL, rendered README screenshot, or deployed landing page showing the platform has enough substance to support a Ko-fi/product CTA.
+
+### 5. YouTube channel nav
 **Status:** ⏳ Needs YouTube Studio access.
 **Asset:** YouTube channel links
 **Recommended links:** `dracon.uk`, GitHub, Sponsor, Ko-fi, Discord (if active)
 **Why:** This is the Theo pattern: a 5-link ecosystem map.
 **Verification needed:** Channel page screenshot or YouTube Studio export showing the links.
 
-### 5. YouTube descriptions
+### 6. YouTube descriptions
 **Status:** ⏳ Needs YouTube Studio access.
 **Asset:** Video description template
 **Recommended structure:** Hook → sponsor (if any) → body → topic index → social links → evergreen CTA
 **Why:** This is the Fireship/Theo pattern: sponsor at top, social links at bottom, recurring CTA.
 **Verification needed:** Published video description screenshot or exported description text.
 
-### 6. Content cadence / format
+### 7. Content cadence / format
 **Status:** ⏳ Needs execution plan.
 **Asset:** Publishing workflow
 **Recommended cadence:** Weekly shorts or weekly live streams
@@ -100,7 +108,8 @@ The README should **not** become the place where every funnel update lives. The 
 
 - Keep the 4-repo pin list.
 - Keep the 239K+ lines / 5,600+ tests stat unless a verified stronger stat replaces it.
-- Keep Ko-fi off the README.
+- Keep Ko-fi off the profile README.
+- Do not add the WIP `DraconDev/dracon-platform` repo to the profile README or pin list until it has public, tangible value.
 - Keep the 3-link README footer density.
 - Do not add WIP, working-on, or experimental sections.
 - Do not introduce placeholders or undocumented assumptions.
@@ -114,3 +123,4 @@ Before marking the goal complete, verify:
 4. `EFFECTIVENESS_SCORING.md` exists and is referenced by `PROFILE_STRATEGY.md`.
 5. Any external platform update is backed by a screenshot, exported text, or deployment URL.
 6. Any missing external update is explicitly marked as blocked by access, not deferred silently.
+7. The WIP `DraconDev/dracon-platform` repo is not added to the public profile README or pin list unless it has a public landing/demo/pricing surface.

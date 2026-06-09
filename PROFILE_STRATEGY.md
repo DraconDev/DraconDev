@@ -263,6 +263,7 @@ The 3-link footer block (dracon.uk · YouTube · Sponsor) follows the Fireship "
 - **4-repo pin list (TUI & Terminal)** — Per the "tangible things only" stance and the audit, this is correct. Don't add "Working on" or "Experimental" sections.
 - **239K+ lines / 5,600+ tests stat** — concrete numbers, no widgets. Per the original 131-profile research. Don't change.
 - **No Ko-fi in README** — Per Fireship/Theo patterns, the 3-link footer is the right density. Adding Ko-fi to the README would dilute.
+- **No WIP platform in README** — `DraconDev/dracon-platform` is currently WIP, so it stays out of the profile README and pin list until it has public, tangible value.
 
 ### Cross-References
 
@@ -373,6 +374,7 @@ The most effective strategy is not to copy any single peer. It's to **combine th
 - **4-repo pin list (TUI & Terminal)** — Per the "tangible things only" stance and the audit, this is correct. Don't add "Working on" or "Experimental" sections.
 - **239K+ lines / 5,600+ tests stat** — concrete numbers, no widgets. Per the original 131-profile research. Don't change.
 - **No Ko-fi in README** — Per Fireship/Theo patterns, the 3-link footer is the right density. Adding Ko-fi to the README would dilute.
+- **No WIP platform in README** — `DraconDev/dracon-platform` is currently WIP, so it stays out of the profile README and pin list until it has public, tangible value.
 
 ### Cross-References
 
