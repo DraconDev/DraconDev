@@ -281,6 +281,7 @@ The 3-link footer block (dracon.uk · YouTube · Sponsor) follows the Fireship "
 - **239K+ lines / 5,600+ tests stat** — concrete numbers, no widgets. Per the original 131-profile research. Don't change.
 - **No Ko-fi in README or default YouTube premium funnel** — Ko-fi stays on `dracon.uk` as optional low-friction support. It should not lead the YouTube funnel while the strategy is premium subscriptions.
 - **No WIP platform in README** — `DraconDev/dracon-platform` is currently WIP, so it stays out of the profile README and pin list until it has public, tangible value.
+- **No utilities links until public/verified** — `DraconDev/dracon-utilities` can be released as a simple parent monorepo, but profile links must use verified subpaths and wait for release-readiness.
 - **No long profile README** — the trending-developer audit found many profiles write too much; first-screen signal should stay short.
 - **Collapsed `<details>` toggles are future-only** — useful for secondary categories, but do not add now.
 
@@ -394,6 +395,7 @@ The most effective strategy is not to copy any single peer. It's to **combine th
 - **239K+ lines / 5,600+ tests stat** — concrete numbers, no widgets. Per the original 131-profile research. Don't change.
 - **No Ko-fi in README or default YouTube premium funnel** — Ko-fi stays on `dracon.uk` as optional low-friction support. It should not lead the YouTube funnel while the strategy is premium subscriptions.
 - **No WIP platform in README** — `DraconDev/dracon-platform` is currently WIP, so it stays out of the profile README and pin list until it has public, tangible value.
+- **No utilities links until public/verified** — `DraconDev/dracon-utilities` can be released as a simple parent monorepo, but profile links must use verified subpaths and wait for release-readiness.
 - **No long profile README** — the trending-developer audit found many profiles write too much; first-screen signal should stay short.
 - **Collapsed `<details>` toggles are future-only** — useful for secondary categories, but do not add now.
 

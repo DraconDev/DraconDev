@@ -19,6 +19,7 @@ The README should **not** become the place where every funnel update lives. The 
 | GitHub Sponsors page bio | Convert warm visitors with concrete stats | External platform update; requires GitHub Sponsors access |
 | `dracon.uk` footer | Route product/tip traffic without diluting the README | External platform update; requires site repo access |
 | `DraconDev/dracon-platform` README | Future platform/product landing page | ⏳ Needs public release; currently WIP |
+| `DraconDev/dracon-utilities` monorepo | Public infra credibility via simple parent + distinct components | ⏳ Release-readiness gate | Keep parent simple; link `dracon-sync`, `dracon-system`, `dracon-warden` subpaths only after public/verified |
 | Collapsed `<details>` README toggles | Hide secondary categories without cluttering first screen | ⏳ Future pattern only |
 | YouTube channel nav | Premium funnel map: site, GitHub, Sponsor, optional community | External platform update; requires YouTube Studio access |
 | YouTube descriptions | Reusable 5+1 template for each video | External platform update; requires YouTube Studio access |
@@ -96,7 +97,21 @@ The README should **not** become the place where every funnel update lives. The 
 **Why:** The profile README is for current, tangible proof. A WIP platform repo should not dilute the 4-repo pin list or create a broken funnel.
 **Verification needed:** Public repo URL, rendered README screenshot, or deployed landing page showing the platform has enough substance to support a Ko-fi/product CTA.
 
-### 6. Collapsed `<details>` README toggles
+### 6. `DraconDev/dracon-utilities` monorepo
+**Status:** ⏳ Release-readiness gate.
+**Asset:** Parent monorepo containing `dracon-sync`, `dracon-system`, and `dracon-warden`.
+**Recommended decision:** Keep `dracon-utilities` as the simple parent repo; make the three components distinct through their own READMEs, config examples, service/hook docs, and profile link targets. Do **not** split into standalone repos unless explicitly requested later.
+**Why:** This preserves history and keeps the public profile clean while still making each utility discoverable.
+**Candidate profile README links after public release:**
+```markdown
+**Infrastructure**
+• [dracon-sync](https://github.com/DraconDev/dracon-utilities/tree/main/dracon-sync) — Git auto-commit, multi-mirror
+• [dracon-system](https://github.com/DraconDev/dracon-utilities/tree/main/dracon-system) — system monitor, SSH, notifications
+• [dracon-warden](https://github.com/DraconDev/dracon-utilities/tree/main/dracon-warden) — encryption, team keys, secret scanning
+```
+**Verification needed:** Public monorepo URL, subcomponent README links, clean secret scan, and passing component tests before adding to the profile README.
+
+### 7. Collapsed `<details>` README toggles
 **Status:** ⏳ Future pattern only.
 **Asset:** Profile README secondary-category toggles, only if future secondary work needs to be listed.
 **Recommended decision:** Do **not** add toggles now. The current 15-line README is already short and concrete.
@@ -113,21 +128,21 @@ The README should **not** become the place where every funnel update lives. The 
 ```
 **Verification needed:** Only add a toggle after the linked products have public, tangible surfaces strong enough to support the profile funnel.
 
-### 7. YouTube channel nav
+### 8. YouTube channel nav
 **Status:** ⏳ Needs YouTube Studio access.
 **Asset:** YouTube channel links
 **Recommended links:** `dracon.uk`, GitHub, Sponsor, Discord (if active). Ko-fi is **not** included by default because the current positioning is premium subscriptions, not small tips.
 **Why:** This keeps the YouTube funnel focused on subscriptions/products. Ko-fi can stay on `dracon.uk` as an optional low-friction support path, but it should not lead the YouTube funnel unless we are deliberately selling small-ticket products.
 **Verification needed:** Channel page screenshot or YouTube Studio export showing the links.
 
-### 8. YouTube descriptions
+### 9. YouTube descriptions
 **Status:** ⏳ Needs YouTube Studio access.
 **Asset:** Video description template
 **Recommended structure:** Hook → sponsor (if any) → body → topic index → social links → evergreen CTA
 **Why:** This is the Fireship/Theo pattern: sponsor at top, social links at bottom, recurring CTA.
 **Verification needed:** Published video description screenshot or exported description text.
 
-### 9. Content cadence / format
+### 10. Content cadence / format
 **Status:** ⏳ Needs execution plan.
 **Asset:** Publishing workflow
 **Recommended cadence:** Weekly shorts or weekly live streams
@@ -141,6 +156,7 @@ The README should **not** become the place where every funnel update lives. The 
 - Keep the 239K+ lines / 5,600+ tests stat unless a verified stronger stat replaces it.
 - Keep Ko-fi off the profile README and off the default YouTube premium funnel.
 - Do not add the WIP `DraconDev/dracon-platform` repo to the profile README or pin list until it has public, tangible value.
+- Do not add `DraconDev/dracon-utilities` links to the profile README until the parent monorepo is public, clean, and verified.
 - Do not expand the README into a long portfolio; the trending-developer audit found many profiles write too much.
 - Collapsed `<details>` toggles are future-only for secondary categories.
 - Keep the 3-link README footer density.
@@ -160,3 +176,4 @@ Before marking the goal complete, verify:
 8. The GitHub profile sidebar fields match the README positioning and do not add unsupported social links.
 9. Ko-fi is treated as optional/secondary support, not as a primary YouTube CTA while the strategy is premium subscriptions.
 10. The profile README stays short; future secondary categories can use collapsed `<details>` toggles only if they have public, tangible value.
+11. `DraconDev/dracon-utilities` stays a simple parent monorepo with distinct `dracon-sync`, `dracon-system`, and `dracon-warden` component paths.

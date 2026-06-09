@@ -335,7 +335,7 @@ Given the user's preference for **tangible things only**:
 - Keep `ai-auto-repo-rot-scanner` out until the 404 is resolved
 - Add `pully-fully` after publishing
 - Add `kiki` after publishing
-- Add monorepo sub-repos after deciding on monorepo approach
+- Add `dracon-utilities` component links only after the parent monorepo is public, clean, and verified
 - Add `rust-ai-web-auto` when AI lib decision is made
 
 ---

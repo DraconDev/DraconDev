@@ -15,13 +15,13 @@
 | folder-auto-banner | 1★ | 8K | "ls on steroids" | Must show |
 | dracon-terminal-engine | 1★ | 143K | TUI framework | Show on README |
 
-### Publish & Pin (private → public — 4 repos)
-| Repo | Lines | Tests | What | Why |
+### Publish & Link (private → public — 4 repo paths)
+| Repo / path | Lines | Tests | What | Why |
 |:-----|------:|------:|:-----|:----|
 | pully-fully | 27.5K | 1,393 | Fleet reconciler, GitOps | Good to feature, WIP |
-| dracon-sync | 21.5K | 341 | Git auto-commit, multi-mirror | Split from utilities |
-| dracon-warden | 9.2K | 171 | Git encryption, secret scanning | Split from utilities |
-| dracon-system | 5.8K | — | System monitoring | Split from utilities |
+| `dracon-utilities/dracon-sync` | 21.5K | 341 | Git auto-commit, multi-mirror | Distinct component inside simple parent monorepo |
+| `dracon-utilities/dracon-warden` | 9.2K | 171 | Git encryption, secret scanning | Distinct component inside simple parent monorepo |
+| `dracon-utilities/dracon-system` | 5.8K | — | System monitoring | Distinct component inside simple parent monorepo |
 
 ### Mention in README (private — 1 repo)
 | Repo | What | Why |
@@ -63,7 +63,7 @@
 | dracon-code | WIP, long-term |
 | dracon-demons | Internal |
 | dracon-platform | Internal |
-| dracon-utilities | Split into sync/warden/system |
+| dracon-utilities | Keep as simple parent monorepo; make sync/warden/system distinct component paths |
 | browser-extensions-shared | Internal |
 | All Chrome extensions | Skip |
 | All games | Direct to site |
