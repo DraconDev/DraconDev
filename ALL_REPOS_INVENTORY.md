@@ -1,144 +1,349 @@
-# Full Public Repo Inventory and Go/No-Go
+# Full Authenticated Repo Inventory and Go/No-Go
 
-Generated during publish-readiness audit from the GitHub API for `DraconDev` public repos.
+Generated during publish-readiness audit from the authenticated GitHub API for the active account.
+Total repos listed: **341** (`203` private, `138` public).
 
-| Repo | License | Last pushed | Go/No-Go |
-|:-----|:--------|:------------|:---------|
-| `adamnagy.github.io` | NOASSERTION | 2019-12-24 | NO-GO/SKIP - not selected for profile README publish scope |
-| `advanced-routing` | unknown/none | 2020-04-03 | NO-GO/SKIP - not selected for profile README publish scope |
-| `ai-gui-auto-video-editor` | AGPL-3.0 | 2026-05-31 | NO-GO/SKIP - not selected for profile README publish scope |
-| `amazon-clone` | unknown/none | 2020-10-10 | NO-GO/SKIP - not selected for profile README publish scope |
-| `Amazon-easyshop-filter-scraper` | unknown/none | 2023-04-24 | NO-GO/SKIP - not selected for profile README publish scope |
-| `amazon_price_checker` | unknown/none | 2023-03-19 | NO-GO/SKIP - not selected for profile README publish scope |
-| `api-debugger` | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
-| `auto-cleaner` | AGPL-3.0 | 2026-05-20 | NO-GO/SKIP - not selected for profile README publish scope |
-| `azumi-live-ssr-framework` | AGPL-3.0 | 2026-05-31 | NO-GO - public but README links broken |
-| `basic-redux-toolkit-with-react` | unknown/none | 2021-01-08 | NO-GO/SKIP - not selected for profile README publish scope |
-| `basic-typescript-context` | unknown/none | 2020-09-18 | NO-GO/SKIP - not selected for profile README publish scope |
-| `Blog` | unknown/none | 2023-05-19 | NO-GO/SKIP - not selected for profile README publish scope |
-| `brics` | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
-| `calmweb` | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
-| `chrome-auto-fullscreen` | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
-| `chrome-extension-boilerplate-react-vite` | MIT | 2024-01-01 | NO-GO/SKIP - not selected for profile README publish scope |
-| `chrome-extension-tech-stack-and-init` | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
-| `colly` | Apache-2.0 | 2023-12-28 | NO-GO/SKIP - not selected for profile README publish scope |
-| `complete-react-course` | unknown/none | 2019-11-29 | NO-GO/SKIP - not selected for profile README publish scope |
-| `css-animations` | unknown/none | 2023-12-17 | NO-GO/SKIP - not selected for profile README publish scope |
-| `css-peek-pro` | AGPL-3.0 | 2026-05-20 | NO-GO/SKIP - not selected for profile README publish scope |
-| `derpnews` | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
-| `dracon-libs` | AGPL-3.0 | 2026-06-08 | NO-GO/SKIP - not selected for profile README publish scope |
-| `dracon-terminal-engine` | AGPL-3.0 | 2026-06-04 | GO - existing profile pin |
-| `DraconDev` | AGPL-3.0 | 2026-06-08 | NO-GO/SKIP - not selected for profile README publish scope |
-| `dracondev-privacy-linkedinapply` | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
-| `dummy-site-nixos` | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
-| `easykeys` | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
-| `ecommerce-store` | unknown/none | 2023-05-07 | NO-GO/SKIP - not selected for profile README publish scope |
-| `face-recognition` | unknown/none | 2023-01-11 | NO-GO/SKIP - not selected for profile README publish scope |
-| `FaceDetectionWithFirebase` | unknown/none | 2023-01-11 | NO-GO/SKIP - not selected for profile README publish scope |
-| `fastapi-starter-with-venv-on-vercel` | unknown/none | 2023-05-14 | NO-GO/SKIP - not selected for profile README publish scope |
-| `FCC-Free-Code-Camp-Challenges` | unknown/none | 2019-03-07 | NO-GO/SKIP - not selected for profile README publish scope |
-| `FCC-Projects` | unknown/none | 2019-04-29 | NO-GO/SKIP - not selected for profile README publish scope |
-| `FirebaseAuth-Context-Router` | unknown/none | 2023-01-05 | NO-GO/SKIP - not selected for profile README publish scope |
-| `folder-auto-banner` | MIT | 2026-06-06 | GO - existing profile pin |
-| `gatsby-playground` | MIT | 2023-01-06 | NO-GO/SKIP - not selected for profile README publish scope |
-| `git-ai-committer` | AGPL-3.0 | 2026-05-20 | NO-GO/SKIP - not selected for profile README publish scope |
-| `git-seal` | AGPL-3.0 | 2026-06-01 | NO-GO/SKIP - not selected for profile README publish scope |
-| `go-api-ai-messages` | unknown/none | 2024-01-01 | NO-GO/SKIP - not selected for profile README publish scope |
-| `go-backend-example` | unknown/none | 2023-12-27 | NO-GO/SKIP - not selected for profile README publish scope |
-| `go-gin-example` | unknown/none | 2023-12-27 | NO-GO/SKIP - not selected for profile README publish scope |
-| `go-templ-htmx-ex` | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
-| `go-todo` | unknown/none | 2023-11-17 | NO-GO/SKIP - not selected for profile README publish scope |
-| `go-todo-htmx-example` | unknown/none | 2024-02-02 | NO-GO/SKIP - not selected for profile README publish scope |
-| `go-todo-rest-api-example` | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
-| `goprac` | unknown/none | 2024-10-26 | NO-GO/SKIP - not selected for profile README publish scope |
-| `graphql-simple-example` | unknown/none | 2020-10-11 | NO-GO/SKIP - not selected for profile README publish scope |
-| `guess-us-states-on-map` | unknown/none | 2023-02-27 | NO-GO/SKIP - not selected for profile README publish scope |
-| `hello-api` | unknown/none | 2026-06-06 | NO-GO/SKIP - not selected for profile README publish scope |
-| `job-board` | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
-| `job_auto_applier` | unknown/none | 2023-04-13 | NO-GO/SKIP - not selected for profile README publish scope |
-| `kittentts-showcase` | AGPL-3.0 | 2026-06-06 | NO-GO/SKIP - not selected for profile README publish scope |
-| `lesson-react-query` | unknown/none | 2020-10-03 | NO-GO/SKIP - not selected for profile README publish scope |
-| `lesson-react-recoil` | unknown/none | 2020-10-04 | NO-GO/SKIP - not selected for profile README publish scope |
-| `login-google` | unknown/none | 2023-04-06 | NO-GO/SKIP - not selected for profile README publish scope |
-| `mern_ecommerce` | unknown/none | 2020-12-22 | NO-GO/SKIP - not selected for profile README publish scope |
-| `movie-site` | unknown/none | 2020-10-01 | NO-GO/SKIP - not selected for profile README publish scope |
-| `Nadaga-Burger-Builder-2.0` | unknown/none | 2022-02-10 | NO-GO/SKIP - not selected for profile README publish scope |
-| `new-page-pro-ext` | MIT | 2024-04-01 | NO-GO/SKIP - not selected for profile README publish scope |
-| `next-app-react-query-example` | unknown/none | 2023-12-11 | NO-GO/SKIP - not selected for profile README publish scope |
-| `next-auth-14-all-basic-functionality` | unknown/none | 2023-11-30 | NO-GO/SKIP - not selected for profile README publish scope |
-| `next-css-playground` | unknown/none | 2023-11-30 | NO-GO/SKIP - not selected for profile README publish scope |
-| `next-ecommerce` | unknown/none | 2024-05-31 | NO-GO/SKIP - not selected for profile README publish scope |
-| `next-jotai-example` | unknown/none | 2023-12-11 | NO-GO/SKIP - not selected for profile README publish scope |
-| `next-js-dark-mode` | unknown/none | 2023-11-24 | NO-GO/SKIP - not selected for profile README publish scope |
-| `next-markdown` | unknown/none | 2023-12-15 | NO-GO/SKIP - not selected for profile README publish scope |
-| `next-media-connection-map` | unknown/none | 2024-01-27 | NO-GO/SKIP - not selected for profile README publish scope |
-| `next-page-stripe-example` | unknown/none | 2023-12-16 | NO-GO/SKIP - not selected for profile README publish scope |
-| `next-portfolio` | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
-| `next-prisma-example` | unknown/none | 2023-12-19 | NO-GO/SKIP - not selected for profile README publish scope |
-| `next-quill-example` | unknown/none | 2023-12-17 | NO-GO/SKIP - not selected for profile README publish scope |
-| `next-rtk-redux-toolkit-example` | unknown/none | 2023-12-11 | NO-GO/SKIP - not selected for profile README publish scope |
-| `next-stripe-example` | unknown/none | 2023-12-16 | NO-GO/SKIP - not selected for profile README publish scope |
-| `next-tailwind-playwright-base` | unknown/none | 2023-04-19 | NO-GO/SKIP - not selected for profile README publish scope |
-| `next-ui-libs-experiment` | unknown/none | 2023-12-23 | NO-GO/SKIP - not selected for profile README publish scope |
-| `next-work-board` | unknown/none | 2023-12-20 | NO-GO/SKIP - not selected for profile README publish scope |
-| `next-workboard` | unknown/none | 2023-12-20 | NO-GO/SKIP - not selected for profile README publish scope |
-| `nextjs-app-router-with-jotai` | unknown/none | 2023-12-11 | NO-GO/SKIP - not selected for profile README publish scope |
-| `nextjs-dashboard` | unknown/none | 2023-12-09 | NO-GO/SKIP - not selected for profile README publish scope |
-| `nixpkgs` | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
-| `obs-wayland-hotkey` | AGPL-3.0 | 2026-06-06 | NO-GO - public but license mismatch needs investigation |
-| `opencode-auto-continue` | AGPL-3.0 | 2026-06-01 | NO-GO/SKIP - not selected for profile README publish scope |
-| `opencode-auto-force-resume` | AGPL-3.0 | 2026-06-01 | NO-GO/SKIP - not selected for profile README publish scope |
-| `opencode-auto-review-completed-todos` | AGPL-3.0 | 2026-06-01 | NO-GO/SKIP - not selected for profile README publish scope |
-| `Pandas` | unknown/none | 2023-02-27 | NO-GO/SKIP - not selected for profile README publish scope |
-| `pi-auto-review` | AGPL-3.0 | 2026-06-01 | NO-GO/SKIP - not selected for profile README publish scope |
-| `pi-global-context-limit` | MIT | 2026-06-06 | NO-GO/SKIP - not selected for profile README publish scope |
-| `playlist_manager_spotify_API` | unknown/none | 2023-03-17 | NO-GO/SKIP - not selected for profile README publish scope |
-| `Portfolio` | NOASSERTION | 2021-05-04 | NO-GO/SKIP - not selected for profile README publish scope |
-| `portfolio_flask` | unknown/none | 2023-12-10 | NO-GO/SKIP - not selected for profile README publish scope |
-| `portfolioReact` | unknown/none | 2020-09-27 | NO-GO/SKIP - not selected for profile README publish scope |
-| `Practice` | unknown/none | 2013-12-19 | NO-GO/SKIP - not selected for profile README publish scope |
-| `practice-git` | unknown/none | 2023-10-13 | NO-GO/SKIP - not selected for profile README publish scope |
-| `practice-java` | unknown/none | 2024-01-24 | NO-GO/SKIP - not selected for profile README publish scope |
-| `practice-next` | unknown/none | 2023-11-01 | NO-GO/SKIP - not selected for profile README publish scope |
-| `practice-prisma` | unknown/none | 2023-10-21 | NO-GO/SKIP - not selected for profile README publish scope |
-| `practice-rust` | unknown/none | 2023-11-27 | NO-GO/SKIP - not selected for profile README publish scope |
-| `practice_100DaysOfCodePython` | unknown/none | 2023-03-15 | NO-GO/SKIP - not selected for profile README publish scope |
-| `practice_docker` | unknown/none | 2023-03-27 | NO-GO/SKIP - not selected for profile README publish scope |
-| `practice_mongodb` | unknown/none | 2023-10-17 | NO-GO/SKIP - not selected for profile README publish scope |
-| `practiceStyledComponents` | unknown/none | 2020-09-27 | NO-GO/SKIP - not selected for profile README publish scope |
-| `privacy-policy` | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
-| `pully-fleet-control` | unknown/none | 2026-06-06 | NO-GO/SKIP - not selected for profile README publish scope |
-| `react-practice` | unknown/none | 2019-03-07 | NO-GO/SKIP - not selected for profile README publish scope |
-| `react-tic-tac-toe` | unknown/none | 2023-03-26 | NO-GO/SKIP - not selected for profile README publish scope |
-| `react-typescript-lesson` | unknown/none | 2020-10-01 | NO-GO/SKIP - not selected for profile README publish scope |
-| `respec-spec-reconciler` | AGPL-3.0 | 2026-06-01 | NO-GO/SKIP - not selected for profile README publish scope |
-| `RoboCardsUpdated` | unknown/none | 2023-03-04 | NO-GO/SKIP - not selected for profile README publish scope |
-| `Robofriends` | unknown/none | 2024-04-23 | NO-GO/SKIP - not selected for profile README publish scope |
-| `rust_course` | unknown/none | 2023-11-29 | NO-GO/SKIP - not selected for profile README publish scope |
-| `rust_leetcode` | unknown/none | 2024-01-12 | NO-GO/SKIP - not selected for profile README publish scope |
-| `saas-starter-turso-bun-version` | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
-| `screensaga` | unknown/none | 2023-12-17 | NO-GO/SKIP - not selected for profile README publish scope |
-| `Search-Ace-Hide-Highlight-Results` | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
-| `simple-ai-scrapping-example` | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
-| `stripe-payment-with-nextjs` | unknown/none | 2024-08-09 | NO-GO/SKIP - not selected for profile README publish scope |
-| `stripe-typescript` | unknown/none | 2020-09-23 | NO-GO/SKIP - not selected for profile README publish scope |
-| `subtitle_syncer` | unknown/none | 2023-03-20 | NO-GO/SKIP - not selected for profile README publish scope |
-| `Tentacles_Extension` | unknown/none | 2020-08-14 | NO-GO/SKIP - not selected for profile README publish scope |
-| `terma` | AGPL-3.0 | 2026-05-20 | NO-GO/SKIP - not selected for profile README publish scope |
-| `theme-black-red` | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
-| `tiles-tui-file-manager` | AGPL-3.0 | 2026-06-01 | GO - existing profile pin |
-| `tinder_auto_swiper` | unknown/none | 2023-03-22 | NO-GO/SKIP - not selected for profile README publish scope |
-| `todolist` | unknown/none | 2021-01-04 | NO-GO/SKIP - not selected for profile README publish scope |
-| `TraderApp_NextJS_MaterialUI_TypeScript` | unknown/none | 2023-01-06 | NO-GO/SKIP - not selected for profile README publish scope |
-| `typescript-axios` | unknown/none | 2020-09-17 | NO-GO/SKIP - not selected for profile README publish scope |
-| `typescript-context` | unknown/none | 2020-09-16 | NO-GO/SKIP - not selected for profile README publish scope |
-| `typescript-lesson` | unknown/none | 2020-10-01 | NO-GO/SKIP - not selected for profile README publish scope |
-| `vite-react-19-release-example` | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
-| `volume-and-video-pro` | AGPL-3.0 | 2026-06-01 | NO-GO/SKIP - not selected for profile README publish scope |
-| `webextensions-examples` | MPL-2.0 | 2020-08-11 | NO-GO/SKIP - not selected for profile README publish scope |
-| `wga` | MIT | 2024-01-01 | NO-GO/SKIP - not selected for profile README publish scope |
-| `whatsapp-clone` | unknown/none | 2020-09-13 | NO-GO/SKIP - not selected for profile README publish scope |
-| `wxt-bun-react-tailwind-sync` | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
-| `youtube-clone` | unknown/none | 2020-09-21 | NO-GO/SKIP - not selected for profile README publish scope |
-| `youtube-video-uploader` | AGPL-3.0 | 2026-06-06 | NO-GO/SKIP - not selected for profile README publish scope |
-| `SamAI` | unknown | unknown | NO-GO - Chrome Web Store link redirects to generic store homepage |
+| Repo | Visibility | License | Last pushed | Go/No-Go |
+|:-----|:-----------|:--------|:------------|:---------|
+| `.dracon` | private | unknown/none | 2026-05-08 | NO-GO/SKIP - not selected for profile README publish scope |
+| `100-days-of-code-Python` | private | unknown/none | 2023-03-01 | NO-GO/SKIP - not selected for profile README publish scope |
+| `ace` | private | unknown/none | 2026-02-16 | NO-GO/SKIP - not selected for profile README publish scope |
+| `adamnagy.github.io` | public | NOASSERTION | 2019-12-24 | NO-GO/SKIP - not selected for profile README publish scope |
+| `advanced-routing` | public | unknown/none | 2020-04-03 | NO-GO/SKIP - not selected for profile README publish scope |
+| `ai-api-python-huggingface` | private | unknown/none | 2025-02-25 | NO-GO/SKIP - not selected for profile README publish scope |
+| `ai-ats` | private | unknown/none | 2026-04-15 | NO-GO/SKIP - not selected for profile README publish scope |
+| `ai-auto-repo-rot-scanner-todo-agent` | private | AGPL-3.0 | 2026-06-09 | NO-GO - private; not selected for profile README publish scope |
+| `ai-auto-writer` | private | AGPL-3.0 | 2026-06-08 | NO-GO/SKIP - not selected for profile README publish scope |
+| `ai-gui-auto-video-editor` | public | AGPL-3.0 | 2026-05-31 | NO-GO/SKIP - not selected for profile README publish scope |
+| `ai-vid-editor` | private | AGPL-3.0 | 2026-05-29 | NO-GO/SKIP - not selected for profile README publish scope |
+| `amazon-clone` | public | unknown/none | 2020-10-10 | NO-GO/SKIP - not selected for profile README publish scope |
+| `Amazon-easyshop-filter-scraper` | public | unknown/none | 2023-04-24 | NO-GO/SKIP - not selected for profile README publish scope |
+| `amazon_price_checker` | public | unknown/none | 2023-03-19 | NO-GO/SKIP - not selected for profile README publish scope |
+| `api-debugger` | public | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
+| `app` | private | unknown/none | 2024-01-23 | NO-GO/SKIP - not selected for profile README publish scope |
+| `arcane` | private | NOASSERTION | 2026-01-19 | NO-GO/SKIP - not selected for profile README publish scope |
+| `arcane-action` | public | unknown/none | 2025-12-28 | NO-GO/SKIP - not selected for profile README publish scope |
+| `audiocraft` | private | MIT | 2025-03-02 | NO-GO/SKIP - not selected for profile README publish scope |
+| `auth-ms` | private | unknown/none | 2025-12-17 | NO-GO/SKIP - not selected for profile README publish scope |
+| `auth-ms-front` | private | unknown/none | 2025-03-25 | NO-GO/SKIP - not selected for profile README publish scope |
+| `auto-cleaner` | public | AGPL-3.0 | 2026-05-20 | NO-GO/SKIP - not selected for profile README publish scope |
+| `auto-form-filler` | private | unknown/none | 2026-04-15 | NO-GO/SKIP - not selected for profile README publish scope |
+| `auto-import-rust` | private | AGPL-3.0 | 2026-05-20 | NO-GO/SKIP - not selected for profile README publish scope |
+| `avid` | private | AGPL-3.0 | 2026-06-08 | NO-GO/SKIP - not selected for profile README publish scope |
+| `axum-gemini-api` | private | unknown/none | 2025-10-29 | NO-GO/SKIP - not selected for profile README publish scope |
+| `azumi` | private | AGPL-3.0 | 2026-05-31 | NO-GO/SKIP - private/legacy; not selected for profile README publish scope |
+| `azumi-legacy` | private | NOASSERTION | 2025-12-24 | NO-GO/SKIP - not selected for profile README publish scope |
+| `azumi-live-ssr-framework` | public | AGPL-3.0 | 2026-05-31 | NO-GO - public but README links broken |
+| `azumi-starter` | private | unknown/none | 2025-12-31 | NO-GO/SKIP - not selected for profile README publish scope |
+| `basic-redux-toolkit-with-react` | public | unknown/none | 2021-01-08 | NO-GO/SKIP - not selected for profile README publish scope |
+| `basic-typescript-context` | public | unknown/none | 2020-09-18 | NO-GO/SKIP - not selected for profile README publish scope |
+| `Blog` | public | unknown/none | 2023-05-19 | NO-GO/SKIP - not selected for profile README publish scope |
+| `bot-blog` | private | unknown/none | 2023-08-15 | NO-GO/SKIP - not selected for profile README publish scope |
+| `botblog-back` | private | unknown/none | 2023-05-14 | NO-GO/SKIP - not selected for profile README publish scope |
+| `brics` | public | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
+| `browser-extensions-shared` | private | AGPL-3.0 | 2026-06-09 | NO-GO/SKIP - not selected for profile README publish scope |
+| `bun-stripe-basic` | private | unknown/none | 2025-01-18 | NO-GO/SKIP - not selected for profile README publish scope |
+| `burger-builder` | private | unknown/none | 2026-04-02 | NO-GO/SKIP - not selected for profile README publish scope |
+| `calmweb` | public | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
+| `cerberus-auth-ms` | private | unknown/none | 2025-11-07 | NO-GO/SKIP - not selected for profile README publish scope |
+| `chimera` | private | NOASSERTION | 2026-01-18 | NO-GO/SKIP - not selected for profile README publish scope |
+| `chrome-auto-fullscreen` | public | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
+| `chrome-extension-boilerplate-react-vite` | public | MIT | 2024-01-01 | NO-GO/SKIP - not selected for profile README publish scope |
+| `chrome-extension-tech-stack-and-init` | public | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
+| `cinematic-pages-cooler-presentations` | private | unknown/none | 2025-01-03 | NO-GO/SKIP - not selected for profile README publish scope |
+| `citadel` | private | NOASSERTION | 2026-01-19 | NO-GO/SKIP - not selected for profile README publish scope |
+| `cli-file-manager` | private | MIT | 2026-06-04 | NO-GO/SKIP - not selected for profile README publish scope |
+| `colly` | public | Apache-2.0 | 2023-12-28 | NO-GO/SKIP - not selected for profile README publish scope |
+| `complete-react-course` | public | unknown/none | 2019-11-29 | NO-GO/SKIP - not selected for profile README publish scope |
+| `complex_dummy` | private | unknown/none | 2026-01-15 | NO-GO/SKIP - not selected for profile README publish scope |
+| `cortex` | private | unknown/none | 2026-01-07 | NO-GO/SKIP - not selected for profile README publish scope |
+| `css-animations` | public | unknown/none | 2023-12-17 | NO-GO/SKIP - not selected for profile README publish scope |
+| `css-peek-pro` | public | AGPL-3.0 | 2026-05-20 | NO-GO/SKIP - not selected for profile README publish scope |
+| `custom-history` | private | unknown/none | 2026-04-28 | NO-GO/SKIP - not selected for profile README publish scope |
+| `de-addict` | private | unknown/none | 2024-12-18 | NO-GO/SKIP - not selected for profile README publish scope |
+| `de-addict-chrome-extension` | private | unknown/none | 2024-12-19 | NO-GO/SKIP - not selected for profile README publish scope |
+| `deaddict` | private | unknown/none | 2024-12-17 | NO-GO/SKIP - not selected for profile README publish scope |
+| `demo` | private | unknown/none | 2024-01-26 | NO-GO/SKIP - not selected for profile README publish scope |
+| `demon-deploy` | private | unknown/none | 2026-01-23 | NO-GO/SKIP - not selected for profile README publish scope |
+| `demon-ext` | private | unknown/none | 2026-02-02 | NO-GO/SKIP - not selected for profile README publish scope |
+| `demon-git-stand` | private | unknown/none | 2026-01-23 | NO-GO/SKIP - not selected for profile README publish scope |
+| `demon-leg` | private | unknown/none | 2026-01-23 | NO-GO/SKIP - not selected for profile README publish scope |
+| `demon-legacy` | private | unknown/none | 2026-01-19 | NO-GO/SKIP - not selected for profile README publish scope |
+| `demon-suite` | private | unknown/none | 2026-01-28 | NO-GO/SKIP - not selected for profile README publish scope |
+| `demon-workplace` | private | unknown/none | 2026-02-13 | NO-GO/SKIP - not selected for profile README publish scope |
+| `demon-wp` | private | unknown/none | 2026-01-24 | NO-GO/SKIP - not selected for profile README publish scope |
+| `derpnews` | public | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dotenvx-test` | private | unknown/none | 2025-12-03 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dracon-agent` | private | unknown/none | 2026-04-28 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dracon-ai-daemon` | private | unknown/none | 2026-04-09 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dracon-ai-directory` | private | unknown/none | 2026-04-15 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dracon-ai-gateway-service` | private | unknown/none | 2026-04-06 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dracon-ai-lib` | private | AGPL-3.0 | 2026-06-08 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dracon-apis` | private | unknown/none | 2026-04-11 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dracon-auth-daemon` | private | unknown/none | 2026-04-09 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dracon-auth-service` | private | unknown/none | 2026-04-06 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dracon-billing-daemon` | private | unknown/none | 2026-04-09 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dracon-billing-service` | private | unknown/none | 2026-04-06 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dracon-bucket-daemon` | private | unknown/none | 2026-04-09 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dracon-bucket-service` | private | unknown/none | 2026-04-06 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dracon-code` | private | AGPL-3.0 | 2026-06-09 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dracon-core` | private | unknown/none | 2026-02-07 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dracon-demons` | private | AGPL-3.0 | 2026-06-03 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dracon-diles` | private | unknown/none | 2026-02-14 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dracon-director` | private | unknown/none | 2026-04-14 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dracon-email-daemon` | private | unknown/none | 2026-04-09 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dracon-email-service` | private | unknown/none | 2026-04-05 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dracon-files` | private | unknown/none | 2026-04-15 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dracon-git` | private | unknown/none | 2026-02-08 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dracon-home` | private | AGPL-3.0 | 2026-06-09 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dracon-home-repo` | private | unknown/none | 2026-05-02 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dracon-homepage` | private | unknown/none | 2026-01-14 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dracon-homepage-legacy` | private | unknown/none | 2025-12-26 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dracon-libs` | public | AGPL-3.0 | 2026-06-08 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dracon-libs-l3` | private | unknown/none | 2026-03-30 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dracon-libs-legacy` | private | unknown/none | 2026-02-25 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dracon-litestream-daemon` | private | unknown/none | 2026-04-07 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dracon-nixos-auto-box` | private | unknown/none | 2026-04-07 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dracon-platform` | private | AGPL-3.0 | 2026-06-09 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dracon-platformer` | private | unknown/none | 2026-04-15 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dracon-private-services` | private | unknown/none | 2026-04-08 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dracon-releaser` | private | unknown/none | 2026-05-17 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dracon-rust-ui` | private | AGPL-3.0 | 2026-05-29 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dracon-security` | private | unknown/none | 2026-02-07 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dracon-services` | private | unknown/none | 2026-04-06 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dracon-spark` | private | unknown/none | 2026-04-15 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dracon-spark-and-director` | private | AGPL-3.0 | 2026-05-23 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dracon-spark-recipes` | private | unknown/none | 2026-04-15 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dracon-terminal-engine` | public | AGPL-3.0 | 2026-06-04 | GO - existing profile pin |
+| `dracon-utilities` | private | AGPL-3.0 | 2026-06-09 | NO-GO - private monorepo containing sync/warden/system |
+| `dracon-voice-notifications` | private | MIT | 2026-06-08 | NO-GO/SKIP - not selected for profile README publish scope |
+| `DraconDev` | public | AGPL-3.0 | 2026-06-09 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dracondev-privacy-linkedinapply` | public | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dummy-site-nixos` | public | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
+| `dummy3` | private | unknown/none | 2026-01-15 | NO-GO/SKIP - not selected for profile README publish scope |
+| `easykeys` | public | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
+| `ecommerce-store` | public | unknown/none | 2023-05-07 | NO-GO/SKIP - not selected for profile README publish scope |
+| `face-recognition` | public | unknown/none | 2023-01-11 | NO-GO/SKIP - not selected for profile README publish scope |
+| `FaceDetectionWithFirebase` | public | unknown/none | 2023-01-11 | NO-GO/SKIP - not selected for profile README publish scope |
+| `fastapi-starter-with-venv-on-vercel` | public | unknown/none | 2023-05-14 | NO-GO/SKIP - not selected for profile README publish scope |
+| `FCC-Free-Code-Camp-Challenges` | public | unknown/none | 2019-03-07 | NO-GO/SKIP - not selected for profile README publish scope |
+| `FCC-Projects` | public | unknown/none | 2019-04-29 | NO-GO/SKIP - not selected for profile README publish scope |
+| `FirebaseAuth-Context-Router` | public | unknown/none | 2023-01-05 | NO-GO/SKIP - not selected for profile README publish scope |
+| `folder-auto-banner` | public | MIT | 2026-06-06 | GO - existing profile pin |
+| `freelance-pro` | private | unknown/none | 2024-02-27 | NO-GO/SKIP - not selected for profile README publish scope |
+| `gatsby-playground` | public | MIT | 2023-01-06 | NO-GO/SKIP - not selected for profile README publish scope |
+| `gcp-fullstack` | private | unknown/none | 2025-02-27 | NO-GO/SKIP - not selected for profile README publish scope |
+| `git-ai-committer` | public | AGPL-3.0 | 2026-05-20 | NO-GO/SKIP - not selected for profile README publish scope |
+| `git-arcane-legacy` | private | NOASSERTION | 2025-12-25 | NO-GO/SKIP - not selected for profile README publish scope |
+| `git-seal` | public | AGPL-3.0 | 2026-06-01 | NO-GO/SKIP - not selected for profile README publish scope |
+| `go-api-ai-messages` | public | unknown/none | 2024-01-01 | NO-GO/SKIP - not selected for profile README publish scope |
+| `go-auth-ex` | private | unknown/none | 2024-02-05 | NO-GO/SKIP - not selected for profile README publish scope |
+| `go-backend-example` | public | unknown/none | 2023-12-27 | NO-GO/SKIP - not selected for profile README publish scope |
+| `go-cloud-cicd-ex` | private | unknown/none | 2025-02-15 | NO-GO/SKIP - not selected for profile README publish scope |
+| `go-ecom-backend` | private | unknown/none | 2024-03-06 | NO-GO/SKIP - not selected for profile README publish scope |
+| `go-gin-example` | public | unknown/none | 2023-12-27 | NO-GO/SKIP - not selected for profile README publish scope |
+| `go-hello` | private | unknown/none | 2025-02-15 | NO-GO/SKIP - not selected for profile README publish scope |
+| `go-hello-cloud` | private | unknown/none | 2025-02-15 | NO-GO/SKIP - not selected for profile README publish scope |
+| `go-love-match` | private | unknown/none | 2024-02-04 | NO-GO/SKIP - not selected for profile README publish scope |
+| `go-stripe-ms` | private | unknown/none | 2025-12-17 | NO-GO/SKIP - not selected for profile README publish scope |
+| `go-templ-htmx-ex` | public | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
+| `go-todo` | public | unknown/none | 2023-11-17 | NO-GO/SKIP - not selected for profile README publish scope |
+| `go-todo-htmx-example` | public | unknown/none | 2024-02-02 | NO-GO/SKIP - not selected for profile README publish scope |
+| `go-todo-rest-api-example` | public | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
+| `goprac` | public | unknown/none | 2024-10-26 | NO-GO/SKIP - not selected for profile README publish scope |
+| `graphql-simple-example` | public | unknown/none | 2020-10-11 | NO-GO/SKIP - not selected for profile README publish scope |
+| `grpc` | private | unknown/none | 2025-10-31 | NO-GO/SKIP - not selected for profile README publish scope |
+| `guess-us-states-on-map` | public | unknown/none | 2023-02-27 | NO-GO/SKIP - not selected for profile README publish scope |
+| `gumroad-like` | private | unknown/none | 2025-01-17 | NO-GO/SKIP - not selected for profile README publish scope |
+| `hello` | private | unknown/none | 2025-02-21 | NO-GO/SKIP - not selected for profile README publish scope |
+| `hello-api` | public | unknown/none | 2026-06-06 | NO-GO/SKIP - not selected for profile README publish scope |
+| `hello-start` | private | unknown/none | 2026-03-16 | NO-GO/SKIP - not selected for profile README publish scope |
+| `hello-world-axum` | private | unknown/none | 2025-12-03 | NO-GO/SKIP - not selected for profile README publish scope |
+| `hello-world-rust-axum` | private | unknown/none | 2025-02-10 | NO-GO/SKIP - not selected for profile README publish scope |
+| `hello-world-rust-axum-new` | private | unknown/none | 2025-02-11 | NO-GO/SKIP - not selected for profile README publish scope |
+| `hermes` | private | unknown/none | 2025-12-15 | NO-GO/SKIP - not selected for profile README publish scope |
+| `hide-env` | private | unknown/none | 2024-12-17 | NO-GO/SKIP - not selected for profile README publish scope |
+| `homepage` | private | unknown/none | 2024-12-03 | NO-GO/SKIP - not selected for profile README publish scope |
+| `hosted-webdriver` | private | unknown/none | 2025-04-08 | NO-GO/SKIP - not selected for profile README publish scope |
+| `java-book3` | private | unknown/none | 2024-01-21 | NO-GO/SKIP - not selected for profile README publish scope |
+| `java-bookstore` | private | unknown/none | 2024-01-19 | NO-GO/SKIP - not selected for profile README publish scope |
+| `java-demo` | private | unknown/none | 2024-01-19 | NO-GO/SKIP - not selected for profile README publish scope |
+| `java-restful` | private | unknown/none | 2024-01-22 | NO-GO/SKIP - not selected for profile README publish scope |
+| `java-simple-app` | private | unknown/none | 2024-01-24 | NO-GO/SKIP - not selected for profile README publish scope |
+| `job-board` | public | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
+| `job_auto_applier` | public | unknown/none | 2023-04-13 | NO-GO/SKIP - not selected for profile README publish scope |
+| `Junk-Runner` | private | unknown/none | 2026-01-19 | NO-GO/SKIP - not selected for profile README publish scope |
+| `Junk-Runner-bevy` | private | AGPL-3.0 | 2026-06-09 | NO-GO/SKIP - not selected for profile README publish scope |
+| `junk-runner-tauri` | private | unknown/none | 2026-05-02 | NO-GO/SKIP - not selected for profile README publish scope |
+| `kami` | private | unknown/none | 2026-01-14 | NO-GO/SKIP - not selected for profile README publish scope |
+| `kiki-sassy-desktop-announcer` | private | MIT | 2026-05-25 | NO-GO - private/unpublished; CI added but cargo check is environment-dependent |
+| `killcore` | private | unknown/none | 2026-01-10 | NO-GO/SKIP - not selected for profile README publish scope |
+| `kirimase-example` | private | unknown/none | 2024-04-12 | NO-GO/SKIP - not selected for profile README publish scope |
+| `kittentts-showcase` | public | AGPL-3.0 | 2026-06-06 | NO-GO/SKIP - not selected for profile README publish scope |
+| `kokoro-web` | private | MIT | 2025-03-05 | NO-GO/SKIP - not selected for profile README publish scope |
+| `Kokoros` | private | unknown/none | 2025-03-04 | NO-GO/SKIP - not selected for profile README publish scope |
+| `kokoros-api` | private | unknown/none | 2025-03-10 | NO-GO/SKIP - not selected for profile README publish scope |
+| `learn-hooks` | private | unknown/none | 2026-04-02 | NO-GO/SKIP - not selected for profile README publish scope |
+| `Learn-React` | private | unknown/none | 2026-04-02 | NO-GO/SKIP - not selected for profile README publish scope |
+| `legacy-fat-demon` | private | unknown/none | 2026-01-23 | NO-GO/SKIP - not selected for profile README publish scope |
+| `leptos-prac` | private | unknown/none | 2025-03-26 | NO-GO/SKIP - not selected for profile README publish scope |
+| `lesson-react-query` | public | unknown/none | 2020-10-03 | NO-GO/SKIP - not selected for profile README publish scope |
+| `lesson-react-recoil` | public | unknown/none | 2020-10-04 | NO-GO/SKIP - not selected for profile README publish scope |
+| `linkedin-auto-job-apply-extension-removed-from-store` | private | unknown/none | 2025-04-23 | NO-GO/SKIP - not selected for profile README publish scope |
+| `linkedin-autoapply` | private | unknown/none | 2024-05-25 | NO-GO/SKIP - not selected for profile README publish scope |
+| `linkedin-autoapply-pro` | private | unknown/none | 2025-02-08 | NO-GO/SKIP - not selected for profile README publish scope |
+| `linkedin_auto_apply_local` | private | unknown/none | 2024-05-10 | NO-GO/SKIP - not selected for profile README publish scope |
+| `linklist` | private | unknown/none | 2024-04-09 | NO-GO/SKIP - not selected for profile README publish scope |
+| `live-reload-pro` | private | unknown/none | 2026-05-07 | NO-GO/SKIP - not selected for profile README publish scope |
+| `login-google` | public | unknown/none | 2023-04-06 | NO-GO/SKIP - not selected for profile README publish scope |
+| `memory-palace-fm` | private | unknown/none | 2026-02-15 | NO-GO/SKIP - not selected for profile README publish scope |
+| `mern-project` | private | unknown/none | 2023-04-08 | NO-GO/SKIP - not selected for profile README publish scope |
+| `mern_ecommerce` | public | unknown/none | 2020-12-22 | NO-GO/SKIP - not selected for profile README publish scope |
+| `momo` | private | NOASSERTION | 2026-03-31 | NO-GO/SKIP - not selected for profile README publish scope |
+| `movie-site` | public | unknown/none | 2020-10-01 | NO-GO/SKIP - not selected for profile README publish scope |
+| `music-automator` | private | unknown/none | 2025-02-24 | NO-GO/SKIP - not selected for profile README publish scope |
+| `my-project` | private | unknown/none | 2024-05-28 | NO-GO/SKIP - not selected for profile README publish scope |
+| `my-repo` | private | unknown/none | 2026-05-02 | NO-GO/SKIP - not selected for profile README publish scope |
+| `Nadaga-Burger-Builder-2.0` | public | unknown/none | 2022-02-10 | NO-GO/SKIP - not selected for profile README publish scope |
+| `new-page-pro-ext` | public | MIT | 2024-04-01 | NO-GO/SKIP - not selected for profile README publish scope |
+| `new-page-pro-extension` | private | MIT | 2024-01-04 | NO-GO/SKIP - not selected for profile README publish scope |
+| `new_rusti` | private | unknown/none | 2025-11-20 | NO-GO/SKIP - not selected for profile README publish scope |
+| `next-app-react-query-example` | public | unknown/none | 2023-12-11 | NO-GO/SKIP - not selected for profile README publish scope |
+| `next-auth-14-all-basic-functionality` | public | unknown/none | 2023-11-30 | NO-GO/SKIP - not selected for profile README publish scope |
+| `next-css-playground` | public | unknown/none | 2023-11-30 | NO-GO/SKIP - not selected for profile README publish scope |
+| `next-ecommerce` | public | unknown/none | 2024-05-31 | NO-GO/SKIP - not selected for profile README publish scope |
+| `next-jotai-example` | public | unknown/none | 2023-12-11 | NO-GO/SKIP - not selected for profile README publish scope |
+| `next-js-dark-mode` | public | unknown/none | 2023-11-24 | NO-GO/SKIP - not selected for profile README publish scope |
+| `next-markdown` | public | unknown/none | 2023-12-15 | NO-GO/SKIP - not selected for profile README publish scope |
+| `next-media-connection-map` | public | unknown/none | 2024-01-27 | NO-GO/SKIP - not selected for profile README publish scope |
+| `next-new-tab-extension` | private | unknown/none | 2024-01-02 | NO-GO/SKIP - not selected for profile README publish scope |
+| `next-page-stripe-example` | public | unknown/none | 2023-12-16 | NO-GO/SKIP - not selected for profile README publish scope |
+| `next-portfolio` | public | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
+| `next-practice` | private | unknown/none | 2024-07-21 | NO-GO/SKIP - not selected for profile README publish scope |
+| `next-prisma-example` | public | unknown/none | 2023-12-19 | NO-GO/SKIP - not selected for profile README publish scope |
+| `next-quill-example` | public | unknown/none | 2023-12-17 | NO-GO/SKIP - not selected for profile README publish scope |
+| `next-rtk-redux-toolkit-example` | public | unknown/none | 2023-12-11 | NO-GO/SKIP - not selected for profile README publish scope |
+| `next-stripe-example` | public | unknown/none | 2023-12-16 | NO-GO/SKIP - not selected for profile README publish scope |
+| `next-tailwind-playwright-base` | public | unknown/none | 2023-04-19 | NO-GO/SKIP - not selected for profile README publish scope |
+| `next-ui-libs-experiment` | public | unknown/none | 2023-12-23 | NO-GO/SKIP - not selected for profile README publish scope |
+| `next-work-board` | public | unknown/none | 2023-12-20 | NO-GO/SKIP - not selected for profile README publish scope |
+| `next-workboard` | public | unknown/none | 2023-12-20 | NO-GO/SKIP - not selected for profile README publish scope |
+| `nextjs` | private | unknown/none | 2024-11-28 | NO-GO/SKIP - not selected for profile README publish scope |
+| `nextjs-app-router-with-jotai` | public | unknown/none | 2023-12-11 | NO-GO/SKIP - not selected for profile README publish scope |
+| `nextjs-blog` | private | unknown/none | 2023-04-10 | NO-GO/SKIP - not selected for profile README publish scope |
+| `nextjs-dashboard` | public | unknown/none | 2023-12-09 | NO-GO/SKIP - not selected for profile README publish scope |
+| `nextjs-strapi` | private | unknown/none | 2024-05-26 | NO-GO/SKIP - not selected for profile README publish scope |
+| `nexus-new-tab` | private | unknown/none | 2026-05-08 | NO-GO/SKIP - not selected for profile README publish scope |
+| `nixos-home-save` | private | unknown/none | 2026-01-06 | NO-GO/SKIP - not selected for profile README publish scope |
+| `nixpkgs` | public | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
+| `nodejsServer` | private | unknown/none | 2023-04-02 | NO-GO/SKIP - not selected for profile README publish scope |
+| `obs-wayland-hotkey` | public | AGPL-3.0 | 2026-06-06 | NO-GO - public but license mismatch needs investigation |
+| `one-mil-girls` | private | AGPL-3.0 | 2026-06-09 | NO-GO/SKIP - not selected for profile README publish scope |
+| `opencode-auto-continue` | public | AGPL-3.0 | 2026-06-01 | NO-GO/SKIP - not selected for profile README publish scope |
+| `opencode-auto-force-resume` | public | AGPL-3.0 | 2026-06-01 | NO-GO/SKIP - not selected for profile README publish scope |
+| `opencode-auto-review-completed-todos` | public | AGPL-3.0 | 2026-06-01 | NO-GO/SKIP - not selected for profile README publish scope |
+| `Pandas` | public | unknown/none | 2023-02-27 | NO-GO/SKIP - not selected for profile README publish scope |
+| `personal-site` | private | unknown/none | 2024-04-17 | NO-GO/SKIP - not selected for profile README publish scope |
+| `pi-auto-review` | public | AGPL-3.0 | 2026-06-01 | NO-GO/SKIP - not selected for profile README publish scope |
+| `pi-global-context-limit` | public | MIT | 2026-06-06 | NO-GO/SKIP - not selected for profile README publish scope |
+| `playlist_manager_spotify_API` | public | unknown/none | 2023-03-17 | NO-GO/SKIP - not selected for profile README publish scope |
+| `Portfolio` | public | NOASSERTION | 2021-05-04 | NO-GO/SKIP - not selected for profile README publish scope |
+| `portfolio_flask` | public | unknown/none | 2023-12-10 | NO-GO/SKIP - not selected for profile README publish scope |
+| `portfolioReact` | public | unknown/none | 2020-09-27 | NO-GO/SKIP - not selected for profile README publish scope |
+| `Practice` | public | unknown/none | 2013-12-19 | NO-GO/SKIP - not selected for profile README publish scope |
+| `practice-git` | public | unknown/none | 2023-10-13 | NO-GO/SKIP - not selected for profile README publish scope |
+| `practice-java` | public | unknown/none | 2024-01-24 | NO-GO/SKIP - not selected for profile README publish scope |
+| `practice-next` | public | unknown/none | 2023-11-01 | NO-GO/SKIP - not selected for profile README publish scope |
+| `practice-prisma` | public | unknown/none | 2023-10-21 | NO-GO/SKIP - not selected for profile README publish scope |
+| `practice-python` | private | unknown/none | 2023-11-16 | NO-GO/SKIP - not selected for profile README publish scope |
+| `practice-rust` | public | unknown/none | 2023-11-27 | NO-GO/SKIP - not selected for profile README publish scope |
+| `practice_100DaysOfCodePython` | public | unknown/none | 2023-03-15 | NO-GO/SKIP - not selected for profile README publish scope |
+| `practice_docker` | public | unknown/none | 2023-03-27 | NO-GO/SKIP - not selected for profile README publish scope |
+| `practice_go` | private | unknown/none | 2023-07-09 | NO-GO/SKIP - not selected for profile README publish scope |
+| `practice_mongodb` | public | unknown/none | 2023-10-17 | NO-GO/SKIP - not selected for profile README publish scope |
+| `practice_python` | private | unknown/none | 2023-08-15 | NO-GO/SKIP - not selected for profile README publish scope |
+| `practiceStyledComponents` | public | unknown/none | 2020-09-27 | NO-GO/SKIP - not selected for profile README publish scope |
+| `PriceCompareSite` | private | unknown/none | 2026-04-02 | NO-GO/SKIP - not selected for profile README publish scope |
+| `privacy-policy` | public | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
+| `protos` | private | unknown/none | 2025-12-06 | NO-GO/SKIP - not selected for profile README publish scope |
+| `pully-fleet-control` | public | unknown/none | 2026-06-06 | NO-GO/SKIP - not selected for profile README publish scope |
+| `pully-fully-pull-based-fleet-reconciler` | private | AGPL-3.0 | 2026-06-09 | NO-GO - private/unpublished; README links must be fixed before publish |
+| `rain_forecast` | private | unknown/none | 2023-03-05 | NO-GO/SKIP - not selected for profile README publish scope |
+| `react-practice` | public | unknown/none | 2019-03-07 | NO-GO/SKIP - not selected for profile README publish scope |
+| `react-tic-tac-toe` | public | unknown/none | 2023-03-26 | NO-GO/SKIP - not selected for profile README publish scope |
+| `react-typescript-lesson` | public | unknown/none | 2020-10-01 | NO-GO/SKIP - not selected for profile README publish scope |
+| `Remi` | private | unknown/none | 2026-04-15 | NO-GO/SKIP - not selected for profile README publish scope |
+| `remi-app` | private | unknown/none | 2026-04-15 | NO-GO/SKIP - not selected for profile README publish scope |
+| `remote-job` | private | unknown/none | 2025-05-11 | NO-GO/SKIP - not selected for profile README publish scope |
+| `remote-work` | private | unknown/none | 2024-06-05 | NO-GO/SKIP - not selected for profile README publish scope |
+| `rentagirlfriend` | private | unknown/none | 2024-12-14 | NO-GO/SKIP - not selected for profile README publish scope |
+| `respec` | private | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
+| `respec-spec-reconciler` | public | AGPL-3.0 | 2026-06-01 | NO-GO/SKIP - not selected for profile README publish scope |
+| `RoboCardsUpdated` | public | unknown/none | 2023-03-04 | NO-GO/SKIP - not selected for profile README publish scope |
+| `Robofriends` | public | unknown/none | 2024-04-23 | NO-GO/SKIP - not selected for profile README publish scope |
+| `rust-ai-web-auto` | private | AGPL-3.0 | 2026-06-09 | NO-GO - on hold for AI lib decision |
+| `rust-dynamic-scraper` | private | unknown/none | 2025-04-27 | NO-GO/SKIP - not selected for profile README publish scope |
+| `rust-env-project` | private | unknown/none | 2025-12-03 | NO-GO/SKIP - not selected for profile README publish scope |
+| `rust-extensions` | private | unknown/none | 2026-02-13 | NO-GO/SKIP - not selected for profile README publish scope |
+| `rust-generalist-scraper` | private | unknown/none | 2025-04-27 | NO-GO/SKIP - not selected for profile README publish scope |
+| `rust_course` | public | unknown/none | 2023-11-29 | NO-GO/SKIP - not selected for profile README publish scope |
+| `rust_leetcode` | public | unknown/none | 2024-01-12 | NO-GO/SKIP - not selected for profile README publish scope |
+| `rustee-rust-templ` | private | unknown/none | 2025-11-08 | NO-GO/SKIP - not selected for profile README publish scope |
+| `rustprac` | private | unknown/none | 2025-03-22 | NO-GO/SKIP - not selected for profile README publish scope |
+| `saas-starter-nextjs` | private | unknown/none | 2025-02-15 | NO-GO/SKIP - not selected for profile README publish scope |
+| `saas-starter-turso-bun-version` | public | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
+| `sam` | private | unknown/none | 2026-01-07 | NO-GO/SKIP - not selected for profile README publish scope |
+| `SamAI` | private | AGPL-3.0 | 2026-06-01 | NO-GO - Chrome Web Store link redirects to generic store homepage |
+| `screensaga` | public | unknown/none | 2023-12-17 | NO-GO/SKIP - not selected for profile README publish scope |
+| `Search-Ace-Hide-Highlight-Results` | public | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
+| `selenium-basic-examples` | private | unknown/none | 2023-03-15 | NO-GO/SKIP - not selected for profile README publish scope |
+| `shared-config` | private | unknown/none | 2026-05-27 | NO-GO/SKIP - not selected for profile README publish scope |
+| `sheets_database` | private | unknown/none | 2023-03-10 | NO-GO/SKIP - not selected for profile README publish scope |
+| `simple-ai-scrapping-example` | public | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
+| `simple-stripe-example-with-nextjs` | private | unknown/none | 2025-02-04 | NO-GO/SKIP - not selected for profile README publish scope |
+| `spec-reconciler` | private | unknown/none | 2026-05-24 | NO-GO/SKIP - not selected for profile README publish scope |
+| `sqlite-embedded-continuous-wal-backup-to-object-storage` | private | AGPL-3.0 | 2026-05-20 | NO-GO/SKIP - not selected for profile README publish scope |
+| `sqlite-ex` | private | unknown/none | 2024-04-13 | NO-GO/SKIP - not selected for profile README publish scope |
+| `stripe-guide-nextjs` | private | unknown/none | 2025-01-27 | NO-GO/SKIP - not selected for profile README publish scope |
+| `stripe-nextjs-example` | private | unknown/none | 2024-07-30 | NO-GO/SKIP - not selected for profile README publish scope |
+| `stripe-payment-with-nextjs` | public | unknown/none | 2024-08-09 | NO-GO/SKIP - not selected for profile README publish scope |
+| `stripe-typescript` | public | unknown/none | 2020-09-23 | NO-GO/SKIP - not selected for profile README publish scope |
+| `subhub---subcription-tracker` | private | unknown/none | 2024-12-21 | NO-GO/SKIP - not selected for profile README publish scope |
+| `subhub-subcription-tracker` | private | unknown/none | 2024-12-23 | NO-GO/SKIP - not selected for profile README publish scope |
+| `subtitle_syncer` | public | unknown/none | 2023-03-20 | NO-GO/SKIP - not selected for profile README publish scope |
+| `svelte-media-connection-map` | private | unknown/none | 2024-01-10 | NO-GO/SKIP - not selected for profile README publish scope |
+| `Tentacles_Extension` | public | unknown/none | 2020-08-14 | NO-GO/SKIP - not selected for profile README publish scope |
+| `terma` | public | AGPL-3.0 | 2026-05-20 | NO-GO/SKIP - not selected for profile README publish scope |
+| `test-auto-create` | private | AGPL-3.0 | 2026-06-01 | NO-GO/SKIP - not selected for profile README publish scope |
+| `test-conflict` | private | unknown/none | 2026-04-09 | NO-GO/SKIP - not selected for profile README publish scope |
+| `test-github-private` | private | unknown/none | 2026-04-09 | NO-GO/SKIP - not selected for profile README publish scope |
+| `test-repo` | private | unknown/none | 2026-05-17 | NO-GO/SKIP - not selected for profile README publish scope |
+| `test_banner` | private | AGPL-3.0 | 2026-06-03 | NO-GO/SKIP - not selected for profile README publish scope |
+| `theme-black-red` | public | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
+| `tiles` | private | unknown/none | 2026-05-24 | NO-GO/SKIP - not selected for profile README publish scope |
+| `tiles-tui-file-manager` | public | AGPL-3.0 | 2026-06-01 | GO - existing profile pin |
+| `tinder_auto_swiper` | public | unknown/none | 2023-03-22 | NO-GO/SKIP - not selected for profile README publish scope |
+| `todo-addict` | private | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
+| `todo-drizz` | private | unknown/none | 2024-04-15 | NO-GO/SKIP - not selected for profile README publish scope |
+| `todolist` | public | unknown/none | 2021-01-04 | NO-GO/SKIP - not selected for profile README publish scope |
+| `TraderApp_NextJS_MaterialUI_TypeScript` | public | unknown/none | 2023-01-06 | NO-GO/SKIP - not selected for profile README publish scope |
+| `trpc-prisma-starter` | private | unknown/none | 2024-06-12 | NO-GO/SKIP - not selected for profile README publish scope |
+| `typescript-axios` | public | unknown/none | 2020-09-17 | NO-GO/SKIP - not selected for profile README publish scope |
+| `typescript-context` | public | unknown/none | 2020-09-16 | NO-GO/SKIP - not selected for profile README publish scope |
+| `typescript-lesson` | public | unknown/none | 2020-10-01 | NO-GO/SKIP - not selected for profile README publish scope |
+| `video-factory` | private | AGPL-3.0 | 2026-06-06 | NO-GO/SKIP - not selected for profile README publish scope |
+| `video-uploader` | private | AGPL-3.0 | 2026-06-06 | NO-GO/SKIP - not selected for profile README publish scope |
+| `vidpro-extension` | private | unknown/none | 2026-05-10 | NO-GO/SKIP - not selected for profile README publish scope |
+| `vite-react-19-release-example` | public | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
+| `volume-and-video-pro` | public | AGPL-3.0 | 2026-06-01 | NO-GO/SKIP - not selected for profile README publish scope |
+| `wal-backup` | private | AGPL-3.0 | 2026-06-01 | NO-GO/SKIP - not selected for profile README publish scope |
+| `wallet-guard` | private | unknown/none | 2026-03-09 | NO-GO/SKIP - not selected for profile README publish scope |
+| `web-automator` | private | unknown/none | 2026-04-15 | NO-GO/SKIP - not selected for profile README publish scope |
+| `webextensions-examples` | public | MPL-2.0 | 2020-08-11 | NO-GO/SKIP - not selected for profile README publish scope |
+| `wga` | public | MIT | 2024-01-01 | NO-GO/SKIP - not selected for profile README publish scope |
+| `whatsapp-clone` | public | unknown/none | 2020-09-13 | NO-GO/SKIP - not selected for profile README publish scope |
+| `wxt-bun-react-tailwind-sync` | public | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
+| `youtube-clone` | public | unknown/none | 2020-09-21 | NO-GO/SKIP - not selected for profile README publish scope |
+| `youtube-music-gen` | private | unknown/none | 2025-03-03 | NO-GO/SKIP - not selected for profile README publish scope |
+| `youtube-video-uploader` | public | AGPL-3.0 | 2026-06-06 | NO-GO/SKIP - not selected for profile README publish scope |
+| `SamAI` | external link | unknown | unknown | NO-GO - Chrome Web Store link redirects to generic store homepage |
