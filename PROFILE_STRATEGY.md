@@ -16,7 +16,7 @@ This is **not just a README change**. The README is one asset in a broader cross
 | GitHub profile bio | Name-drop the killer work above the README | ⏳ Needs GitHub profile access | Suggested: "Rust infrastructure for fleets, git, and terminals. 239K+ LOC, 5,600+ tests, 24 crates on crates.io." |
 | GitHub Sponsors page bio | Convert warm visitors with concrete stats | ⏳ Needs GitHub Sponsors access | Suggested: "239K+ lines of Rust, 5,600+ tests, 24 crates on crates.io, 12 in-scope repos per the audit." |
 | `dracon.uk` footer | Route product/tip traffic without diluting the README | ⏳ Needs site repo access | Add Ko-fi on the site, not the README |
-| YouTube channel nav | 5-link ecosystem map | ⏳ Needs YouTube Studio access | `dracon.uk`, GitHub, Sponsor, Ko-fi, Discord if active |
+| YouTube channel nav | Premium funnel map: site, GitHub, Sponsor, optional community | ⏳ Needs YouTube Studio access | `dracon.uk`, GitHub, Sponsor, Discord if active; Ko-fi optional only if selling small-ticket products |
 | YouTube descriptions | Reusable 5+1 template for each video | ⏳ Needs YouTube Studio access | Hook → sponsor if any → body → topic index → social links → evergreen CTA |
 | Content cadence / format | Weekly volume into the funnel | ⏳ Needs publishing workflow | Weekly shorts or weekly live streams; short-form hooks + long-form deep-dives |
 
@@ -196,7 +196,7 @@ Per §3.4 of `YOUTUBE_AND_MONETIZATION_RESEARCH.md`:
 |:-:|:-------|:------|:-------|:----|
 | 1 | **Keep GitHub Sponsors link in README** | `README_DRAFT.md` footer | None | Already verified set up; page exists, bio is real, custom amount + monthly/one-time working |
 | 2 | **Add Ko-fi to dracon.uk footer** (not README) | `dracon.uk` site | Low | Ko-fi is for digital products (Anki deck is already there) — fits the products-site tone, not the OSS profile tone |
-| 3 | **Add Ko-fi to YouTube video descriptions** (when YouTube is active) | YouTube video descriptions | Low | **Highest-conversion spot for tip links** per Fireship/Theo patterns. YouTube viewers are the warmest audience for "buy me a coffee" |
+| 3 | **Do not add Ko-fi to YouTube video descriptions by default** | YouTube video descriptions | Low | Premium subscription positioning should lead with `dracon.uk`, GitHub, and Sponsor. Ko-fi can be used only when the specific video/product is small-ticket or community-support oriented. |
 | 4 | **Add GitHub profile bio name-drop** (separate from README) | GitHub profile bio field | Low | Pattern from mitsuhiko: "Software developer... Creator of the Flask framework. Founder of @earendil-works." — name-drops the killer work. Suggested: "Rust infrastructure for fleets, git, and terminals. 239K+ LOC, 5,600+ tests." |
 | 5 | **Expand Sponsors page bio with concrete stats** | `github.com/sponsors/DraconDev` | Medium | Pattern from dtolnay: he bioed "68% of all published crates on crates.io depend transitively on syn." Stats make the page credible. Concrete numbers: 239K+ LOC, 5,600+ tests, 24 crates on crates.io, 12 in-scope repos per the audit. |
 
@@ -277,7 +277,7 @@ The 3-link footer block (dracon.uk · YouTube · Sponsor) follows the Fireship "
 - **Hero line "Hey, I make tools that run themselves."** — Per mitsuhiko's pattern, this is the strong name-drop. Don't change.
 - **4-repo pin list (TUI & Terminal)** — Per the "tangible things only" stance and the audit, this is correct. Don't add "Working on" or "Experimental" sections.
 - **239K+ lines / 5,600+ tests stat** — concrete numbers, no widgets. Per the original 131-profile research. Don't change.
-- **No Ko-fi in README** — Per Fireship/Theo patterns, the 3-link footer is the right density. Adding Ko-fi to the README would dilute.
+- **No Ko-fi in README or default YouTube premium funnel** — Ko-fi stays on `dracon.uk` as optional low-friction support. It should not lead the YouTube funnel while the strategy is premium subscriptions.
 - **No WIP platform in README** — `DraconDev/dracon-platform` is currently WIP, so it stays out of the profile README and pin list until it has public, tangible value.
 
 ### Cross-References
@@ -354,7 +354,7 @@ The most effective strategy is not to copy any single peer. It's to **combine th
 - **Sponsors page bio:** Expand with concrete stats: "239K+ lines of Rust, 5,600+ tests, 24 crates on crates.io, 12 in-scope repos per the audit."
 - **README:** Keep the current 15-line, 4-repo pin list. Do NOT add "Working on" or "Experimental" sections.
 - **YouTube descriptions (when active):** Fireship 5+1 structure: hook → sponsor (if any) → body → topic index → social links → evergreen CTA.
-- **YouTube channel nav (when active):** 5 links: dracon.uk, GitHub, Sponsor, Ko-fi, Discord (if active).
+- **YouTube channel nav (when active):** 4 primary links: dracon.uk, GitHub, Sponsor, Discord (if active). Ko-fi is optional only if selling small-ticket products.
 - **Content cadence:** Weekly live streams or weekly shorts. Consistency > volume.
 - **Content format:** Mix of short-form (shorts) and long-form (deep-dives). Short-form hooks, long-form retains.
 - **Cross-platform hub:** dracon.uk is the hub. All roads lead there.
@@ -373,7 +373,7 @@ The most effective strategy is not to copy any single peer. It's to **combine th
 
 #### 3. YouTube channel nav links (33/40) — Theo's 5-link nav
 **Why it works:** 5 links give the viewer a map of the ecosystem. It works when you have multiple channels. Counter-evidence: fasterthanlime has just Patreon in the nav and still 58K subs — so the nav links are not necessary if the content is strong enough.
-**How to test for DraconDev:** The YouTube channel nav should eventually include: dracon.uk, GitHub, Sponsor, Ko-fi, Discord (if active). That's 5 links, matching Theo's pattern.
+**How to test for DraconDev:** The YouTube channel nav should eventually include: dracon.uk, GitHub, Sponsor, Discord (if active). Ko-fi is excluded by default to preserve premium subscription positioning.
 
 #### 4. YouTube description hook (31/40) — Fireship's 1-2 line hook
 **Why it works:** The hook is the first thing the viewer sees. A good hook turns a casual viewer into a subscriber. It works when the content is strong. Counter-evidence: antfu's description is just the episode title and still works for live streams — so the hook is not necessary if the content is niche enough.
@@ -388,7 +388,7 @@ The most effective strategy is not to copy any single peer. It's to **combine th
 - **Hero line "Hey, I make tools that run themselves."** — Per mitsuhiko's pattern, this is the strong name-drop. Don't change.
 - **4-repo pin list (TUI & Terminal)** — Per the "tangible things only" stance and the audit, this is correct. Don't add "Working on" or "Experimental" sections.
 - **239K+ lines / 5,600+ tests stat** — concrete numbers, no widgets. Per the original 131-profile research. Don't change.
-- **No Ko-fi in README** — Per Fireship/Theo patterns, the 3-link footer is the right density. Adding Ko-fi to the README would dilute.
+- **No Ko-fi in README or default YouTube premium funnel** — Ko-fi stays on `dracon.uk` as optional low-friction support. It should not lead the YouTube funnel while the strategy is premium subscriptions.
 - **No WIP platform in README** — `DraconDev/dracon-platform` is currently WIP, so it stays out of the profile README and pin list until it has public, tangible value.
 
 ### Cross-References

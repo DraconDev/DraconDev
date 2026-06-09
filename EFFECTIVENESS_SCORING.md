@@ -121,7 +121,7 @@ The goal is not to find the "best" peer. The goal is to find the **best factor f
 ### Factor 11: YouTube channel nav links
 **Best-in-class:** Theo (5 links: second channel, third channel, Twitter, Twitch, t3.gg)
 **Why it works:** 5 links give the viewer a map of the ecosystem. It works when you have multiple channels. Counter-evidence: fasterthanlime has just Patreon in the nav and still 58K subs — so the nav links are not necessary if the content is strong enough.
-**How to test for DraconDev:** The YouTube channel nav should eventually include: dracon.uk, GitHub, Sponsor, Ko-fi, Discord (if active). That's 5 links, matching Theo's pattern.
+**How to test for DraconDev:** The YouTube channel nav should eventually include: dracon.uk, GitHub, Sponsor, Discord (if active). Ko-fi is excluded by default to preserve premium subscription positioning.
 
 ### Factor 12: Content cadence
 **Best-in-class:** antfu (weekly live streams)
@@ -168,7 +168,7 @@ The best factors from each peer, combined:
 - **Description hook** (from Fireship): 1-2 line hook that names the specific problem the video solves.
 - **Sponsor placement** (from Theo): Sponsor at the top only if there's actually a sponsor.
 - **Social links** (from ThePrimeagen): 3 links at the top (Twitch, Discord, boot.dev) — adapt to dracon.uk, GitHub, Sponsor.
-- **Channel nav links** (from Theo): 5 links (dracon.uk, GitHub, Sponsor, Ko-fi, Discord if active).
+- **Channel nav links** (from Theo): 4 primary links for premium positioning (dracon.uk, GitHub, Sponsor, Discord if active). Ko-fi is optional only if selling small-ticket products.
 - **Content cadence** (from antfu): Weekly live streams or weekly shorts.
 - **Content format** (from Fireship): Mix of short-form (shorts) and long-form (deep-dives).
 - **Cross-platform CTA consistency** (from Theo): One link to rule them all (t3.gg) — adapt to dracon.uk as the hub.
@@ -219,8 +219,8 @@ This is the combined strategy. It takes the best factor from each peer and synth
 4. DraconDev already has most of the right pieces in place. The missing piece is **volume** — getting more content into the funnel.
 5. The README is already optimal for the "tangible things only" stance. The best next changes are:
    - Expand the Sponsors page bio with concrete stats (dtolnay pattern)
-   - Add Ko-fi to dracon.uk (not README)
-   - Add Ko-fi to YouTube descriptions (when active)
+   - Add Ko-fi to dracon.uk (not README) as optional low-friction support
+   - Do not add Ko-fi to YouTube descriptions by default while the strategy is premium subscriptions
    - Add a GitHub profile bio name-drop (mitsuhiko pattern)
    - Do not add WIP `DraconDev/dracon-platform` to the profile README or pin list until it has public, tangible value
 

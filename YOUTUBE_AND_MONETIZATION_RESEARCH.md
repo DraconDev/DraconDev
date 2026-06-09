@@ -274,7 +274,7 @@ None of these accounts visibly showed "0 sponsors" or "X sponsors" in the unauth
 
 1. **GitHub Sponsors is the OSS-first play.** Custom amounts, no tier names, bio does the heavy lifting. Best for OSS maintainers. **DraconDev's page is set up correctly.**
 2. **Ko-fi is the digital-product play.** Shop tab + tip amounts. Best for creators with small products (Anki decks, art, music). **DraconDev's Anki deck is already there.**
-3. **YouTube description is the highest-conversion spot for Ko-fi tips.** A "Tip me at ko-fi.com/adamdracon" line in every YouTube video description converts better than Ko-fi on a personal website. **DraconDev should add this when YouTube gets active.**
+3. **YouTube description is the highest-conversion spot for Ko-fi tips.** A "Tip me at ko-fi.com/adamdracon" line in every YouTube video description converts better than Ko-fi on a personal website. **DraconDev decision update:** do not use it by default while the strategy is premium subscriptions; reserve it for small-ticket or community-support content.
 4. **Patreon is the middle path.** In channel nav, lower pressure than per-video affiliate. Good if you don't want to monetize aggressively.
 5. **"First supporter" anxiety is mostly internal.** All the verified sponsor pages look complete at 0 sponsors. The page itself is the proof of seriousness, not the supporter count.
 
@@ -284,7 +284,8 @@ None of these accounts visibly showed "0 sponsors" or "X sponsors" in the unauth
 |:-------|:------|:-------|:----|
 | ✅ Keep the GitHub Sponsors link in README | README_DRAFT.md | None | Already verified as set up |
 | ✅ Add Ko-fi to dracon.uk (not README) | dracon.uk footer | Low | Fits the "small products" tone, not the OSS profile tone |
-| 🆕 Add Ko-fi to YouTube video descriptions (when YouTube is active) | YouTube descriptions | Low | Highest-conversion spot for tip links per Fireship/Theo patterns |
+| ⚠️ Do **not** add Ko-fi to YouTube video descriptions by default | YouTube descriptions | Low | Current positioning is premium subscriptions; Ko-fi can look small-ticket unless the specific video/product is small-ticket or community-support oriented |
+| 🆕 Add Ko-fi to YouTube video descriptions only for small-ticket/community-support content | YouTube descriptions | Low | Highest-conversion spot for tip links per Fireship/Theo patterns, but should not lead the premium funnel |
 | 🆕 Consider a sponsorable-callout in the GitHub profile bio | GitHub profile (separate from README) | Low | Pattern 4 from §1.6 — name-drop the killer work. e.g. "Rust infrastructure for fleets, git, and terminals. 239K+ LOC, 5,600+ tests." |
 | 🆕 Consider expanding the Sponsors page bio | github.com/sponsors/DraconDev | Medium | mitsuhiko's 800-word bio is the high-effort pattern. dtolnay's "68% of crates depend on me" stat is the killer-stat pattern. |
 
@@ -323,6 +324,6 @@ None of these accounts visibly showed "0 sponsors" or "X sponsors" in the unauth
 2. **YouTube description pattern is highly consistent** across the 5 dev YouTubers: hook → sponsor → body → topic list → social links → evergreen CTA.
 3. **GitHub Sponsors pages are uniform** — custom amount, no tier names, bio does the heavy lifting.
 4. **Ko-fi is for digital products + tips**, distinct from GitHub Sponsors which is for OSS sponsorship.
-5. **Cross-platform funnel**: YouTube → channel nav → social → GitHub → Sponsor/Ko-fi. DraconDev already has the funnel; the research confirms the structure.
+5. **Cross-platform funnel**: YouTube → channel nav → social → GitHub → Sponsor. Ko-fi is optional secondary support on `dracon.uk`, not the default YouTube CTA.
 
 **DraconDev-specific recommendations** are in §3.4. The apply task (`apply-findings`) will turn §3.4 into concrete edits to `PROFILE_STRATEGY.md`, `README_DRAFT.md`, and `GITHUB_PROFILE_RESEARCH.md`.
