@@ -5,12 +5,12 @@
   "status": "active",
   "autoContinue": true,
   "usage": {
-    "tokensUsed": 6345696,
-    "activeSeconds": 27295
+    "tokensUsed": 6782171,
+    "activeSeconds": 27376
   },
   "sisyphus": false,
   "createdAt": "2026-06-09T01:28:50.256Z",
-  "updatedAt": "2026-06-09T09:04:56.085Z",
+  "updatedAt": "2026-06-09T09:06:18.742Z",
   "activePath": ".pi/goals/active_goal_2026060902285025_mq5yoguo-wewezf.md",
   "taskList": {
     "tasks": [
@@ -41,7 +41,9 @@
       {
         "id": "apply-findings",
         "title": "Apply concrete updates to PROFILE_STRATEGY.md, GITHUB_PROFILE_RESEARCH.md, and README_DRAFT.md",
-        "status": "pending",
+        "status": "complete",
+        "completedAt": "2026-06-09T09:06:18.739Z",
+        "evidence": "Applied 3 concrete updates: (1) README_DRAFT.md + root README.md: '**4** on crates.io' → '[**4** on crates.io](https://crates.io/users/DraconDev)' — makes the stat a clickable link to the canonical cr",
         "verificationContract": "PROFILE_STRATEGY.md has new sections referencing research findings; README_DRAFT.md has at least one concrete change (link, hero line, CTA, or stat format) justified by the new research; all README_DRAFT.md links still return HTTP 200; root README.md stays in sync with README_DRAFT.md."
       }
     ],
@@ -90,13 +92,13 @@ If blocked: stop and ask the user.
 - Status: running
 - Auto-continue: on
 - Sisyphus mode: no
-- Time spent: 7h34m55s
-- Tokens used: 6.3M (6,345,696) tokens
+- Time spent: 7h36m16s
+- Tokens used: 6.8M (6,782,171) tokens
 ## Tasks
 
 <!-- blockCompletion: false -->
 - [x] research-github: Research GitHub profile patterns (refresh 131-profile analysis) — evidence: Added new section "2026 Refresh: New Profile Patterns (5 New Profiles Analyzed)" to GITHUB_PROFILE_RESEARCH.md (file grew 18KB→27KB). Section covers 5 Playwright-verified profile examples NOT in the o
 - [x] research-youtube: Research YouTube + content-creator patterns (dev YouTubers: Prime, Theo, antfu, etc.) — evidence: Created YOUTUBE_AND_MONETIZATION_RESEARCH.md covering 3 angles. YouTube section: 5 dev YouTubers verified (ThePrimeagen, Theo/t3dotgg, antfu, Fireship, fasterthanlime). Each has: subscribers, channel 
 - [x] research-monetization: Research monetization & sponsorship patterns (real GitHub Sponsors + Ko-fi accounts) — evidence: Monetization section of YOUTUBE_AND_MONETIZATION_RESEARCH.md covers: 5 GitHub Sponsors accounts (dtolnay, BurntSushi, mitsuhiko, fasterthanlime, yoshuawuyts) with full bio text, custom-amount verifica
-- [ ] apply-findings: Apply concrete updates to PROFILE_STRATEGY.md, GITHUB_PROFILE_RESEARCH.md, and README_DRAFT.md — contract: PROFILE_STRATEGY.md has new sections referencing research findings; README_DRAFT.md has at least one concrete change (link, hero line, CTA, or stat format) justified by the new research; all README_DRAFT.md links still return HTTP 200; root README.md stays in sync with README_DRAFT.md.
+- [x] apply-findings: Apply concrete updates to PROFILE_STRATEGY.md, GITHUB_PROFILE_RESEARCH.md, and README_DRAFT.md — evidence: Applied 3 concrete updates: (1) README_DRAFT.md + root README.md: '**4** on crates.io' → '[**4** on crates.io](https://crates.io/users/DraconDev)' — makes the stat a clickable link to the canonical cr
 
