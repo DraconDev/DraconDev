@@ -137,3 +137,4 @@ Before marking the goal complete, verify:
 5. Any external platform update is backed by a screenshot, exported text, or deployment URL.
 6. Any missing external update is explicitly marked as blocked by access, not deferred silently.
 7. The WIP `DraconDev/dracon-platform` repo is not added to the public profile README or pin list unless it has a public landing/demo/pricing surface.
+8. The GitHub profile sidebar fields match the README positioning and do not add unsupported social links.

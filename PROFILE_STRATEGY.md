@@ -12,6 +12,7 @@ This is **not just a README change**. The README is one asset in a broader cross
 | `README.md` / `README_DRAFT.md` | Public GitHub profile proof: hero line, 4 pinned repos, stats, 3 CTAs | ✅ Aligned | Current 15-line README; keep unchanged unless new evidence appears |
 | `PROFILE_STRATEGY.md` | Internal strategy map: what to do, where, why, and in what order | ✅ Updated | Effectiveness scoring section + action plan reference |
 | `EFFECTIVENESS_SCORING.md` | Evidence base: factor scores, why they work, synthesized strategy | ✅ Created | 18.6KB, 226-line scoring artifact |
+| GitHub profile sidebar | First-screen context: name, bio, website, company, location | ⏳ Needs GitHub profile access | Bio/website/company should reinforce the README without adding unsupported links |
 | GitHub profile bio | Name-drop the killer work above the README | ⏳ Needs GitHub profile access | Suggested: "Rust infrastructure for fleets, git, and terminals. 239K+ LOC, 5,600+ tests, 24 crates on crates.io." |
 | GitHub Sponsors page bio | Convert warm visitors with concrete stats | ⏳ Needs GitHub Sponsors access | Suggested: "239K+ lines of Rust, 5,600+ tests, 24 crates on crates.io, 12 in-scope repos per the audit." |
 | `dracon.uk` footer | Route product/tip traffic without diluting the README | ⏳ Needs site repo access | Add Ko-fi on the site, not the README |
@@ -198,6 +199,20 @@ Per §3.4 of `YOUTUBE_AND_MONETIZATION_RESEARCH.md`:
 | 3 | **Add Ko-fi to YouTube video descriptions** (when YouTube is active) | YouTube video descriptions | Low | **Highest-conversion spot for tip links** per Fireship/Theo patterns. YouTube viewers are the warmest audience for "buy me a coffee" |
 | 4 | **Add GitHub profile bio name-drop** (separate from README) | GitHub profile bio field | Low | Pattern from mitsuhiko: "Software developer... Creator of the Flask framework. Founder of @earendil-works." — name-drops the killer work. Suggested: "Rust infrastructure for fleets, git, and terminals. 239K+ LOC, 5,600+ tests." |
 | 5 | **Expand Sponsors page bio with concrete stats** | `github.com/sponsors/DraconDev` | Medium | Pattern from dtolnay: he bioed "68% of all published crates on crates.io depend transitively on syn." Stats make the page credible. Concrete numbers: 239K+ LOC, 5,600+ tests, 24 crates on crates.io, 12 in-scope repos per the audit. |
+
+### GitHub Profile Sidebar Recommendation
+
+The sidebar is separate from the README and should reinforce the same positioning:
+
+| Field | Recommended value |
+|:------|:------------------|
+| Name | `DraconDev` |
+| Bio | `Rust infrastructure for fleets, git, and terminals. 239K+ LOC, 5,600+ tests, 24 crates on crates.io.` |
+| Website | `https://dracon.uk` |
+| Company | `DraconDev` |
+| Location | Only if public and accurate; do not add just for SEO |
+
+**Why:** The sidebar is the first context a visitor sees before the README. It should reinforce the README, not duplicate it.
 
 ### GitHub Profile Bio Recommendation (Pattern 4 from research)
 

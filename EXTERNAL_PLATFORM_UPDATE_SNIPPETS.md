@@ -5,7 +5,23 @@
 
 **Note on `DraconDev/dracon-platform`:** currently WIP, so it is **not** added to the profile README, pin list, or Ko-fi funnel yet. Revisit only when it has public, tangible value.
 
-## 1. GitHub Profile Bio
+## 1. GitHub Profile Sidebar
+
+**Asset:** GitHub profile sidebar fields: name, bio, website, company, location.
+**Recommended fields:**
+- **Name:** `DraconDev`
+- **Bio:** `Rust infrastructure for fleets, git, and terminals. 239K+ LOC, 5,600+ tests, 24 crates on crates.io.`
+- **Website:** `https://dracon.uk`
+- **Company:** `DraconDev`
+- **Location:** only if public and accurate; do not add just for SEO
+
+**Why these fields:** The sidebar is the first context a visitor sees before the README. It should reinforce the README, not duplicate it.
+
+**Verification:** Screenshot or exported profile text showing the sidebar fields.
+
+---
+
+## 2. GitHub Profile Bio
 
 **Asset:** GitHub profile bio field
 **Recommended copy:**
@@ -17,7 +33,7 @@
 
 ---
 
-## 2. GitHub Sponsors Page Bio
+## 3. GitHub Sponsors Page Bio
 
 **Asset:** `github.com/sponsors/DraconDev`
 **Recommended copy:**
@@ -29,7 +45,7 @@
 
 ---
 
-## 3. `dracon.uk` Footer Copy
+## 4. `dracon.uk` Footer Copy
 
 **Asset:** Site footer or global nav
 **Recommended copy:**
@@ -41,7 +57,7 @@
 
 ---
 
-## 4. YouTube Channel Nav Links
+## 5. YouTube Channel Nav Links
 
 **Asset:** YouTube Studio → Customization → Basic info → Links
 **Recommended links:**
@@ -57,7 +73,7 @@
 
 ---
 
-## 5. YouTube Description Template
+## 6. YouTube Description Template
 
 **Asset:** Video description template
 **Recommended structure:**
@@ -82,7 +98,7 @@ Support what I build: https://github.com/sponsors/DraconDev · https://ko-fi.com
 
 ---
 
-## 6. `DraconDev/dracon-platform` README (Future Only)
+## 7. `DraconDev/dracon-platform` README (Future Only)
 
 **Asset:** Platform repo README, only if/when `dracon-platform` becomes public-facing.
 **Status:** WIP; do not add yet.
@@ -90,7 +106,7 @@ Support what I build: https://github.com/sponsors/DraconDev · https://ko-fi.com
 **Why:** The profile README is for current, tangible proof. A WIP platform repo should not dilute the 4-repo pin list or create a broken funnel.
 **Verification needed:** Public repo URL, rendered README screenshot, or deployed landing page showing the platform has enough substance to support a Ko-fi/product CTA.
 
-## 7. Content Cadence / Format
+## 8. Content Cadence / Format
 
 **Asset:** Publishing workflow
 **Recommended cadence:** Weekly shorts or weekly live streams
@@ -102,14 +118,15 @@ Support what I build: https://github.com/sponsors/DraconDev · https://ko-fi.com
 
 ---
 
-## 7. Execution Order
+## 9. Execution Order
 
-1. GitHub profile bio
-2. GitHub Sponsors page bio
-3. `dracon.uk` footer
-4. `DraconDev/dracon-platform` README, only after public release
-5. YouTube channel nav
-6. YouTube description template
-7. Content cadence / format
+1. GitHub profile sidebar
+2. GitHub profile bio
+3. GitHub Sponsors page bio
+4. `dracon.uk` footer
+5. `DraconDev/dracon-platform` README, only after public release
+6. YouTube channel nav
+7. YouTube description template
+8. Content cadence / format
 
 **Reason:** Start with the assets that convert warm visitors first (GitHub profile + Sponsors page), then expand the funnel outward (site footer, YouTube nav, descriptions, cadence).
