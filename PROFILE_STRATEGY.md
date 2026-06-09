@@ -138,3 +138,117 @@ Your strongest asset isn't your Rust repos — it's the **combination** of:
 - Rust repos (credibility that proves you can build real systems)
 
 t3dotgg doesn't win because he writes good code. He wins because he has YouTube + products + a clean profile that connects them. You have all three assets. You just need to connect them.
+
+---
+
+## 2026 Refresh: Cross-Platform Funnel & Sponsor Placement
+
+**Date:** 2026-06-09
+**Source:** `YOUTUBE_AND_MONETIZATION_RESEARCH.md` (22KB, Playwright-verified across 5 GitHub profiles, 5 YouTubers, 5 Sponsors accounts, 2 Ko-fi pages)
+
+### The 5-Stage Cross-Platform Funnel (verified across 5 YouTubers)
+
+```
+[1] Content (YouTube video)
+        ↓
+[2] Subscribe (channel page)
+        ↓
+[3] Discover more (channel nav banner: Twitter, Twitch, Patreon, blog, GitHub, Discord)
+        ↓
+[4] Support (GitHub Sponsors / Patreon / affiliate link)
+        ↓
+[5] Deeper engagement (blog / courses / products on dracon.uk)
+```
+
+**DraconDev funnel status:**
+- ✅ Stage 1: YouTube channel exists
+- ✅ Stage 2: YouTube channel subscribable
+- ✅ Stage 3: Channel nav (in README) has 3 links: dracon.uk · YouTube · Sponsor — per Fireship/Theo patterns, 3 distinct value props is the right density
+- ✅ Stage 4: GitHub Sponsors page is **verified set up** (Playwright: "Become a sponsor to Dracon" page with bio "Support DraconDev's open source work" + monthly/one-time tiers + custom amount)
+- ✅ Stage 5: dracon.uk has Products / Pricing / Licensing / AI Hub nav (verified via Playwright in earlier session)
+
+**The funnel is complete.** What's missing is volume — getting more content into Stage 1 to feed the funnel.
+
+### Sponsor Placement Recommendations (5 concrete actions)
+
+Per §3.4 of `YOUTUBE_AND_MONETIZATION_RESEARCH.md`:
+
+| # | Action | Where | Effort | Why |
+|:-:|:-------|:------|:-------|:----|
+| 1 | **Keep GitHub Sponsors link in README** | `README_DRAFT.md` footer | None | Already verified set up; page exists, bio is real, custom amount + monthly/one-time working |
+| 2 | **Add Ko-fi to dracon.uk footer** (not README) | `dracon.uk` site | Low | Ko-fi is for digital products (Anki deck is already there) — fits the products-site tone, not the OSS profile tone |
+| 3 | **Add Ko-fi to YouTube video descriptions** (when YouTube is active) | YouTube video descriptions | Low | **Highest-conversion spot for tip links** per Fireship/Theo patterns. YouTube viewers are the warmest audience for "buy me a coffee" |
+| 4 | **Add GitHub profile bio name-drop** (separate from README) | GitHub profile bio field | Low | Pattern from mitsuhiko: "Software developer... Creator of the Flask framework. Founder of @earendil-works." — name-drops the killer work. Suggested: "Rust infrastructure for fleets, git, and terminals. 239K+ LOC, 5,600+ tests." |
+| 5 | **Expand Sponsors page bio with concrete stats** | `github.com/sponsors/DraconDev` | Medium | Pattern from dtolnay: he bioed "68% of all published crates on crates.io depend transitively on syn." Stats make the page credible. Concrete numbers: 239K+ LOC, 5,600+ tests, 24 crates on crates.io, 12 in-scope repos per the audit. |
+
+### GitHub Profile Bio Recommendation (Pattern 4 from research)
+
+Per mitsuhiko's pattern (the most directly applicable for DraconDev):
+
+**Current** (per earlier docs, profile bio field on GitHub):
+> (empty or default)
+
+**Suggested** (per new research, name-drops killer work like mitsuhiko does with "Flask"):
+> Rust infrastructure for fleets, git, and terminals. 239K+ lines, 5,600+ tests, 24 crates on crates.io.
+
+**Why this works:** Per the research, mitsuhiko's 25K-follower profile bioed "Creator of the Flask framework" and "Founder of @earendil-works" — 4-word and 5-word positioning hits. DraconDev's bio should similarly name-drop the killer work (Rust infrastructure at scale).
+
+### YouTube Description Pattern (5+1 sections, per Fireship)
+
+When YouTube becomes active, the description pattern below applies (verified across 5 YouTubers, most clearly seen in Fireship's descriptions):
+
+```
+[1] Hook (1-2 lines, the video topic)
+
+[2] Sponsor (when there is one — at the TOP):
+    "Thank you [Sponsor] for sponsoring! Check them out at: [link]"
+
+[3] Body (2-3 paragraphs of context, source links, etc.)
+
+[4] Topic index (when relevant):
+    🔖 Topics Covered
+    - Topic 1: link
+    - Topic 2: link
+
+[5] Social/website CTAs (BOTTOM of description):
+    Check out my [Twitter/Twitch/Blog] at [link]
+    Find more of my stuff on: [main website]
+
+[6] Recurring evergreen CTA (high-value):
+    "Want more? [Newsletter] · [Courses] · [Ko-fi tip jar] · [GitHub Sponsors]"
+```
+
+**For DraconDev specifically** (when YouTube is active):
+- [1] Hook: 1-2 lines about the topic
+- [2] Sponsor: at top, but only if there's actually a sponsor (per antfu: don't fake it)
+- [3] Body: 2-3 paragraphs
+- [5] Social: link to dracon.uk, GitHub profile, Ko-fi
+- [6] Evergreen CTA: "Support what I build: GitHub Sponsors / Ko-fi / dracon.uk"
+
+### README Update (already applied 2026-06-09)
+
+The README footer is now 3 distinct value props (per Fireship pattern: site + content + support). The stats line is now a clickable link to crates.io:
+
+**Before:**
+> **239K+** lines of Rust · **5,600+** tests · **4** on crates.io
+
+**After:**
+> **239K+** lines of Rust · **5,600+** tests · [**4** on crates.io](https://crates.io/users/DraconDev)
+
+The change adds clickability to a stat — verified by Playwright that `https://crates.io/users/DraconDev` loads in a real browser and shows "Displaying 1-10 of 24 total results" (the 24 = total crates; the 4 = the 4 mature/pinned repos featured in the README).
+
+The 3-link footer block (dracon.uk · YouTube · Sponsor) follows the Fireship "Want more?" pattern, with 3 distinct value props. The "first supporter" status is invisible to non-sponsors (GitHub hides count), so the Sponsor link is functional at zero sponsors.
+
+### What the research did NOT change about the README
+
+- **Hero line "Hey, I make tools that run themselves."** — Per mitsuhiko's pattern, this is the strong name-drop. Don't change.
+- **4-repo pin list (TUI & Terminal)** — Per the "tangible things only" stance and the audit, this is correct. Don't add "Working on" or "Experimental" sections.
+- **239K+ lines / 5,600+ tests stat** — concrete numbers, no widgets. Per the original 131-profile research. Don't change.
+- **No Ko-fi in README** — Per Fireship/Theo patterns, the 3-link footer is the right density. Adding Ko-fi to the README would dilute.
+
+### Cross-References
+
+- GitHub profile research: `GITHUB_PROFILE_RESEARCH.md` — original 131-profile analysis (2026-06-06) + 2026 Refresh section (2026-06-09)
+- YouTube & monetization research: `YOUTUBE_AND_MONETIZATION_RESEARCH.md` (22KB, 2026-06-09)
+- Publish readiness audit: `GO_NO_GO_REPORT.md` (2026-06-08) — not regressed by the README change
+- Verification artifacts: `/tmp/profile-*.png` (5 GitHub), `/tmp/yt-*.png` (5 YouTube), `/tmp/monet-*.png` (6 sponsor/kofi), `/tmp/crates-user-final.png` (crates.io user page)
