@@ -109,7 +109,7 @@ The README should **not** become the place where every funnel update lives. The 
 • [dracon-system](https://github.com/DraconDev/dracon-utilities/tree/main/dracon-system) — system monitor, SSH, notifications
 • [dracon-warden](https://github.com/DraconDev/dracon-utilities/tree/main/dracon-warden) — encryption, team keys, secret scanning
 ```
-**Verification needed:** Public monorepo URL, subcomponent README links, clean secret scan, and passing component tests before adding to the profile README.
+**Verification needed:** Public monorepo URL, subcomponent README links, clean secret scan, and passing component/full workspace tests before adding to the profile README. Current local gate: `dracon-system`, `dracon-warden`, and `dracon-sync` integration tests pass; full workspace tests are blocked by `dracon-sync` unit-test failures.
 
 ### 7. Collapsed `<details>` README toggles
 **Status:** ⏳ Future pattern only.

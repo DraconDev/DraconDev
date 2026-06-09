@@ -130,7 +130,7 @@ Support the OSS work: https://github.com/sponsors/DraconDev
 • [dracon-warden](https://github.com/DraconDev/dracon-utilities/tree/main/dracon-warden) — encryption, team keys, secret scanning
 ```
 
-**Release gate:** public repo, clean secret scan, subcomponent READMEs, passing component tests, and verified links before adding to the profile README.
+**Release gate:** public repo, clean secret scan, subcomponent READMEs, passing component/full workspace tests, and verified links before adding to the profile README. Current local gate: `dracon-system`, `dracon-warden`, and `dracon-sync` integration tests pass; full workspace tests are blocked by `dracon-sync` unit-test failures.
 
 ---
 

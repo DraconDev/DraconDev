@@ -173,6 +173,7 @@
 - Root README already separates the three components with links to `dracon-sync/README.md`, `dracon-system/README.md`, and `dracon-warden/README.md`
 - `UTILITY_BOUNDARIES.md` already defines component ownership and non-overlapping roles
 - **Verdict:** Keep the parent monorepo simple, make components distinct, and do not add profile links until the parent repo is public, clean, and verified
+- **Local validation:** `cargo fmt --check` passed, `cargo clippy --workspace --all-targets --all-features -- -D warnings` passed, `dracon-system` and `dracon-warden` tests passed, and `dracon-sync` integration tests passed. Full `cargo test --workspace --no-fail-fast` is still blocked by `dracon-sync` unit-test failures, so the monorepo is not release-ready yet.
 
 ---
 
@@ -314,6 +315,7 @@
    - Keep parent repo simple: root README, install, boundaries, docs index
    - Keep components distinct: `dracon-sync`, `dracon-system`, `dracon-warden` each have their own README, config, service/hook docs, and subdirectory link target
    - Do not split into standalone repos unless explicitly requested later
+   - Fix `dracon-sync` unit-test failures before public release
    - Update profile README links only after the monorepo is public and verified
 
 ---
