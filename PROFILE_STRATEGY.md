@@ -250,5 +250,116 @@ The 3-link footer block (dracon.uk · YouTube · Sponsor) follows the Fireship "
 
 - GitHub profile research: `GITHUB_PROFILE_RESEARCH.md` — original 131-profile analysis (2026-06-06) + 2026 Refresh section (2026-06-09)
 - YouTube & monetization research: `YOUTUBE_AND_MONETIZATION_RESEARCH.md` (22KB, 2026-06-09)
+- Effectiveness scoring: `EFFECTIVENESS_SCORING.md` (18.6KB, 2026-06-09) — factor-based 4×16 matrix, top 5 factors by total score, synthesized combined strategy
+- Publish readiness audit: `GO_NO_GO_REPORT.md` (2026-06-08) — not regressed by the README change
+- Verification artifacts: `/tmp/profile-*.png` (5 GitHub), `/tmp/yt-*.png` (5 YouTube), `/tmp/monet-*.png` (6 sponsor/kofi), `/tmp/crates-user-final.png` (crates.io user page)
+
+---
+
+## Effectiveness Scoring: What Works and Why
+
+**Date:** 2026-06-09
+**Source:** `EFFECTIVENESS_SCORING.md` (18.6KB, 226 lines)
+
+### Why factor-based scoring (not peer ranking)
+
+The goal is not to find the "best" peer. The goal is to find the **best factor from each peer** and combine them into a superior strategy. A peer with 2/4 dimensions excellent is still a source of those 2 dimensions. This is Pareto, not a leaderboard.
+
+### The 4×16 Effectiveness Matrix (summary)
+
+**4 outcome dimensions** (what we're trying to maximize):
+1. **Reach** — how many people see the work (subs/followers/stars/views)
+2. **Engagement** — how much people interact (comments, stars-per-repo, view-through rate, repeat visitors)
+3. **Monetization** — how much money the strategy generates (sponsor count, Patreon, paid sponsors, Ko-fi supporters)
+4. **Cross-platform reinforcement** — how much one channel feeds another (YouTube → GitHub → website → sponsor, etc.)
+
+**16 input factors** (things you can actually change in your own strategy):
+1. Hero line / bio name-drop
+2. Bio depth / killer stats
+3. README presence
+4. Pinned repo selection
+5. Sponsor button presence
+6. Sponsor page bio quality
+7. Sponsor page tier structure
+8. YouTube description hook
+9. YouTube description sponsor placement
+10. YouTube description social links
+11. YouTube channel nav links
+12. Content cadence
+13. Content format
+14. Cross-platform CTA consistency
+15. Social proof visibility
+16. Product/website integration
+
+**Top 5 factors by total score (0-40):**
+1. **Cross-platform CTA consistency** (35) — Theo's t3.gg hub
+2. **Product/website integration** (34) — Fireship's newsletter + courses
+3. **YouTube channel nav links** (33) — Theo's 5-link nav
+4. **YouTube description hook** (31) — Fireship's 1-2 line hook
+5. **Content format** (31) — Fireship's short-form, high-intensity
+
+**Key insight:** The top 5 factors are all about **funnel architecture**, not individual tactics. The best-performing strategies are the ones that create the strongest cross-platform loop.
+
+### Synthesized Combined Strategy
+
+The most effective strategy is not to copy any single peer. It's to **combine the best factor from each peer** into a coherent funnel:
+
+1. **GitHub profile bio** name-drops the killer work (mitsuhiko)
+2. **Sponsors page bio** uses killer stats (dtolnay)
+3. **README** keeps the 15-line, 4-repo pin list (yoshuawuyts + BurntSushi)
+4. **YouTube description** uses the Fireship 5+1 structure with sponsor at top (Fireship + Theo)
+5. **YouTube channel nav** has 5 links (Theo)
+6. **Content cadence** is weekly (antfu)
+7. **Content format** is a mix of short-form (shorts) and long-form (deep-dives) (Fireship)
+8. **Cross-platform CTA consistency** is one hub (dracon.uk) (Theo)
+9. **Social proof visibility** is the Sponsor page + Ko-fi (fasterthanlime + jam1garner)
+10. **Product/website integration** is the book library + newsletter on dracon.uk (Fireship)
+
+**DraconDev-specific synthesis:**
+- **GitHub profile bio:** "Rust infrastructure for fleets, git, and terminals. 239K+ LOC, 5,600+ tests, 24 crates on crates.io."
+- **Sponsors page bio:** Expand with concrete stats: "239K+ lines of Rust, 5,600+ tests, 24 crates on crates.io, 12 in-scope repos per the audit."
+- **README:** Keep the current 15-line, 4-repo pin list. Do NOT add "Working on" or "Experimental" sections.
+- **YouTube descriptions (when active):** Fireship 5+1 structure: hook → sponsor (if any) → body → topic index → social links → evergreen CTA.
+- **YouTube channel nav (when active):** 5 links: dracon.uk, GitHub, Sponsor, Ko-fi, Discord (if active).
+- **Content cadence:** Weekly live streams or weekly shorts. Consistency > volume.
+- **Content format:** Mix of short-form (shorts) and long-form (deep-dives). Short-form hooks, long-form retains.
+- **Cross-platform hub:** dracon.uk is the hub. All roads lead there.
+- **Social proof:** The Sponsor page + Ko-fi page are the social proof. The "first supporter" status is invisible to non-sponsors (GitHub hides count), so the page itself is the proof of seriousness.
+- **Product/website integration:** The book library + newsletter on dracon.uk is the deeper funnel.
+
+### Why the top 5 factors work
+
+#### 1. Cross-platform CTA consistency (35/40) — Theo's t3.gg hub
+**Why it works:** One link (t3.gg) that routes to all socials simplifies the decision for the viewer. It works when you have multiple channels. Counter-evidence: ThePrimeagen has separate links and still works — so consistency is not necessary if the audience is already familiar.
+**How to test for DraconDev:** The current 3-link footer (dracon.uk, YouTube, Sponsor) is the right density. If Ko-fi is added to dracon.uk, the footer should stay at 3 links (dracon.uk, YouTube, Sponsor) — Ko-fi belongs on dracon.uk, not the README.
+
+#### 2. Product/website integration (34/40) — Fireship's newsletter + courses
+**Why it works:** Newsletter + courses + website create a deeper funnel. It works when you have products to sell. Counter-evidence: antfu has no product integration and still works for live streams — so product integration is not necessary if the content is educational enough.
+**How to test for DraconDev:** The dracon.uk site already has Products / Pricing / Licensing / AI Hub. The next step is to link the book library or a newsletter from the YouTube descriptions.
+
+#### 3. YouTube channel nav links (33/40) — Theo's 5-link nav
+**Why it works:** 5 links give the viewer a map of the ecosystem. It works when you have multiple channels. Counter-evidence: fasterthanlime has just Patreon in the nav and still 58K subs — so the nav links are not necessary if the content is strong enough.
+**How to test for DraconDev:** The YouTube channel nav should eventually include: dracon.uk, GitHub, Sponsor, Ko-fi, Discord (if active). That's 5 links, matching Theo's pattern.
+
+#### 4. YouTube description hook (31/40) — Fireship's 1-2 line hook
+**Why it works:** The hook is the first thing the viewer sees. A good hook turns a casual viewer into a subscriber. It works when the content is strong. Counter-evidence: antfu's description is just the episode title and still works for live streams — so the hook is not necessary if the content is niche enough.
+**How to test for DraconDev:** When YouTube becomes active, use a 1-2 line hook that names the specific problem the video solves. E.g., "I built a Rust TUI framework with 43 widgets. Here's what I learned."
+
+#### 5. Content format (31/40) — Fireship's short-form, high-intensity
+**Why it works:** Short-form, high-intensity content is optimized for retention. It works when the audience has short attention spans. Counter-evidence: fasterthanlime's long-form deep-dives work too — so format is not the only factor.
+**How to test for DraconDev:** For DraconDev, a mix of short-form (shorts) and long-form (deep-dives) is likely best. The short-form should hook, the long-form should retain.
+
+### What the scoring did NOT change about the README
+
+- **Hero line "Hey, I make tools that run themselves."** — Per mitsuhiko's pattern, this is the strong name-drop. Don't change.
+- **4-repo pin list (TUI & Terminal)** — Per the "tangible things only" stance and the audit, this is correct. Don't add "Working on" or "Experimental" sections.
+- **239K+ lines / 5,600+ tests stat** — concrete numbers, no widgets. Per the original 131-profile research. Don't change.
+- **No Ko-fi in README** — Per Fireship/Theo patterns, the 3-link footer is the right density. Adding Ko-fi to the README would dilute.
+
+### Cross-References
+
+- Effectiveness scoring: `EFFECTIVENESS_SCORING.md` (18.6KB, 226 lines)
+- YouTube & monetization research: `YOUTUBE_AND_MONETIZATION_RESEARCH.md` (22KB, 2026-06-09)
+- GitHub profile research: `GITHUB_PROFILE_RESEARCH.md` — original 131-profile analysis (2026-06-06) + 2026 Refresh section (2026-06-09)
 - Publish readiness audit: `GO_NO_GO_REPORT.md` (2026-06-08) — not regressed by the README change
 - Verification artifacts: `/tmp/profile-*.png` (5 GitHub), `/tmp/yt-*.png` (5 YouTube), `/tmp/monet-*.png` (6 sponsor/kofi), `/tmp/crates-user-final.png` (crates.io user page)
