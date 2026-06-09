@@ -66,8 +66,8 @@ See `PROFILE_STRATEGY.md` for detailed execution plan.
 **In short:**
 - **Pin:** 3–4 Rust repos (terminal-engine, pully if published, tiles, obs-wayland-hotkey)
 - **Link:** SamAI (Chrome Web Store, not pinned — closed source), YouTube, dracon.uk
-- **Keep private:** platform, code, demons, utilities, all browser extensions except SamAI
-- **Publish:** pully-fully, rust-ai-web-auto, repo-rot-scanner (if ready)
+- **Keep private until release-ready:** platform, code, demons, utilities; utilities can become a simple public monorepo only after cleanup/verification
+- **Publish:** pully-fully, rust-ai-web-auto, repo-rot-scanner (if ready); utilities only as a simple public monorepo with distinct sync/system/warden component paths
 
 ---
 

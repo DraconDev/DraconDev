@@ -128,9 +128,9 @@ Building Rust tools for developers who'd rather write code than manage servers.
 ## Questions to Resolve
 
 1. **dracon-utilities — monorepo or separate repos?**
-   - Separate repos = more pins, more discoverability
-   - Monorepo = cleaner, but only 1 pin
-   - Recommendation: Separate repos for sync/warden/system
+   - Separate repos = more pins, more discoverability, more history work
+   - Monorepo = cleaner parent repo, preserves history, fewer pins
+   - Recommendation: Keep `dracon-utilities` as a simple parent monorepo and make `dracon-sync`, `dracon-system`, `dracon-warden` distinct through component READMEs and profile subpath links
 
 2. **Hero section — which tone?**
    - Minimal vs personality vs direct

@@ -283,7 +283,7 @@ death-note-typing-practice, cinematic-pages, cursor-style, volume-and-video-pro,
 | **dracon-sync** | part of utilities | 8,000+ (sync+policy+report) | Git auto-commit, multi-mirror daemon |
 | **dracon-warden** | part of utilities | 2,120+1,534 | Security — encryption, team keys, secret scanning |
 
-**These power your infrastructure.** Don't publish — they're your competitive advantage.
+**These power your infrastructure.** Treat as a release candidate only after cleanup: publish `dracon-utilities` as a simple parent monorepo with distinct `dracon-sync`, `dracon-system`, and `dracon-warden` component paths, not as a raw dump.
 
 ---
 
@@ -302,7 +302,7 @@ death-note-typing-practice, cinematic-pages, cursor-style, volume-and-video-pro,
 
 ### Keep private
 - dracon-platform, dracon-code, dracon-demons — core business
-- dracon-utilities, dracon-sync, dracon-warden — infrastructure advantage
+- dracon-utilities as simple parent monorepo — infrastructure credibility after release-readiness; keep components distinct
 - All browser extensions (except SamAI) — don't show hand
 
 ### Publish to GitHub (if open-sourcing)

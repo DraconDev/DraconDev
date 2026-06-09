@@ -115,7 +115,7 @@ Total repos listed: **341** (`203` private, `138` public).
 | `dracon-spark-and-director` | private | AGPL-3.0 | 2026-05-23 | NO-GO/SKIP - not selected for profile README publish scope |
 | `dracon-spark-recipes` | private | unknown/none | 2026-04-15 | NO-GO/SKIP - not selected for profile README publish scope |
 | `dracon-terminal-engine` | public | AGPL-3.0 | 2026-06-04 | GO - existing profile pin |
-| `dracon-utilities` | private | AGPL-3.0 | 2026-06-09 | NO-GO - private monorepo containing sync/warden/system |
+| `dracon-utilities` | private → release candidate | AGPL-3.0 | 2026-06-09 | Keep as simple parent monorepo; make sync/warden/system distinct; profile links only after public/clean/verified |
 | `dracon-voice-notifications` | private | MIT | 2026-06-08 | NO-GO/SKIP - not selected for profile README publish scope |
 | `DraconDev` | public | AGPL-3.0 | 2026-06-09 | NO-GO/SKIP - not selected for profile README publish scope |
 | `dracondev-privacy-linkedinapply` | public | AGPL-3.0 | 2026-05-30 | NO-GO/SKIP - not selected for profile README publish scope |
