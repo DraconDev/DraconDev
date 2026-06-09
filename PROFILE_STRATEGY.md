@@ -3,6 +3,24 @@
 ## Goal
 GitHub profile as a revenue-generating sales funnel. Drive visitors to products, services, and YouTube.
 
+## Current Execution Plan (2026-06-09)
+
+This is **not just a README change**. The README is one asset in a broader cross-platform funnel. The current plan separates in-repo documentation from external platform actions:
+
+| Asset | Job | Status | Evidence / artifact |
+|:------|:----|:-------|:--------------------|
+| `README.md` / `README_DRAFT.md` | Public GitHub profile proof: hero line, 4 pinned repos, stats, 3 CTAs | ✅ Aligned | Current 15-line README; keep unchanged unless new evidence appears |
+| `PROFILE_STRATEGY.md` | Internal strategy map: what to do, where, why, and in what order | ✅ Updated | Effectiveness scoring section + action plan reference |
+| `EFFECTIVENESS_SCORING.md` | Evidence base: factor scores, why they work, synthesized strategy | ✅ Created | 18.6KB, 226-line scoring artifact |
+| GitHub profile bio | Name-drop the killer work above the README | ⏳ Needs GitHub profile access | Suggested: "Rust infrastructure for fleets, git, and terminals. 239K+ LOC, 5,600+ tests, 24 crates on crates.io." |
+| GitHub Sponsors page bio | Convert warm visitors with concrete stats | ⏳ Needs GitHub Sponsors access | Suggested: "239K+ lines of Rust, 5,600+ tests, 24 crates on crates.io, 12 in-scope repos per the audit." |
+| `dracon.uk` footer | Route product/tip traffic without diluting the README | ⏳ Needs site repo access | Add Ko-fi on the site, not the README |
+| YouTube channel nav | 5-link ecosystem map | ⏳ Needs YouTube Studio access | `dracon.uk`, GitHub, Sponsor, Ko-fi, Discord if active |
+| YouTube descriptions | Reusable 5+1 template for each video | ⏳ Needs YouTube Studio access | Hook → sponsor if any → body → topic index → social links → evergreen CTA |
+| Content cadence / format | Weekly volume into the funnel | ⏳ Needs publishing workflow | Weekly shorts or weekly live streams; short-form hooks + long-form deep-dives |
+
+The detailed plan, constraints, and verification checklist are in `CROSS_PLATFORM_ACTION_PLAN.md`.
+
 ---
 
 ## Product Inventory (ranked by revenue potential)
@@ -358,6 +376,7 @@ The most effective strategy is not to copy any single peer. It's to **combine th
 
 ### Cross-References
 
+- Cross-platform action plan: `CROSS_PLATFORM_ACTION_PLAN.md` (6.2KB, 2026-06-09)
 - Effectiveness scoring: `EFFECTIVENESS_SCORING.md` (18.6KB, 226 lines)
 - YouTube & monetization research: `YOUTUBE_AND_MONETIZATION_RESEARCH.md` (22KB, 2026-06-09)
 - GitHub profile research: `GITHUB_PROFILE_RESEARCH.md` — original 131-profile analysis (2026-06-06) + 2026 Refresh section (2026-06-09)

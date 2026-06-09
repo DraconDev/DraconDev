@@ -222,5 +222,5 @@ This is the combined strategy. It takes the best factor from each peer and synth
    - Add Ko-fi to YouTube descriptions (when active)
    - Add a GitHub profile bio name-drop (mitsuhiko pattern)
 
-**Next actionable step:** Update `PROFILE_STRATEGY.md` with the synthesized combined strategy above, then apply the 4 concrete changes listed in §3.4 of `YOUTUBE_AND_MONETIZATION_RESEARCH.md`.
+**Next actionable step:** Use `CROSS_PLATFORM_ACTION_PLAN.md` as the execution checklist. It separates in-repo documentation updates from external platform updates and lists the exact access needed for each remaining action.
 
