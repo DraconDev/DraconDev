@@ -177,6 +177,45 @@ Fetched raw README.md from 131 GitHub profiles via `raw.githubusercontent.com`. 
 | 5 | **Motto / focus areas instead of project list** | yoshuawuyts "Be kind to people, be ruthless to systems" + 3 arrows | 8 lines can carry the whole profile if the motto is right. |
 | 6 | **Categorized projects (Current vs. Experimental)** | fasterthanlime | When projects vary in stability, grouping them by status is a useful pattern. (But probably **not for DraconDev** given the "tangible things only" stance.) |
 
+### 2026 Audit Note: Trending Developers and the `isair` Toggle Pattern
+
+**Date:** 2026-06-09
+**Source:** Manual audit of `https://github.com/trending/developers` plus `https://github.com/isair`.
+
+**Finding:** Many trending developer profiles write too much. The profile README often becomes a second portfolio, which fights the GitHub UI because the visitor already sees the sidebar, pinned repos, and activity.
+
+**Good pattern found:** `@isair` uses Markdown `<details><summary>...</summary>` toggles for secondary project categories. The first screen stays short, while deeper project lists are available without expanding by default.
+
+**Verified structure from `@isair`:**
+- Featured project shown directly.
+- "All projects" grouped under collapsed toggles:
+  - Machine Learning Libraries
+  - React Native Libraries
+  - Apps
+  - Example Projects
+  - Gaming Related
+  - iOS & macOS Libraries
+- Each toggle contains links and one-line descriptions.
+
+**What this means for DraconDev:**
+- Do **not** expand the README just to list more projects.
+- Do **not** add WIP `DraconDev/dracon-platform` to the profile README.
+- If future secondary work needs to be listed, use collapsed `<details>` toggles only for non-core categories.
+- The current 15-line README remains the better default because it is already concrete and short.
+
+**Candidate future toggle (do not add yet):**
+```markdown
+<details>
+  <summary>Products / AI tools</summary>
+
+  - [SamAI](https://dracon.uk) — AI browser companion, BYOK.
+  - [rust-ai-web-auto](https://dracon.uk) — AI-driven browser automation.
+
+</details>
+```
+
+**Decision:** Do not add the toggle now. It is useful only when those products have public, tangible surfaces strong enough to support the profile funnel.
+
 ### Concrete implications for DraconDev's profile README
 
 | Current state in `README_DRAFT.md` | Pattern 1-6 implication | Action |

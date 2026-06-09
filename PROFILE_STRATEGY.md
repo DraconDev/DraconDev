@@ -16,6 +16,8 @@ This is **not just a README change**. The README is one asset in a broader cross
 | GitHub profile bio | Name-drop the killer work above the README | ⏳ Needs GitHub profile access | Suggested: "Rust infrastructure for fleets, git, and terminals. 239K+ LOC, 5,600+ tests, 24 crates on crates.io." |
 | GitHub Sponsors page bio | Convert warm visitors with concrete stats | ⏳ Needs GitHub Sponsors access | Suggested: "239K+ lines of Rust, 5,600+ tests, 24 crates on crates.io, 12 in-scope repos per the audit." |
 | `dracon.uk` footer | Route product/tip traffic without diluting the README | ⏳ Needs site repo access | Add Ko-fi on the site, not the README |
+| `DraconDev/dracon-platform` README | Future platform/product landing page | ⏳ Needs public release; currently WIP | Do not add to profile README or pin list until public/tangible |
+| Collapsed `<details>` README toggles | Hide secondary categories without cluttering first screen | ⏳ Future pattern only | Useful for future non-core categories; do not add now |
 | YouTube channel nav | Premium funnel map: site, GitHub, Sponsor, optional community | ⏳ Needs YouTube Studio access | `dracon.uk`, GitHub, Sponsor, Discord if active; Ko-fi optional only if selling small-ticket products |
 | YouTube descriptions | Reusable 5+1 template for each video | ⏳ Needs YouTube Studio access | Hook → sponsor if any → body → topic index → social links → evergreen CTA |
 | Content cadence / format | Weekly volume into the funnel | ⏳ Needs publishing workflow | Weekly shorts or weekly live streams; short-form hooks + long-form deep-dives |
@@ -279,6 +281,8 @@ The 3-link footer block (dracon.uk · YouTube · Sponsor) follows the Fireship "
 - **239K+ lines / 5,600+ tests stat** — concrete numbers, no widgets. Per the original 131-profile research. Don't change.
 - **No Ko-fi in README or default YouTube premium funnel** — Ko-fi stays on `dracon.uk` as optional low-friction support. It should not lead the YouTube funnel while the strategy is premium subscriptions.
 - **No WIP platform in README** — `DraconDev/dracon-platform` is currently WIP, so it stays out of the profile README and pin list until it has public, tangible value.
+- **No long profile README** — the trending-developer audit found many profiles write too much; first-screen signal should stay short.
+- **Collapsed `<details>` toggles are future-only** — useful for secondary categories, but do not add now.
 
 ### Cross-References
 
@@ -390,6 +394,8 @@ The most effective strategy is not to copy any single peer. It's to **combine th
 - **239K+ lines / 5,600+ tests stat** — concrete numbers, no widgets. Per the original 131-profile research. Don't change.
 - **No Ko-fi in README or default YouTube premium funnel** — Ko-fi stays on `dracon.uk` as optional low-friction support. It should not lead the YouTube funnel while the strategy is premium subscriptions.
 - **No WIP platform in README** — `DraconDev/dracon-platform` is currently WIP, so it stays out of the profile README and pin list until it has public, tangible value.
+- **No long profile README** — the trending-developer audit found many profiles write too much; first-screen signal should stay short.
+- **Collapsed `<details>` toggles are future-only** — useful for secondary categories, but do not add now.
 
 ### Cross-References
 
