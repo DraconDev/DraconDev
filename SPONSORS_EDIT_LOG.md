@@ -118,14 +118,34 @@ Evidence:
 - `/tmp/sponsors-after/sponsors-public-full.png`
 - `/tmp/current_listing_after.json`
 
-## Remaining follow-up
+## Blocked stop condition
 
-To finish the sponsors page properly, use the browser dashboard or a future GitHub API surface that can update the existing listing:
+The blocked stop condition is met for the remaining fields. I can no longer make progress on the bio/introduction/goal/featured-work sections without one of these inputs:
+
+- A logged-in browser session that can reach `https://github.com/sponsors/DraconDev/dashboard`.
+- A GitHub-supported API endpoint or mutation for updating an existing Sponsors listing.
+- Direct manual dashboard access by the account owner.
+
+Current evidence for the blocker:
+
+- Correct dashboard URL from GraphQL: `https://github.com/sponsors/DraconDev/dashboard`.
+- Browser capture of the correct dashboard URL renders GitHub sign-in: `/tmp/sponsors-dashboard-attempt/dashboard.json`.
+- Local Chrome/Chromium profiles tested have GitHub `logged_in=no`.
+- Public GraphQL introspection shows no update mutation for the existing Sponsors listing.
+- `createSponsorsListing` returns `DraconDev already has a GitHub Sponsors profile`.
+
+Remaining copy to apply when unblocked:
 
 - Short bio:
   `Rust infrastructure builder — terminal engines, fleet reconcilers, git daemons. I teach the builds on YouTube and sell the tools on dracon.uk.`
 - Introduction:
-  `I build infrastructure in Rust and ship it as open source: terminal engines, fleet reconcilers, git daemons. My tools run on Linux, talk to OBS, encrypt secrets, and reconcile fleets — boring, real work that other developers depend on every day. ...`
+  ```markdown
+  I build infrastructure in Rust and ship it as open source: terminal engines, fleet reconcilers, git daemons. My tools run on Linux, talk to OBS, encrypt secrets, and reconcile fleets — boring, real work that other developers depend on every day.
+
+  Sponsor me if you want me to keep doing that full-time. Sponsorship pays for the time I spend on issues, refactors, security fixes, and the long tail of work that nobody sees. It also funds the YouTube videos where I show how the tools are built.
+
+  Even $3/month makes a real difference. Higher tiers get their name in the README, early access to new releases, and a direct line for bug reports and feature requests.
+  ```
 - Goal:
   `Maintainer time for the next release cycle — $400/month covers a focused month of issue triage, refactors, and security work across the DraconDev tools.`
 - Featured work:
