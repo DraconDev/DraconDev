@@ -124,6 +124,27 @@ Because the remaining fields require dashboard access, I prepared a manual hando
 
 - `/tmp/sponsors_dashboard_manual.md`
 
+## Completion audit table
+
+| Requirement | Status | Evidence |
+| --- | --- | --- |
+| Extensive research document | Complete | `SPONSORS_RESEARCH.md` documents effective sponsors-page patterns, sources, examples, copy, tier structure, and the DraconDev plan. |
+| Factor-specific copy/tier reasoning | Complete | Research identifies best-in-class factors, why they work, and concrete DraconDev tier copy. |
+| Before-state browser capture | Complete | `/tmp/sponsors-before/` contains screenshots, HTML, and extracted JSON/text. |
+| Dashboard profile capture | Attempted/blocked | `/tmp/sponsors-dashboard-attempt/` captures the dashboard URL rendering the GitHub sign-in page. |
+| Live page updated to legitimate state | Partial | Five researched monthly tiers were created and published; bio/story/goal/featured work remain blocked. |
+| Bio/story edit | Blocked | Official GitHub docs route this through the dashboard; no public API mutation exists. |
+| Goal/roadmap edit | Blocked | `activeGoal` remains `null` in `/tmp/current_listing_blocked.json`; dashboard/API access blocked. |
+| Featured work/featured sponsors edit | Blocked | `featuredItems` remains `[]` in `/tmp/current_listing_blocked.json`; dashboard/API access blocked. |
+| Recognition/social proof | Blocked for manual fields | Featured sponsors require dashboard access; tier structure is live. |
+| Social links | Smoke-checked | User-facing GitHub links on the public sponsors page returned HTTP 200; no new non-existent links were added. |
+| Edit method and exact copy recorded | Complete | `SPONSORS_EDIT_LOG.md` records API/browser attempts and exact tier copy without token values. |
+| After-state browser capture | Complete for public page | `/tmp/sponsors-after/` shows the new tiers rendering. |
+| Smoke check | Complete | Public page returns HTTP 200, all five tiers render, and checked user-facing GitHub links return HTTP 200. |
+| Stale/contradictory docs check | Complete | `rg` found no stale sponsors wording or leaked token-like secret patterns. |
+| Working tree | Justified remaining change | `SPONSORS_EDIT_LOG.md` remains modified to record blocker evidence, audit status, and manual handoff. |
+| Final completion | Not complete | Required bio/story, goal/roadmap, featured work, and featured sponsors fields remain unedited because access/API support is insufficient. |
+
 ## Objective audit
 
 - Research document: completed — `SPONSORS_RESEARCH.md` documents effective sponsors-page patterns, sources, copy, tiers, and the DraconDev plan.
