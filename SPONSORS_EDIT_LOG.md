@@ -238,3 +238,86 @@ Remaining copy to apply when unblocked:
   `Maintainer time for the next release cycle — $400/month covers a focused month of issue triage, refactors, and security work across the DraconDev tools.`
 - Featured work:
   `DraconDev/dracon-terminal-engine`, `DraconDev/tiles-tui-file-manager`, `DraconDev/obs-wayland-hotkey`, `DraconDev/git-seal`, `DraconDev/azumi-live-ssr-framework`, `DraconDev/ai-gui-auto-video-editor`.
+
+## 2026-06-10 t3dotgg-style API update
+
+### t3dotgg pattern captured
+
+- Public `t3dotgg` sponsors page captured before this update:
+  - `/tmp/t3dotgg-sponsors/page.html`
+  - `/tmp/t3dotgg-sponsors/text.txt`
+  - `/tmp/t3dotgg-sponsors/page.png`
+  - `/tmp/t3dotgg-sponsors/tiers.json`
+- Observed pattern:
+  - No fixed monthly tier cards.
+  - Monthly and One-time frequency controls.
+  - Custom amount field present.
+  - Default reward text: `A Public Sponsor achievement will be added to your profile.`
+  - Short, personality-led bio/story:
+    - `Hi I'm Theo. You might know me from YouTube, Twitch or Twitter`
+    - `Money contributed here will go towards making more, cooler content, as well as keeping me sane. Appreciate y'all immensely <3`
+  - Social proof visible: `Current sponsors 9`, `Past sponsors 38`.
+- Pattern note: `/tmp/t3dotgg_sponsors_pattern.txt`.
+
+### DraconDev before this API update
+
+- Current DraconDev sponsors page captured before mutation:
+  - `/tmp/dracon-sponsors-before-api-update/page.html`
+  - `/tmp/dracon-sponsors-before-api-update/text.txt`
+  - `/tmp/dracon-sponsors-before-api-update/page.png`
+  - `/tmp/dracon-sponsors-before-api-update/tiers.json`
+- Existing fixed tiers at that moment:
+  - `$3 a month` — `A thank-you in the next release notes.`
+  - `$7 a month` — `Backer perks + your name in the README of one repo of your choice.`
+  - `$14 a month` — `Supporter perks + early access to new releases + a direct line for bug reports.`
+  - `$49 a month` — `Builder perks + your logo on dracon.uk when launched + a 30-min call per quarter.`
+  - `$200 a month` — `Studio perks + a dedicated support channel + roadmap input.`
+
+### API method used
+
+- Loaded the GitHub PAT from `~/.dracon/secrets/pat/github.env` into `GH_TOKEN` only.
+- The token value was not printed, logged, or stored in this file.
+- Confirmed API auth with `gh api user`; the authenticated user is `DraconDev`.
+- Captured the current sponsors listing with `gh api graphql` before mutation:
+  - `/tmp/github_viewer_sponsors_listing.json`
+- Created one new published tier with `createSponsorsTier`:
+  - Name: `$10 a month`
+  - Description: `API-first support: helps keep DraconDev's platform/tooling work moving. Sponsors get a public thank-you in release notes.`
+  - Recurring: `true`
+  - Published immediately: `true`
+  - Response: `/tmp/create_dracon_t3_tier_response.json`
+- Retired the previous five fixed tiers with `retireSponsorsTier`:
+  - `$3 a month` — `ST_kwDOAF7t7s4ACYv5`
+  - `$7 a month` — `ST_kwDOAF7t7s4ACYv7`
+  - `$14 a month` — `ST_kwDOAF7t7s4ACYv8`
+  - `$49 a month` — `ST_kwDOAF7t7s4ACYv9`
+  - `$200 a month` — `ST_kwDOAF7t7s4ACYv-`
+  - Response log: `/tmp/reti[DRACON_SECRET:YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBxa3cxSXQzSklqN1BBeGlQVXRQbVdKWmFNTnB4MTVGdlZPc1dRSlEvVG53CjBXcHBzTU9WdEMvcml6aDBTTi9VMW1Ja3FSSjl1YTNyL1ZWZzRoOFQ1a0UKLT4gWDI1NTE5IHpIdG9zVHlER29WQUNBZHVHZXhSMG4wZW5CR3gxOTNwalBnWDNlL1krMmsKYkVaNVlMb3BqdTQvaHIzaHdHalBqanljK1RWUUF1NnZxd0NTQkd3NjhTMAotPiBYMjU1MTkgVWlPLytzRVFRWjVpOFlSc2xQaHE3V3R2dDA0dmNJWUQyWG9tT04vZTJocwpEdW8rblF5eXFXa3Q3enFoTkRGbFhxRHZ1d2xnQlVVdWF1dzFPSnljUTY0Ci0+IFgyNTUxOSBub0ROUTA5eXppTE9ZaGJXTURURUxZRFd3QlRqbkZrajBnZklpRWtkelU4ClIxeVlWVFJaUEtXWTZxUEFSUmE2M1NleXhjeWxkcitKdW51ayt3SS9lVEUKLT4gXyMtZ3JlYXNlICNWQVI5a3IKY29xbnJnYWVSY0JtRW5VUkF2SittWUVleFpyUDBCL2UwQjYycHZCYk1yMGV6NFJnZ3hhQXBCOWszeUltZVlnTwprVHZMemdUendCWQotLS0gMU42RHlXcm0rQ0lhUTduTHVzWlhsdEdlcUVKeUhkdU5ZajZ5bnRaT0FxTQoX4ArX0POAjIxVu4JyayKjXSwIHRBr+kHdopuM5wGlwvUJXLnWR/2UV9lc4hnHkGjefbX2aeyjCZyTrz4=].jsonl`
+- Captured the post-update listing with `gh api graphql`:
+  - `/tmp/github_viewer_sponsors_listing_after.json`
+
+### Post-update DraconDev state
+
+- Updated DraconDev sponsors page captured after mutation:
+  - `/tmp/dracon-sponsors-after-api-update/page.html`
+  - `/tmp/dracon-sponsors-after-api-update/text.txt`
+  - `/tmp/dracon-sponsors-after-api-update/page.png`
+  - `/tmp/dracon-sponsors-after-api-update/tiers.json`
+- Public page now shows:
+  - Custom amount selector: `Choose a custom amount.`
+  - One fixed tier: `$10 a month`
+  - Tier description: `API-first support: helps keep DraconDev's platform/tooling work moving. Sponsors get a public thank-you in release notes.`
+- The old tier copy is absent from the rendered page.
+
+### Verification
+
+- Smoke check script: `/tmp/dracon_sponsors_t3_smoke.sh`
+  - Public URL returned HTTP 200.
+  - `$10 a month` renders.
+  - `API-first support` renders.
+  - `Choose a custom amount.` renders.
+  - Old tier copy is absent.
+  - No obvious placeholder/WIP wording found.
+- Link check: `/tmp/dracon_sponsors_link_check.json`
+  - Checked 76 unique links from the captured page.
+  - No failures found.
