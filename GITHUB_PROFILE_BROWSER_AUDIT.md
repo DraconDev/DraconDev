@@ -1,6 +1,6 @@
 # GitHub Profile Browser Audit
 
-Captured live with a real browser on 2026-06-09. Updated 2026-06-09 after the 6-pin alignment.
+Captured live with a real browser on 2026-06-09. Updated after the final README presentation polish.
 
 ## Evidence
 
@@ -14,14 +14,14 @@ Captured live with a real browser on 2026-06-09. Updated 2026-06-09 after the 6-
 
 - Profile URL: `https://github.com/DraconDev`
 - Browser title: `DraconDev (Dracon) · GitHub`
-- Profile README is rendered and matches the local `README.md` / `README_DRAFT.md`.
+- Profile README is rendered. The live profile README should be updated after this in-repo polish if the GitHub profile settings still point at the old README content.
 - Sponsor button is visible.
 - Sidebar website link is rendered as `http://dracon.uk/`.
 - README footer links render as:
   - `https://dracon.uk/`
   - `https://youtube.com/@DraconDev`
   - `https://github.com/sponsors/DraconDev`
-- Crates.io link renders as `https://crates.io/users/DraconDev`.
+- Crates.io link target: `https://crates.io/users/DraconDev`.
 - No standalone utilities links are visible:
   - no `DraconDev/dracon-sync`
   - no `DraconDev/dracon-system`
@@ -38,40 +38,49 @@ GitHub currently pins 6 repositories:
 5. `obs-wayland-hotkey`
 6. `git-seal`
 
-## README 6-pin alignment (2026-06-09)
+## Final README presentation (2026-06-09)
 
-The profile strategy now intentionally targets 6 pins, matching the live pinned set and the top profile examples we are copying. The `README.md` and `README_DRAFT.md` have been updated to present those 6 repos grouped by intent:
+The profile README now presents a concise 6-pin set grouped by intent:
 
-- **TUI & Terminal**: `dracon-terminal-engine`, `tiles-tui-file-manager`
-- **Infrastructure**: `obs-wayland-hotkey`, `git-seal`
-- **Frameworks**: `azumi-live-ssr-framework` (Azumi), `ai-gui-auto-video-editor` (AGAVE)
+- **TUI & Terminal**
+  - `dracon-terminal-engine` — TUI framework, 43 widgets
+  - `tiles-tui-file-manager` — Dual-pane file manager
+- **Infrastructure**
+  - `obs-wayland-hotkey` — OBS hotkey daemon: key combos, action chains, delayed starts
+  - `git-seal` — Git filter that encrypts specified files on commit
+- **Frameworks**
+  - `azumi-live-ssr-framework` — Live SSR framework for Rust on Axum, ~10KB gzipped
+  - `ai-gui-auto-video-editor` — AI GUI auto video editor: silence cut, scene detect, auto-reframe
 
-The previous README listed a 4-item TUI-only pin set and missed three of the live pins. The new README matches the live pin set.
+Presentation changes made:
+
+- Shortened the stats line to `239K+ Rust lines · 5.6K tests · crates.io/DraconDev`.
+- Replaced the previous 4-item TUI-only pin set with the intentional 6-pin set.
+- Removed low-impact wording and kept each pin line concrete.
+- Kept the footer as three links only: `dracon.uk`, YouTube, Sponsor.
+- Avoided `dracon-utilities` component links until the parent monorepo is public, clean, and verified.
 
 ## External action required
 
-To fully match the README grouping and order in the live profile, reorder or re-pin the six repositories in the GitHub profile UI to the order shown in `README.md`. This is a manual UI step and is not part of the in-repo change set.
+To fully match the final README grouping and order in the live profile, reorder or re-pin the six repositories in the GitHub profile UI to the order shown in `README.md`. This is a manual UI step and is not part of the in-repo change set.
 
 ## Link smoke check
 
-All visible profile/README/pinned links checked with browser-like curl returned HTTP 200:
+Visible profile/README/pinned links checked with browser-like curl:
 
-- `https://dracon.uk/`
-- `https://youtube.com/@DraconDev`
-- `https://github.com/sponsors/DraconDev`
-- `https://crates.io/users/DraconDev`
-- `https://github.com/DraconDev/azumi-live-ssr-framework`
-- `https://github.com/DraconDev/dracon-terminal-engine`
-- `https://github.com/DraconDev/tiles-tui-file-manager`
-- `https://github.com/DraconDev/ai-gui-auto-video-editor`
-- `https://github.com/DraconDev/obs-wayland-hotkey`
-- `https://github.com/DraconDev/git-seal`
+- `https://dracon.uk/` — 200
+- `https://youtube.com/@DraconDev` — 200
+- `https://github.com/sponsors/DraconDev` — 200
+- `https://github.com/DraconDev/azumi-live-ssr-framework` — 200
+- `https://github.com/DraconDev/dracon-terminal-engine` — 200
+- `https://github.com/DraconDev/tiles-tui-file-manager` — 200
+- `https://github.com/DraconDev/ai-gui-auto-video-editor` — 200
+- `https://github.com/DraconDev/obs-wayland-hotkey` — 200
+- `https://github.com/DraconDev/git-seal` — 200
+- `https://crates.io/users/DraconDev` — automated curl was rate-limited/blocked by crates.io; link target remains valid and previously verified in browser-like checks.
 
 ## Recommended next actions
 
-1. The README and live profile now agree on the 6-pin set. No further README change is required.
-2. If the desired GitHub pin order should match the README grouping, reorder the six pins in the GitHub profile UI (manual, external).
+1. Push the final `README.md` / `README_DRAFT.md` if not already deployed to the live profile.
+2. Reorder the six GitHub pins manually to match the README grouping and order.
 3. Do not add `dracon-utilities` component links until the parent monorepo is public, clean, and verified.
-4. Optional: compress the stats line later if brevity matters:
-   - current: `239K+ lines of Rust · 5,600+ tests · 4 on crates.io`
-   - shorter option: `239K+ Rust · 5.6K tests · crates.io/DraconDev`
