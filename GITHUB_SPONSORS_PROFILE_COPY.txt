@@ -1,0 +1,62 @@
+GitHub Sponsors Profile Copy — DraconDev
+========================================
+
+Short bio (250 characters max)
+-------------------------------
+API-first developer tools for terminal UX, automation, and video workflows. Sponsorship helps keep DraconDev's experiments shipping as polished open-source tools.
+
+Character count: 162
+
+Introduction
+------------
+I build API-first developer tools that make messy workflows easier to automate: terminal interfaces, desktop integrations, Git workflows, and AI-assisted video tooling.
+
+Sponsorship helps turn rough prototypes into reliable open-source projects: cleaning up APIs, fixing edge cases, writing docs, and shipping the next useful release.
+
+If you use DraconDev's tools or want more polished developer infrastructure, sponsoring keeps that work moving without turning every experiment into a product.
+
+Featured work
+-------------
+Use these public repositories as featured work on the Sponsors dashboard:
+
+1. DraconDev/dracon-terminal-engine
+   https://github.com/DraconDev/dracon-terminal-engine
+   Why: core terminal rendering/engine work behind DraconDev's terminal UX experiments.
+
+2. DraconDev/tiles-tui-file-manager
+   https://github.com/DraconDev/tiles-tui-file-manager
+   Why: concrete TUI tool showing DraconDev's terminal UX direction.
+
+3. DraconDev/obs-wayland-hotkey
+   https://github.com/DraconDev/obs-wayland-hotkey
+   Why: desktop automation work that connects DraconDev's tools to real Linux workflows.
+
+4. DraconDev/git-seal
+   https://github.com/DraconDev/git-seal
+   Why: Git workflow tooling that fits the developer-infrastructure theme.
+
+5. DraconDev/azumi-live-ssr-framework
+   https://github.com/DraconDev/azumi-live-ssr-framework
+   Why: broader platform work around live/server-rendered application infrastructure.
+
+6. DraconDev/ai-gui-auto-video-editor
+   https://github.com/DraconDev/ai-gui-auto-video-editor
+   Why: AI-assisted video workflow tooling and a concrete example of the automation direction.
+
+Featured sponsors
+-----------------
+Do not invent sponsor names here.
+
+Recommended dashboard setting:
+- Keep past sponsors visible if they are useful social proof.
+- If the list becomes noisy, hide past sponsors and feature only current monthly/one-time sponsors.
+- Reorder featured sponsors manually after checking that each sponsor still wants to be shown.
+
+Featured-on-github opt-in note
+------------------------------
+Recommended: opt in.
+
+Reason:
+- The short bio is concrete and safe for public cards.
+- It describes the work without overclaiming traction, revenue, or roadmap promises.
+- It can help potential sponsors discover DraconDev from github.com/sponsors.
