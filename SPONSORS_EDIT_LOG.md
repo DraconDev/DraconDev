@@ -135,6 +135,7 @@ Evidence:
 Because the remaining fields require dashboard access, I prepared a manual handoff file with the exact copy to paste when a logged-in session is available:
 
 - `/tmp/sponsors_dashboard_manual.md`
+- Final blocked-completion report: `/tmp/sponsors_blocked_final_report.md`
 - Featured work links were smoke-checked before handoff: all six proposed repositories returned HTTP 200 (`/tmp/sponsors_featured_work_link_check.txt`).
 
 ## Completion audit table
