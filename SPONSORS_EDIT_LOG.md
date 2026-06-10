@@ -142,6 +142,7 @@ The blocked stop condition is met for the remaining fields. I can no longer make
 
 Current evidence for the blocker:
 
+- No logged-in browser session available for the Sponsors dashboard.
 - Correct dashboard URL from GraphQL: `https://github.com/sponsors/DraconDev/dashboard`.
 - Browser capture of the correct dashboard URL renders GitHub sign-in: `/tmp/sponsors-dashboard-attempt/dashboard.json`.
 - Local Chrome/Chromium profiles tested have GitHub `logged_in=no`.
@@ -149,6 +150,8 @@ Current evidence for the blocker:
 - Also tested the system Chromium `~/.config/chromium/Default` profile with the system Chromium executable; it rendered the logged-out GitHub homepage and had `logged_in=no`.
 - Playwright's bundled Firefox/bundled Chromium binaries cannot launch in this environment due missing host libraries, so they were not usable as alternative browser sessions.
 - Tried using the local PAT as a web-login password through `https://github.com/session`; GitHub returned the sign-in page with `logged_in=no`, so PATs cannot be used as a browser session credential.
+- Official GitHub docs for “Editing your profile details for GitHub Sponsors” route short bio, introduction, featured work, featured sponsors, and saving through the Sponsors dashboard; no API update path is documented there.
+- No public API mutation available for the existing Sponsors listing.
 - Public GraphQL introspection shows no update mutation for the existing Sponsors listing.
 - Public GraphQL mutation introspection also shows no general user/profile update mutation relevant to the Sponsors listing fields; available update mutations are `updateEnterpriseProfile`, `updateIpAllowListUserLevelEnforcementEnabledSetting`, `updateUserList`, and `updateUserListsForItem`.
 - `createSponsorsListing` returns `DraconDev already has a GitHub Sponsors profile`.
