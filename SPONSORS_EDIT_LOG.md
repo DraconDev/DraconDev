@@ -58,7 +58,7 @@ Evidence: `/tmp/sponsors-before/sponsors-public.json`.
 ### Method 4: local Chrome cookie decryption experiment
 
 - Retrieved the local Chrome Safe Storage secret through the desktop secret service and attempted to decrypt GitHub cookie candidates from `~/.config/google-chrome/Default/Cookies`.
-- The decrypted candidates were not usable as browser/session credentials: cookie-setting validation rejected them as invalid cookie values, and direct cookie-header probing did not produce a usable logged-in session.
+- The decrypted candidates were not usable as browser/session credentials: cookie-setting validation rejected them as invalid cookie values, and direct cookie-header probing returned the logged-out sign-in page (`Sign in` present, `Sign out` absent).
 - No cookie values were printed or stored in this log.
 
 ## Changes applied
