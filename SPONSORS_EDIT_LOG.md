@@ -135,7 +135,7 @@ Because the remaining fields require dashboard access, I prepared a manual hando
 - After-state browser capture: completed for the public page — `/tmp/sponsors-after/` shows the new tiers rendering; `/tmp/sponsors-dashboard-attempt/` records the failed dashboard access.
 - Method record: completed — `SPONSORS_EDIT_LOG.md` records API and browser attempts without exposing token values.
 - Smoke check: completed — public page returns HTTP 200 and renders the published tiers.
-- Link smoke check: completed — user-facing GitHub links extracted from the sponsors page returned HTTP 200; see `/tmp/sponsors_interesting_links.txt` and the link-check output.
+- Link smoke check: completed — user-facing GitHub links extracted from the sponsors page returned HTTP 200; see `/tmp/sponsors_interesting_links.txt` and `/tmp/sponsors_link_check_output.txt`.
 - Docs consistency: completed for available checks — edited docs no longer contain stale sponsors-page wording or leaked token patterns.
 - Final completion status: not complete — required bio/story/goal/featured-work fields remain unedited because access/API support is insufficient.
 
