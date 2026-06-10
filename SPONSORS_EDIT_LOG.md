@@ -118,6 +118,20 @@ Evidence:
 - `/tmp/sponsors-after/sponsors-public-full.png`
 - `/tmp/current_listing_after.json`
 
+## Objective audit
+
+- Research document: completed — `SPONSORS_RESEARCH.md` documents effective sponsors-page patterns, sources, copy, tiers, and the DraconDev plan.
+- Before-state browser capture: completed — `/tmp/sponsors-before/` contains screenshots, HTML, and extracted text showing the barebones public sponsors page.
+- Live-page edits: partially completed — five monthly sponsorship tiers were created and published through the GitHub GraphQL API using the local PAT via `GH_TOKEN`; exact tier copy is recorded above.
+- Bio/story edit: blocked — public GraphQL has no update mutation for the existing Sponsors listing; browser dashboard is inaccessible because available browser profiles are logged out.
+- Goal/roadmap edit: blocked for the same reason.
+- Featured work/featured sponsors edit: blocked for the same reason.
+- After-state browser capture: completed for the public page — `/tmp/sponsors-after/` shows the new tiers rendering; `/tmp/sponsors-dashboard-attempt/` records the failed dashboard access.
+- Method record: completed — `SPONSORS_EDIT_LOG.md` records API and browser attempts without exposing token values.
+- Smoke check: completed — public page returns HTTP 200 and renders the published tiers.
+- Docs consistency: completed for available checks — edited docs no longer contain stale sponsors-page wording or leaked token patterns.
+- Final completion status: not complete — required bio/story/goal/featured-work fields remain unedited because access/API support is insufficient.
+
 ## Blocked stop condition
 
 The blocked stop condition is met for the remaining fields. I can no longer make progress on the bio/introduction/goal/featured-work sections without one of these inputs:
