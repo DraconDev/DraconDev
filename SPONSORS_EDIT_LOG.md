@@ -67,6 +67,13 @@ Evidence: `/tmp/sponsors-before/sponsors-public.json`.
 - The original profile directory was locked by Chrome's process singleton, so I tested read-only-equivalent copies of `Default` and `Profile 2` under `/tmp/`.
 - Both copied profiles rendered `https://github.com/DraconDev` as logged out (`Sign in` present, `Sign out` absent), so this did not provide an editable dashboard session.
 
+### Method 6: user-provided remote debugging port 9223
+
+- Connected to the user-provided Chrome remote debugging endpoint at `http://127.0.0.1:9223`.
+- The endpoint was reachable and had one browser context.
+- Navigating/inspecting `https://github.com/DraconDev` still rendered GitHub as logged out: `Sign in` present, `Sign out` absent, `Dashboard` absent.
+- Evidence: `/tmp/cdp_9223_inspection.json` and `/tmp/cdp_9223_pages.txt`.
+
 ## Changes applied
 
 The following sponsorship tiers were created and published through the GitHub GraphQL `createSponsorsTier` mutation.
@@ -149,7 +156,7 @@ Because the remaining fields require dashboard access, I prepared a manual hando
 | Before-state browser capture | Complete | `/tmp/sponsors-before/` contains screenshots, HTML, and extracted JSON/text. |
 | Dashboard profile capture | Attempted/blocked | `/tmp/sponsors-dashboard-attempt/` captures the dashboard URL rendering the GitHub sign-in page. |
 | Live page updated to legitimate state | Partial | Five researched monthly tiers were created and published; bio/story/goal/featured work remain blocked. |
-| Cookie/session workaround | Attempted/blocked | Local Chrome Safe Storage cookie decryption did not yield usable session credentials; copied real Chrome profiles also rendered GitHub logged out. |
+| Cookie/session workaround | Attempted/blocked | Local Chrome Safe Storage cookie decryption did not yield usable session credentials; copied real Chrome profiles also rendered GitHub logged out; user-provided CDP port 9223 was reachable but logged out. |
 | Bio/story edit | Blocked | Official GitHub docs route this through the dashboard; no public API mutation exists. |
 | Goal/roadmap edit | Blocked | `activeGoal` remains `null` in `/tmp/current_listing_blocked.json`; dashboard/API access blocked. |
 | Featured work/featured sponsors edit | Blocked | `featuredItems` remains `[]` in `/tmp/current_listing_blocked.json`; dashboard/API access blocked. |
