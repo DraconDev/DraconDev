@@ -75,7 +75,7 @@ Visible profile/README/pinned links checked with browser-like curl:
 - `https://github.com/DraconDev/ai-gui-auto-video-editor` — 200
 - `https://github.com/DraconDev/obs-wayland-hotkey` — 200
 - `https://github.com/DraconDev/git-seal` — 200
-- `https://crates.io/users/DraconDev` — automated curl was rate-limited/blocked by crates.io; link target remains valid and previously verified in browser-like checks.
+- `https://crates.io/users/DraconDev` — 200
 
 ## Recommended next actions
 
