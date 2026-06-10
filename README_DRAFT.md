@@ -9,7 +9,13 @@ I build infrastructure in Rust — terminal engines, fleet reconcilers, git daem
 **TUI & Terminal**
 • [**terminal-engine**](https://github.com/DraconDev/dracon-terminal-engine) — TUI framework, 43 widgets
 • [**tiles**](https://github.com/DraconDev/tiles-tui-file-manager) — Dual-pane file manager
-• [**folder-auto-banner**](https://github.com/DraconDev/folder-auto-banner) — `ls` on steroids
-• [**obs-wayland-hotkey**](https://github.com/DraconDev/obs-wayland-hotkey) — OBS for Wayland ⭐8
+
+**Infrastructure**
+• [**obs-wayland-hotkey**](https://github.com/DraconDev/obs-wayland-hotkey) — Professional OBS hotkey daemon: key combos, multi-action chains, delayed start
+• [**git-seal**](https://github.com/DraconDev/git-seal) — Transparent Git filter that encrypts specified files on commit
+
+**Frameworks**
+• [**azumi**](https://github.com/DraconDev/azumi-live-ssr-framework) — Live SSR framework for Rust on Axum, ~10KB gzipped, zero custom JS
+• [**agave**](https://github.com/DraconDev/ai-gui-auto-video-editor) — AI GUI Auto Video Editor: silence cut, scene detect, auto-reframe
 
 [🌐 dracon.uk](https://dracon.uk) · [🎥 YouTube](https://youtube.com/@DraconDev) · [💰 Sponsor](https://github.com/sponsors/DraconDev)

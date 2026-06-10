@@ -1,6 +1,6 @@
 # GitHub Profile Browser Audit
 
-Captured live with a real browser on 2026-06-09.
+Captured live with a real browser on 2026-06-09. Updated 2026-06-09 after the 6-pin alignment.
 
 ## Evidence
 
@@ -38,19 +38,19 @@ GitHub currently pins 6 repositories:
 5. `obs-wayland-hotkey`
 6. `git-seal`
 
-## Mismatch against current README strategy
+## README 6-pin alignment (2026-06-09)
 
-The README currently presents a 4-item **TUI & Terminal** pin set:
+The profile strategy now intentionally targets 6 pins, matching the live pinned set and the top profile examples we are copying. The `README.md` and `README_DRAFT.md` have been updated to present those 6 repos grouped by intent:
 
-1. `dracon-terminal-engine`
-2. `tiles-tui-file-manager`
-3. `folder-auto-banner`
-4. `obs-wayland-hotkey`
+- **TUI & Terminal**: `dracon-terminal-engine`, `tiles-tui-file-manager`
+- **Infrastructure**: `obs-wayland-hotkey`, `git-seal`
+- **Frameworks**: `azumi-live-ssr-framework` (Azumi), `ai-gui-auto-video-editor` (AGAVE)
 
-The live profile does **not** match that README pin strategy yet:
+The previous README listed a 4-item TUI-only pin set and missed three of the live pins. The new README matches the live pin set.
 
-- `folder-auto-banner` is in the README but is **not pinned** in the live profile.
-- `azumi-live-ssr-framework`, `ai-gui-auto-video-editor`, and `git-seal` are pinned live but are not in the README's current 4-item pin set.
+## External action required
+
+To fully match the README grouping and order in the live profile, reorder or re-pin the six repositories in the GitHub profile UI to the order shown in `README.md`. This is a manual UI step and is not part of the in-repo change set.
 
 ## Link smoke check
 
@@ -69,14 +69,9 @@ All visible profile/README/pinned links checked with browser-like curl returned 
 
 ## Recommended next actions
 
-1. Decide whether the README's 4-pin strategy is the desired live profile.
-2. If yes, update GitHub pinned repositories to:
-   - `dracon-terminal-engine`
-   - `tiles-tui-file-manager`
-   - `folder-auto-banner`
-   - `obs-wayland-hotkey`
-3. If no, update the README to match the current live pins.
-4. Consider compressing the stats line later if brevity matters:
+1. The README and live profile now agree on the 6-pin set. No further README change is required.
+2. If the desired GitHub pin order should match the README grouping, reorder the six pins in the GitHub profile UI (manual, external).
+3. Do not add `dracon-utilities` component links until the parent monorepo is public, clean, and verified.
+4. Optional: compress the stats line later if brevity matters:
    - current: `239K+ lines of Rust · 5,600+ tests · 4 on crates.io`
    - shorter option: `239K+ Rust · 5.6K tests · crates.io/DraconDev`
-5. Do not add `dracon-utilities` component links until the parent monorepo is public, clean, and verified.
