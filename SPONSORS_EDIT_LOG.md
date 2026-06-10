@@ -74,6 +74,12 @@ Evidence: `/tmp/sponsors-before/sponsors-public.json`.
 - Navigating/inspecting `https://github.com/DraconDev` still rendered GitHub as logged out: `Sign in` present, `Sign out` absent, `Dashboard` absent.
 - Evidence: `/tmp/cdp_9223_inspection.json` and `/tmp/cdp_9223_pages.txt`.
 
+### Method 7: user-provided alternate remote debugging port 9222
+
+- Attempted to connect to `http://127.0.0.1:9222`.
+- Connection was refused (`ECONNREFUSED 127.0.0.1:9222`), so no logged-in session was available on that port.
+- Evidence: `/tmp/cdp_9222_attempt.txt`.
+
 ## Changes applied
 
 The following sponsorship tiers were created and published through the GitHub GraphQL `createSponsorsTier` mutation.
