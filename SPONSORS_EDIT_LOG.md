@@ -52,7 +52,7 @@ Evidence: `/tmp/sponsors-before/sponsors-public.json`.
 
 - Loaded the local PAT through the `GH_TOKEN` environment variable only; the token value was not printed or stored in this log.
 - Confirmed the token belongs to `DraconDev` via `gh api user`.
-- Confirmed via REST headers that the token includes `user` and `admin:org`.
+- Current `gh api user` headers show token scopes `gist`, `read:org`, `repo`, and `workflow`; no token value was stored in this log.
 - Used `gh api graphql` with the local PAT to create published sponsorship tiers.
 
 ### Method 4: local Chrome cookie decryption experiment
