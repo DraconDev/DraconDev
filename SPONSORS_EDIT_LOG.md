@@ -202,6 +202,7 @@ Current evidence for the blocker:
 - No public API mutation available for the existing Sponsors listing.
 - Public GraphQL introspection shows no update mutation for the existing Sponsors listing.
 - Official GitHub REST OpenAPI description was checked for sponsor-related entries; matches are webhook/event descriptions only and point back to GraphQL docs, with no REST endpoint for updating an existing Sponsors listing. Evidence: `/tmp/github_rest_api_sponsors_grep.txt`.
+- Public GraphQL sponsor-related mutation inputs were inspected (`/tmp/github_sponsor_mutation_inputs.txt`): `UpdateSponsorshipPreferencesInput` only changes sponsorship receive-emails/privacy, `CreateSponsorsListingInput` cannot update an existing listing, and `CreateSponsorsTierInput`/`PublishSponsorsTierInput` only create/publish tiers.
 - Public GraphQL mutation introspection also shows no general user/profile update mutation relevant to the Sponsors listing fields; available update mutations are `updateEnterpriseProfile`, `updateIpAllowListUserLevelEnforcementEnabledSetting`, `updateUserList`, and `updateUserListsForItem`.
 - `createSponsorsListing` returns `DraconDev already has a GitHub Sponsors profile`.
 
