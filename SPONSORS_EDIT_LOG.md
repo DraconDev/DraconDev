@@ -118,6 +118,12 @@ Evidence:
 - `/tmp/sponsors-after/sponsors-public-full.png`
 - `/tmp/current_listing_after.json`
 
+## Manual handoff
+
+Because the remaining fields require dashboard access, I prepared a manual handoff file with the exact copy to paste when a logged-in session is available:
+
+- `/tmp/sponsors_dashboard_manual.md`
+
 ## Objective audit
 
 - Research document: completed — `SPONSORS_RESEARCH.md` documents effective sponsors-page patterns, sources, copy, tiers, and the DraconDev plan.
