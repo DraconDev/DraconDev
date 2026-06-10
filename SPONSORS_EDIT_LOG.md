@@ -205,6 +205,7 @@ Current evidence for the blocker:
 - Tried using the local PAT as a web-login password through `https://github.com/session`; GitHub returned the sign-in page with `logged_in=no`, so PATs cannot be used as a browser session credential.
 - Local Chrome cookie decryption experiment did not produce usable session credentials; invalid cookie values were rejected and no cookie values were stored in this log.
 - Copied real Chrome profiles under `/tmp/` and launched them with the parent user-data directory plus explicit profile directory; both rendered GitHub as logged out.
+- User-provided remote debugging port `9223` was reachable but rendered GitHub as logged out (`Sign in` present, `Sign out` absent, `Dashboard` absent); evidence: `/tmp/cdp_9223_inspection.json`.
 - Official GitHub docs for “Editing your profile details for GitHub Sponsors” route short bio, introduction, featured work, featured sponsors, and saving through the Sponsors dashboard; no API update path is documented there.
 - No public API mutation available for the existing Sponsors listing.
 - Public GraphQL introspection shows no update mutation for the existing Sponsors listing.
