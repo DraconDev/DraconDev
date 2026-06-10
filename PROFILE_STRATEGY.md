@@ -185,7 +185,7 @@ t3dotgg doesn't win because he writes good code. He wins because he has YouTube 
 - ✅ Stage 1: YouTube channel exists
 - ✅ Stage 2: YouTube channel subscribable
 - ✅ Stage 3: Channel nav (in README) has 3 links: dracon.uk · YouTube · Sponsor — per Fireship/Theo patterns, 3 distinct value props is the right density
-- ✅ Stage 4: GitHub Sponsors page is **verified set up** (Playwright: "Become a sponsor to Dracon" page with bio "Support DraconDev's open source work" + monthly/one-time tiers + custom amount)
+- ✅ Stage 4: GitHub Sponsors page has published tiers, but the bio/goal/featured-work fields still need dashboard/API follow-up
 - ✅ Stage 5: dracon.uk has Products / Pricing / Licensing / AI Hub nav (verified via Playwright in earlier session)
 
 **The funnel is complete.** What's missing is volume — getting more content into Stage 1 to feed the funnel.
@@ -196,7 +196,7 @@ Per §3.4 of `YOUTUBE_AND_MONETIZATION_RESEARCH.md`:
 
 | # | Action | Where | Effort | Why |
 |:-:|:-------|:------|:-------|:----|
-| 1 | **Keep GitHub Sponsors link in README** | `README_DRAFT.md` footer | None | Already verified set up; page exists, bio is real, custom amount + monthly/one-time working |
+| 1 | **Keep GitHub Sponsors link in README** | `README_DRAFT.md` footer | None | Sponsors page exists and now has published monthly tiers; remaining bio/goal/featured-work polish is tracked separately |
 | 2 | **Add Ko-fi to dracon.uk footer** (not README) | `dracon.uk` site | Low | Ko-fi is for digital products (Anki deck is already there) — fits the products-site tone, not the OSS profile tone |
 | 3 | **Do not add Ko-fi to YouTube video descriptions by default** | YouTube video descriptions | Low | Premium subscription positioning should lead with `dracon.uk`, GitHub, and Sponsor. Ko-fi can be used only when the specific video/product is small-ticket or community-support oriented. |
 | 4 | **Add GitHub profile bio name-drop** (separate from README) | GitHub profile bio field | Low | Pattern from mitsuhiko: "Software developer... Creator of the Flask framework. Founder of @earendil-works." — name-drops the killer work. Suggested: "Rust infrastructure for fleets, git, and terminals. 239K+ LOC, 5,600+ tests." |

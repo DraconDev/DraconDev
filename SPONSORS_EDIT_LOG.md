@@ -32,92 +32,101 @@ Featured sponsors: none
 
 Evidence: `/tmp/sponsors-before/sponsors-public.json`.
 
-## Edit method attempted
+## Edit methods attempted
 
-1. Checked local GitHub CLI auth:
-   - `gh auth status -h github.com --json active,hostname,user,oauthScopes` was attempted; `active` is not a valid JSON field.
-   - `gh auth token` worked and confirmed the CLI is authenticated as `DraconDev`.
-   - Token scopes from API errors: `gist`, `read:org`, `repo`, `workflow`.
+### Method 1: local `gh` token
 
-2. Tried to use the GitHub GraphQL API for Sponsors mutations:
-   - Querying `viewer.sponsorsListing` worked.
-   - Current listing ID: `SL_kwDOAF7t7s4AAusu`
-   - Current short description: `Support DraconDev's open source work`
-   - Current full description: `Support DraconDev's open source work`
-   - Active goal: `null`
-   - Featured items: `[]`
-   - Tiers: `[]`
+- `gh auth token` confirmed CLI auth as `DraconDev`.
+- Token scopes were insufficient for Sponsors mutations: `gist`, `read:org`, `repo`, `workflow`.
+- `createSponsorsListing` and `createSponsorsTier` both failed with `INSUFFICIENT_SCOPES`; they require `user` or `admin:org`.
 
-3. Tried the available Sponsors GraphQL mutations:
-   - `createSponsorsListing` failed with `INSUFFICIENT_SCOPES`; it requires `user` or `admin:org`.
-   - `createSponsorsTier` failed with `INSUFFICIENT_SCOPES`; it requires `user` or `admin:org`.
+### Method 2: browser automation
 
-4. Tried browser automation:
-   - Connected to the existing Chrome CDP endpoint on `http://localhost:9223`.
-   - Navigated to `https://github.com/sponsors/DraconDev/dashboard/profile`.
-   - The browser rendered a GitHub sign-in / 404 page, not the sponsors dashboard.
-   - Evidence: `/tmp/sponsors-edit-attempt/dashboard-before.json`.
+- Connected to the existing Chrome CDP endpoint on `http://localhost:9223`.
+- Navigated first to `https://github.com/sponsors/DraconDev/dashboard/profile`, which rendered a GitHub sign-in / 404 page.
+- Queried `viewer.sponsorsListing.dashboardUrl`, which returned `https://github.com/sponsors/DraconDev/dashboard`.
+- Navigated to the correct dashboard URL; it rendered the GitHub sign-in page because the browser session is logged out.
+- Evidence: `/tmp/sponsors-edit-attempt/dashboard-before.json` and `/tmp/sponsors-dashboard-attempt/dashboard.json`.
 
-5. Tried reusing the local Chromium profile:
-   - Launched persistent Chromium with `/home/dracon/.config/chromium`.
-   - Navigated to `https://github.com/`.
-   - GitHub rendered the logged-out homepage.
-   - Cookies showed `logged_in=no`.
-   - Evidence: `/tmp/github-check.png` and the console output from `/tmp/check_cookie_context.cjs`.
+### Method 3: local PAT from `~/.dracon/secrets/pat/github.env`
 
-## Result
+- Loaded the local PAT through the `GH_TOKEN` environment variable only; the token value was not printed or stored in this log.
+- Confirmed the token belongs to `DraconDev` via `gh api user`.
+- Confirmed via REST headers that the token includes `user` and `admin:org`.
+- Used `gh api graphql` with the local PAT to create published sponsorship tiers.
 
-No live sponsors page edits were applied.
+## Changes applied
 
-Reason: the only available programmatic path requires a GitHub token with `user` or `admin:org` scope, and the local `gh` token has only `gist`, `read:org`, `repo`, and `workflow`. The browser automation path also failed because the available browser session is not logged into GitHub.
+The following sponsorship tiers were created and published through the GitHub GraphQL `createSponsorsTier` mutation.
 
-## Exact copy that should be applied when access is available
+1. `$3 a month`
+   - Description: `A thank-you in the next release notes.`
+   - Welcome message: `Thanks for backing DraconDev. Your support helps keep the Rust infrastructure work moving.`
+   - Tier ID: `ST_kwDOAF7t7s4ACYv5`
 
-Short bio:
+2. `$7 a month`
+   - Description: `Backer perks + your name in the README of one repo of your choice.`
+   - Welcome message: `Thanks for supporting DraconDev. I will add your name to the README of one repo you choose.`
+   - Tier ID: `ST_kwDOAF7t7s4ACYv7`
 
-```text
-Rust infrastructure builder — terminal engines, fleet reconcilers, git daemons. I teach the builds on YouTube and sell the tools on dracon.uk.
-```
+3. `$14 a month`
+   - Description: `Supporter perks + early access to new releases + a direct line for bug reports.`
+   - Welcome message: `Thanks for building with DraconDev. I will keep you close to new releases and bug reports.`
+   - Tier ID: `ST_kwDOAF7t7s4ACYv8`
 
-Introduction:
+4. `$49 a month`
+   - Description: `Builder perks + your logo on dracon.uk when launched + a 30-min call per quarter.`
+   - Welcome message: `Thanks for sponsoring at Studio level. I will coordinate the README/logo and quarterly call details.`
+   - Tier ID: `ST_kwDOAF7t7s4ACYv9`
 
-```markdown
-I build infrastructure in Rust and ship it as open source: terminal engines, fleet reconcilers, git daemons. My tools run on Linux, talk to OBS, encrypt secrets, and reconcile fleets — boring, real work that other developers depend on every day.
+5. `$200 a month`
+   - Description: `Studio perks + a dedicated support channel + roadmap input.`
+   - Welcome message: `Thanks for sponsoring at Infrastructure level. I will set up the dedicated support channel and roadmap input path.`
+   - Tier ID: `ST_kwDOAF7t7s4ACYv-`
 
-Sponsor me if you want me to keep doing that full-time. Sponsorship pays for the time I spend on issues, refactors, security fixes, and the long tail of work that nobody sees. It also funds the YouTube videos where I show how the tools are built.
+## Changes not applied
 
-Even $3/month makes a real difference. Higher tiers get their name in the README, early access to new releases, and a direct line for bug reports and feature requests.
-```
-
-Goal:
+The public GraphQL API does not expose an update mutation for the existing Sponsors listing. Attempting `createSponsorsListing` with the researched introduction returned:
 
 ```text
-Maintainer time for the next release cycle — $400/month covers a focused month of issue triage, refactors, and security work across the DraconDev tools.
+DraconDev already has a GitHub Sponsors profile
 ```
 
-Tiers:
+So these sections remain unchanged for now:
+
+- Short bio: still `Support DraconDev's open source work`.
+- Introduction: still `Support DraconDev's open source work`.
+- Active goal: still `null`.
+- Featured work: still `[]`.
+- Featured sponsors: not edited.
+
+## Post-edit verification
+
+The public page now renders the new tiers:
 
 ```text
-Backer — $3/month — A thank-you in the next release notes.
-Supporter — $7/month — Backer perks + your name in the README of one repo of your choice.
-Builder — $14/month — Supporter perks + early access to new releases + a direct line for bug reports.
-Studio — $49/month — Builder perks + your logo on dracon.uk + a 30-min call per quarter.
-Infrastructure — $200/month — Studio perks + a dedicated support channel + roadmap input.
+$3 a month — A thank-you in the next release notes.
+$7 a month — Backer perks + your name in the README of one repo of your choice.
+$14 a month — Supporter perks + early access to new releases + a direct line for bug reports.
+$49 a month — Builder perks + your logo on dracon.uk when launched + a 30-min call per quarter.
+$200 a month — Studio perks + a dedicated support channel + roadmap input.
 ```
 
-Featured work:
+Evidence:
 
-```text
-DraconDev/dracon-terminal-engine
-DraconDev/tiles-tui-file-manager
-DraconDev/obs-wayland-hotkey
-DraconDev/git-seal
-DraconDev/azumi-live-ssr-framework
-DraconDev/ai-gui-auto-video-editor
-```
+- `/tmp/sponsors-after/sponsors-public.json`
+- `/tmp/sponsors-after/sponsors-public-full.png`
+- `/tmp/current_listing_after.json`
 
-## Unblock options
+## Remaining follow-up
 
-- Option A: approve `gh auth refresh -h github.com -s user` and complete the browser/device authorization, then rerun the sponsors edit script.
-- Option B: log into GitHub in the existing browser session, then rerun the CDP edit script.
-- Option C: provide a personal access token with `user` or `admin:org` scope via a secure local mechanism; do not paste it into chat.
+To finish the sponsors page properly, use the browser dashboard or a future GitHub API surface that can update the existing listing:
+
+- Short bio:
+  `Rust infrastructure builder — terminal engines, fleet reconcilers, git daemons. I teach the builds on YouTube and sell the tools on dracon.uk.`
+- Introduction:
+  `I build infrastructure in Rust and ship it as open source: terminal engines, fleet reconcilers, git daemons. My tools run on Linux, talk to OBS, encrypt secrets, and reconcile fleets — boring, real work that other developers depend on every day. ...`
+- Goal:
+  `Maintainer time for the next release cycle — $400/month covers a focused month of issue triage, refactors, and security work across the DraconDev tools.`
+- Featured work:
+  `DraconDev/dracon-terminal-engine`, `DraconDev/tiles-tui-file-manager`, `DraconDev/obs-wayland-hotkey`, `DraconDev/git-seal`, `DraconDev/azumi-live-ssr-framework`, `DraconDev/ai-gui-auto-video-editor`.

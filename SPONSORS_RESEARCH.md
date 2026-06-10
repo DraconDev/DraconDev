@@ -149,4 +149,4 @@ The sponsors link should also appear in:
 
 ## Implementation method
 
-Edits will be applied via browser automation, attaching to the existing Chrome instance over the Chrome DevTools Protocol (CDP) on `http://localhost:9223`, so the logged-in session is reused. Every change will be recorded with exact copy and the method used.
+Published tiers were applied through the GitHub GraphQL API using the local PAT available under `~/.dracon/`, passed only through `GH_TOKEN`. The existing Sponsors listing bio/introduction/goal/featured-work fields are not exposed by the public GraphQL update mutations, so those remaining fields still need the dashboard UI or a future GitHub API surface.

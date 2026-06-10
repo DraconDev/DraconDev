@@ -91,7 +91,7 @@ The goal is not to find the "best" peer. The goal is to find the **best factor f
 ### Factor 5: Sponsor button presence
 **Best-in-class:** All 5 GitHub Sponsors accounts (dtolnay, BurntSushi, mitsuhiko, fasterthanlime, yoshuawuyts)
 **Why it works:** The "♥ Sponsor" button is a low-friction conversion mechanism. It works even at 0 sponsors because the button itself is the CTA. Counter-evidence: none — all 5 have it.
-**How to test for DraconDev:** Keep the Sponsor link in the README footer. It's already verified set up.
+**How to test for DraconDev:** Keep the Sponsor link in the README footer. The Sponsors page exists and now has published monthly tiers; bio/goal/featured-work polish is still pending.
 
 ### Factor 6: Sponsor page bio quality
 **Best-in-class:** dtolnay (600+ words with killer stats)
@@ -101,7 +101,7 @@ The goal is not to find the "best" peer. The goal is to find the **best factor f
 ### Factor 7: Sponsor page tier structure
 **Best-in-class:** All 5 (custom amount + monthly/one-time, no tier names)
 **Why it works:** Custom amount + monthly/one-time toggle removes friction. It works when the visitor is already motivated. Counter-evidence: none — all 5 use it.
-**How to test for DraconDev:** The current Sponsors page is set up correctly. No changes needed.
+**How to test for DraconDev:** Published monthly tiers are now live ($3, $7, $14, $49, $200). Finish the page with a concrete bio, goal, and featured-work section.
 
 ### Factor 8: YouTube description hook
 **Best-in-class:** Fireship (1-2 line hook, high-intensity)
