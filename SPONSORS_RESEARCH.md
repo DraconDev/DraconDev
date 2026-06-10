@@ -149,4 +149,4 @@ The sponsors link should also appear in:
 
 ## Implementation method
 
-Published tiers were applied through the GitHub GraphQL API using the local PAT available under `~/.dracon/`, passed only through `GH_TOKEN`. The existing Sponsors listing bio/introduction/goal/featured-work fields are not exposed by the public GraphQL update mutations, so those remaining fields still need the dashboard UI or a future GitHub API surface.
+Published tiers were applied through the GitHub GraphQL API using the local PAT available under `~/.dracon/`, passed only through `GH_TOKEN`. The existing Sponsors listing bio/introduction/goal/featured-work fields are not exposed by the public GraphQL update mutations, so those remaining fields still need the dashboard UI or a future GitHub API surface. `createSponsorsListing` cannot be used as an update path because GitHub returns `DraconDev already has a GitHub Sponsors profile` for an existing listing.

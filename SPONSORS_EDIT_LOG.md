@@ -42,11 +42,11 @@ Evidence: `/tmp/sponsors-before/sponsors-public.json`.
 
 ### Method 2: browser automation
 
-- Connected to the existing Chrome CDP endpoint on `http://localhost:9223`.
-- Navigated first to `https://github.com/sponsors/DraconDev/dashboard/profile`, which rendered a GitHub sign-in / 404 page.
 - Queried `viewer.sponsorsListing.dashboardUrl`, which returned `https://github.com/sponsors/DraconDev/dashboard`.
+- Connected to the existing Chrome CDP endpoint and tried persistent Chromium/Chrome profiles.
 - Navigated to the correct dashboard URL; it rendered the GitHub sign-in page because the browser session is logged out.
-- Evidence: `/tmp/sponsors-edit-attempt/dashboard-before.json` and `/tmp/sponsors-dashboard-attempt/dashboard.json`.
+- Checked `~/.config/chromium` and `~/.config/google-chrome/*` cookies; the GitHub `logged_in` cookie was `no` in the profiles tested.
+- Evidence: `/tmp/sponsors-dashboard-attempt/dashboard.json` and `/tmp/sponsors-dashboard-attempt/dashboard.html`.
 
 ### Method 3: local PAT from `~/.dracon/secrets/pat/github.env`
 
