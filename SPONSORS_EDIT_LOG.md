@@ -199,6 +199,7 @@ Current evidence for the blocker:
 - Official GitHub docs for “Editing your profile details for GitHub Sponsors” route short bio, introduction, featured work, featured sponsors, and saving through the Sponsors dashboard; no API update path is documented there.
 - No public API mutation available for the existing Sponsors listing.
 - Public GraphQL introspection shows no update mutation for the existing Sponsors listing.
+- Official GitHub REST OpenAPI description was checked for sponsor-related entries; matches are webhook/event descriptions only and point back to GraphQL docs, with no REST endpoint for updating an existing Sponsors listing. Evidence: `/tmp/github_rest_api_sponsors_grep.txt`.
 - Public GraphQL mutation introspection also shows no general user/profile update mutation relevant to the Sponsors listing fields; available update mutations are `updateEnterpriseProfile`, `updateIpAllowListUserLevelEnforcementEnabledSetting`, `updateUserList`, and `updateUserListsForItem`.
 - `createSponsorsListing` returns `DraconDev already has a GitHub Sponsors profile`.
 
