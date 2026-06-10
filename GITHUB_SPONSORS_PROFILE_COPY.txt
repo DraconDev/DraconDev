@@ -3,17 +3,17 @@ GitHub Sponsors Profile Copy — DraconDev
 
 Short bio (250 characters max)
 -------------------------------
-API-first developer tools for terminal UX, automation, and video workflows. Sponsorship helps keep DraconDev's experiments shipping as polished open-source tools.
+Rust infrastructure for terminal UX, Git automation, and video workflows. Sponsor focused polish time: issues, docs, releases, and the boring edge cases.
 
-Character count: 162
+Character count: 153
 
 Introduction
 ------------
-I build API-first developer tools that make messy workflows easier to automate: terminal interfaces, desktop integrations, Git workflows, and AI-assisted video tooling.
+I build API-first Rust tools that make messy workflows easier to automate: terminal interfaces, Git sync, desktop integrations, and AI-assisted video tooling.
 
-Sponsorship helps turn rough prototypes into reliable open-source projects: cleaning up APIs, fixing edge cases, writing docs, and shipping the next useful release.
+Sponsorship does not buy the work from scratch. It buys focused time for the parts that usually get deferred behind client work: issues, docs, polish, edge cases, and release pressure.
 
-If you use DraconDev's tools or want more polished developer infrastructure, sponsoring keeps that work moving without turning every experiment into a product.
+If you use these tools, sponsorship helps turn rough prototypes into reliable open-source infrastructure you can actually keep using.
 
 Featured work
 -------------
@@ -21,27 +21,28 @@ Use these public repositories as featured work on the Sponsors dashboard:
 
 1. DraconDev/obs-wayland-hotkey
    https://github.com/DraconDev/obs-wayland-hotkey
-   Why: strongest external signal in the set: a real Linux desktop automation tool with crates.io, CI, and a concrete OBS workflow.
+   Why: strongest public signal in the set: a real Linux desktop automation tool with crates.io, CI, and a concrete OBS workflow.
 
 2. DraconDev/tiles-tui-file-manager
    https://github.com/DraconDev/tiles-tui-file-manager
    Why: polished TUI app with a clear user-facing workflow: file management, Git integration, SSH, system monitor, and editor features.
 
-3. DraconDev/dracon-terminal-engine
-   https://github.com/DraconDev/dracon-terminal-engine
-   Why: foundational terminal framework work with crates.io and docs.rs; shows the engine behind DraconDev's terminal UX direction.
-
-4. DraconDev/git-seal
+3. DraconDev/git-seal
    https://github.com/DraconDev/git-seal
    Why: concrete developer workflow tool that solves a real Git problem: transparent encryption for sensitive files without changing local workflow.
 
-5. DraconDev/youtube-video-uploader
+4. DraconDev/youtube-video-uploader
    https://github.com/DraconDev/youtube-video-uploader
    Why: API-first automation with a Rust CLI/library, YouTube Data API v3 integration, resumable uploads, profiles, and automation-oriented output.
 
-6. DraconDev/ai-gui-auto-video-editor
-   https://github.com/DraconDev/ai-gui-auto-video-editor
-   Why: concrete AI-assisted video workflow tooling with GUI + CLI automation for editing tasks like silence cutting, audio enhancement, scene detection, and reframing.
+Optional alternate if you want a stronger video angle:
+- DraconDev/ai-gui-auto-video-editor
+  https://github.com/DraconDev/ai-gui-auto-video-editor
+  Why: AI-assisted video workflow tooling with GUI + CLI automation for editing tasks like silence cutting, audio enhancement, scene detection, and reframing.
+
+Do not feature yet:
+- DraconDev/dracon-utilities
+  It is the main current work, but it is still private and has a formatting check failure, so do not use it as public featured work until it is public and clean.
 
 Featured sponsors
 -----------------
@@ -54,7 +55,7 @@ Recommended dashboard setting:
 
 Featured-on-github opt-in note
 ------------------------------
-Recommended: opt in.
+Recommended: opt in after this copy is applied.
 
 Reason:
 - The short bio is concrete and safe for public cards.
