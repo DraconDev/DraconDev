@@ -19,29 +19,29 @@ Featured work
 -------------
 Use these public repositories as featured work on the Sponsors dashboard:
 
-1. DraconDev/dracon-terminal-engine
-   https://github.com/DraconDev/dracon-terminal-engine
-   Why: core terminal rendering/engine work behind DraconDev's terminal UX experiments.
+1. DraconDev/obs-wayland-hotkey
+   https://github.com/DraconDev/obs-wayland-hotkey
+   Why: strongest external signal in the set: a real Linux desktop automation tool with crates.io, CI, and a concrete OBS workflow.
 
 2. DraconDev/tiles-tui-file-manager
    https://github.com/DraconDev/tiles-tui-file-manager
-   Why: concrete TUI tool showing DraconDev's terminal UX direction.
+   Why: polished TUI app with a clear user-facing workflow: file management, Git integration, SSH, system monitor, and editor features.
 
-3. DraconDev/obs-wayland-hotkey
-   https://github.com/DraconDev/obs-wayland-hotkey
-   Why: desktop automation work that connects DraconDev's tools to real Linux workflows.
+3. DraconDev/dracon-terminal-engine
+   https://github.com/DraconDev/dracon-terminal-engine
+   Why: foundational terminal framework work with crates.io and docs.rs; shows the engine behind DraconDev's terminal UX direction.
 
 4. DraconDev/git-seal
    https://github.com/DraconDev/git-seal
-   Why: Git workflow tooling that fits the developer-infrastructure theme.
+   Why: concrete developer workflow tool that solves a real Git problem: transparent encryption for sensitive files without changing local workflow.
 
-5. DraconDev/azumi-live-ssr-framework
-   https://github.com/DraconDev/azumi-live-ssr-framework
-   Why: broader platform work around live/server-rendered application infrastructure.
+5. DraconDev/youtube-video-uploader
+   https://github.com/DraconDev/youtube-video-uploader
+   Why: API-first automation with a Rust CLI/library, YouTube Data API v3 integration, resumable uploads, profiles, and automation-oriented output.
 
 6. DraconDev/ai-gui-auto-video-editor
    https://github.com/DraconDev/ai-gui-auto-video-editor
-   Why: AI-assisted video workflow tooling and a concrete example of the automation direction.
+   Why: concrete AI-assisted video workflow tooling with GUI + CLI automation for editing tasks like silence cutting, audio enhancement, scene detection, and reframing.
 
 Featured sponsors
 -----------------
