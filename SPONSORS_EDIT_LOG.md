@@ -135,6 +135,7 @@ Evidence:
 Because the remaining fields require dashboard access, I prepared a manual handoff file with the exact copy to paste when a logged-in session is available:
 
 - `/tmp/sponsors_dashboard_manual.md`
+- Featured work links were smoke-checked before handoff: all six proposed repositories returned HTTP 200 (`/tmp/sponsors_featured_work_link_check.txt`).
 
 ## Completion audit table
 
@@ -170,7 +171,7 @@ Because the remaining fields require dashboard access, I prepared a manual hando
 - Fresh listing snapshot: completed — `/tmp/current_listing_blocked.json` confirms tiers are present while `shortDescription`, `fullDescription`, `activeGoal`, and `featuredItems` remain unchanged/empty.
 - Method record: completed — `SPONSORS_EDIT_LOG.md` records API and browser attempts without exposing token values.
 - Smoke check: completed — public page returns HTTP 200 and renders the published tiers.
-- Link smoke check: completed — user-facing GitHub links extracted from the sponsors page returned HTTP 200; see `/tmp/sponsors_interesting_links.txt` and `/tmp/sponsors_link_check_output.txt`.
+- Link smoke check: completed — user-facing GitHub links extracted from the sponsors page returned HTTP 200; proposed featured-work repositories also returned HTTP 200. See `/tmp/sponsors_interesting_links.txt`, `/tmp/sponsors_link_check_output.txt`, and `/tmp/sponsors_featured_work_link_check.txt`.
 - Docs consistency: completed for available checks — edited docs no longer contain stale sponsors-page wording or leaked token patterns.
 - Final completion status: not complete — required bio/story/goal/featured-work fields remain unedited because access/API support is insufficient.
 
