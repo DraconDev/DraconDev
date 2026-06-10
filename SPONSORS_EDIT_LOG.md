@@ -136,6 +136,8 @@ Because the remaining fields require dashboard access, I prepared a manual hando
 
 - `/tmp/sponsors_dashboard_manual.md`
 - Final blocked-completion report: `/tmp/sponsors_blocked_final_report.md`
+- Final comprehensive audit report: `/tmp/sponsors_final_audit.txt`
+- Refined stale/contradictory checks: `/tmp/sponsors_refined_stale_checks.txt`
 - Featured work links were smoke-checked before handoff: all six proposed repositories returned HTTP 200 (`/tmp/sponsors_featured_work_link_check.txt`).
 
 ## Completion audit table
