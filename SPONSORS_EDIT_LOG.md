@@ -37,8 +37,8 @@ Evidence: `/tmp/sponsors-before/sponsors-public.json`.
 ### Method 1: local `gh` token
 
 - `gh auth token` confirmed CLI auth as `DraconDev`.
-- Token scopes were insufficient for Sponsors mutations: `gist`, `read:org`, `repo`, `workflow`.
-- `createSponsorsListing` and `createSponsorsTier` both failed with `INSUFFICIENT_SCOPES`; they require `user` or `admin:org`.
+- Token scopes were `gist`, `read:org`, `repo`, and `workflow`; this auth path did not provide a usable sponsors mutation path.
+- `createSponsorsListing` and `createSponsorsTier` attempts through this auth path failed with `INSUFFICIENT_SCOPES`; a later PAT auth path succeeded for tier creation.
 
 ### Method 2: browser automation
 
