@@ -145,6 +145,7 @@ Current evidence for the blocker:
 - Correct dashboard URL from GraphQL: `https://github.com/sponsors/DraconDev/dashboard`.
 - Browser capture of the correct dashboard URL renders GitHub sign-in: `/tmp/sponsors-dashboard-attempt/dashboard.json`.
 - Local Chrome/Chromium profiles tested have GitHub `logged_in=no`.
+- Also tested the real Google Chrome executable against all `~/.config/google-chrome` profiles with GitHub cookies (`Default`, `Profile 2`, `Profile 6`, `Profile 7`, `Profile 9`, `Profile 10`); each rendered the logged-out GitHub homepage and had `logged_in=no`.
 - Tried using the local PAT as a web-login password through `https://github.com/session`; GitHub returned the sign-in page with `logged_in=no`, so PATs cannot be used as a browser session credential.
 - Public GraphQL introspection shows no update mutation for the existing Sponsors listing.
 - Public GraphQL mutation introspection also shows no general user/profile update mutation relevant to the Sponsors listing fields; available update mutations are `updateEnterpriseProfile`, `updateIpAllowListUserLevelEnforcementEnabledSetting`, `updateUserList`, and `updateUserListsForItem`.
