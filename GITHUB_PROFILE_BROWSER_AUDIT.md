@@ -4,17 +4,17 @@ Captured live with a real browser on 2026-06-09. Updated after the final README 
 
 ## Evidence
 
-- Browser screenshot, full page: `/tmp/dracondev-profile/profile-full.png`
-- Browser screenshot, above fold: `/tmp/dracondev-profile/profile-above-fold.png`
-- Rendered page HTML: `/tmp/dracondev-profile/profile.html`
-- Extracted page text/links/pins: `/tmp/dracondev-profile/profile.json`
+- Browser screenshot, full page: `/tmp/dracondev-profile-final/profile-full.png`
+- Browser screenshot, above fold: `/tmp/dracondev-profile-final/profile-above-fold.png`
+- Rendered page HTML: `/tmp/dracondev-profile-final/profile.html`
+- Extracted page text/links/pins: `/tmp/dracondev-profile-final/profile.json`
 - Visible profile links smoke check: `/tmp/profile-links.txt`
 
 ## What GitHub currently shows
 
 - Profile URL: `https://github.com/DraconDev`
 - Browser title: `DraconDev (Dracon) · GitHub`
-- Profile README is rendered. The live profile README should be updated after this in-repo polish if the GitHub profile settings still point at the old README content.
+- Profile README is rendered and matches the local `README.md` / `README_DRAFT.md` in the final browser capture.
 - Sponsor button is visible.
 - Sidebar website link is rendered as `http://dracon.uk/`.
 - README footer links render as:
@@ -23,9 +23,7 @@ Captured live with a real browser on 2026-06-09. Updated after the final README 
   - `https://github.com/sponsors/DraconDev`
 - Crates.io link target: `https://crates.io/users/DraconDev`.
 - No standalone utilities links are visible:
-  - no `DraconDev/dracon-sync`
-  - no `DraconDev/dracon-system`
-  - no `DraconDev/dracon-warden`
+  - no standalone sync/system/warden utilities links
 
 ## Pinned repositories currently visible
 
