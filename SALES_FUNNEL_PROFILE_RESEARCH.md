@@ -249,10 +249,11 @@ Course-funnel examples like Wes Bos, Kent C. Dodds, Brad Traversy, and Frontend 
 
 ## DraconDev implications
 
-- If DraconDev wants a sales funnel, the cleanest pattern is a short hero line + one obvious destination: `dracon.uk` or a specific product page.
+- DraconDev should lead as a maker/product seller, not as an educator: **make tools, present them clearly, direct buyers/users to `dracon.uk` or a specific product page.**
+- The cleanest sales funnel is a short hero line + one obvious destination: `dracon.uk` or a specific product page.
 - The profile should not mix code and product links in the same bullet list; keep the Code section for developer-useful repos and the product dropdowns for install/play pages.
-- A newsletter or community funnel is a softer option. That pattern fits a low-friction path into YouTube or a mailing list, but it is less direct than a product/course funnel.
-- The strongest pattern for DraconDev is likely a hybrid of Wes Bos / Kent C. Dodds / Brad Traversy: short bio, clear destination, and a single CTA.
+- A newsletter or community funnel is a softer option. That pattern fits a low-friction path into YouTube or a mailing list, but it is less direct than a product/tool funnel.
+- The strongest pattern for DraconDev is likely a hybrid of Rauchg / Amir Salihefendic / Feross for product destination clarity plus DraconDev's own shipped-tool proof.
 
 ## Evidence directory
 
