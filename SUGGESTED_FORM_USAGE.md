@@ -7,8 +7,9 @@ as the live `README.md` (and matching `README_DRAFT.md`).
 
 Adopt only when at least one of the placeholders is about to be filled,
 or when the user explicitly asks to replace the live README. The current
-README already separates Code, Chrome extensions, and Games, so adopting
-the form is optional and incremental.
+README already separates products and code, so adopting the form is
+optional and incremental. When adopting, keep the maker/product-seller
+positioning: products first, code as proof.
 
 ## Steps
 
@@ -45,7 +46,8 @@ the form is optional and incremental.
 ## What to never remove
 
 - The hero line, stat line, and footer line structure.
-- The three-section split (Code, Chrome extensions, Games).
+- The product-first split: Use it / buy it before Inspect the code.
+- The separation between product destinations and source-code links.
 - The `<details>` dropdowns for the product sections.
 - The "More code worth knowing about" dropdown.
 
