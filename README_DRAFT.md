@@ -25,20 +25,20 @@ Extensions and games are in details below; open the one you need. Only verified 
 
 </details>
 
-**Usable public tools** — projects with a real grab-and-run path.
+**Usable tools** — things that solve a job directly.
 
 - [**folder-auto-banner**](https://github.com/DraconDev/folder-auto-banner) — contextual directory dashboard; `ls` with git, TODO, ports, and build context.
 - [**tiles-tui-file-manager**](https://github.com/DraconDev/tiles-tui-file-manager) — TUI file manager; ships the terminal engine.
 - [**obs-wayland-hotkey**](https://github.com/DraconDev/obs-wayland-hotkey) — OBS hotkey daemon; crates.io + CI.
 - [**youtube-video-uploader**](https://github.com/DraconDev/youtube-video-uploader) — Rust YouTube API client + CLI; resumable uploads.
 - [**git-seal**](https://github.com/DraconDev/git-seal) — Git filter for transparent file encryption.
+- `dracon-utilities` — private monorepo; sync/warden/system tooling, not linked until public and `cargo fmt --check` is clean.
 
 <details><summary>Build-with foundations</summary>
 
 - [**dracon-terminal-engine**](https://github.com/DraconDev/dracon-terminal-engine) — TUI engine; 43 widgets for building terminal UX.
 - [**azumi-live-ssr-framework**](https://github.com/DraconDev/azumi-live-ssr-framework) — live SSR framework for Rust on Axum; ~10KB gzipped.
 - [**ai-gui-auto-video-editor**](https://github.com/DraconDev/ai-gui-auto-video-editor) — AGAVE: AI-assisted GUI video editor; product demo, not first-screen library.
-- `dracon-utilities` — private monorepo; sync/warden/system tooling, not linked until public and `cargo fmt --check` is clean.
 
 </details>
 
