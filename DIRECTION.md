@@ -1,112 +1,231 @@
-# DraconDev — Strategic Direction
+# DraconDev — Direction
 
-**Last updated:** 2026-06-02
-**Supersedes:** POSITIONING_BRIEF.md, POSITIONING.md, PRODUCT_ROADMAP.md
-
----
-
-## The Business
-
-DraconDev builds AI-powered tools for developers and power users. Revenue comes from:
-1. **Browser extensions** (SamAI, vidpro, api-debugger) — freemium via Chrome Web Store
-2. **Open source tools** (pully-fully, rust-ai-web-auto) — open core + managed/enterprise
-3. **YouTube** — content marketing that drives traffic to products
-4. **Consulting** — via website
-
-**Not selling:** Software licenses directly. AGPL-3.0 for open source. Paid tiers for hosted services.
+**Last updated:** 2026-06-11  
+**Purpose:** Stop the audit spiral and turn the current state into a clear operating direction.
 
 ---
 
-## The Market
+## Current direction
 
-- **AI coding agent market:** $8.5B–$12.8B (2026), projected $47B–$91B by 2034
-- **37–46% CAGR** through 2030
-- **Rust + AI agent intersection** is high-demand (claw-code 193k★, codex 87k★, tauri 107k★)
-- DraconDev sits at: **Rust core + AI agents + Tauri desktop GUI**
+DraconDev should present itself as a **maker of usable developer tools**, not as an audit archive, course brand, or generic open-source portfolio.
 
----
+The profile should lead with things people can understand quickly:
 
-## Positioning
+1. **Usable tools** — tools that solve a job directly.
+2. **Build-with foundations** — libraries/frameworks for people building similar tools.
+3. **Product destinations** — extensions/games only when there is a verified install/play/store page.
+4. **Private/unverified work** — mentioned honestly, not promoted as public products.
 
-**"AI agents for engineers who want control, not magic."**
+The operating principle is:
 
-### Competitive Landscape
-
-| Competitor | What they do | How we differ |
-|:-----------|:-------------|:--------------|
-| **0xNyk** (north star) | Fleet dashboard, policy gates, agent ops (TypeScript) | We use Rust + Tauri + desktop GUI |
-| **anomalyco/opencode** | Open source coding agent (167k★) | We focus on fleet management, not single-agent |
-| **t3dotgg** | T3 Chat, UploadThing, YouTube funnel | We target B2B, not indie devs |
-| **steipete** | OpenClaw, credibility play | We have products, not just reputation |
-
-### Positioning Archetypes
-
-| Archetype | Fits DraconDev? | Notes |
-|:----------|:----------------|:------|
-| Operator systems builder | ✅ Primary | Fleet orchestration, policy gates, agent ops |
-| Product-first | ✅ Secondary | SamAI, vidpro, api-debugger |
-| Building in public | ✅ YouTube | Content marketing, demos |
-| Massive credibility | ⚠️ Aspirational | Need more stars/repo traction |
-| Niche utility | ✅ Rust tools | dracon-terminal-engine, tiles |
+> When in doubt, let the stuff do the talking: shipped tools, install pages, and public code.
 
 ---
 
-## Target Audience
+## Current featured direction
 
-**Primary:** Small engineering teams (2–5 engineers) who use AI tools but want more control.
-**Secondary:** Individual developers who want better browser tools (SamAI, vidpro).
-**NOT targeting:** Indie hackers, enterprise (yet), non-technical users.
+### Featured usable tools
+
+These are the current best profile features because they are concrete, understandable, and more grab-and-run than pure foundations:
+
+1. **`folder-auto-banner`**
+   - Contextual directory dashboard.
+   - “`ls` with git, TODO, ports, and build context.”
+   - Has a thumbnail and a clear before/after demo story.
+   - Strong first feature.
+
+2. **`tiles-tui-file-manager`**
+   - TUI file manager.
+   - Ships the terminal engine.
+   - Strong usable tool.
+
+3. **`obs-wayland-hotkey`**
+   - OBS hotkey daemon.
+   - Concrete Linux/OBS utility.
+   - Public repo, but local copy is currently missing for validation.
+
+4. **`youtube-video-uploader`**
+   - Rust YouTube API client + CLI.
+   - Useful for creator workflows.
+
+5. **`git-seal`**
+   - Git filter for transparent file encryption.
+   - Public and usable.
+   - `dracon-warden` is the stronger private successor.
+
+6. **`dracon-utilities`**
+   - Strong usable category.
+   - Private monorepo.
+   - Should **not** be linked until public and `cargo fmt --check` is clean.
+   - Best treated as a future public feature, not a current public product link.
+
+### Build-with foundations
+
+These are valuable but less grab-and-run:
+
+- **`dracon-terminal-engine`**
+  - TUI engine; 43 widgets.
+  - README-worthy, but more “build with” than “install and use.”
+
+- **`azumi-live-ssr-framework`**
+  - Live SSR framework for Rust on Axum.
+  - Good foundation, but not a first-screen grab-and-run product.
+
+- **`ai-gui-auto-video-editor`**
+  - AGAVE product demo.
+  - Useful as a demo/product signal, but not first-screen library positioning.
 
 ---
 
-## GitHub Profile Strategy
+## Product destination direction
 
-See `PROFILE_STRATEGY.md` for detailed execution plan.
+Extensions and games should stay in details/collapsible sections.
 
-**In short:**
-- **Pin:** 3–4 Rust repos (terminal-engine, pully if published, tiles, obs-wayland-hotkey)
-- **Link:** SamAI (Chrome Web Store, not pinned — closed source), YouTube, dracon.uk
-- **Keep private until release-ready:** platform, code, demons, utilities; utilities can become a simple public monorepo only after cleanup/verification
-- **Publish:** pully-fully, rust-ai-web-auto, repo-rot-scanner (if ready); utilities only as a simple public monorepo with distinct sync/system/warden component paths
+### Chrome extensions
 
----
+- Feature only verified public install/store pages.
+- Do not link private source repos as product destinations.
+- Current verified public install link: Auto Fullscreen on Chrome Web Store.
+- Other extensions remain local/private inventory until public install pages are verified.
 
-## Key Decisions (confirmed)
+### Games
 
-1. **B2B > B2C** — small engineering teams pay; indie hackers don't
-2. **Option B (Audience Lead)** — open source tools build credibility → funnel to dracon.uk → pivot to Option A when products are ready
-3. **3–5 pinned repos max** — long lists signal overcompensation
-4. **No plugins/extensions on profile** — they don't reinforce the Rust story
-5. **SamAI stays closed source** — it's a product, not a portfolio piece
-6. **YouTube is the distribution channel** — content marketing drives everything
-7. **Products come when ready** — don't promote half-finished things
+- Feature only verified public play/install destinations.
+- Current state: Junk Runner is private; no public play page verified.
+- Do not promote private games as public products.
 
 ---
 
-## Positioning Audit (2026-06-02)
+## Private/unverified blockers
 
-See `POSITIONING_AUDIT.md` for full per-project recommendations.
+These are strong but should not be featured as public products yet:
 
-**Summary:**
-| Action | Count | Key projects |
-|:-------|------:|:-------------|
-| PIN | 4 | terminal-engine, pully, tiles, obs-wayland-hotkey |
-| SELL | 7 | SamAI, vidpro, api-debugger, bugkit, auto-form-filler, ai-ats, ai-job-finder |
-| PUBLISH | 6 | pully, rust-ai-web-auto, repo-rot-scanner, ai-auto-writer, Kiki, wal-backup |
-| PRIVATE | 24 | platform, code, demons, utilities, most extensions |
-| DELETE | 2 | kittentts-showcase, test-auto-create |
+1. **`dracon-utilities`**
+   - Private.
+   - Useful trio: sync / warden / system.
+   - `warden` is a stronger successor to `git-seal`.
+   - Needs public release + clean validation before profile linking.
 
-**Priority actions:**
-1. Clean up README — short, link SamAI + YouTube + dracon.uk
-2. Publish pully-fully — strongest open source candidate
-3. Package vidpro-extension — natural YouTube play
-4. Package api-debugger — already on GitHub, low effort
-5. Delete kittentts-showcase and test-auto-create
+2. **`browser-extensions-shared`**
+   - Private monorepo.
+   - Many local extension projects, but most lack verified public install pages.
+   - Do not invent store status from local files.
+
+3. **`Junk-Runner-bevy`**
+   - Private game.
+   - No verified public play page.
+
+4. **`avid`**
+   - Private/local product.
+   - No verified public destination.
+
+5. **`one-mil-girls`**
+   - Private/local game/product.
+   - No verified public play page.
+
+6. **`ai-auto-writer`**
+   - Private/local AI product.
+   - No verified public destination.
 
 ---
 
-## Open Questions
+## Validation state
 
-1. When to publish pully-fully? (Needs README cleanup first)
-2. Pricing model for SamAI paid tier?
-3. When to start YouTube content about these tools?
+Evidence from the latest state audit:
+
+- README and draft are synchronized.
+- README public links pass.
+- README renders correctly.
+- `dracon-utilities cargo fmt --check` passed.
+- `Junk-Runner-bevy/web npm run build` passed.
+- Local `obs-wayland-hotkey` copy is missing, so local validation for that repo is blocked.
+- Expensive `dracon-utilities cargo test --workspace` was not run because the local workspace is ~14G; this should be a later validation goal, not part of routine profile direction.
+
+---
+
+## What not to do next
+
+Do **not** keep producing broad audits unless they directly cause a decision.
+
+Avoid:
+
+- More “full state” audits with no action.
+- Adding private repos as public product links.
+- Rewriting the profile into a long audit report.
+- Promoting extensions/games without verified install/play pages.
+- Treating build-with foundations as grab-and-run tools.
+- Treating grab-and-run tools as generic code libraries.
+
+---
+
+## Next decisions
+
+### Decision 1: utilities public release
+
+Question:
+
+> Do we want to make `dracon-utilities` public as a clean simple monorepo with `dracon-sync`, `dracon-warden`, and `dracon-system` as distinct component paths?
+
+If yes, next work is cleanup/validation/release-readiness, not more profile audits.
+
+If no, keep it as a private note and do not feature individual utilities yet.
+
+### Decision 2: warden vs git-seal
+
+Current recommendation:
+
+- Keep `git-seal` featured because it is public.
+- Mention `dracon-warden` as the stronger private successor.
+- Once `warden` is public and clean, feature it ahead of `git-seal`.
+
+### Decision 3: obs-wayland-hotkey validation
+
+Current blocker:
+
+- Public repo exists.
+- Local copy is missing.
+
+Next useful step:
+
+- Restore/clone `obs-wayland-hotkey` locally and run practical validation:
+  - `cargo fmt --check`
+  - `cargo test`
+  - `cargo clippy -- -D warnings`
+
+### Decision 4: product destinations
+
+Next useful step:
+
+- Verify public install/play pages for extensions and games.
+- Only then update profile product details.
+
+---
+
+## Recommended near-term roadmap
+
+1. **Lock the profile direction**
+   - Usable tools first.
+   - Build-with foundations second.
+   - Product destinations only when verified.
+   - Private/unverified work noted honestly.
+
+2. **Prepare `dracon-utilities` for public release**
+   - Only if the user wants utilities featured as a real public tool.
+   - Clean, validate, and publish as a simple monorepo.
+
+3. **Promote `dracon-warden` after public release**
+   - It is the stronger successor to `git-seal`.
+   - Should not be linked while private.
+
+4. **Restore and validate `obs-wayland-hotkey`**
+   - Needed before claiming strong validation beyond public repo status.
+
+5. **Verify extension/game destinations**
+   - Store/play pages only.
+   - No source-code links as product destinations.
+
+---
+
+## One-line direction
+
+DraconDev should lead with **usable tools that prove the maker**, keep **build-with foundations in a second tier**, and only promote **private work when it becomes public, clean, and verifiably usable**.
