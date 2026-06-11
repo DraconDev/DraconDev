@@ -5,12 +5,12 @@
   "status": "active",
   "autoContinue": true,
   "usage": {
-    "tokensUsed": 2366463,
-    "activeSeconds": 1022
+    "tokensUsed": 4965055,
+    "activeSeconds": 1303
   },
   "sisyphus": false,
   "createdAt": "2026-06-11T22:55:09.058Z",
-  "updatedAt": "2026-06-11T23:12:15.865Z",
+  "updatedAt": "2026-06-11T23:17:03.379Z",
   "activePath": ".pi/goals/active_goal_2026061123550905_mqa3idqa-l9ppej.md",
   "taskList": {
     "tasks": [
@@ -41,19 +41,25 @@
       {
         "id": "task-4",
         "title": "Rank projects and decide whether proposed README changes",
-        "status": "pending",
+        "status": "complete",
+        "completedAt": "2026-06-11T23:15:17.109Z",
+        "evidence": "Saved evidence-backed ranking and README change decision under /tmp/deep_project_strength_goal/task4_ranking.",
         "verificationContract": "Produce an evidence-backed ranking and state whether README_PROPOSED_NEXT.md should change."
       },
       {
         "id": "task-5",
         "title": "Update proposed README and final report if findings change",
-        "status": "pending",
+        "status": "complete",
+        "completedAt": "2026-06-11T23:16:44.927Z",
+        "evidence": "Updated README_PROPOSED_NEXT.md based on deeper findings and wrote final report under /tmp/deep_project_strength_goal/final_report.md.",
         "verificationContract": "Update README_PROPOSED_NEXT.md only if justified, render/link-check it, prove README.md unchanged, and write final report."
       },
       {
         "id": "task-6",
         "title": "Final completion audit",
-        "status": "pending",
+        "status": "complete",
+        "completedAt": "2026-06-11T23:17:03.378Z",
+        "evidence": "Final completion audit passed and saved to /tmp/deep_project_strength_goal/task6_completion_audit/final_completion_audit.json.",
         "verificationContract": "Map every goal requirement to fresh evidence or explicit blockers before marking complete."
       }
     ],
@@ -104,15 +110,15 @@ Stop and ask the user with attempted paths, evidence gathered, exact blockers, r
 - Status: running
 - Auto-continue: on
 - Sisyphus mode: no
-- Time spent: 17m02s
-- Tokens used: 2.4M (2,366,463) tokens
+- Time spent: 21m43s
+- Tokens used: 5M (4,965,055) tokens
 ## Tasks
 
 <!-- blockCompletion: false -->
 - [x] task-1: Inventory target projects and evidence sources — evidence: Saved remote repo inventory, local git inventory, and target project list under /tmp/deep_project_strength_goal/task1_inventory.
 - [x] task-2: Inspect project substance beyond surface presentation — evidence: Saved project substance matrix, summary, and dracon-utilities component counts under /tmp/deep_project_strength_goal/task2_substance.
 - [x] task-3: Run practical validation checks where feasible — evidence: Saved validation outputs under /tmp/deep_project_strength_goal/task3_validation, including fmt/test/build/package checks and skipped/blocked notes.
-- [ ] task-4: Rank projects and decide whether proposed README changes — contract: Produce an evidence-backed ranking and state whether README_PROPOSED_NEXT.md should change.
-- [ ] task-5: Update proposed README and final report if findings change — contract: Update README_PROPOSED_NEXT.md only if justified, render/link-check it, prove README.md unchanged, and write final report.
-- [ ] task-6: Final completion audit — contract: Map every goal requirement to fresh evidence or explicit blockers before marking complete.
+- [x] task-4: Rank projects and decide whether proposed README changes — evidence: Saved evidence-backed ranking and README change decision under /tmp/deep_project_strength_goal/task4_ranking.
+- [x] task-5: Update proposed README and final report if findings change — evidence: Updated README_PROPOSED_NEXT.md based on deeper findings and wrote final report under /tmp/deep_project_strength_goal/final_report.md.
+- [x] task-6: Final completion audit — evidence: Final completion audit passed and saved to /tmp/deep_project_strength_goal/task6_completion_audit/final_completion_audit.json.
 

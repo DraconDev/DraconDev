@@ -49,15 +49,21 @@ Things that solve a job directly.
 
 Strong work that should become public only when it is clean, verifiable, and safe to link.
 
+### Higher-priority private/on-the-way
+
+- `pully-fully-pull-based-fleet-reconciler` — private fleet/control-plane work; stronger than it first appears because local validation passed `cargo fmt --check` and `cargo test --workspace`.
 - `dracon-utilities` — private monorepo; not linked until public and `cargo fmt --check` is clean.
   - `dracon-warden` — private successor to `git-seal`; stronger Git encryption/security story once public.
   - `dracon-sync` — private Git sync / multi-mirror workflow tooling.
   - `dracon-system` — private system monitoring and maintenance tooling.
-- `pully-fully-pull-based-fleet-reconciler` — private fleet/control-plane work; not a public product link yet.
-- `rust-ai-web-auto` — private AI browser automation work; not a public product link yet.
-- `dracon-code` — private autonomous engineering runtime work; not a public product link yet.
-- `browser-extensions-shared` — private extension monorepo; only verified public install pages should be featured.
-- `avid` — private video automation product; no public destination verified.
+
+### Destination-gated or still private
+
+- `rust-ai-web-auto` — private AI browser automation work; fmt passed, but no public destination yet.
+- `dracon-code` — private autonomous engineering runtime work; fmt passed, but no public destination yet.
+- `browser-extensions-shared` — private extension monorepo; large local codebase, but only verified public install pages should be featured.
+- `avid` — private video automation product; no public destination verified; fmt still needs cleanup.
+- `Junk Runner` — private game/product; web build passed, but no public play page verified.
 - `one-mil-girls` — private game/product; no public play page verified.
 - `ai-auto-writer` — private AI writing product; no public destination verified.
 
@@ -68,7 +74,7 @@ Strong work that should become public only when it is clean, verifiable, and saf
 Libraries and frameworks for people building similar tools.
 
 - [**dracon-terminal-engine**](https://github.com/DraconDev/dracon-terminal-engine) — TUI engine; 43 widgets for building terminal UX.
-- [**dracon-libs**](https://github.com/DraconDev/dracon-libs) — reusable Rust libraries and runtimes.
+- [**dracon-libs**](https://github.com/DraconDev/dracon-libs) — reusable Rust libraries and runtimes; fmt passed, workspace tests blocked in this environment by missing `sqlite3` linker library.
 - [**azumi-live-ssr-framework**](https://github.com/DraconDev/azumi-live-ssr-framework) — live SSR framework for Rust on Axum; ~10KB gzipped.
 - [**ai-gui-auto-video-editor**](https://github.com/DraconDev/ai-gui-auto-video-editor) — AGAVE: AI-assisted GUI video editor; product demo, not first-screen library.
 
@@ -77,8 +83,9 @@ Libraries and frameworks for people building similar tools.
 ## What this is heading toward
 
 - Usable tools first: folder dashboard, TUI file manager, OBS hotkeys, YouTube uploads, Git encryption.
-- Stronger private successors next: `dracon-warden` over `git-seal`, then `dracon-utilities` if/when public and clean.
+- Stronger private successors next: `pully-fully` for control-plane/fleet work, then `dracon-warden` over `git-seal`, then the rest of `dracon-utilities` if/when public and clean.
 - Product destinations only when verified: Chrome Web Store pages, play pages, or install pages.
 - Build-with foundations second: terminal engine, Rust libs, SSR framework, AI GUI demo.
+- Destination-gated work stays out of product lists until public install/play pages exist.
 
 [🌐 dracon.uk](https://dracon.uk) · [🎥 YouTube](https://youtube.com/@DraconDev) · [💰 Sponsor](https://github.com/sponsors/DraconDev)
