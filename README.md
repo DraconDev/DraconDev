@@ -6,31 +6,34 @@ I build infrastructure in Rust — terminal engines, fleet reconcilers, git daem
 
 ---
 
-**TUI & Terminal**
-• [**terminal-engine**](https://github.com/DraconDev/dracon-terminal-engine) — TUI framework, 43 widgets
-• [**tiles**](https://github.com/DraconDev/tiles-tui-file-manager) — Dual-pane file manager
+**Code** — public, developer-useful open source. Each repo is a focused, small-surface library or tool.
+• [**dracon-terminal-engine**](https://github.com/DraconDev/dracon-terminal-engine) — a TUI engine with 43 widgets, used as a dependency by other projects.
+• [**tiles-tui-file-manager**](https://github.com/DraconDev/tiles-tui-file-manager) — a polished TUI app that ships the engine in a real product.
+• [**obs-wayland-hotkey**](https://github.com/DraconDev/obs-wayland-hotkey) — a Linux desktop daemon for OBS hotkeys, published on crates.io with CI.
+• [**git-seal**](https://github.com/DraconDev/git-seal) — a small, focused Git filter that encrypts specified files on commit.
+• [**youtube-video-uploader**](https://github.com/DraconDev/youtube-video-uploader) — an API-first Rust wrapper around YouTube Data API v3 with resumable uploads and a CLI.
 
-**Infrastructure**
-• [**obs-wayland-hotkey**](https://github.com/DraconDev/obs-wayland-hotkey) — OBS hotkey daemon: key combos, action chains, delayed starts
-• [**git-seal**](https://github.com/DraconDev/git-seal) — Git filter that encrypts specified files on commit
+<details><summary>More code worth knowing about</summary>
 
-**Chrome extensions**
-<details><summary>Installable browser tools</summary>
+• [**azumi-live-ssr-framework**](https://github.com/DraconDev/azumi-live-ssr-framework) — a live SSR framework for Rust on Axum, ~10KB gzipped. (Public, but a niche fit; promoted here so the first screen stays short.)
+• [**ai-gui-auto-video-editor**](https://github.com/DraconDev/ai-gui-auto-video-editor) — AGAVE: AI-assisted GUI auto video editor (silence cut, scene detect, auto-reframe). (Public, but more of a product demo than a reusable library; not on the first screen.)
+• `dracon-utilities` — the parent monorepo (`dracon-sync`, `dracon-warden`, `dracon-system`) is the strongest future code feature, but it is private and `cargo fmt --check` is still failing. I’ll promote it to the first screen the moment it is public and clean.
+
+</details>
+
+**Chrome extensions** — installable browser tools, not source code.
+<details><summary>Install a DraconDev extension</summary>
 
 • [**Auto Fullscreen**](https://chromewebstore.google.com/detail/auto-fullscreen-fullscree/liddomimembhlpgehhkhefijckmhkkjn) — fullscreen any page on load, navigation, or click-hold.
-• More browser extensions are in the private monorepo; I’ll link install pages only once they’re public.
+• More browser extensions live in a private monorepo; I’ll link install pages only once they’re public.
 
 </details>
 
-**Games**
-<details><summary>Playable work</summary>
+**Games** — playable work, not source code.
+<details><summary>Playable DraconDev games</summary>
 
-• **Junk Runner** — private survival/trading roguelike; no public install/play page verified yet.
+• **Junk Runner** — a private survival/trading roguelike. No public install/play page is verified yet, so this is a non-link note rather than a fake destination.
 
 </details>
-
-**Frameworks**
-• [**azumi**](https://github.com/DraconDev/azumi-live-ssr-framework) — Live SSR framework for Rust on Axum, ~10KB gzipped
-• [**AGAVE**](https://github.com/DraconDev/ai-gui-auto-video-editor) — AI GUI auto video editor: silence cut, scene detect, auto-reframe
 
 [🌐 dracon.uk](https://dracon.uk) · [🎥 YouTube](https://youtube.com/@DraconDev) · [💰 Sponsor](https://github.com/sponsors/DraconDev)
