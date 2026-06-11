@@ -1,12 +1,12 @@
 # Hey, I make tools that run themselves.
 
-I build Rust infrastructure, terminal UX, Git utilities, and video workflows. Use or buy the finished tools on [dracon.uk](https://dracon.uk).
+I build Rust infrastructure, terminal UX, Git utilities, and video workflows. Finished products and install pages are on [dracon.uk](https://dracon.uk).
 
 **239K+ Rust lines** · **5.6K tests** · [Dracon crates on lib.rs](https://lib.rs/search?q=dracon)
 
 ---
 
-**Use it / buy it** — finished tools, not source code.
+**Use / buy finished tools**
 
 <details><summary>Chrome extensions</summary>
 
@@ -21,7 +21,7 @@ I build Rust infrastructure, terminal UX, Git utilities, and video workflows. Us
 
 </details>
 
-**Inspect the code** — public Rust/tooling that proves the products are real.
+**Inspect public code** — developer-useful Rust/tooling that backs the products.
 
 - [**dracon-terminal-engine**](https://github.com/DraconDev/dracon-terminal-engine) — TUI engine; 43 widgets.
 - [**tiles-tui-file-manager**](https://github.com/DraconDev/tiles-tui-file-manager) — TUI file manager; ships the engine.
