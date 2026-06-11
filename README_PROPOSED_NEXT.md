@@ -8,7 +8,7 @@ This is a direction draft, not the live profile README. It previews where the pr
 
 I build Rust infrastructure, terminal UX, Git utilities, creator workflows, and private control-plane tools. Finished products and install pages go in the details below; code is shown when it proves the work.
 
-**239K+ Rust lines** · **5.6K tests** · [Dracon crates on lib.rs](https://lib.rs/search?q=dracon)
+**239K+ Rust lines** · [Dracon crates on lib.rs](https://lib.rs/search?q=dracon)
 
 When in doubt, let the stuff do the talking: shipped tools, install pages, public code, and honest notes for private work.
 
