@@ -31,7 +31,7 @@ Extensions and games are in details below; open the one you need. Only verified 
 - [**tiles-tui-file-manager**](https://github.com/DraconDev/tiles-tui-file-manager) — TUI file manager; ships the terminal engine.
 - [**obs-wayland-hotkey**](https://github.com/DraconDev/obs-wayland-hotkey) — OBS hotkey daemon; crates.io + CI.
 - [**youtube-video-uploader**](https://github.com/DraconDev/youtube-video-uploader) — Rust YouTube API client + CLI; resumable uploads.
-- [**git-seal**](https://github.com/DraconDev/git-seal) — Git filter for transparent file encryption.
+- [**git-seal**](https://github.com/DraconDev/git-seal) — Git filter for transparent file encryption; `dracon-warden` is the stronger private successor.
 - `dracon-utilities` — private monorepo; sync/warden/system tooling, not linked until public and `cargo fmt --check` is clean.
 
 <details><summary>Build-with foundations</summary>
