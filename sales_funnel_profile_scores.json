@@ -1,0 +1,479 @@
+[
+  {
+    "login": "wesbos",
+    "classification": "Strong sales funnel",
+    "profile_evidence": "Profile meta description says: \"I create courses that make learning things like JavaScript easy and fun \ud83d\udd25\"; website is wesbos.com.",
+    "funnel_path": "GitHub profile \u2192 wesbos.com/courses",
+    "monetization_destination": "Wes Bos courses",
+    "why_funnel": "The profile bio explicitly sells courses and the website destination is the course catalog.",
+    "draconded_advice": "Copy the direct \"I create courses\" style only if DraconDev wants a course-led funnel. Otherwise, keep the profile README product/code split clean.",
+    "copy_adapt_avoid": "copy",
+    "scores": {
+      "funnel_clarity": 5,
+      "monetization_specificity": 5,
+      "first_screen_signal": 5,
+      "trust_building": 5,
+      "fit_for_dracondev": 4
+    },
+    "source_artifact_paths": {
+      "profile_html": "/tmp/sales_funnel_profiles/wesbos/profile.html",
+      "github_api": "/tmp/sales_funnel_profiles/wesbos/github_api.json",
+      "endpoint_html": "/tmp/sales_funnel_profiles/wesbos/endpoint.html",
+      "endpoint_status": "/tmp/sales_funnel_profiles/wesbos/endpoint_status.txt",
+      "profile_readme": "/tmp/sales_funnel_profiles/wesbos/profile_readme.md"
+    },
+    "endpoint_status": "200",
+    "endpoint_url": "https://wesbos.com/courses",
+    "endpoint_title": "Courses - Wes Bos"
+  },
+  {
+    "login": "kentcdodds",
+    "classification": "Strong sales funnel",
+    "profile_evidence": "Profile meta description says: \"EpicAI.pro EpicWeb.dev EpicReact.dev\"; website is kentcdodds.com.",
+    "funnel_path": "GitHub profile \u2192 kentcdodds.com",
+    "monetization_destination": "EpicAI / EpicWeb / EpicReact",
+    "why_funnel": "The profile bio names the products directly and the site is the destination for them.",
+    "draconded_advice": "Copy the product-name funnel if DraconDev wants to promote dracon.uk products directly from the profile bio.",
+    "copy_adapt_avoid": "copy",
+    "scores": {
+      "funnel_clarity": 5,
+      "monetization_specificity": 5,
+      "first_screen_signal": 5,
+      "trust_building": 5,
+      "fit_for_dracondev": 4
+    },
+    "source_artifact_paths": {
+      "profile_html": "/tmp/sales_funnel_profiles/kentcdodds/profile.html",
+      "github_api": "/tmp/sales_funnel_profiles/kentcdodds/github_api.json",
+      "endpoint_html": "/tmp/sales_funnel_profiles/kentcdodds/endpoint.html",
+      "endpoint_status": "/tmp/sales_funnel_profiles/kentcdodds/endpoint_status.txt",
+      "profile_readme": "/tmp/sales_funnel_profiles/kentcdodds/profile_readme.md"
+    },
+    "endpoint_status": "200",
+    "endpoint_url": "https://kentcdodds.com/",
+    "endpoint_title": "Kent C. Dodds"
+  },
+  {
+    "login": "getify",
+    "classification": "Strong sales funnel",
+    "profile_evidence": "Profile HTML shows worksFor Getify Solutions and the website getify.me.",
+    "funnel_path": "GitHub profile \u2192 getify.me \u2192 Frontend Masters course page",
+    "monetization_destination": "Frontend Masters courses",
+    "why_funnel": "The profile points to a course destination and the endpoint page is a course catalog.",
+    "draconded_advice": "Copy only if DraconDev wants to route visitors to a course or training page; otherwise keep the profile focused on code and product destinations.",
+    "copy_adapt_avoid": "copy",
+    "scores": {
+      "funnel_clarity": 4,
+      "monetization_specificity": 5,
+      "first_screen_signal": 4,
+      "trust_building": 4,
+      "fit_for_dracondev": 4
+    },
+    "source_artifact_paths": {
+      "profile_html": "/tmp/sales_funnel_profiles/getify/profile.html",
+      "github_api": "/tmp/sales_funnel_profiles/getify/github_api.json",
+      "endpoint_html": "/tmp/sales_funnel_profiles/getify/endpoint.html",
+      "endpoint_status": "/tmp/sales_funnel_profiles/getify/endpoint_status.txt"
+    },
+    "endpoint_status": "200",
+    "endpoint_url": "https://frontendmasters.com/teachers/kyle-simpson/",
+    "endpoint_title": "Learn from Kyle Simpson's courses | Frontend Masters"
+  },
+  {
+    "login": "bradtraversy",
+    "classification": "Strong sales funnel",
+    "profile_evidence": "Profile meta description says: \"Full stack web developer and online instructor\"; website is traversymedia.com.",
+    "funnel_path": "GitHub profile \u2192 traversymedia.com/store",
+    "monetization_destination": "Traversy Media courses/store",
+    "why_funnel": "The profile bio and endpoint both point to paid learning content.",
+    "draconded_advice": "Copy the \"online instructor + store\" pattern if DraconDev wants to sell courses or tutorials directly.",
+    "copy_adapt_avoid": "copy",
+    "scores": {
+      "funnel_clarity": 5,
+      "monetization_specificity": 5,
+      "first_screen_signal": 5,
+      "trust_building": 5,
+      "fit_for_dracondev": 4
+    },
+    "source_artifact_paths": {
+      "profile_html": "/tmp/sales_funnel_profiles/bradtraversy/profile.html",
+      "github_api": "/tmp/sales_funnel_profiles/bradtraversy/github_api.json",
+      "endpoint_html": "/tmp/sales_funnel_profiles/bradtraversy/endpoint.html",
+      "endpoint_status": "/tmp/sales_funnel_profiles/bradtraversy/endpoint_status.txt"
+    },
+    "endpoint_status": "200",
+    "endpoint_url": "https://www.traversymedia.com/store",
+    "endpoint_title": "Traversy Media | Learn Web Development"
+  },
+  {
+    "login": "unclebob",
+    "classification": "Strong sales funnel",
+    "profile_evidence": "Profile HTML shows worksFor Uncle Bob Consulting LLC and pinned repo desc mentions cleancoders.com.",
+    "funnel_path": "GitHub profile \u2192 cleancoders.com",
+    "monetization_destination": "Clean Coders training videos / consulting",
+    "why_funnel": "The profile routes visitors to a training site, not just a code portfolio.",
+    "draconded_advice": "Copy the training-site funnel if DraconDev wants to sell learning content. Keep the profile README short and destination-led.",
+    "copy_adapt_avoid": "copy",
+    "scores": {
+      "funnel_clarity": 5,
+      "monetization_specificity": 5,
+      "first_screen_signal": 4,
+      "trust_building": 4,
+      "fit_for_dracondev": 3
+    },
+    "source_artifact_paths": {
+      "profile_html": "/tmp/sales_funnel_profiles/unclebob/profile.html",
+      "github_api": "/tmp/sales_funnel_profiles/unclebob/github_api.json",
+      "endpoint_html": "/tmp/sales_funnel_profiles/unclebob/endpoint.html",
+      "endpoint_status": "/tmp/sales_funnel_profiles/unclebob/endpoint_status.txt"
+    },
+    "endpoint_status": "200",
+    "endpoint_url": "https://cleancoders.com/",
+    "endpoint_title": "Clean Coders : Level up your code."
+  },
+  {
+    "login": "rauchg",
+    "classification": "Strong sales funnel",
+    "profile_evidence": "Profile HTML shows worksFor Vercel; endpoint is vercel.com.",
+    "funnel_path": "GitHub profile \u2192 Vercel product site",
+    "monetization_destination": "Vercel AI Cloud / product platform",
+    "why_funnel": "The profile is a company/product portal, not just a code dump.",
+    "draconded_advice": "Copy only if DraconDev wants to funnel to dracon.uk as a product site. Otherwise, keep the README split between product destinations and code.",
+    "copy_adapt_avoid": "copy",
+    "scores": {
+      "funnel_clarity": 4,
+      "monetization_specificity": 5,
+      "first_screen_signal": 5,
+      "trust_building": 5,
+      "fit_for_dracondev": 5
+    },
+    "source_artifact_paths": {
+      "profile_html": "/tmp/sales_funnel_profiles/rauchg/profile.html",
+      "github_api": "/tmp/sales_funnel_profiles/rauchg/github_api.json",
+      "endpoint_html": "/tmp/sales_funnel_profiles/rauchg/endpoint.html",
+      "endpoint_status": "/tmp/sales_funnel_profiles/rauchg/endpoint_status.txt",
+      "profile_readme": "/tmp/sales_funnel_profiles/rauchg/profile_readme.md"
+    },
+    "endpoint_status": "200",
+    "endpoint_url": "https://vercel.com/",
+    "endpoint_title": "Vercel: Build and deploy the best web experiences with the AI Cloud"
+  },
+  {
+    "login": "1Marc",
+    "classification": "Strong sales funnel",
+    "profile_evidence": "Profile HTML shows worksFor @FrontendMasters and website marcgrabanski.com.",
+    "funnel_path": "GitHub profile \u2192 Frontend Masters teacher page",
+    "monetization_destination": "Frontend Masters courses",
+    "why_funnel": "The profile is tied to a course platform and the endpoint is a course catalog.",
+    "draconded_advice": "Copy the platform-funnel pattern if DraconDev wants to route visitors to a course or learning platform.",
+    "copy_adapt_avoid": "copy",
+    "scores": {
+      "funnel_clarity": 5,
+      "monetization_specificity": 5,
+      "first_screen_signal": 5,
+      "trust_building": 5,
+      "fit_for_dracondev": 4
+    },
+    "source_artifact_paths": {
+      "profile_html": "/tmp/sales_funnel_profiles/1Marc/profile.html",
+      "github_api": "/tmp/sales_funnel_profiles/1Marc/github_api.json",
+      "endpoint_html": "/tmp/sales_funnel_profiles/1Marc/endpoint.html",
+      "endpoint_status": "/tmp/sales_funnel_profiles/1Marc/endpoint_status.txt"
+    },
+    "endpoint_status": "200",
+    "endpoint_url": "https://frontendmasters.com/teachers/marc-grabanski/",
+    "endpoint_title": "Learn from Marc Grabanski's courses | Frontend Masters"
+  },
+  {
+    "login": "amix",
+    "classification": "Strong sales funnel",
+    "profile_evidence": "Profile meta description says: \"Founder/CEO of @Doist\"; endpoint is doist.com.",
+    "funnel_path": "GitHub profile \u2192 Doist company site",
+    "monetization_destination": "Doist / Todoist / Twist",
+    "why_funnel": "The profile bio identifies the founder role and routes visitors to the company site.",
+    "draconded_advice": "Copy the founder/company funnel if DraconDev wants to route visitors to dracon.uk as the product/company destination.",
+    "copy_adapt_avoid": "copy",
+    "scores": {
+      "funnel_clarity": 5,
+      "monetization_specificity": 5,
+      "first_screen_signal": 5,
+      "trust_building": 4,
+      "fit_for_dracondev": 5
+    },
+    "source_artifact_paths": {
+      "profile_html": "/tmp/sales_funnel_profiles/amix/profile.html",
+      "github_api": "/tmp/sales_funnel_profiles/amix/github_api.json",
+      "endpoint_html": "/tmp/sales_funnel_profiles/amix/endpoint.html",
+      "endpoint_status": "/tmp/sales_funnel_profiles/amix/endpoint_status.txt",
+      "profile_readme": "/tmp/sales_funnel_profiles/amix/profile_readme.md"
+    },
+    "endpoint_status": "200",
+    "endpoint_url": "https://doist.com/",
+    "endpoint_title": "Doist: The remote company behind Todoist & Twist"
+  },
+  {
+    "login": "btholt",
+    "classification": "Strong sales funnel",
+    "profile_evidence": "Profile meta description says: \"teacher on @FrontendMasters\"; endpoint is a Frontend Masters teacher page.",
+    "funnel_path": "GitHub profile \u2192 Frontend Masters teacher page",
+    "monetization_destination": "Frontend Masters courses",
+    "why_funnel": "The profile bio and endpoint both point to a course platform.",
+    "draconded_advice": "Copy the teacher/platform funnel if DraconDev wants to sell learning content through a platform.",
+    "copy_adapt_avoid": "copy",
+    "scores": {
+      "funnel_clarity": 5,
+      "monetization_specificity": 5,
+      "first_screen_signal": 5,
+      "trust_building": 4,
+      "fit_for_dracondev": 4
+    },
+    "source_artifact_paths": {
+      "profile_html": "/tmp/sales_funnel_profiles/btholt/profile.html",
+      "github_api": "/tmp/sales_funnel_profiles/btholt/github_api.json",
+      "endpoint_html": "/tmp/sales_funnel_profiles/btholt/endpoint.html",
+      "endpoint_status": "/tmp/sales_funnel_profiles/btholt/endpoint_status.txt",
+      "profile_readme": "/tmp/sales_funnel_profiles/btholt/profile_readme.md"
+    },
+    "endpoint_status": "200",
+    "endpoint_url": "https://frontendmasters.com/teachers/brian-holt/",
+    "endpoint_title": "Learn from Brian Holt's courses | Frontend Masters"
+  },
+  {
+    "login": "cassidoo",
+    "classification": "Soft funnel",
+    "profile_evidence": "Profile README says: \"I have a weekly newsletter ... Patreon ... livestream ... blog\".",
+    "funnel_path": "GitHub profile \u2192 cassidoo.co/newsletter \u2192 Patreon / blog / apps",
+    "monetization_destination": "Newsletter, Patreon, blog, apps",
+    "why_funnel": "The profile promotes a newsletter and community, but the funnel is softer than a direct sales page.",
+    "draconded_advice": "Adapt the newsletter/community pattern if DraconDev wants a low-friction funnel into YouTube or dracon.uk.",
+    "copy_adapt_avoid": "adapt",
+    "scores": {
+      "funnel_clarity": 4,
+      "monetization_specificity": 3,
+      "first_screen_signal": 5,
+      "trust_building": 5,
+      "fit_for_dracondev": 3
+    },
+    "source_artifact_paths": {
+      "profile_html": "/tmp/sales_funnel_profiles/cassidoo/profile.html",
+      "github_api": "/tmp/sales_funnel_profiles/cassidoo/github_api.json",
+      "endpoint_html": "/tmp/sales_funnel_profiles/cassidoo/endpoint.html",
+      "endpoint_status": "/tmp/sales_funnel_profiles/cassidoo/endpoint_status.txt",
+      "profile_readme": "/tmp/sales_funnel_profiles/cassidoo/profile_readme.md"
+    },
+    "endpoint_status": "200",
+    "endpoint_url": "https://cassidoo.co/",
+    "endpoint_title": "Cassidy Williams"
+  },
+  {
+    "login": "colbyfayock",
+    "classification": "Soft funnel",
+    "profile_evidence": "Profile README says: \"Astrocoder, Developer Experience Engineer ... educational content ... newsletter\".",
+    "funnel_path": "GitHub profile \u2192 colbyfayock.com/newsletter \u2192 egghead.io courses",
+    "monetization_destination": "Newsletter / egghead courses",
+    "why_funnel": "The profile is content-led, with a newsletter and course destination, but it is not a hard sell on the profile page.",
+    "draconded_advice": "Adapt the educational-content funnel if DraconDev wants to route visitors from GitHub to YouTube or a newsletter.",
+    "copy_adapt_avoid": "adapt",
+    "scores": {
+      "funnel_clarity": 4,
+      "monetization_specificity": 3,
+      "first_screen_signal": 4,
+      "trust_building": 4,
+      "fit_for_dracondev": 3
+    },
+    "source_artifact_paths": {
+      "profile_html": "/tmp/sales_funnel_profiles/colbyfayock/profile.html",
+      "github_api": "/tmp/sales_funnel_profiles/colbyfayock/github_api.json",
+      "endpoint_html": "/tmp/sales_funnel_profiles/colbyfayock/endpoint.html",
+      "endpoint_status": "/tmp/sales_funnel_profiles/colbyfayock/endpoint_status.txt",
+      "profile_readme": "/tmp/sales_funnel_profiles/colbyfayock/profile_readme.md"
+    },
+    "endpoint_status": "200",
+    "endpoint_url": "https://egghead.io/q/resources-by-colby-fayock",
+    "endpoint_title": "Courses from Colby Fayock | egghead.io"
+  },
+  {
+    "login": "mbeaudru",
+    "classification": "Soft funnel",
+    "profile_evidence": "Profile meta description says: \"Github Modern JS Cheatsheet author\"; endpoint is the cheatsheet site.",
+    "funnel_path": "GitHub profile \u2192 modern-js-cheatsheet",
+    "monetization_destination": "Free cheatsheet / community",
+    "why_funnel": "The profile routes visitors to a free resource, which can become a lead magnet but is not a hard sale.",
+    "draconded_advice": "Adapt the free-resource funnel if DraconDev wants to attract developers before pitching dracon.uk products.",
+    "copy_adapt_avoid": "adapt",
+    "scores": {
+      "funnel_clarity": 3,
+      "monetization_specificity": 2,
+      "first_screen_signal": 4,
+      "trust_building": 3,
+      "fit_for_dracondev": 3
+    },
+    "source_artifact_paths": {
+      "profile_html": "/tmp/sales_funnel_profiles/mbeaudru/profile.html",
+      "github_api": "/tmp/sales_funnel_profiles/mbeaudru/github_api.json",
+      "endpoint_html": "/tmp/sales_funnel_profiles/mbeaudru/endpoint.html",
+      "endpoint_status": "/tmp/sales_funnel_profiles/mbeaudru/endpoint_status.txt"
+    },
+    "endpoint_status": "200",
+    "endpoint_url": "https://mbeaudru.github.io/modern-js-cheatsheet/",
+    "endpoint_title": "Modern JavaScript Cheatsheet | Modern JS Cheatsheet"
+  },
+  {
+    "login": "troyhunt",
+    "classification": "Soft funnel",
+    "profile_evidence": "Profile meta description is minimal; endpoint is troyhunt.com.",
+    "funnel_path": "GitHub profile \u2192 troyhunt.com",
+    "monetization_destination": "Security blog / personal brand",
+    "why_funnel": "The profile is more of a personal-brand funnel than a direct sales funnel.",
+    "draconded_advice": "Use only as a contrast case: personal-brand funnels are softer and less conversion-focused than DraconDev needs.",
+    "copy_adapt_avoid": "avoid",
+    "scores": {
+      "funnel_clarity": 3,
+      "monetization_specificity": 2,
+      "first_screen_signal": 3,
+      "trust_building": 5,
+      "fit_for_dracondev": 2
+    },
+    "source_artifact_paths": {
+      "profile_html": "/tmp/sales_funnel_profiles/troyhunt/profile.html",
+      "github_api": "/tmp/sales_funnel_profiles/troyhunt/github_api.json",
+      "endpoint_html": "/tmp/sales_funnel_profiles/troyhunt/endpoint.html",
+      "endpoint_status": "/tmp/sales_funnel_profiles/troyhunt/endpoint_status.txt"
+    },
+    "endpoint_status": "200",
+    "endpoint_url": "https://www.troyhunt.com/",
+    "endpoint_title": "Troy Hunt: Troy Hunt"
+  },
+  {
+    "login": "benawad",
+    "classification": "Soft funnel",
+    "profile_evidence": "Profile meta description says: \"Voidpet cofounder \u2022 ex-youtuber\"; endpoint is benawad.com.",
+    "funnel_path": "GitHub profile \u2192 benawad.com",
+    "monetization_destination": "Personal site / Voidpet",
+    "why_funnel": "The profile hints at a business and a creator brand, but the funnel is not explicit.",
+    "draconded_advice": "Use as a soft-funnel contrast case, not a template for DraconDev.",
+    "copy_adapt_avoid": "avoid",
+    "scores": {
+      "funnel_clarity": 3,
+      "monetization_specificity": 2,
+      "first_screen_signal": 3,
+      "trust_building": 3,
+      "fit_for_dracondev": 3
+    },
+    "source_artifact_paths": {
+      "profile_html": "/tmp/sales_funnel_profiles/benawad/profile.html",
+      "github_api": "/tmp/sales_funnel_profiles/benawad/github_api.json",
+      "endpoint_html": "/tmp/sales_funnel_profiles/benawad/endpoint.html",
+      "endpoint_status": "/tmp/sales_funnel_profiles/benawad/endpoint_status.txt"
+    },
+    "endpoint_status": "200",
+    "endpoint_url": "https://benawad.com/",
+    "endpoint_title": "Ben Awad"
+  },
+  {
+    "login": "feross",
+    "classification": "Soft funnel",
+    "profile_evidence": "Profile meta description says: \"Founder + CEO of Socket (@SocketDev)\"; endpoint is socket.dev but bot-blocked.",
+    "funnel_path": "GitHub profile \u2192 socket.dev",
+    "monetization_destination": "Socket security product",
+    "why_funnel": "The profile points to a company/product, but the endpoint is bot-blocked in this run, so the funnel is only partially verifiable.",
+    "draconded_advice": "Do not copy unless DraconDev can keep the destination page accessible and clearly product-led.",
+    "copy_adapt_avoid": "avoid",
+    "scores": {
+      "funnel_clarity": 3,
+      "monetization_specificity": 3,
+      "first_screen_signal": 4,
+      "trust_building": 5,
+      "fit_for_dracondev": 4
+    },
+    "source_artifact_paths": {
+      "profile_html": "/tmp/sales_funnel_profiles/feross/profile.html",
+      "github_api": "/tmp/sales_funnel_profiles/feross/github_api.json",
+      "endpoint_html": "/tmp/sales_funnel_profiles/feross/endpoint.html",
+      "endpoint_status": "/tmp/sales_funnel_profiles/feross/endpoint_status.txt",
+      "profile_readme": "/tmp/sales_funnel_profiles/feross/profile_readme.md"
+    },
+    "endpoint_status": "403",
+    "endpoint_url": "https://www.socket.dev/",
+    "endpoint_title": "Just a moment..."
+  },
+  {
+    "login": "addyosmani",
+    "classification": "Portfolio-first",
+    "profile_evidence": "Profile README says: \"I\u2019m currently working on AI at Google (Gemini, Agents, Vertex)\" and endpoint is addyosmani.com.",
+    "funnel_path": "GitHub profile \u2192 personal site",
+    "monetization_destination": "Personal site / Google AI",
+    "why_funnel": "The profile is more of a professional portfolio than a sales funnel.",
+    "draconded_advice": "Use as a contrast case: strong personal brand, weak sales funnel.",
+    "copy_adapt_avoid": "avoid",
+    "scores": {
+      "funnel_clarity": 1,
+      "monetization_specificity": 1,
+      "first_screen_signal": 2,
+      "trust_building": 5,
+      "fit_for_dracondev": 2
+    },
+    "source_artifact_paths": {
+      "profile_html": "/tmp/sales_funnel_profiles/addyosmani/profile.html",
+      "github_api": "/tmp/sales_funnel_profiles/addyosmani/github_api.json",
+      "endpoint_html": "/tmp/sales_funnel_profiles/addyosmani/endpoint.html",
+      "endpoint_status": "/tmp/sales_funnel_profiles/addyosmani/endpoint_status.txt",
+      "profile_readme": "/tmp/sales_funnel_profiles/addyosmani/profile_readme.md"
+    },
+    "endpoint_status": "200",
+    "endpoint_url": "https://addyosmani.com/",
+    "endpoint_title": "AddyOsmani.com"
+  },
+  {
+    "login": "joshwcomeau",
+    "classification": "Portfolio-first",
+    "profile_evidence": "Profile meta description says: \"Software developer. Makes stuff.\"; endpoint is joshwcomeau.com.",
+    "funnel_path": "GitHub profile \u2192 personal site",
+    "monetization_destination": "Personal site / courses",
+    "why_funnel": "The profile itself does not sell; the funnel is implicit rather than explicit.",
+    "draconded_advice": "Use as a contrast case: portfolio-first profiles are less effective for direct conversion.",
+    "copy_adapt_avoid": "avoid",
+    "scores": {
+      "funnel_clarity": 1,
+      "monetization_specificity": 1,
+      "first_screen_signal": 2,
+      "trust_building": 4,
+      "fit_for_dracondev": 2
+    },
+    "source_artifact_paths": {
+      "profile_html": "/tmp/sales_funnel_profiles/joshwcomeau/profile.html",
+      "github_api": "/tmp/sales_funnel_profiles/joshwcomeau/github_api.json",
+      "endpoint_html": "/tmp/sales_funnel_profiles/joshwcomeau/endpoint.html",
+      "endpoint_status": "/tmp/sales_funnel_profiles/joshwcomeau/endpoint_status.txt"
+    },
+    "endpoint_status": "200",
+    "endpoint_url": "https://www.joshwcomeau.com/",
+    "endpoint_title": "Josh W. Comeau"
+  },
+  {
+    "login": "jason",
+    "classification": "No funnel",
+    "profile_evidence": "Profile has no bio and no clear destination; endpoint is a CodeTV series page.",
+    "funnel_path": "GitHub profile \u2192 CodeTV series page",
+    "monetization_destination": "None visible",
+    "why_funnel": "The profile does not clearly route visitors anywhere; it is effectively a no-funnel case.",
+    "draconded_advice": "Avoid this pattern for DraconDev; the profile should do more than sit there.",
+    "copy_adapt_avoid": "avoid",
+    "scores": {
+      "funnel_clarity": 1,
+      "monetization_specificity": 1,
+      "first_screen_signal": 1,
+      "trust_building": 2,
+      "fit_for_dracondev": 1
+    },
+    "source_artifact_paths": {
+      "profile_html": "/tmp/sales_funnel_profiles/jason/profile.html",
+      "github_api": "/tmp/sales_funnel_profiles/jason/github_api.json",
+      "endpoint_html": "/tmp/sales_funnel_profiles/jason/endpoint.html",
+      "endpoint_status": "/tmp/sales_funnel_profiles/jason/endpoint_status.txt"
+    },
+    "endpoint_status": "200",
+    "endpoint_url": "https://codetv.dev/series/learn-with-jason/s8",
+    "endpoint_title": "Learn With Jason Season 8"
+  }
+]
