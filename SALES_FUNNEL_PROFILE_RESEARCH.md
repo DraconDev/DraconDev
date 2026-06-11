@@ -6,6 +6,24 @@ Date: 2026-06-11
 
 Yes. A number of public GitHub profiles use the profile as a sales funnel, not just as a code portfolio. The strongest examples are course creators, training platforms, and company founders who make the destination explicit in the bio or profile README.
 
+## Maker/product-seller lens
+
+DraconDev is not primarily an educator, so the most relevant examples are not the course creators. The best fit is the **product/company funnel** pattern:
+
+- `rauchg` → Vercel: the profile routes visitors to a product/company destination.
+- `amix` → Doist: the profile bio identifies the founder role and routes visitors to the company site.
+- `feross` → Socket: the profile bio identifies the founder/CEO role and points to a security product, though the endpoint was bot-blocked in this run.
+
+For DraconDev, the profile should not say "I teach" or copy educator/course language. It should say, in effect: **I make real tools; inspect the code if you want, buy/use the finished product if you want.**
+
+The strongest DraconDev-specific pattern is therefore:
+
+1. **Product/company destination clarity** — route buyers/users to `dracon.uk` or a specific product page.
+2. **Shipped-tool proof** — show public, useful code as evidence that the maker ships real things.
+3. **Separated product vs code paths** — Chrome extensions and games go to install/play pages; code goes to GitHub source repos.
+
+Course-funnel examples like Wes Bos, Kent C. Dodds, Brad Traversy, and Frontend Masters teachers are useful only as structural inspiration: short bio, clear destination, single CTA. DraconDev should not borrow their educator wording unless the business actually becomes course-led.
+
 ## Classification summary
 
 | Bucket | Count |
@@ -219,15 +237,15 @@ Yes. A number of public GitHub profiles use the profile as a sales funnel, not j
 
 ## Top patterns to copy
 
-1. **Direct product/course bio + destination link.** Wes Bos, Kent C. Dodds, Brad Traversy, and Brian Holt all make the funnel visible in the bio or profile README.
-2. **Founder/company funnel.** Rauchg and Amir Salihefendic turn the profile into a company portal by naming the company and routing to the product site.
-3. **Teacher/platform funnel.** 1Marc, Brian Holt, and Kyle Simpson use the profile to route visitors to a course platform.
+1. **Product/company funnel.** Rauchg, Amir Salihefendic, and Feross route visitors from GitHub to a product/company destination. This is the best fit for DraconDev because the goal is to get people to buy/use tools, not to enroll in courses.
+2. **Shipped-tool proof.** DraconDev's own public tools (`dracon-terminal-engine`, `tiles-tui-file-manager`, `obs-wayland-hotkey`, `git-seal`, `youtube-video-uploader`) prove that the maker ships real things.
+3. **Product-destination dropdowns.** Chrome extensions and games should go to install/play pages, not source repos.
 
 ## Top patterns to avoid
 
-1. **A vague personal brand with no destination.** Josh Comeau and Addy Osmani are strong personal brands, but the profile itself does not sell anything clearly.
-2. **A profile that only points to a company but not the product.** Rauchg works because the company is the product. A generic company link without a product story would be weaker.
-3. **A profile that hides the funnel behind too much code.** The best funnels are short, explicit, and destination-led.
+1. **Educator/course-first funnel.** Wes Bos, Kent C. Dodds, Brad Traversy, and Frontend Masters teachers are useful only as structural inspiration. Do not copy their educator wording unless DraconDev actually sells courses.
+2. **A vague personal brand with no destination.** Josh Comeau and Addy Osmani are strong personal brands, but the profile itself does not sell anything clearly.
+3. **Repo dump as funnel.** A long list of repos without a buy/use destination makes the visitor do the sales work.
 
 ## DraconDev implications
 
