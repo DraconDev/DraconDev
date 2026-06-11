@@ -3,6 +3,36 @@
 Date: 2026-06-11  
 Scope: inspect local browser-extension/browser folders and attempt to inspect the Chrome Web Store developer console and Firefox Add-ons developer pages. No browser listing was edited, uploaded, submitted, or changed.
 
+## Real/system Chromium check for Chrome Web Store developer console
+
+Target URL:
+
+`https://chrome.google.com/webstore/devconsole/103b7bcb-2951-422a-887b-5ff701135adc`
+
+Attempted paths:
+
+- Playwright headed Chromium with an isolated temporary profile failed before navigation because the bundled Playwright Chromium binary could not load `libnspr4.so`.
+- System Chromium (`chromium --version` → `Chromium 148.0.7778.167`) was then launched with an isolated temporary profile and `--headless=new` so the page could be rendered in a real browser engine without using existing cookies, passwords, tokens, or authenticated session data.
+
+Evidence saved:
+
+- `/tmp/chrome_console_goal/chrome_devconsole_system_headless.png` — screenshot from system Chromium.
+- `/tmp/chrome_console_goal/chrome_devconsole_system_headless.html` — rendered DOM dump from system Chromium.
+- `/tmp/chrome_console_goal/chrome_devconsole_system_headless.txt` — extracted visible/text DOM excerpt.
+- `/tmp/chrome_console_goal/chrome_devconsole_system_headless.stderr` — Chromium stderr.
+
+Observed:
+
+- The target redirected to `https://accounts.google.com/v3/signin/`.
+- The rendered DOM was a Google Accounts sign-in page.
+- No Chrome Web Store developer dashboard, extension list, item IDs, review status, or unpublished/private listing state was visible from the isolated browser session.
+
+Conclusion:
+
+- The console still requires the authenticated Chrome Web Store developer session.
+- Do not infer store status or public availability from this check.
+- The local extension inventory below remains local-file evidence only unless a public store URL independently returns a real listing page.
+
 ## Result summary
 
 - Main browser product repo found: `/home/dracon/Dev/browser-extensions-shared`.

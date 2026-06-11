@@ -4,9 +4,13 @@ I build Rust infrastructure, terminal UX, Git utilities, and video workflows. Fi
 
 **239K+ Rust lines** · **5.6K tests** · [Dracon crates on lib.rs](https://lib.rs/search?q=dracon)
 
+When in doubt, let the stuff do the talking: shipped tools, install pages, and public code.
+
 ---
 
 **Use / buy finished tools**
+
+Extensions and games are in details below; open the one you need. Only verified install/play pages are linked.
 
 <details><summary>Chrome extensions</summary>
 
