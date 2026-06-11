@@ -5,12 +5,12 @@
   "status": "active",
   "autoContinue": true,
   "usage": {
-    "tokensUsed": 771933,
-    "activeSeconds": 85
+    "tokensUsed": 1598413,
+    "activeSeconds": 181
   },
   "sisyphus": false,
   "createdAt": "2026-06-11T22:02:13.758Z",
-  "updatedAt": "2026-06-11T22:03:41.548Z",
+  "updatedAt": "2026-06-11T22:05:20.337Z",
   "activePath": ".pi/goals/active_goal_2026061123021375_mqa1mbnj-i01ilg.md",
   "taskList": {
     "tasks": [
@@ -25,7 +25,9 @@
       {
         "id": "task-2",
         "title": "Inventory local/remote repos and key product candidates",
-        "status": "pending",
+        "status": "complete",
+        "completedAt": "2026-06-11T22:04:27.792Z",
+        "evidence": "Saved fresh remote repo inventory, local git repo inventory, key repo API details, and key candidate status under /tmp/full_dracondev_state_audit/task2_repo_inventory.",
         "verificationContract": "Save GitHub API/local filesystem inventory, public/private status, and candidate notes for featured products/code."
       },
       {
@@ -92,13 +94,13 @@ Stop and ask the user with attempted paths, evidence gathered, exact blockers, r
 - Status: running
 - Auto-continue: on
 - Sisyphus mode: no
-- Time spent: 1m25s
-- Tokens used: 772K (771,933) tokens
+- Time spent: 3m01s
+- Tokens used: 1.6M (1,598,413) tokens
 ## Tasks
 
 <!-- blockCompletion: false -->
 - [x] task-1: Inventory profile/docs and current presentation — evidence: Saved profile docs summary, rendered README, and public link check under /tmp/full_dracondev_state_audit/task1_profile_docs; README/DRAFT match and 14/14 public links pass.
-- [ ] task-2: Inventory local/remote repos and key product candidates — contract: Save GitHub API/local filesystem inventory, public/private status, and candidate notes for featured products/code.
+- [x] task-2: Inventory local/remote repos and key product candidates — evidence: Saved fresh remote repo inventory, local git repo inventory, key repo API details, and key candidate status under /tmp/full_dracondev_state_audit/task2_repo_inventory.
 - [ ] task-3: Run practical validation checks — contract: Run feasible link checks, README render checks, and lightweight build/test/fmt checks where practical; save outputs and note skipped expensive checks.
 - [ ] task-4: Write final full-state audit report — contract: Produce a report mapping findings to evidence, blockers, and recommended next actions.
 - [ ] task-5: Final completion audit — contract: Before completion, verify every goal area is either evidenced or explicitly blocked.
