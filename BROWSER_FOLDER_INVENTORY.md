@@ -268,3 +268,4 @@ Conclusion:
 - `/tmp/browser_goal/firefox_addons.status.json` — Firefox AMO developer status metadata.
 - `/tmp/browser_goal/firefox_addons_firefox.png` — Firefox headless screenshot attempt.
 - `/tmp/browser_goal/browser_availability.txt` — available browser binaries/tools.
+- `/tmp/browser_goal/final_audit.sh` — final audit script; last run printed `PASS browser inventory audit`.
