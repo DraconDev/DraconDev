@@ -5,12 +5,12 @@
   "status": "active",
   "autoContinue": true,
   "usage": {
-    "tokensUsed": 5976476,
-    "activeSeconds": 1615
+    "tokensUsed": 6230215,
+    "activeSeconds": 2493
   },
   "sisyphus": false,
   "createdAt": "2026-06-11T22:55:09.058Z",
-  "updatedAt": "2026-06-11T23:22:26.087Z",
+  "updatedAt": "2026-06-11T23:37:07.090Z",
   "activePath": ".pi/goals/active_goal_2026061123550905_mqa3idqa-l9ppej.md",
   "taskList": {
     "tasks": [
@@ -110,8 +110,8 @@ Stop and ask the user with attempted paths, evidence gathered, exact blockers, r
 - Status: running
 - Auto-continue: on
 - Sisyphus mode: no
-- Time spent: 26m55s
-- Tokens used: 6M (5,976,476) tokens
+- Time spent: 41m33s
+- Tokens used: 6.2M (6,230,215) tokens
 ## Tasks
 
 <!-- blockCompletion: false -->
