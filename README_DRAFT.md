@@ -29,6 +29,7 @@ Extensions and games are in details below; open the one you need. Only verified 
 
 - [**dracon-terminal-engine**](https://github.com/DraconDev/dracon-terminal-engine) — TUI engine; 43 widgets.
 - [**tiles-tui-file-manager**](https://github.com/DraconDev/tiles-tui-file-manager) — TUI file manager; ships the engine.
+- [**folder-auto-banner**](https://github.com/DraconDev/folder-auto-banner) — contextual directory dashboard; `ls` with git, TODO, ports, and build context.
 - [**obs-wayland-hotkey**](https://github.com/DraconDev/obs-wayland-hotkey) — OBS hotkey daemon; crates.io + CI.
 - [**git-seal**](https://github.com/DraconDev/git-seal) — Git filter for transparent file encryption.
 - [**youtube-video-uploader**](https://github.com/DraconDev/youtube-video-uploader) — Rust YouTube API client + CLI; resumable uploads.
