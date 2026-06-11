@@ -8,6 +8,8 @@ the exact blocker that must be cleared before the slot is filled.
 | Slot | Blocker | Evidence to clear |
 |------|---------|-------------------|
 | `{stat-line}` | None. Current `239K+ Rust lines · 5.6K tests` works. | `rg "239K" README.md` returns one match. |
+| `{tool-or-product-1-url}` (`dracon.uk` tool/product slot) | No specific DraconDev product page has been verified as a standalone buy/use destination yet. Promote only when the product page is live, public, and clearly describes what to buy/use. | `curl -L -A 'Mozilla/5.0' -o /dev/null -w '%{http_code}' <url>` returns `200`, and the page has a clear product title/description. |
+| `{tool-or-product-2-url}` and beyond | No additional DraconDev product pages are verified yet. Promote only when a public install/play/store/product page exists. | Same as `{tool-or-product-1-url}`. |
 | `{code-repo-1..5}` | All five currently featured repos are public and not archived, verified via `gh api repos/DraconDev/<repo>`. | See `final_audit.sh` and `readme_link_check.json`. |
 | `{secondary-code-repo}` (`azumi-live-ssr-framework`, `ai-gui-auto-video-editor`) | Public, but niche fit / product demo, so they stay in the "More code" dropdown. | `gh api repos/DraconDev/<repo>` returns `private: false, archived: false`. |
 | `{dracon-utilities-or-similar}` (the `dracon-utilities` slot) | Repo is **private** and `cargo fmt --check` is still failing. Promote to the first screen the moment it is public and clean. | Run `gh api repos/DraconDev/dracon-utilities --jq '.private, .archived'` and `cargo fmt --check` in `dracon-utilities/`. |
@@ -21,6 +23,10 @@ the exact blocker that must be cleared before the slot is filled.
 
 ## Decision rule for adding new slots
 
+- **Product/tool slot**: add only when the destination URL is a public
+  install/play/store/product page on `dracon.uk`, Chrome Web Store,
+  itch.io, Steam, GameJolt, or a similar destination. Never link source
+  code when a user-facing destination page exists and is better.
 - **Code slot**: add only if the repo is public, not archived, has a
   real README, and the one-line "why a developer cares" is honest and
   specific. If the repo is private, it does not get a public code slot.
