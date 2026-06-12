@@ -3,6 +3,19 @@
 ## Goal
 GitHub profile as a revenue-generating sales funnel. Drive visitors to products, licenses, support, and YouTube.
 
+## Feature priority
+
+Feature in this order:
+
+1. Verified public product destinations: Chrome extensions and games with install/play/store pages.
+2. Productized browser and creator tools with a clear revenue path.
+3. Usable tools with direct use paths.
+4. Private product candidates only as private/coming work.
+5. Build-with foundations as secondary proof.
+6. YouTube and support as distribution/support layers.
+
+This order keeps the profile product-first, not job-first.
+
 ## Current Execution Plan (2026-06-09)
 
 This is **not just a README change**. The README is one asset in a broader cross-platform funnel. The current plan separates in-repo documentation from external platform actions:
