@@ -35,6 +35,27 @@ Checked with `gh api graphql`:
 
 GitHub profile pins can pin repositories, not subdirectories. So the exact desired pin set cannot be applied until those components are split/published as separate public repos.
 
+## Completion audit status
+
+Not complete.
+
+Verified blockers:
+
+- GitHub profile pins can be changed in the UI, but the authenticated GraphQL schema exposes no repository profile pin update mutation.
+- `DraconDev/dracon-sync`, `DraconDev/dracon-system`, and `DraconDev/dracon-warden` are not separate public repositories yet, so the exact desired pin set cannot be applied.
+- GitHub pins cannot target subdirectories inside `dracon-utilities`.
+
+Evidence sources:
+
+- `gh auth status` confirmed the `DraconDev` account.
+- `gh api graphql` confirmed `viewerCanChangePinnedItems: true`.
+- `gh api graphql` confirmed current visible pins.
+- Public profile HTML from `https://github.com/DraconDev` confirmed the same visible pinned repositories.
+- `gh api graphql` introspection showed only issue/environment pin mutations.
+- GitHub API checks returned HTTP 404 for the three missing component repos.
+- `git diff --check` passed.
+- Markdown sanity checks passed.
+
 ## Unblock checklist before exact desired pins can be applied
 
 1. Publish `dracon-sync`, `dracon-system`, and `dracon-warden` as separate public repositories, or explicitly choose a different interim pin set.
