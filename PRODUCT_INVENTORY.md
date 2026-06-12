@@ -274,7 +274,7 @@ death-note-typing-practice, cinematic-pages, cursor-style, volume-and-video-pro,
 
 ---
 
-## TIER 7 — INFRASTRUCTURE (internal, don't publish)
+## TIER 7 — INFRASTRUCTURE (public installable utilities)
 
 | Project | Files | Lines | What it does |
 |:--------|------:|------:|:-------------|
@@ -283,26 +283,26 @@ death-note-typing-practice, cinematic-pages, cursor-style, volume-and-video-pro,
 | **dracon-sync** | part of utilities | 8,000+ (sync+policy+report) | Git auto-commit, multi-mirror daemon |
 | **dracon-warden** | part of utilities | 2,120+1,534 | Security — encryption, team keys, secret scanning |
 
-**These power your infrastructure.** Treat as a release candidate only after cleanup: publish `dracon-utilities` as a simple parent monorepo with distinct `dracon-sync`, `dracon-system`, and `dracon-warden` component paths, not as a raw dump.
+**These are public installable utilities.** Feature the parent repo while keeping `dracon-sync`, `dracon-system`, and `dracon-warden` as distinct component stories, not as a raw dump.
 
 ---
 
 ## GitHub Profile Strategy
 
 ### Pin (3-4 repos)
-1. **dracon-terminal-engine** — 144K lines of Rust, most impressive project
-2. **pully-fully** (if published) — real DevOps tool, would get traction
-3. **tiles-tui-file-manager** — already has stars, shows shipping ability
-4. **obs-wayland-hotkey** — already has 8★, keep it
+1. **dracon-utilities** — three installable Rust CLI utilities: sync, system guard, and warden; strong proof of usable systems work
+2. **dracon-terminal-engine** — 144K lines of Rust, most impressive project
+3. **pully-fully** (if published) — real DevOps tool, would get traction
+4. **tiles-tui-file-manager** — already has stars, shows shipping ability
 
 ### Link in README
 - **SamAI** — link to verified Chrome Web Store page when confirmed (not source code)
+- **dracon-utilities** — public installable utilities; feature the three component jobs
 - **YouTube channel** — content marketing
 - **dracon.uk** — website
 
 ### Keep private
 - dracon-platform, dracon-code, dracon-demons — core business
-- dracon-utilities as simple parent monorepo — infrastructure credibility after release-readiness; keep components distinct
 - All browser extensions (except SamAI) — don't show hand
 
 ### Publish to GitHub (if open-sourcing)

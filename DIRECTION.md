@@ -51,13 +51,12 @@ These are the current best profile features because they are concrete, understan
 5. **`git-seal`**
    - Git filter for transparent file encryption.
    - Public and usable.
-   - `dracon-warden` is the stronger private successor.
+   - `dracon-warden` is the stronger public successor inside `dracon-utilities`.
 
 6. **`dracon-utilities`**
-   - Strong usable category.
-   - Private monorepo.
-   - Should **not** be linked until public and `cargo fmt --check` is clean.
-   - Best treated as a future public feature, not a current public product link.
+   - Public monorepo of three installable Rust CLI utilities.
+   - Feature the components clearly: `dracon-sync`, `dracon-system`, and `dracon-warden`.
+   - Local validation passed: `cargo fmt`, `cargo clippy`, `cargo test --workspace`, `cargo deny check`, and `./scripts/verify-spec.sh`.
 
 ### Build-with foundations
 
@@ -100,30 +99,24 @@ Chrome extensions and games are the main product destinations to feature, but on
 
 These are strong but should not be featured as public products yet:
 
-1. **`dracon-utilities`**
-   - Private.
-   - Useful trio: sync / warden / system.
-   - `warden` is a stronger successor to `git-seal`.
-   - Needs public release + clean validation before profile linking.
-
-2. **`browser-extensions-shared`**
+1. **`browser-extensions-shared`**
    - Private monorepo.
    - Many local extension projects, but most lack verified public install pages.
    - Do not invent store status from local files.
 
-3. **`Junk-Runner-bevy`**
+2. **`Junk-Runner-bevy`**
    - Private game.
    - No verified public play page.
 
-4. **`avid`**
+3. **`avid`**
    - Private/local product.
    - No verified public destination.
 
-5. **`one-mil-girls`**
+4. **`one-mil-girls`**
    - Private/local game/product.
    - No verified public play page.
 
-6. **`ai-auto-writer`**
+5. **`ai-auto-writer`**
    - Private/local AI product.
    - No verified public destination.
 
@@ -136,10 +129,10 @@ Evidence from the latest state audit:
 - README and draft are synchronized.
 - README public links pass.
 - README renders correctly.
-- `dracon-utilities cargo fmt --check` passed.
+- `dracon-utilities` local validation passed: `cargo fmt`, `cargo clippy`, `cargo test --workspace`, `cargo deny check`, and `./scripts/verify-spec.sh`.
 - `Junk-Runner-bevy/web npm run build` passed.
 - Local `obs-wayland-hotkey` copy is missing, so local validation for that repo is blocked.
-- Expensive `dracon-utilities cargo test --workspace` was not run because the local workspace is ~14G; this should be a later validation goal, not part of routine profile direction.
+- Expensive broader validation beyond the local workspace commands was not run because the local workspace is large; this should be a later validation goal, not part of routine profile direction.
 
 ---
 
@@ -160,22 +153,25 @@ Avoid:
 
 ## Next decisions
 
-### Decision 1: utilities public release
+### Decision 1: utilities feature rollout
 
 Question:
 
-> Do we want to make `dracon-utilities` public as a clean simple monorepo with `dracon-sync`, `dracon-warden`, and `dracon-system` as distinct component paths?
+> Do we want to feature `dracon-utilities` as a public installable-utilities product with `dracon-sync`, `dracon-warden`, and `dracon-system` as distinct component stories?
 
-If yes, next work is cleanup/validation/release-readiness, not more profile audits.
+Current recommendation:
 
-If no, keep it as a private note and do not feature individual utilities yet.
+- Yes, feature it as a usable-tools product, not as a vague infrastructure bucket.
+- Lead with the three concrete jobs.
+- Keep validation and install prerequisites clear.
+- Do not claim paid revenue or broad casual-user readiness.
 
 ### Decision 2: warden vs git-seal
 
 Current recommendation:
 
 - Keep `git-seal` featured because it is public.
-- Mention `dracon-warden` as the stronger private successor.
+- Mention `dracon-warden` as the stronger public successor inside `dracon-utilities`.
 - Once `warden` is public and clean, feature it ahead of `git-seal`.
 
 ### Decision 3: obs-wayland-hotkey validation
@@ -210,13 +206,14 @@ Next useful step:
    - Product destinations only when verified.
    - Private/unverified work noted honestly.
 
-2. **Prepare `dracon-utilities` for public release**
-   - Only if the user wants utilities featured as a real public tool.
-   - Clean, validate, and publish as a simple monorepo.
+2. **Feature `dracon-utilities` as public installable utilities**
+   - Lead with `dracon-sync`, `dracon-system`, and `dracon-warden` as distinct jobs.
+   - Keep the repo link public and validated.
+   - Do not claim revenue or casual-user polish.
 
-3. **Promote `dracon-warden` after public release**
+3. **Promote `dracon-warden` as the stronger public successor to `git-seal`**
    - It is the stronger successor to `git-seal`.
-   - Should not be linked while private.
+   - Should be linked because `dracon-utilities` is public and validated.
 
 4. **Restore and validate `obs-wayland-hotkey`**
    - Needed before claiming strong validation beyond public repo status.

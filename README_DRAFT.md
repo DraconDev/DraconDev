@@ -27,12 +27,12 @@ DraconDev mainly features usable things people can install, open, or play. Build
 
 **Usable tools** — things that solve a job directly.
 
+- [**dracon-utilities**](https://github.com/DraconDev/dracon-utilities) — three installable Rust CLI utilities: `dracon-sync` for invisible Git sync, `dracon-system` for disk/process protection, and `dracon-warden` for Git secret encryption and repo hardening.
 - [**folder-auto-banner**](https://github.com/DraconDev/folder-auto-banner) — contextual directory dashboard; `ls` with git, TODO, ports, and build context.
 - [**tiles-tui-file-manager**](https://github.com/DraconDev/tiles-tui-file-manager) — TUI file manager; ships the terminal engine.
 - [**obs-wayland-hotkey**](https://github.com/DraconDev/obs-wayland-hotkey) — OBS hotkey daemon; crates.io + CI.
 - [**youtube-video-uploader**](https://github.com/DraconDev/youtube-video-uploader) — Rust YouTube API client + CLI; resumable uploads.
-- [**git-seal**](https://github.com/DraconDev/git-seal) — Git filter for transparent file encryption; `dracon-warden` is the stronger private successor.
-- `dracon-utilities` — private monorepo; sync/warden/system tooling, not linked until public and `cargo fmt --check` is clean.
+- [**git-seal**](https://github.com/DraconDev/git-seal) — Git filter for transparent file encryption; `dracon-warden` is the stronger public successor inside `dracon-utilities`.
 
 <details><summary>Build-with foundations (secondary)</summary>
 

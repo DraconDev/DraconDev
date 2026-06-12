@@ -281,7 +281,8 @@ Feature order:
 | `README_DRAFT.md` | Aligned: mirrors `README.md`. |
 | `DIRECTION.md` | Aligned: Chrome extensions/games as main product destinations when verified; foundations secondary. |
 | `PROFILE_STRATEGY.md` | Aligned after updates: product/license/support funnel; SamAI treated as product work to verify, not overclaimed. |
-| `PRODUCT_INVENTORY.md` | Aligned after updates: consulting removed; SamAI store status marked as claim requiring verification. |
+| `DRACON_UTILITIES_FEATURE_DECISION.md` | Aligned after decision: `dracon-utilities` is a public installable-utilities feature with three component stories. |
+| `PRODUCT_INVENTORY.md` | Aligned after updates: consulting removed; SamAI store status marked as claim requiring verification; `dracon-utilities` marked public. |
 | `STRATEGIC_ANGLE_DECISION.md` | Aligned: product/business angle chosen over job-seeking. |
 | `CHASING_TWO_BIRDS.md` | Aligned: job-vs-business tension documented; public profile stays business-first. |
 | `BUSINESS_POSITIONING_STRATEGY.md` | Aligned: non-employment revenue models and productized offers. |

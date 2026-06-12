@@ -111,10 +111,10 @@ You have the same assets:
 > DraconDev
 
 ### Pinned repos (3-4 max)
-1. **dracon-terminal-engine** — "Terminal framework for Rust. Composable widgets, z-indexed layers." (144K lines, most impressive Rust project)
-2. **pully-fully** (if published) — "Fleet reconciler for 5-100 VPS. Git recipes, auto-provisioning."
-3. **tiles-tui-file-manager** — "Dual-pane TUI file manager. Vim-style, git, SSH, system monitor."
-4. **obs-wayland-hotkey** — "OBS hotkey daemon for Wayland/X11. 8★."
+1. **dracon-utilities** — "Three installable Rust CLI utilities: sync, system guard, and Git secret hardening." Public repo; local validation passed.
+2. **dracon-terminal-engine** — "Terminal framework for Rust. Composable widgets, z-indexed layers." (144K lines, most impressive Rust project)
+3. **pully-fully** (if published) — "Fleet reconciler for 5-100 VPS. Git recipes, auto-provisioning."
+4. **tiles-tui-file-manager** — "Dual-pane TUI file manager. Vim-style, git, SSH, system monitor."
 
 **NOT pinned:** SamAI (closed source product, link instead), rust-ai-web-auto (link if published)
 
@@ -126,6 +126,7 @@ I build AI-powered tools for the browser and terminal.
 
 🚀 **Products:**
 - [SamAI](Chrome Web Store link) — AI browser companion
+- [dracon-utilities](https://github.com/DraconDev/dracon-utilities) — sync, system guard, and Git secret hardening
 - [YouTube](link) — I demo my products and tools
 
 🌐 [dracon.uk](https://dracon.uk)
@@ -294,7 +295,7 @@ The 3-link footer block (dracon.uk · YouTube · Sponsor) follows the Fireship "
 - **239K+ lines / 5,600+ tests stat** — concrete numbers, no widgets. Per the original 131-profile research. Don't change.
 - **No Ko-fi in README or default YouTube premium funnel** — Ko-fi stays on `dracon.uk` as optional low-friction support. It should not lead the YouTube funnel while the strategy is premium subscriptions.
 - **No WIP platform in README** — `DraconDev/dracon-platform` is currently WIP, so it stays out of the profile README and pin list until it has public, tangible value.
-- **No utilities links until public/verified** — `DraconDev/dracon-utilities` can be released as a simple parent monorepo, but profile links must use verified subpaths and wait for release-readiness.
+- **Feature `dracon-utilities` when pinned** — the repo is public and validated; pin it as proof of installable systems work, but keep product destinations first.
 - **No long profile README** — the trending-developer audit found many profiles write too much; first-screen signal should stay short.
 - **Collapsed `<details>` toggles are future-only** — useful for secondary categories, but do not add now.
 
@@ -408,7 +409,7 @@ The most effective strategy is not to copy any single peer. It's to **combine th
 - **239K+ lines / 5,600+ tests stat** — concrete numbers, no widgets. Per the original 131-profile research. Don't change.
 - **No Ko-fi in README or default YouTube premium funnel** — Ko-fi stays on `dracon.uk` as optional low-friction support. It should not lead the YouTube funnel while the strategy is premium subscriptions.
 - **No WIP platform in README** — `DraconDev/dracon-platform` is currently WIP, so it stays out of the profile README and pin list until it has public, tangible value.
-- **No utilities links until public/verified** — `DraconDev/dracon-utilities` can be released as a simple parent monorepo, but profile links must use verified subpaths and wait for release-readiness.
+- **Feature `dracon-utilities` when pinned** — the repo is public and validated; pin it as proof of installable systems work, but keep product destinations first.
 - **No long profile README** — the trending-developer audit found many profiles write too much; first-screen signal should stay short.
 - **Collapsed `<details>` toggles are future-only** — useful for secondary categories, but do not add now.
 
