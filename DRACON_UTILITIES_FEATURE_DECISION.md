@@ -135,14 +135,24 @@ Update the infrastructure tier:
 - Keep the three component paths distinct.
 - Update GitHub profile strategy to feature `dracon-utilities` and its components.
 
-### PROFILE_STRATEGY.md
+### Pin decision
 
-Update pin/repo strategy:
+Do **not** pin `dracon-utilities` on the GitHub profile.
 
-- **Yes, pin `dracon-utilities`** as proof of serious usable systems work.
-- **Pin the parent repo, not all three component repos separately.**
-- Use the pin description to name the three component jobs: sync, system guard, and Git secret hardening.
-- Keep product destinations first; pins remain proof, not the main offer.
+Reason:
+
+- The repo is useful and worth featuring in the README, but the label `dracon-utilities` is too vague for a pin.
+- A pin must communicate value in one glance. "Utilities" sounds generic and risks feeling like a lie unless the pin description carries too much explanation.
+- The three component jobs are clearer in README/profile copy than in a pin slot.
+
+Better pin choice:
+
+- Pin `obs-wayland-hotkey` instead if you need a concrete utility pin.
+- Suggested pin description: "OBS hotkey daemon for Wayland/X11. 8★; concrete utility people can understand quickly."
+
+README/profile wording remains:
+
+> `dracon-utilities` — three installable Rust CLI utilities: `dracon-sync` for invisible Git sync, `dracon-system` for disk/process protection, and `dracon-warden` for Git secret encryption and repo hardening.
 
 ## Business-angle fit
 

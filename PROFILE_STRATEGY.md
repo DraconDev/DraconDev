@@ -111,10 +111,12 @@ You have the same assets:
 > DraconDev
 
 ### Pinned repos (3-4 max)
-1. **dracon-utilities** — "Three installable Rust CLI utilities: sync, system guard, and Git secret hardening." Public repo; local validation passed.
-2. **dracon-terminal-engine** — "Terminal framework for Rust. Composable widgets, z-indexed layers." (144K lines, most impressive Rust project)
-3. **pully-fully** (if published) — "Fleet reconciler for 5-100 VPS. Git recipes, auto-provisioning."
-4. **tiles-tui-file-manager** — "Dual-pane TUI file manager. Vim-style, git, SSH, system monitor."
+1. **dracon-terminal-engine** — "Terminal framework for Rust. Composable widgets, z-indexed layers." (144K lines, most impressive Rust project)
+2. **pully-fully** (if published) — "Fleet reconciler for 5-100 VPS. Git recipes, auto-provisioning."
+3. **tiles-tui-file-manager** — "Dual-pane TUI file manager. Vim-style, git, SSH, system monitor."
+4. **obs-wayland-hotkey** — "OBS hotkey daemon for Wayland/X11. 8★; concrete utility people can understand quickly."
+
+**README-only feature, not pinned:** `dracon-utilities` — add the three component jobs in the README, but do not spend a pin slot on a vague "utilities" label.
 
 **NOT pinned:** SamAI (closed source product, link instead), rust-ai-web-auto (link if published)
 
