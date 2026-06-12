@@ -352,7 +352,7 @@ The most effective strategy is not to copy any single peer. It's to **combine th
 7. **Content format** is a mix of short-form (shorts) and long-form (deep-dives) (Fireship)
 8. **Cross-platform CTA consistency** is one hub (dracon.uk) (Theo)
 9. **Social proof visibility** is the Sponsor page + Ko-fi (fasterthanlime + jam1garner)
-10. **Product/website integration** is the book library + newsletter on dracon.uk (Fireship)
+10. **Product/website integration** is the product pages + newsletter on dracon.uk (Fireship pattern adapted)
 
 **DraconDev-specific synthesis:**
 - **GitHub profile bio:** "Rust infrastructure for fleets, git, and terminals. 239K+ LOC, 5,600+ tests, 24 crates on crates.io."
@@ -364,7 +364,7 @@ The most effective strategy is not to copy any single peer. It's to **combine th
 - **Content format:** Mix of short-form (shorts) and long-form (deep-dives). Short-form hooks, long-form retains.
 - **Cross-platform hub:** dracon.uk is the hub. All roads lead there.
 - **Social proof:** The Sponsor page + Ko-fi page are the social proof. The "first supporter" status is invisible to non-sponsors (GitHub hides count), so the page itself is the proof of seriousness.
-- **Product/website integration:** The book library + newsletter on dracon.uk is the deeper funnel.
+- **Product/website integration:** The product pages + newsletter on dracon.uk are the deeper funnel.
 
 ### Why the top 5 factors work
 
@@ -372,9 +372,9 @@ The most effective strategy is not to copy any single peer. It's to **combine th
 **Why it works:** One link (t3.gg) that routes to all socials simplifies the decision for the viewer. It works when you have multiple channels. Counter-evidence: ThePrimeagen has separate links and still works — so consistency is not necessary if the audience is already familiar.
 **How to test for DraconDev:** The current 3-link footer (dracon.uk, YouTube, Sponsor) is the right density. If Ko-fi is added to dracon.uk, the footer should stay at 3 links (dracon.uk, YouTube, Sponsor) — Ko-fi belongs on dracon.uk, not the README.
 
-#### 2. Product/website integration (34/40) — Fireship's newsletter + courses
-**Why it works:** Newsletter + courses + website create a deeper funnel. It works when you have products to sell. Counter-evidence: antfu has no product integration and still works for live streams — so product integration is not necessary if the content is educational enough.
-**How to test for DraconDev:** The dracon.uk site already has Products / Pricing / Licensing / AI Hub. The next step is to link the book library or a newsletter from the YouTube descriptions.
+#### 2. Product/website integration (34/40) — product pages + newsletter
+**Why it works:** Product pages + newsletter + website create a deeper funnel. It works when you have products to sell. Counter-evidence: antfu has no product integration and still works for live streams — so product integration is not necessary if the content is educational enough.
+**How to test for DraconDev:** The dracon.uk site already has Products / Pricing / Licensing / AI Hub. The next step is to link product pages or a newsletter from the YouTube descriptions.
 
 #### 3. YouTube channel nav links (33/40) — Theo's 5-link nav
 **Why it works:** 5 links give the viewer a map of the ecosystem. It works when you have multiple channels. Counter-evidence: fasterthanlime has just Patreon in the nav and still 58K subs — so the nav links are not necessary if the content is strong enough.
