@@ -207,7 +207,9 @@ Final GitHub pin set:
 1. `dracon-sync`
 2. `dracon-system`
 3. `dracon-warden`
-4. `dracon-terminal-engine`
+4. `tiles-tui-file-manager`
+5. `folder-auto-banner`
+6. `obs-wayland-hotkey`
 
 Do **not** pin:
 
