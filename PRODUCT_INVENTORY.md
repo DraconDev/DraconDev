@@ -43,7 +43,7 @@
 ### SamAI
 - **What:** AI browser companion — summarize, chat, fill forms, BYOK
 - **Files:** 101 (local) + 144 (extension) | **Lines:** 12,086
-- **Maturity:** Beta (tests ✓, CI ✓) — already on Chrome Web Store
+- **Maturity:** Beta (tests ✓, CI ✓) — inventory claim: already on Chrome Web Store; verify before public claims.
 - **Audience:** Everyone who uses a browser
 - **Revenue model:** Freemium — free BYOK tier + paid hosted AI tier
 - **On GitHub:** No (closed source product)
@@ -184,7 +184,7 @@ death-note-typing-practice, cinematic-pages, cursor-style, volume-and-video-pro,
 | **avid** | 18 | 4,549 | Auto video processor — silence detection, audio enhancement |
 | **video-factory** | 27 | ~5,000 | Web platform for video processing with FFmpeg + S3 |
 
-**These are internal creator workflow tools. They are useful proof and possible product seeds, but not public products until packaged.** Not products,
+**These are internal creator workflow tools. They are useful proof and possible product seeds, but not public products until packaged.**
 
 ---
 
@@ -296,7 +296,7 @@ death-note-typing-practice, cinematic-pages, cursor-style, volume-and-video-pro,
 4. **obs-wayland-hotkey** — already has 8★, keep it
 
 ### Link in README
-- **SamAI** — link to Chrome Web Store (not source code)
+- **SamAI** — link to verified Chrome Web Store page when confirmed (not source code)
 - **YouTube channel** — content marketing
 - **dracon.uk** — website
 
@@ -317,7 +317,7 @@ death-note-typing-practice, cinematic-pages, cursor-style, volume-and-video-pro,
 
 | Product | Model | Price point | Timeline |
 |:--------|:------|:------------|:---------|
-| SamAI (free tier) | Free BYOK | $0 | Now (on store) |
+| SamAI (free tier) | Free BYOK | $0 | Verify store page, then publish pricing |
 | SamAI (paid tier) | Subscription | $5-10/mo | Build backend |
 | vidpro-extension | Freemium | $5-10/mo | Package + publish |
 | api-debugger | Freemium | $3-5/mo | Package + publish |
@@ -325,7 +325,7 @@ death-note-typing-practice, cinematic-pages, cursor-style, volume-and-video-pro,
 | pully-fully | Open core + managed | Free + $20/mo managed | Publish + build managed |
 | rust-ai-web-auto | Open core + enterprise | Free + custom pricing | Publish + enterprise sales |
 | YouTube | Ad revenue + sponsorships | Variable | Grow channel |
-| Consulting | Hourly/project | $100-200/hr | Via website |
+| Productized support | Fixed-scope support/license add-on | Productized pricing | Only if tied to an existing asset |
 
 ---
 
@@ -342,5 +342,5 @@ death-note-typing-practice, cinematic-pages, cursor-style, volume-and-video-pro,
 | Go projects | 1 |
 | Beta maturity | 18 projects |
 | Already on GitHub | 11 repos |
-| Already on Chrome Web Store | 1 (SamAI) |
+| Already on Chrome Web Store | 1 claimed (SamAI; verify before public use) |
 | On crates.io | 1 (Kiki) |

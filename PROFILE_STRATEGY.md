@@ -68,7 +68,7 @@ YouTube video (demo SamAI / vidpro / api-debugger)
     ↓
 Viewer visits GitHub profile
     ↓
-Profile shows: "Founder of SamAI" + pinned repos + YouTube link
+Profile shows: "SamAI product work" + pinned repos + YouTube link
     ↓
 Clicks SamAI → website → download / pay
     ↓
@@ -89,7 +89,7 @@ You have the same assets:
 ## Profile Layout (recommended)
 
 ### Bio (one line)
-> Building AI-powered browser tools. Creator of SamAI. 🎥 YouTube
+> Building AI-powered browser tools. SamAI and browser automation work. 🎥 YouTube
 
 ### Website field
 > https://dracon.uk
@@ -139,10 +139,10 @@ I build AI-powered tools for the browser and terminal.
 
 ## Revenue Path (near-term)
 
-1. **Package SamAI for Chrome Web Store** — it has 149 src files, it's the most complete
+1. **Verify/package SamAI for Chrome Web Store** — it has 149 src files, it's the most complete
 2. **Add pricing to dracon.uk** — freemium: free tier + paid tier with more AI features
 3. **YouTube video: "I built an AI browser extension"** — demo SamAI, link to download
-4. **Link SamAI in README** — don't pin (closed source), link to Chrome Web Store
+4. **Link SamAI in README** — don't pin (closed source), link to the verified Chrome Web Store page when ready
 
 5. **Package vidpro-extension** — you use YouTube, you built a YouTube tool, demo it on your channel
 6. **vidpro = "YouTube tool for YouTubers"** — perfect product-market fit with your audience
