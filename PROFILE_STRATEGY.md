@@ -1,7 +1,7 @@
 # DraconDev GitHub Profile Strategy
 
 ## Goal
-GitHub profile as a revenue-generating sales funnel. Drive visitors to products, services, and YouTube.
+GitHub profile as a revenue-generating sales funnel. Drive visitors to products, licenses, support, and YouTube.
 
 ## Current Execution Plan (2026-06-09)
 
@@ -15,7 +15,7 @@ This is **not just a README change**. The README is one asset in a broader cross
 | GitHub profile sidebar | First-screen context: name, bio, website, company, location | ⏳ Needs GitHub profile access | Bio/website/company should reinforce the README without adding unsupported links |
 | GitHub profile bio | Name-drop the killer work above the README | ⏳ Needs GitHub profile access | Suggested: "Rust infrastructure for fleets, git, and terminals. 239K+ LOC, 5,600+ tests, 24 crates on crates.io." |
 | GitHub Sponsors page bio | Convert warm visitors with concrete stats | ⏳ Needs GitHub Sponsors access | Suggested: "239K+ lines of Rust, 5,600+ tests, 24 crates on crates.io, 12 in-scope repos per the audit." |
-| `dracon.uk` footer | Route product/tip traffic without diluting the README | ⏳ Needs site repo access | Add Ko-fi on the site, not the README |
+| `dracon.uk` footer | Route product/license/support traffic without diluting the README | ⏳ Needs site repo access | Add Ko-fi on the site, not the README |
 | `DraconDev/dracon-platform` README | Future platform/product landing page | ⏳ Needs public release; currently WIP | Do not add to profile README or pin list until public/tangible |
 | Collapsed `<details>` README toggles | Hide secondary categories without cluttering first screen | ⏳ Future pattern only | Useful for future non-core categories; do not add now |
 | YouTube channel nav | Premium funnel map: site, GitHub, Sponsor, optional community | ⏳ Needs YouTube Studio access | `dracon.uk`, GitHub, Sponsor, Discord if active; Ko-fi optional only if selling small-ticket products |
@@ -113,7 +113,7 @@ I build AI-powered tools for the browser and terminal.
 
 🚀 **Products:**
 - [SamAI](Chrome Web Store link) — AI browser companion
-- [YouTube](link) — I demo my tools and build in public
+- [YouTube](link) — I demo my products and tools
 
 🌐 [dracon.uk](https://dracon.uk)
 ```
@@ -178,7 +178,7 @@ t3dotgg doesn't win because he writes good code. He wins because he has YouTube 
         ↓
 [4] Support (GitHub Sponsors / Patreon / affiliate link)
         ↓
-[5] Deeper engagement (blog / courses / products on dracon.uk)
+[5] Deeper engagement (blog / products / support on dracon.uk)
 ```
 
 **DraconDev funnel status:**
@@ -250,7 +250,7 @@ When YouTube becomes active, the description pattern below applies (verified acr
     Find more of my stuff on: [main website]
 
 [6] Recurring evergreen CTA (high-value):
-    "Want more? [Newsletter] · [Courses] · [Ko-fi tip jar] · [GitHub Sponsors]"
+    "Want more? [Newsletter] · [Products] · [Ko-fi tip jar] · [GitHub Sponsors]"
 ```
 
 **For DraconDev specifically** (when YouTube is active):
