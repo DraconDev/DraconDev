@@ -27,7 +27,7 @@ The product/business angle is stronger because it:
 - Supports non-employment revenue through products, licenses, subscriptions, and sponsor support.
 - Avoids the weak middle ground of “I might be hiring, I might be selling, I might be teaching.”
 - Keeps the docs focused on decisions instead of endless audits.
-- Lets job opportunities come from demonstrated product ownership rather than job-hunt language.
+- Lets aligned opportunities come from demonstrated product ownership rather than job-hunt language.
 
 The job angle is not deleted. It is demoted.
 
@@ -37,7 +37,7 @@ Use this order:
 
 1. **Product/business first** — sell or distribute usable things.
 2. **Proof second** — show code, tests, shipped tools, install pages, and public artifacts.
-3. **Employment third** — let strong product proof attract better opportunities.
+3. **Aligned opportunities third** — let strong product proof attract better opportunities.
 4. **Courses/support last** — use only if they become real products, not default positioning.
 
 ## What to stop doing

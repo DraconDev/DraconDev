@@ -43,7 +43,7 @@ The profile should treat GitHub as credibility and proof. The product destinatio
 ## Concrete README changes to consider later
 
 - Lead with a maker/product-seller hero:
-  - "I make tools that run themselves. Buy/use them on dracon.uk."
+  - "I make usable things people can run or play. Chrome extensions, games, tools, and Rust infrastructure."
 - Keep `dracon.uk` as the main product destination.
 - Keep YouTube in the footer as a trust/awareness channel, not as the primary funnel.
 - Keep **Chrome extensions** and **Games** as product-destination dropdowns.
