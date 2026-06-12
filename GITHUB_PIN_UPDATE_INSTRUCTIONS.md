@@ -5,6 +5,8 @@
 
 **Access note:** `gh auth status` works for `DraconDev`, and GraphQL confirms `viewerCanChangePinnedItems: true`; however the schema only exposes issue/environment pin mutations, not profile repository pin updates.
 
+See `GITHUB_PIN_UPDATE_BLOCKED_AUDIT.md` for the full requirement-to-evidence audit.
+
 ## Current verified pins
 
 Checked with `gh api graphql`:
