@@ -94,6 +94,7 @@ The repo currently has too many Markdown docs. Keep the active docs small and hi
 | `CHASING_TWO_BIRDS.md` | Explains the job-vs-business signal conflict. | Keep. |
 | `BUSINESS_POSITIONING_STRATEGY.md` | Non-employment revenue models, offers, segments, monetization. | Keep. |
 | `FEATURE_PRIORITIZATION.md` | Feature order by business/product signal. | Keep. |
+| `PIN_FEATURE_ANALYSIS.md` | Pin-vs-README feature analysis and final pin decision. | Keep. |
 | `DRACON_UTILITIES_FEATURE_DECISION.md` | `dracon-utilities` feature decision. | Keep. |
 | `PRODUCT_INVENTORY.md` | Product catalog and evidence base. | Keep. |
 | `PROFILE_STRATEGY.md` | GitHub/profile funnel map. | Keep if used for profile execution. |
@@ -166,6 +167,7 @@ DIRECTION.md                      Operating direction
 STRATEGIC_ANGLE_DECISION.md        Strategic angle decision
 CHASING_TWO_BIRDS.md               Job-vs-business signal conflict
 FEATURE_PRIORITIZATION.md          Feature order by business/product signal
+PIN_FEATURE_ANALYSIS.md            Pin-vs-README feature analysis
 DRACON_UTILITIES_FEATURE_DECISION.md `dracon-utilities` feature decision
 BUSINESS_POSITIONING_STRATEGY.md   Non-employment business strategy
 PRODUCT_INVENTORY.md              Product evidence and candidates
