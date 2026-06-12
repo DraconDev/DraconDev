@@ -144,7 +144,9 @@ Final pin set:
 1. **`dracon-sync`** — intricate AI/developer Git sync daemon.
 2. **`dracon-system`** — intricate disk/process guard for development machines and servers.
 3. **`dracon-warden`** — intricate Git secret encryption and repo hardening tool.
-4. **`dracon-terminal-engine`** — broad Rust/TUI credibility and the most impressive Rust project.
+4. **`tiles-tui-file-manager`** — concrete usable TUI file manager; better newcomer signal than foundations.
+5. **`folder-auto-banner`** — concrete usable directory dashboard; better newcomer signal than foundations.
+6. **`obs-wayland-hotkey`** — concrete OBS hotkey daemon; highest-starred Rust utility and crates.io + CI.
 
 Reason:
 
@@ -207,4 +209,9 @@ Final GitHub pin set:
 3. `dracon-warden`
 4. `dracon-terminal-engine`
 
-Do **not** pin the `dracon-utilities` parent repo. If the three components remain monorepo subdirectories, link to them in the README; if they become separate public repos, pin those component repos directly.
+Do **not** pin:
+
+- `dracon-utilities` parent repo — too vague.
+- `dracon-terminal-engine` — strong build-with foundation, but low direct newcomer value.
+
+If the three `dracon-utilities` components remain monorepo subdirectories, link to them in the README; if they become separate public repos, pin those component repos directly.

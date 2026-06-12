@@ -110,13 +110,17 @@ You have the same assets:
 ### Company field
 > DraconDev
 
-### Final pinned repos (4)
+### Final pinned repos (6)
 1. **dracon-sync** — "Invisible Git sync for AI-powered development. Auto-commit, multi-mirror, deterministic commit messages." Intricate component; pin as its own repo if split/published.
 2. **dracon-system** — "Proactive disk/process guard for development machines and servers. Monitors, predicts, and mitigates disk pressure." Intricate component; pin as its own repo if split/published.
 3. **dracon-warden** — "Git secret encryption and repo hardening while keeping the working tree plaintext." Intricate component; pin as its own repo if split/published.
-4. **dracon-terminal-engine** — "Terminal framework for Rust. Composable widgets, z-indexed layers." (144K lines, most impressive Rust project)
+4. **tiles-tui-file-manager** — "Dual-pane TUI file manager. Vim-style, git, SSH, system monitor, editor." Concrete usable tool with stronger newcomer value than terminal foundations.
+5. **folder-auto-banner** — "Contextual directory dashboard. `ls` plus git, TODO, ports, Docker, build, and cached size context." Concrete usable tool.
+6. **obs-wayland-hotkey** — "OBS hotkey daemon for Wayland/X11. 8★; crates.io + CI; concrete utility people can understand quickly."
 
 **Do not pin:** `dracon-utilities` parent repo — too vague for a pin. Keep it as README/profile copy that points to the three component jobs.
+
+**Do not pin:** `dracon-terminal-engine` — strong build-with foundation, but low direct value for newcomers who want something they can run/use.
 
 **NOT pinned:** SamAI (closed source product, link instead), `dracon-utilities` (README feature, not pin), rust-ai-web-auto (link if published)
 
