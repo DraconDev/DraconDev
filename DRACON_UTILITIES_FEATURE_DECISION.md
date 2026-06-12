@@ -139,8 +139,9 @@ Update the infrastructure tier:
 
 Update pin/repo strategy:
 
-- Consider pinning `dracon-utilities` as proof of serious usable systems.
-- Do not pin all three component repos separately; pin the parent repo and explain the three components.
+- **Yes, pin `dracon-utilities`** as proof of serious usable systems work.
+- **Pin the parent repo, not all three component repos separately.**
+- Use the pin description to name the three component jobs: sync, system guard, and Git secret hardening.
 - Keep product destinations first; pins remain proof, not the main offer.
 
 ## Business-angle fit
