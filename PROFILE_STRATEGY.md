@@ -332,7 +332,7 @@ The goal is not to find the "best" peer. The goal is to find the **best factor f
 
 **Top 5 factors by total score (0-40):**
 1. **Cross-platform CTA consistency** (35) — Theo's t3.gg hub
-2. **Product/website integration** (34) — Fireship's newsletter + courses
+2. **Product/website integration** (34) — product pages + newsletter
 3. **YouTube channel nav links** (33) — Theo's 5-link nav
 4. **YouTube description hook** (31) — Fireship's 1-2 line hook
 5. **Content format** (31) — Fireship's short-form, high-intensity
