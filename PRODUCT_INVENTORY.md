@@ -290,14 +290,14 @@ death-note-typing-practice, cinematic-pages, cursor-style, volume-and-video-pro,
 ## GitHub Profile Strategy
 
 ### Pin (3-4 repos)
-1. **dracon-utilities** — three installable Rust CLI utilities: sync, system guard, and warden; strong proof of usable systems work
-2. **dracon-terminal-engine** — 144K lines of Rust, most impressive project
-3. **pully-fully** (if published) — real DevOps tool, would get traction
-4. **tiles-tui-file-manager** — already has stars, shows shipping ability
+1. **dracon-terminal-engine** — 144K lines of Rust, most impressive project
+2. **pully-fully** (if published) — real DevOps tool, would get traction
+3. **tiles-tui-file-manager** — already has stars, shows shipping ability
+4. **obs-wayland-hotkey** — concrete utility people understand quickly; already has stars
 
 ### Link in README
 - **SamAI** — link to verified Chrome Web Store page when confirmed (not source code)
-- **dracon-utilities** — public installable utilities; feature the three component jobs
+- **dracon-utilities** — public installable utilities; feature the three component jobs, but do not spend a pin slot on the vague "utilities" label
 - **YouTube channel** — content marketing
 - **dracon.uk** — website
 
