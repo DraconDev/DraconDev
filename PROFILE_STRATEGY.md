@@ -128,7 +128,7 @@ I build AI-powered tools for the browser and terminal.
 
 🚀 **Products:**
 - [SamAI](Chrome Web Store link) — AI browser companion
-- [dracon-utilities](https://github.com/DraconDev/dracon-utilities) — sync, system guard, and Git secret hardening
+- [dracon-utilities](https://github.com/DraconDev/dracon-utilities) — `dracon-sync`, `dracon-system`, and `dracon-warden`
 - [YouTube](link) — I demo my products and tools
 
 🌐 [dracon.uk](https://dracon.uk)
