@@ -3,6 +3,8 @@
 **Date:** 2026-06-12  
 **Status:** Agent cannot update pins directly because GitHub profile pins are not exposed through the available `gh api` mutation surface, and `dracon-sync`, `dracon-system`, and `dracon-warden` currently do not exist as separate public repos.
 
+**Access note:** `gh auth status` works for `DraconDev`, and GraphQL confirms `viewerCanChangePinnedItems: true`; however the schema only exposes issue/environment pin mutations, not profile repository pin updates.
+
 ## Current verified pins
 
 Checked with `gh api graphql`:
