@@ -35,6 +35,17 @@ Checked with `gh api graphql`:
 
 GitHub profile pins can pin repositories, not subdirectories. So the exact desired pin set cannot be applied until those components are split/published as separate public repos.
 
+## Unblock checklist before exact desired pins can be applied
+
+1. Publish `dracon-sync`, `dracon-system`, and `dracon-warden` as separate public repositories, or explicitly choose a different interim pin set.
+2. Re-check repo availability:
+   - `https://api.github.com/repos/DraconDev/dracon-sync`
+   - `https://api.github.com/repos/DraconDev/dracon-system`
+   - `https://api.github.com/repos/DraconDev/dracon-warden`
+3. Re-check current profile pins with `gh api graphql`.
+4. Update pins manually from the GitHub profile page.
+5. Verify the final visible pin order/content from the profile page or API.
+
 ## Manual update steps
 
 When the component repos exist, or if you choose interim pin replacements, update pins from the GitHub profile page:
