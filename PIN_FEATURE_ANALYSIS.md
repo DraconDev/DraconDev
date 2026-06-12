@@ -52,7 +52,7 @@ This means `dracon-terminal-engine`, `azumi-live-ssr-framework`, and `ai-gui-aut
 | `obs-wayland-hotkey` | Strong | Concrete OBS hotkey daemon; 8 stars, crates.io, CI, clear Wayland/X11 use case. |
 | `dracon-terminal-engine` | README, not pin | Strong build-with foundation, but not something newcomers can immediately run/use. |
 | `youtube-video-uploader` | README, not pin | Useful Rust CLI/library, but narrower creator-tool signal than the chosen pins. |
-| `git-seal` | README, not pin | Useful, but `dracon-warden` is the stronger successor story. |
+| `git-seal` | De-emphasize/omit | Older version of the `dracon-warden` story; useful in inventory, but not a primary README or pin item. |
 | `dracon-utilities` | README, not pin | Parent bucket is too vague for a pin; use README to name the three component jobs. |
 
 ## Final pin set

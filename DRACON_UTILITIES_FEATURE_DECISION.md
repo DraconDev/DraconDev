@@ -84,7 +84,7 @@ Why:
 - Clear security value.
 - Strong technical depth.
 - Useful to developers and teams.
-- Complements `git-seal` as the stronger successor.
+- Complements `git-seal` as the stronger successor; do not feature `git-seal` as a primary README/pin item.
 
 Suggested one-liner:
 
