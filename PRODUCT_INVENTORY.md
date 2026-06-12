@@ -308,12 +308,23 @@ death-note-typing-practice, cinematic-pages, cursor-style, volume-and-video-pro,
 - **dracon.uk** — website
 
 ### Future README / pin candidates
-- **kiki-sassy-desktop-announcer** — future README/pin candidate if public polish is clean; memorable installable desktop tool.
-- **ai-auto-repo-rot-scanner-todo-agent** — future pin candidate if public and packaged cleanly; strong devtool story.
-- **pully-fully-pull-based-fleet-reconciler** — future README/pin candidate if public; strong DevOps product story.
-- **rust-ai-web-auto** — future README/pin candidate if public; strong Rust AI browser automation story.
-- **one-mil-girls** — future README/pin candidate only after public play/build destination is verified.
-- **dracon-ai-lib** — future build-with foundation for Rust AI consumers.
+
+**Pins remain usable-only.** Most local projects belong in README sections, not pins.
+
+- **kiki-sassy-desktop-announcer** — future usable-tools README item; possible pin only if public polish is clean and it beats a current pin.
+- **ai-auto-repo-rot-scanner-todo-agent** — future usable-tools README item; possible pin if public, packaged cleanly, and source policy is resolved.
+- **pully-fully-pull-based-fleet-reconciler** — future usable-tools/product README item; possible pin if public with clear install/demo story.
+- **rust-ai-web-auto** — future usable-tools/product README item; possible pin if public with clear non-scary automation positioning.
+- **avid** / **youtube-video-uploader** — future usable-tools README item; creator workflow utility.
+
+### Future README-only sections
+
+- **one-mil-girls** — game details only, not pins; feature only after public play/build destination is verified.
+- **Junk-Runner-bevy** — game details only, not pins; feature only after public play/build destination is verified.
+- **SamAI** and other browser extensions — Chrome extension details only when verified public install pages exist; do not pin source repos.
+- **dracon-ai-lib** — build-with foundation for Rust AI consumers; README only, not pins.
+- **dracon-terminal-engine** — build-with foundation; README only, not pins.
+- **dracon-code** — private/core product; consider only if made public and polished enough.
 
 See `LOCAL_PROJECT_PIN_README_CANDIDATES.md` for the full future-candidate analysis.
 
