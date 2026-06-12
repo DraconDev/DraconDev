@@ -20,14 +20,14 @@ Current README has more freedom and can mention broader usable tools, product de
 
 These are decent README additions before they are pin-worthy:
 
-| Project | Add where | Reason |
-|:--------|:----------|:-------|
-| `pully-fully-pull-based-fleet-reconciler` | Future usable tools / product candidate | Pull-based fleet reconciler for 5-100 VPS; strong DevOps product story once public. |
-| `rust-ai-web-auto` | Future usable tools / product candidate | Rust browser automation with optional AI; strong Playwright/Puppeteer-adjacent story once public. |
-| `ai-auto-repo-rot-scanner-todo-agent` | Future usable tools / product candidate | AI-powered repo health scanner; useful for maintainers and teams if packaged cleanly. |
-| `one-mil-girls` | Future games section | Visual novel with SvelteKit/Tauri-style web stack; only feature after public play/build destination is verified. |
-| `kiki-sassy-desktop-announcer` | Future usable tools | Memorable desktop announcer; crates.io + clear install path. |
-| `dracon-ai-lib` | Build-with foundations | Rust AI library for BYOK consumers; useful to developers building tools. |
+| Project | Add where | Evidence |
+|:--------|:----------|:---------|
+| `pully-fully-pull-based-fleet-reconciler` | Future usable tools / product candidate | Pull-based fleet reconciler for 5-100 VPS; strong DevOps product story once public; ~361 inspected files / ~32.3K LOC. |
+| `rust-ai-web-auto` | Future usable tools / product candidate | Rust browser automation with optional AI; strong Playwright/Puppeteer-adjacent story once public; ~190 inspected files / ~29.8K LOC. |
+| `ai-auto-repo-rot-scanner-todo-agent` | Future usable tools / product candidate | AI-powered repo health scanner; useful for maintainers and teams if packaged cleanly; ~641 inspected files / ~46.5K LOC. |
+| `one-mil-girls` | Future games section | Visual novel with SvelteKit/Tauri-style web stack; only feature after public play/build destination is verified; ~1,970 inspected files / ~248.3K LOC. |
+| `kiki-sassy-desktop-announcer` | Future usable tools | Memorable desktop announcer; crates.io + clear install path; ~67 inspected files / ~134.3K LOC. |
+| `dracon-ai-lib` | Build-with foundations | Rust AI library for BYOK consumers; useful to developers building tools; ~110 inspected files / ~16.1K LOC. |
 | `avid` / `youtube-video-uploader` | Usable tools | Creator workflow utility; already related to YouTube pipeline. |
 
 ## Best future pin candidates
