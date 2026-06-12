@@ -1,6 +1,6 @@
-# Hey, I make tools that run themselves.
+# Hey, I make usable things people can run or play.
 
-I build Rust infrastructure, terminal UX, Git utilities, and video workflows. Finished products and install pages are on [dracon.uk](https://dracon.uk).
+I build Chrome extensions, games, Rust infrastructure, terminal UX, Git utilities, and video workflows. Finished products and install/play pages are on [dracon.uk](https://dracon.uk).
 
 **239K+ Rust lines** · **5.6K tests** · [Dracon crates on lib.rs](https://lib.rs/search?q=dracon)
 
@@ -8,9 +8,9 @@ When in doubt, let the stuff do the talking: shipped tools, install pages, and p
 
 ---
 
-**Use / buy finished tools**
+**Featured first: usable Chrome extensions and games**
 
-Extensions and games are in details below; open the one you need. Only verified install/play pages are linked.
+DraconDev mainly features usable things people can install, open, or play. Build-with foundations are secondary and stay below the product-facing items. Only verified install/play pages are linked.
 
 <details><summary>Chrome extensions</summary>
 
@@ -34,7 +34,9 @@ Extensions and games are in details below; open the one you need. Only verified 
 - [**git-seal**](https://github.com/DraconDev/git-seal) — Git filter for transparent file encryption; `dracon-warden` is the stronger private successor.
 - `dracon-utilities` — private monorepo; sync/warden/system tooling, not linked until public and `cargo fmt --check` is clean.
 
-<details><summary>Build-with foundations</summary>
+<details><summary>Build-with foundations (secondary)</summary>
+
+These are useful if you are building similar tools, but they are not the main feature.
 
 - [**dracon-terminal-engine**](https://github.com/DraconDev/dracon-terminal-engine) — TUI engine; 43 widgets for building terminal UX.
 - [**azumi-live-ssr-framework**](https://github.com/DraconDev/azumi-live-ssr-framework) — live SSR framework for Rust on Axum; ~10KB gzipped.

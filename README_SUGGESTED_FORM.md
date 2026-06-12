@@ -1,8 +1,7 @@
 # Suggested DraconDev Profile README — Maker/Product-Seller Form
 
 Status: **not yet adopted**. This is a forward-looking template. The live
-`README.md` and `README_DRAFT.md` in this repo are intentionally unchanged
-until the user explicitly asks to adopt it.
+`README.md` and `README_DRAFT.md` in this repo now use the same usable-product-first positioning; adopt this form only if it still fits after cleanup.
 
 ## Positioning this form protects
 
@@ -10,7 +9,7 @@ DraconDev is primarily a **maker/product seller**, not an educator.
 
 The profile should say, in effect:
 
-> **I make real tools. Inspect the code if you want. Buy/use the finished product if you want.**
+> **I make usable things people can run or play. Inspect the code if you want. Use/buy the finished product if it is available.**
 
 It should not sound like a course catalog, teaching portfolio, or generic repo dump.
 
@@ -28,23 +27,22 @@ true before the slot is filled.
 3. Re-run `/tmp/suggested_readme_goal/final_audit.sh` to confirm the
    pasted README still parses, has no broken links, and matches the
    structural rules.
-4. Re-snapshot `README.md` and `README_DRAFT.md` so the audit shows the
-   live form is now in use.
+4. Re-snapshot `README.md` and `README_DRAFT.md` only if this template becomes the chosen live form.
 5. If a placeholder was filled, delete its blocker note entry from
    `SUGGESTED_FORM_BLOCKERS.md`.
 
 ## The form
 
 ```markdown
-# Hey, I make tools that run themselves.
+# Hey, I make usable things people can run or play.
 
-I build Rust infrastructure, terminal UX, Git utilities, and video workflows. Use or buy the finished tools on [dracon.uk](https://dracon.uk).
+I build Chrome extensions, games, Rust infrastructure, terminal UX, Git utilities, and video workflows. Use or buy the finished products on [dracon.uk](https://dracon.uk) when verified install/play pages exist.
 
 **{stat-line, e.g. 239K+ Rust lines · 5.6K tests}** · [Dracon crates on lib.rs](https://lib.rs/search?q=dracon)
 
 ---
 
-**Use it / buy it** — product destinations, not source code.
+**Featured first: usable Chrome extensions and games** — product destinations, not source code. Build-with foundations stay secondary.
 
 <details><summary>Chrome extensions</summary>
 
@@ -101,15 +99,13 @@ I build Rust infrastructure, terminal UX, Git utilities, and video workflows. Us
 
 ## Why the form looks like this
 
-- **Products first, code second.** Buyers/users see where to use or buy the
-  finished thing before developers see source repos.
+- **Products first, usable things first.** Buyers/users see Chrome extensions, games, or finished tools before developers see source repos.
 - **Product destinations are separated from source code.** Chrome
   extensions, games, and tools point to install/play/store pages; code
   points to GitHub.
-- **The hero line is maker-first.** It says DraconDev makes tools, not that
+- **The hero line is maker-first.** It says DraconDev makes usable things, not that
   DraconDev teaches courses.
-- **The Code section is supporting evidence.** It proves the maker ships
-  real things without turning the profile into a repo dump.
+- **Build-with foundations are supporting evidence.** They stay below the product-facing items.
 - **The first screen stays short.** Product sections are collapsible, and
   additional code lives in a details dropdown.
 

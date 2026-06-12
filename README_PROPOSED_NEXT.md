@@ -4,9 +4,9 @@ This is a direction draft, not the live profile README. It previews where the pr
 
 ---
 
-# Hey, I make tools that run themselves.
+# Hey, I make usable things people can run or play.
 
-I build Rust infrastructure, terminal UX, Git utilities, creator workflows, and private control-plane tools. Finished products and install pages go in the details below; code is shown when it proves the work.
+I build Chrome extensions, games, Rust infrastructure, terminal UX, Git utilities, creator workflows, and private control-plane tools. Finished products and install/play pages go in the details below; code is shown when it proves the work.
 
 [Dracon crates on lib.rs](https://lib.rs/search?q=dracon)
 
@@ -14,9 +14,9 @@ When in doubt, let the stuff do the talking: shipped tools, install pages, publi
 
 ---
 
-## Verified product destinations
+## Featured first: usable Chrome extensions and games
 
-Open only if you want install/play links. I do not link private source repos as public products.
+DraconDev mainly features usable things people can install, open, or play. Build-with foundations are secondary and stay below the product-facing items. Open only if you want install/play links. I do not link private source repos as public products.
 
 <details><summary>Chrome extensions</summary>
 
@@ -69,9 +69,9 @@ Strong work that should become public only when it is clean, verifiable, and saf
 
 ---
 
-## Build-with foundations
+## Build-with foundations (secondary)
 
-Libraries and frameworks for people building similar tools.
+Libraries and frameworks for people building similar tools; useful, but not the main feature.
 
 - [**dracon-terminal-engine**](https://github.com/DraconDev/dracon-terminal-engine) — TUI engine; 43 widgets for building terminal UX.
 - [**dracon-libs**](https://github.com/DraconDev/dracon-libs) — reusable Rust libraries and runtimes; fmt passed, workspace tests blocked in this environment by missing `sqlite3` linker library.
@@ -82,8 +82,8 @@ Libraries and frameworks for people building similar tools.
 
 ## What this is heading toward
 
-- Usable tools first: folder dashboard, TUI file manager, OBS hotkeys, YouTube uploads, Git encryption.
-- Stronger private successors next: `pully-fully` for control-plane/fleet work, then `dracon-warden` over `git-seal`, then the rest of `dracon-utilities` if/when public and clean.
+- Usable Chrome extensions and games first.
+- Usable tools next.
 - Product destinations only when verified: Chrome Web Store pages, play pages, or install pages.
 - Build-with foundations second: terminal engine, Rust libs, SSR framework, AI GUI demo.
 - Destination-gated work stays out of product lists until public install/play pages exist.

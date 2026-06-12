@@ -7,13 +7,13 @@
 
 ## Current direction
 
-DraconDev should present itself as a **maker of usable developer tools**, not as an audit archive, course brand, or generic open-source portfolio.
+DraconDev should present itself primarily as a maker of usable things people can install, open, or play, with Chrome extensions and games featured when there is a verified public destination. Build-with foundations are secondary and should not crowd the product-facing story.
 
 The profile should lead with things people can understand quickly:
 
-1. **Usable tools** — tools that solve a job directly.
-2. **Build-with foundations** — libraries/frameworks for people building similar tools.
-3. **Product destinations** — extensions/games only when there is a verified install/play/store page.
+1. **Usable Chrome extensions and games** — installable or playable product destinations.
+2. **Usable tools** — tools that solve a job directly.
+3. **Build-with foundations** — libraries/frameworks for people building similar tools.
 4. **Private/unverified work** — mentioned honestly, not promoted as public products.
 
 The operating principle is:
@@ -79,7 +79,7 @@ These are valuable but less grab-and-run:
 
 ## Product destination direction
 
-Extensions and games should stay in details/collapsible sections.
+Chrome extensions and games are the main product destinations to feature, but only when there is a verified public install/play/store page. Keep them in details/collapsible sections until they are ready to be surfaced cleanly.
 
 ### Chrome extensions
 
@@ -204,7 +204,8 @@ Next useful step:
 ## Recommended near-term roadmap
 
 1. **Lock the profile direction**
-   - Usable tools first.
+   - Usable Chrome extensions and games first.
+   - Usable tools next.
    - Build-with foundations second.
    - Product destinations only when verified.
    - Private/unverified work noted honestly.
@@ -228,4 +229,4 @@ Next useful step:
 
 ## One-line direction
 
-DraconDev should lead with **usable tools that prove the maker**, keep **build-with foundations in a second tier**, and only promote **private work when it becomes public, clean, and verifiably usable**.
+DraconDev should lead with **usable things people can install, open, or play**, feature **Chrome extensions and games when verified**, keep **build-with foundations in a second tier**, and only promote **private work when it becomes public, clean, and verifiably usable**.
