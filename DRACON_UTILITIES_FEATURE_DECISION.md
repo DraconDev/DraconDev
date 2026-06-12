@@ -135,15 +135,16 @@ Update the infrastructure tier:
 - Keep the three component paths distinct.
 - Update GitHub profile strategy to feature `dracon-utilities` and its components.
 
-### Pin decision
+### Final pin decision
 
 Do **not** pin the `dracon-utilities` parent repo on the GitHub profile.
 
-Pin the three components instead, as distinct repos/pin slots when they are available as separate public repos:
+Final pin set:
 
 1. **`dracon-sync`** — intricate AI/developer Git sync daemon.
 2. **`dracon-system`** — intricate disk/process guard for development machines and servers.
 3. **`dracon-warden`** — intricate Git secret encryption and repo hardening tool.
+4. **`dracon-terminal-engine`** — broad Rust/TUI credibility and the most impressive Rust project.
 
 Reason:
 
@@ -163,7 +164,7 @@ Important GitHub constraint:
 
 - GitHub profile pins can pin repos, not subdirectories.
 - If `dracon-sync`, `dracon-system`, and `dracon-warden` remain only as subdirectories inside `dracon-utilities`, they cannot be pinned directly.
-- The corrected profile strategy should therefore treat them as the pin targets if/when split or published as separate repos; keep `dracon-utilities` in README/profile copy as the parent suite link.
+- The README should link to the component subdirectories now, while the profile pin strategy treats the three components as the pin targets if/when split or published as separate repos.
 
 README/profile wording remains:
 
@@ -199,4 +200,11 @@ Feature `dracon-utilities` prominently as a public usable-tools product in READM
 2. `dracon-system` — disk/process guard.
 3. `dracon-warden` — Git secret encryption and repo hardening.
 
-Do **not** pin the `dracon-utilities` parent repo. The corrected pin strategy is to pin the three component repos/slots — `dracon-sync`, `dracon-system`, and `dracon-warden` — when they exist as separate public repos; if they remain monorepo subdirectories, GitHub cannot pin them directly.
+Final GitHub pin set:
+
+1. `dracon-sync`
+2. `dracon-system`
+3. `dracon-warden`
+4. `dracon-terminal-engine`
+
+Do **not** pin the `dracon-utilities` parent repo. If the three components remain monorepo subdirectories, link to them in the README; if they become separate public repos, pin those component repos directly.
