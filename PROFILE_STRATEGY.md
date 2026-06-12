@@ -128,11 +128,11 @@ You have the same assets:
 ```markdown
 ### Hi, I'm DraconDev 👋
 
-I build AI-powered tools for the browser and terminal.
+I build usable things people can run or play.
 
 🚀 **Products:**
 - [SamAI](Chrome Web Store link) — AI browser companion
-- [dracon-utilities](https://github.com/DraconDev/dracon-utilities) — `dracon-sync`, `dracon-system`, and `dracon-warden`
+- [Auto Fullscreen](Chrome Web Store link) — fullscreen helper
 - [YouTube](link) — I demo my products and tools
 
 🌐 [dracon.uk](https://dracon.uk)
