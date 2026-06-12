@@ -7,7 +7,7 @@
 
 GitHub pins are constrained proof. They must be instantly understandable and valuable to a newcomer.
 
-The README/profile copy has more freedom. It can include product destinations, usable tools, private-but-honest notes, and build-with foundations as secondary material.
+The README/profile copy has more freedom. It can include product destinations, usable tools, private-but-honest notes, extension/game details, and build-with foundations as secondary material.
 
 ## Pin layer
 
@@ -35,10 +35,11 @@ The README can be broader. It should still lead with product/business signal, bu
 - verified product destinations first,
 - usable tools,
 - GitHub pin focus,
+- extension/game details in their own sections,
 - build-with foundations in a secondary section,
 - private/unverified work only with honest caveats.
 
-This means `dracon-terminal-engine`, `azumi-live-ssr-framework`, and `ai-gui-auto-video-editor` can stay in the README as secondary build-with foundations without spending pin slots.
+This means `dracon-terminal-engine`, `azumi-live-ssr-framework`, and `ai-gui-auto-video-editor` can stay in the README as secondary build-with foundations without spending pin slots. `dracon-ai-lib` should also be README build-with material, not a pin. Games and extensions belong in their own README details sections, not pins.
 
 ## Candidate evaluation
 
@@ -53,6 +54,9 @@ This means `dracon-terminal-engine`, `azumi-live-ssr-framework`, and `ai-gui-aut
 | `dracon-terminal-engine` | README, not pin | Strong build-with foundation, but not something newcomers can immediately run/use. |
 | `youtube-video-uploader` | README, not pin | Useful Rust CLI/library, but narrower creator-tool signal than the chosen pins. |
 | `git-seal` | De-emphasize/omit | Older version of the `dracon-warden` story; useful in inventory, but not a primary README or pin item. |
+| `one-mil-girls` | Game details, not pin | Game/product destination; only feature after public play/build destination is verified. |
+| `dracon-ai-lib` | README build-with, not pin | Rust AI library for BYOK consumers; useful to developers building tools. |
+| `dracon-code` | Private/core product, not README/pin yet | Consider only if made public and polished enough. |
 | `dracon-utilities` | README, not pin | Parent bucket is too vague for a pin; use README to name the three component jobs. |
 
 ## Final pin set
@@ -74,7 +78,7 @@ Important GitHub constraint:
 
 Lead with:
 
-1. verified Chrome extension/game destinations,
+1. verified Chrome extension/game destinations in details,
 2. usable tools,
 3. GitHub pin focus,
 4. build-with foundations as secondary.
@@ -93,9 +97,10 @@ Current README secondary build-with foundations:
 - `dracon-terminal-engine`
 - `azumi-live-ssr-framework`
 - `ai-gui-auto-video-editor`
+- `dracon-ai-lib` if mentioned as Rust AI consumer library
 
 ## Final decision
 
-Pins should be the six concrete items above. The README should remain broader and include the `dracon-utilities` parent suite, usable tools, and secondary build-with foundations. Do not pin the parent utilities repo or the terminal engine.
+Pins should be the six concrete items above. The README should remain broader and include the `dracon-utilities` parent suite, usable tools, extension/game details, and secondary build-with foundations. Do not pin the parent utilities repo, the terminal engine, libraries, games, or extensions.
 
 For future local-project candidates, see `LOCAL_PROJECT_PIN_README_CANDIDATES.md`.
