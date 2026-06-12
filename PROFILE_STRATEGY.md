@@ -122,18 +122,27 @@ You have the same assets:
 
 **Do not pin:** `dracon-terminal-engine` — strong build-with foundation, but low direct value for newcomers who want something they can run/use.
 
-**NOT pinned:** SamAI (closed source product, link instead), `dracon-utilities` (README feature, not pin), rust-ai-web-auto (link if published)
+**NOT pinned:** SamAI (closed source product, link instead), `dracon-utilities` (README feature, not pin), games, browser extensions, libraries, and build-with foundations
 
 ### Future pin / README candidates
 
-Do not change the current six pins unless one of these becomes public, polished, and stronger than a current pin:
+Pins stay usable-only. Most local projects should be README/profile copy, not pins.
+
+**Future usable-tools README items / possible pins only if public and stronger than a current pin:**
 
 1. **kiki-sassy-desktop-announcer** — memorable installable desktop tool; strongest near-term README/pin candidate.
 2. **ai-auto-repo-rot-scanner-todo-agent** — strong devtool story if public and packaged cleanly.
 3. **pully-fully-pull-based-fleet-reconciler** — strong DevOps product if public.
 4. **rust-ai-web-auto** — strong Rust AI browser automation story if public.
-5. **one-mil-girls** — game/product destination only after public play/build destination is verified.
-6. **dracon-ai-lib** — build-with foundation for Rust AI consumers.
+5. **avid** / **youtube-video-uploader** — creator workflow utility.
+
+**README-only / details sections, not pins:**
+
+1. **one-mil-girls** — game details only after public play/build destination is verified.
+2. **Junk-Runner-bevy** — game details only after public play/build destination is verified.
+3. **SamAI** and other browser extensions — Chrome extension details only after verified public install pages.
+4. **dracon-ai-lib** — build-with foundation for Rust AI consumers.
+5. **dracon-code** — private/core product; consider only if made public and polished enough.
 
 See `LOCAL_PROJECT_PIN_README_CANDIDATES.md` for the full future-candidate analysis.
 
