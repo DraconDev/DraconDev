@@ -29,7 +29,7 @@
 - **Maturity:** Beta (tests ✓, CI ✓)
 - **Audience:** Dev teams, SaaS builders
 - **Revenue model:** B2B SaaS — host it for customers, or sell as self-hosted license
-- **Status:** Production infrastructure for your own services
+- **Status:** Production infrastructure for your own product stack
 - **On GitHub:** No (private)
 
 ### dracon-code
@@ -76,7 +76,7 @@
 - **Files:** 327 | **Lines:** 144,390 | **Lang:** Rust
 - **Maturity:** Beta (tests ✓, CI ✓)
 - **Audience:** Rust developers building TUIs
-- **Revenue model:** Open source (credibility play) + consulting
+- **Revenue model:** Open source credibility; optional paid support only if packaged as a productized offer.
 - **Competitive with:** ratatui (but this is a framework ON TOP of ratatui)
 - **On GitHub:** Yes (1★) — **needs more visibility**
 - **Why publish:** Most impressive Rust project by size. Frameworks get more stars than apps.
@@ -184,7 +184,7 @@ death-note-typing-practice, cinematic-pages, cursor-style, volume-and-video-pro,
 | **avid** | 18 | 4,549 | Auto video processor — silence detection, audio enhancement |
 | **video-factory** | 27 | ~5,000 | Web platform for video processing with FFmpeg + S3 |
 
-**These are your internal tools for YouTube content creation.** Not products, but impressive proof you can build real systems.
+**These are internal creator workflow tools. They are useful proof and possible product seeds, but not public products until packaged.** Not products,
 
 ---
 
