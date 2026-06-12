@@ -137,18 +137,33 @@ Update the infrastructure tier:
 
 ### Pin decision
 
-Do **not** pin `dracon-utilities` on the GitHub profile.
+Do **not** pin the `dracon-utilities` parent repo on the GitHub profile.
+
+Pin the three components instead, as distinct repos/pin slots when they are available as separate public repos:
+
+1. **`dracon-sync`** — intricate AI/developer Git sync daemon.
+2. **`dracon-system`** — intricate disk/process guard for development machines and servers.
+3. **`dracon-warden`** — intricate Git secret encryption and repo hardening tool.
 
 Reason:
 
-- The repo is useful and worth featuring in the README, but the label `dracon-utilities` is too vague for a pin.
-- A pin must communicate value in one glance. "Utilities" sounds generic and risks feeling like a lie unless the pin description carries too much explanation.
-- The three component jobs are clearer in README/profile copy than in a pin slot.
+- The parent label `dracon-utilities` is too vague for a pin.
+- The component READMEs show each tool has a distinct, intricate job.
+- The component stories are stronger than the parent bucket.
 
-Better pin choice:
+Intricacy evidence from the local component trees:
 
-- Pin `obs-wayland-hotkey` instead if you need a concrete utility pin.
-- Suggested pin description: "OBS hotkey daemon for Wayland/X11. 8★; concrete utility people can understand quickly."
+| Component | Rust files | Rust LOC |
+|:----------|----------:|---------:|
+| `dracon-sync` | 30 | ~22.8K |
+| `dracon-system` | 12 | ~6.1K |
+| `dracon-warden` | 29 | ~10.2K |
+
+Important GitHub constraint:
+
+- GitHub profile pins can pin repos, not subdirectories.
+- If `dracon-sync`, `dracon-system`, and `dracon-warden` remain only as subdirectories inside `dracon-utilities`, they cannot be pinned directly.
+- The corrected profile strategy should therefore treat them as the pin targets if/when split or published as separate repos; keep `dracon-utilities` in README/profile copy as the parent suite link.
 
 README/profile wording remains:
 
@@ -184,4 +199,4 @@ Feature `dracon-utilities` prominently as a public usable-tools product in READM
 2. `dracon-system` — disk/process guard.
 3. `dracon-warden` — Git secret encryption and repo hardening.
 
-Do **not** pin `dracon-utilities` on the GitHub profile. Use the pin slot for a clearer concrete utility such as `obs-wayland-hotkey`, while keeping `dracon-utilities` in the README as a named component suite.
+Do **not** pin the `dracon-utilities` parent repo. The corrected pin strategy is to pin the three component repos/slots — `dracon-sync`, `dracon-system`, and `dracon-warden` — when they exist as separate public repos; if they remain monorepo subdirectories, GitHub cannot pin them directly.

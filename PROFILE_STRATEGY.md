@@ -111,12 +111,12 @@ You have the same assets:
 > DraconDev
 
 ### Pinned repos (3-4 max)
-1. **dracon-terminal-engine** — "Terminal framework for Rust. Composable widgets, z-indexed layers." (144K lines, most impressive Rust project)
-2. **pully-fully** (if published) — "Fleet reconciler for 5-100 VPS. Git recipes, auto-provisioning."
-3. **tiles-tui-file-manager** — "Dual-pane TUI file manager. Vim-style, git, SSH, system monitor."
-4. **obs-wayland-hotkey** — "OBS hotkey daemon for Wayland/X11. 8★; concrete utility people can understand quickly."
+1. **dracon-sync** — "Invisible Git sync for AI-powered development. Auto-commit, multi-mirror, deterministic commit messages." Intricate component; pin as its own repo if split/published.
+2. **dracon-system** — "Proactive disk/process guard for development machines and servers. Monitors, predicts, and mitigates disk pressure." Intricate component; pin as its own repo if split/published.
+3. **dracon-warden** — "Git secret encryption and repo hardening while keeping the working tree plaintext." Intricate component; pin as its own repo if split/published.
+4. **dracon-terminal-engine** — "Terminal framework for Rust. Composable widgets, z-indexed layers." (144K lines, most impressive Rust project)
 
-**README-only feature, not pinned:** `dracon-utilities` — add the three component jobs in the README, but do not spend a pin slot on a vague "utilities" label.
+**Do not pin:** `dracon-utilities` parent repo — too vague for a pin. Keep it as README/profile copy that points to the three component jobs.
 
 **NOT pinned:** SamAI (closed source product, link instead), `dracon-utilities` (README feature, not pin), rust-ai-web-auto (link if published)
 

@@ -290,10 +290,12 @@ death-note-typing-practice, cinematic-pages, cursor-style, volume-and-video-pro,
 ## GitHub Profile Strategy
 
 ### Pin (3-4 repos)
-1. **dracon-terminal-engine** — 144K lines of Rust, most impressive project
-2. **pully-fully** (if published) — real DevOps tool, would get traction
-3. **tiles-tui-file-manager** — already has stars, shows shipping ability
-4. **obs-wayland-hotkey** — concrete utility people understand quickly; already has stars
+1. **dracon-sync** — intricate AI/dev Git sync daemon; 30 Rust files / ~22.8K Rust LOC in current component tree
+2. **dracon-system** — intricate disk/process guard; 12 Rust files / ~6.1K Rust LOC in current component tree
+3. **dracon-warden** — intricate Git encryption/repo hardening tool; 29 Rust files / ~10.2K Rust LOC in current component tree
+4. **dracon-terminal-engine** — 144K lines of Rust, most impressive project
+
+**Do not pin:** `dracon-utilities` parent repo — too vague for a pin. Keep it as README/profile copy that points to the three component jobs.
 
 ### Link in README
 - **SamAI** — link to verified Chrome Web Store page when confirmed (not source code)
