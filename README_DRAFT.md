@@ -34,6 +34,8 @@ DraconDev mainly features usable things people can install, open, or play. Build
 - [**youtube-video-uploader**](https://github.com/DraconDev/youtube-video-uploader) — Rust YouTube API client + CLI; resumable uploads.
 - [**git-seal**](https://github.com/DraconDev/git-seal) — Git filter for transparent file encryption; `dracon-warden` is the stronger public successor inside `dracon-utilities`.
 
+**GitHub pin focus** — component-level work over vague parent buckets: [`dracon-sync`](https://github.com/DraconDev/dracon-utilities/tree/main/dracon-sync), [`dracon-system`](https://github.com/DraconDev/dracon-utilities/tree/main/dracon-system), [`dracon-warden`](https://github.com/DraconDev/dracon-utilities/tree/main/dracon-warden), and [`dracon-terminal-engine`](https://github.com/DraconDev/dracon-terminal-engine).
+
 <details><summary>Build-with foundations (secondary)</summary>
 
 These are useful if you are building similar tools, but they are not the main feature.

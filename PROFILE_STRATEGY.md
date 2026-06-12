@@ -110,7 +110,7 @@ You have the same assets:
 ### Company field
 > DraconDev
 
-### Pinned repos (3-4 max)
+### Final pinned repos (4)
 1. **dracon-sync** — "Invisible Git sync for AI-powered development. Auto-commit, multi-mirror, deterministic commit messages." Intricate component; pin as its own repo if split/published.
 2. **dracon-system** — "Proactive disk/process guard for development machines and servers. Monitors, predicts, and mitigates disk pressure." Intricate component; pin as its own repo if split/published.
 3. **dracon-warden** — "Git secret encryption and repo hardening while keeping the working tree plaintext." Intricate component; pin as its own repo if split/published.
