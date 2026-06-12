@@ -276,7 +276,7 @@ The 3-link footer block (dracon.uk · YouTube · Sponsor) follows the Fireship "
 
 ### What the research did NOT change about the README
 
-- **Hero line "Hey, I make tools that run themselves."** — Per mitsuhiko's pattern, this is the strong name-drop. Don't change.
+- **Hero line “I make usable things people can run or play.”** — Per the current product/business angle, this is the stronger public name-drop. Keep it aligned with the README.
 - **4-repo pin list (TUI & Terminal)** — Per the "tangible things only" stance and the audit, this is correct. Don't add "Working on" or "Experimental" sections.
 - **239K+ lines / 5,600+ tests stat** — concrete numbers, no widgets. Per the original 131-profile research. Don't change.
 - **No Ko-fi in README or default YouTube premium funnel** — Ko-fi stays on `dracon.uk` as optional low-friction support. It should not lead the YouTube funnel while the strategy is premium subscriptions.
@@ -390,7 +390,7 @@ The most effective strategy is not to copy any single peer. It's to **combine th
 
 ### What the scoring did NOT change about the README
 
-- **Hero line "Hey, I make tools that run themselves."** — Per mitsuhiko's pattern, this is the strong name-drop. Don't change.
+- **Hero line “I make usable things people can run or play.”** — Per the current product/business angle, this is the stronger public name-drop. Keep it aligned with the README.
 - **4-repo pin list (TUI & Terminal)** — Per the "tangible things only" stance and the audit, this is correct. Don't add "Working on" or "Experimental" sections.
 - **239K+ lines / 5,600+ tests stat** — concrete numbers, no widgets. Per the original 131-profile research. Don't change.
 - **No Ko-fi in README or default YouTube premium funnel** — Ko-fi stays on `dracon.uk` as optional low-friction support. It should not lead the YouTube funnel while the strategy is premium subscriptions.
