@@ -178,10 +178,10 @@ It does **not** need to be the primary revenue product yet. It should be feature
 
 ## Final decision
 
-Feature `dracon-utilities` prominently as a public usable-tools product, with the three components named clearly:
+Feature `dracon-utilities` prominently as a public usable-tools product in README/profile copy, with the three components named clearly:
 
 1. `dracon-sync` — invisible Git sync for AI-powered development.
 2. `dracon-system` — disk/process guard.
 3. `dracon-warden` — Git secret encryption and repo hardening.
 
-Do not treat it as a vague “utilities” bucket or as private infrastructure anymore.
+Do **not** pin `dracon-utilities` on the GitHub profile. Use the pin slot for a clearer concrete utility such as `obs-wayland-hotkey`, while keeping `dracon-utilities` in the README as a named component suite.

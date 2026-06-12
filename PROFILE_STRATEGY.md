@@ -118,7 +118,7 @@ You have the same assets:
 
 **README-only feature, not pinned:** `dracon-utilities` — add the three component jobs in the README, but do not spend a pin slot on a vague "utilities" label.
 
-**NOT pinned:** SamAI (closed source product, link instead), rust-ai-web-auto (link if published)
+**NOT pinned:** SamAI (closed source product, link instead), `dracon-utilities` (README feature, not pin), rust-ai-web-auto (link if published)
 
 ### README (short, 5-10 lines)
 ```markdown
