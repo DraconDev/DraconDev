@@ -117,11 +117,7 @@ Recommended bullet:
 - [**dracon-utilities**](https://github.com/DraconDev/dracon-utilities) — three installable Rust CLI utilities: `dracon-sync` for invisible Git sync, `dracon-system` for disk/process protection, and `dracon-warden` for Git secret encryption and repo hardening.
 ```
 
-Remove the old private note:
-
-```markdown
-`dracon-utilities` — private monorepo; sync/warden/system tooling, not linked until public and `cargo fmt --check` is clean.
-```
+Remove the old private note from the usable-tools section.
 
 ### DIRECTION.md
 

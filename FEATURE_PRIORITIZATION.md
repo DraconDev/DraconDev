@@ -94,7 +94,7 @@ Current examples:
 - `obs-wayland-hotkey`
 - `youtube-video-uploader`
 - `git-seal`
-- `dracon-utilities` only when public and clean
+- `dracon-utilities` — public installable utilities: `dracon-sync`, `dracon-system`, and `dracon-warden`
 
 Why:
 
@@ -110,7 +110,7 @@ Feature wording:
 Do not:
 
 - Make these the first feature ahead of verified products.
-- Promote `dracon-utilities` until public and validation-clean.
+- Promote `dracon-utilities` with the three component jobs clear; do not claim revenue or casual-user polish.
 
 ### 4. Private product candidates
 
@@ -121,7 +121,6 @@ Examples:
 - `dracon-platform`
 - `dracon-code`
 - `dracon-demons`
-- `dracon-utilities`
 - `pully-fully-pull-based-fleet-reconciler`
 - `rust-ai-web-auto`
 - `ai-auto-writer`
