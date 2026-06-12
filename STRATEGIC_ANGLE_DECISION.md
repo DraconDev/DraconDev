@@ -91,6 +91,7 @@ The repo currently has too many Markdown docs. Keep the active docs small and hi
 | `README_DRAFT.md` | Live README draft mirror. | Keep while mirroring `README.md`. |
 | `DIRECTION.md` | Internal operating direction. | Keep. |
 | `STRATEGIC_ANGLE_DECISION.md` | This decision: product/business angle over job angle. | Keep. |
+| `CHASING_TWO_BIRDS.md` | Explains the job-vs-business signal conflict. | Keep. |
 | `BUSINESS_POSITIONING_STRATEGY.md` | Non-employment revenue models, offers, segments, monetization. | Keep. |
 | `PRODUCT_INVENTORY.md` | Product catalog and evidence base. | Keep. |
 | `PROFILE_STRATEGY.md` | GitHub/profile funnel map. | Keep if used for profile execution. |
@@ -161,6 +162,7 @@ README.md                         Public front door
 README_DRAFT.md                   Mirror of README.md while drafting
 DIRECTION.md                      Operating direction
 STRATEGIC_ANGLE_DECISION.md        Strategic angle decision
+CHASING_TWO_BIRDS.md               Job-vs-business signal conflict
 BUSINESS_POSITIONING_STRATEGY.md   Non-employment business strategy
 PRODUCT_INVENTORY.md              Product evidence and candidates
 PROFILE_STRATEGY.md               GitHub/profile funnel execution
