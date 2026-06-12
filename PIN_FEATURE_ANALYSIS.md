@@ -97,3 +97,5 @@ Current README secondary build-with foundations:
 ## Final decision
 
 Pins should be the six concrete items above. The README should remain broader and include the `dracon-utilities` parent suite, usable tools, and secondary build-with foundations. Do not pin the parent utilities repo or the terminal engine.
+
+For future local-project candidates, see `LOCAL_PROJECT_PIN_README_CANDIDATES.md`.

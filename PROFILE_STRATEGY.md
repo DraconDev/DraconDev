@@ -124,6 +124,19 @@ You have the same assets:
 
 **NOT pinned:** SamAI (closed source product, link instead), `dracon-utilities` (README feature, not pin), rust-ai-web-auto (link if published)
 
+### Future pin / README candidates
+
+Do not change the current six pins unless one of these becomes public, polished, and stronger than a current pin:
+
+1. **kiki-sassy-desktop-announcer** — memorable installable desktop tool; strongest near-term README/pin candidate.
+2. **ai-auto-repo-rot-scanner-todo-agent** — strong devtool story if public and packaged cleanly.
+3. **pully-fully-pull-based-fleet-reconciler** — strong DevOps product if public.
+4. **rust-ai-web-auto** — strong Rust AI browser automation story if public.
+5. **one-mil-girls** — game/product destination only after public play/build destination is verified.
+6. **dracon-ai-lib** — build-with foundation for Rust AI consumers.
+
+See `LOCAL_PROJECT_PIN_README_CANDIDATES.md` for the full future-candidate analysis.
+
 ### README (short, 5-10 lines)
 ```markdown
 ### Hi, I'm DraconDev 👋

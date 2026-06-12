@@ -307,6 +307,16 @@ death-note-typing-practice, cinematic-pages, cursor-style, volume-and-video-pro,
 - **YouTube channel** — content marketing
 - **dracon.uk** — website
 
+### Future README / pin candidates
+- **kiki-sassy-desktop-announcer** — future README/pin candidate if public polish is clean; memorable installable desktop tool.
+- **ai-auto-repo-rot-scanner-todo-agent** — future pin candidate if public and packaged cleanly; strong devtool story.
+- **pully-fully-pull-based-fleet-reconciler** — future README/pin candidate if public; strong DevOps product story.
+- **rust-ai-web-auto** — future README/pin candidate if public; strong Rust AI browser automation story.
+- **one-mil-girls** — future README/pin candidate only after public play/build destination is verified.
+- **dracon-ai-lib** — future build-with foundation for Rust AI consumers.
+
+See `LOCAL_PROJECT_PIN_README_CANDIDATES.md` for the full future-candidate analysis.
+
 ### Keep private
 - dracon-platform, dracon-code, dracon-demons — core business
 - All browser extensions (except SamAI) — don't show hand
