@@ -1,7 +1,7 @@
 # GitHub Pin Update Blocked Audit
 
 **Goal id:** `7aaece83-6fbd-49d4-8f81-4f3a04b83d7d`  
-**Date:** 2026-06-12  
+**Date:** 2026-06-13
 **Status:** Blocked; not complete.
 
 ## Objective
@@ -76,6 +76,8 @@ GitHub API checks returned:
 - `DraconDev/tiles-tui-file-manager` → exists and public
 - `DraconDev/folder-auto-banner` → exists and public
 - `DraconDev/obs-wayland-hotkey` → exists and public
+
+Fresh 2026-06-13 re-check confirmed the same blocker state: the three utilities components still do not exist as separate public repositories, while the three existing later pin candidates remain public.
 
 Conclusion: the exact desired pin set cannot be applied until `dracon-sync`, `dracon-system`, and `dracon-warden` are split/published as separate public repositories.
 
