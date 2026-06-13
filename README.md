@@ -32,7 +32,6 @@ DraconDev mainly features usable things people can install, open, or play. Build
 - [**tiles-tui-file-manager**](https://github.com/DraconDev/tiles-tui-file-manager) — TUI file manager; ships the terminal engine.
 - [**obs-wayland-hotkey**](https://github.com/DraconDev/obs-wayland-hotkey) — OBS hotkey daemon; crates.io + CI.
 - [**youtube-video-uploader**](https://github.com/DraconDev/youtube-video-uploader) — Rust YouTube API client + CLI; resumable uploads.
-- [**git-seal**](https://github.com/DraconDev/git-seal) — Git filter for transparent file encryption; `dracon-warden` is the stronger public successor inside `dracon-utilities`.
 
 **GitHub pin focus** — component-level work over vague parent buckets: [`dracon-sync`](https://github.com/DraconDev/dracon-utilities/tree/main/dracon-sync), [`dracon-system`](https://github.com/DraconDev/dracon-utilities/tree/main/dracon-system), [`dracon-warden`](https://github.com/DraconDev/dracon-utilities/tree/main/dracon-warden), [`tiles-tui-file-manager`](https://github.com/DraconDev/tiles-tui-file-manager), [`folder-auto-banner`](https://github.com/DraconDev/folder-auto-banner), and [`obs-wayland-hotkey`](https://github.com/DraconDev/obs-wayland-hotkey).
 
