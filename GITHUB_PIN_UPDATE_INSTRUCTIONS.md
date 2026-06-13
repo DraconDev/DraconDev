@@ -93,4 +93,4 @@ If `dracon-sync`, `dracon-system`, and `dracon-warden` are not split yet, do **n
 - `folder-auto-banner`
 - `obs-wayland-hotkey`
 
-Then fill remaining slots only with other concrete usable repos, not games, extensions, libraries, build-with foundations, or private products.
+Then fill remaining slots only with other concrete usable repos, not games, browser extensions, libraries, build-with foundations, or private products.
