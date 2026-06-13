@@ -77,7 +77,7 @@ GitHub API checks returned:
 - `DraconDev/folder-auto-banner` → exists and public
 - `DraconDev/obs-wayland-hotkey` → exists and public
 
-Fresh 2026-06-13 re-checks after 13h40m and 15h23m confirmed the same blocker state: the current visible pins are still `azumi-live-ssr-framework`, `dracon-terminal-engine`, `tiles-tui-file-manager`, `ai-gui-auto-video-editor`, `obs-wayland-hotkey`, and `git-seal`; `dracon-sync`, `dracon-system`, and `dracon-warden` still return HTTP 404; and `tiles-tui-file-manager`, `folder-auto-banner`, and `obs-wayland-hotkey` still exist as public repositories. A later 16h25m component-target check with `gh api graphql` again returned `repository:null` / `NOT_FOUND` for `DraconDev/dracon-sync`, `DraconDev/dracon-system`, and `DraconDev/dracon-warden`.
+Fresh 2026-06-13 re-checks after 13h40m and 15h23m confirmed the same blocker state: the current visible pins are still `azumi-live-ssr-framework`, `dracon-terminal-engine`, `tiles-tui-file-manager`, `ai-gui-auto-video-editor`, `obs-wayland-hotkey`, and `git-seal`; `dracon-sync`, `dracon-system`, and `dracon-warden` still return HTTP 404; and `tiles-tui-file-manager`, `folder-auto-banner`, and `obs-wayland-hotkey` still exist as public repositories. Later component-target checks at 16h25m and 17m with `gh api graphql` again returned `repository:null` / `NOT_FOUND` for `DraconDev/dracon-sync`, `DraconDev/dracon-system`, and `DraconDev/dracon-warden`.
 
 Conclusion: the exact desired pin set cannot be applied until `dracon-sync`, `dracon-system`, and `dracon-warden` are split/published as separate public repositories.
 
