@@ -77,7 +77,7 @@ GitHub API checks returned:
 - `DraconDev/folder-auto-banner` → exists and public
 - `DraconDev/obs-wayland-hotkey` → exists and public
 
-Fresh 2026-06-13 re-check confirmed the same blocker state: the three utilities components still do not exist as separate public repositories, while the three existing later pin candidates remain public.
+Fresh 2026-06-13 re-check after 13h40m confirmed the same blocker state: the current visible pins are still `azumi-live-ssr-framework`, `dracon-terminal-engine`, `tiles-tui-file-manager`, `ai-gui-auto-video-editor`, `obs-wayland-hotkey`, and `git-seal`; `dracon-sync`, `dracon-system`, and `dracon-warden` still return HTTP 404; and `tiles-tui-file-manager`, `folder-auto-banner`, and `obs-wayland-hotkey` still exist as public repositories.
 
 Conclusion: the exact desired pin set cannot be applied until `dracon-sync`, `dracon-system`, and `dracon-warden` are split/published as separate public repositories.
 
