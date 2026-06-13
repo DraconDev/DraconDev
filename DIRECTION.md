@@ -48,15 +48,14 @@ These are the current best profile features because they are concrete, understan
    - Rust YouTube API client + CLI.
    - Useful for creator workflows.
 
-5. **`git-seal`**
-   - Git filter for transparent file encryption.
-   - Public and usable.
-   - `dracon-warden` is the stronger public successor inside `dracon-utilities`.
-
-6. **`dracon-utilities`**
+5. **`dracon-utilities`**
    - Public monorepo of three installable Rust CLI utilities.
    - Feature the components clearly: `dracon-sync`, `dracon-system`, and `dracon-warden`.
    - Local validation passed: `cargo fmt`, `cargo clippy`, `cargo test --workspace`, `cargo deny check`, and `./scripts/verify-spec.sh`.
+
+6. **`git-seal`**
+   - Older Git filter lineage.
+   - Keep in inventory/history only; do not use as a primary README or GitHub pin item because `dracon-warden` is the stronger current successor.
 
 ### Build-with foundations
 
@@ -126,7 +125,7 @@ These are strong but should not be featured as public products yet:
 
 Evidence from the latest state audit:
 
-- README and draft are synchronized.
+- `README.md` and `README_DRAFT.md` intentionally differ while testing a cleaner product/pin/foundation structure.
 - README public links pass.
 - README renders correctly.
 - `dracon-utilities` local validation passed: `cargo fmt`, `cargo clippy`, `cargo test --workspace`, `cargo deny check`, and `./scripts/verify-spec.sh`.
@@ -170,9 +169,9 @@ Current recommendation:
 
 Current recommendation:
 
-- Keep `git-seal` featured because it is public.
-- Mention `dracon-warden` as the stronger public successor inside `dracon-utilities`.
-- Once `warden` is public and clean, feature it ahead of `git-seal`.
+- De-emphasize `git-seal` in primary profile/README copy because it is older `dracon-warden` lineage.
+- Feature `dracon-warden` as the stronger current Git hardening story inside `dracon-utilities`.
+- Do not spend a GitHub pin slot on `git-seal`.
 
 ### Decision 3: obs-wayland-hotkey validation
 
@@ -187,6 +186,20 @@ Next useful step:
   - `cargo fmt --check`
   - `cargo test`
   - `cargo clippy -- -D warnings`
+
+### Decision 5: GitHub pin rollout
+
+Current recommendation:
+
+- Final pin set: `dracon-sync`, `dracon-system`, `dracon-warden`, `tiles-tui-file-manager`, `folder-auto-banner`, and `obs-wayland-hotkey`.
+- Do not pin `dracon-utilities` as a vague parent bucket.
+- Do not pin games, browser extensions, libraries, build-with foundations, private products, or `dracon-terminal-engine`.
+- Pin rollout is blocked until `dracon-sync`, `dracon-system`, and `dracon-warden` are split/published as separate public repositories.
+
+Next useful step:
+
+- If those component repos are split/published, manually update GitHub profile pins from the profile page.
+- If not, keep `dracon-utilities` as README/profile copy only and do not pin the parent bucket.
 
 ### Decision 4: product destinations
 
@@ -211,14 +224,19 @@ Next useful step:
    - Keep the repo link public and validated.
    - Do not claim revenue or casual-user polish.
 
-3. **Promote `dracon-warden` as the stronger public successor to `git-seal`**
+3. **Treat `dracon-warden` as the stronger current successor to `git-seal`**
    - It is the stronger successor to `git-seal`.
-   - Should be linked because `dracon-utilities` is public and validated.
+   - Should be linked through `dracon-utilities` because the monorepo is public and validated.
+   - Do not feature `git-seal` as a primary README/pin item.
 
-4. **Restore and validate `obs-wayland-hotkey`**
+4. **Unblock GitHub pins for the utilities components**
+   - Split/publish `dracon-sync`, `dracon-system`, and `dracon-warden` as separate public repos if direct pinning is desired.
+   - Until then, link to component subdirectories from README/profile copy and do not pin `dracon-utilities` as the parent bucket.
+
+5. **Restore and validate `obs-wayland-hotkey`**
    - Needed before claiming strong validation beyond public repo status.
 
-5. **Verify extension/game destinations**
+6. **Verify extension/game destinations**
    - Store/play pages only.
    - No source-code links as product destinations.
 
