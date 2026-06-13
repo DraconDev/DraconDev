@@ -52,7 +52,6 @@ Pinned work should be concrete, not a vague parent bucket. Current pin direction
 These are useful if you are building similar tools, but they are not the main feature.
 
 - [**dracon-terminal-engine**](https://github.com/DraconDev/dracon-terminal-engine) — TUI engine; 43 widgets for building terminal UX.
-- [**dracon-ai-lib**](https://github.com/DraconDev/dracon-ai-lib) — Rust AI consumer library for BYOK tools and agents.
 - [**azumi-live-ssr-framework**](https://github.com/DraconDev/azumi-live-ssr-framework) — live SSR framework for Rust on Axum; ~10KB gzipped.
 - [**ai-gui-auto-video-editor**](https://github.com/DraconDev/ai-gui-auto-video-editor) — AGAVE: AI-assisted GUI video editor; product demo, not first-screen library.
 
