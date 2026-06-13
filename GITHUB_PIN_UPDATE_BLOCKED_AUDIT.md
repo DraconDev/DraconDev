@@ -61,6 +61,8 @@ Verified with both `gh api graphql` and public profile HTML from `https://github
   - `pinIssueComment`
   - `unpinIssue`
   - `unpinIssueComment`
+- `gh api --method OPTIONS /user/settings/pinned_repos` returned HTTP 404, so no obvious REST endpoint for profile pinned repositories was exposed.
+- A public profile HTML request with the GitHub token as a Bearer token still rendered the public profile state and sign-in prompts rather than the logged-in customize-pins UI.
 
 Conclusion: there is no available authenticated API path to update GitHub profile repository pins.
 
