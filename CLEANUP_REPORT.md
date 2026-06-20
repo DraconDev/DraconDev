@@ -9,11 +9,11 @@ This public profile repo now contains only profile-facing files:
 - `.gitignore`
 - `.gitattributes`
 
-All internal notes, drafts, audits, strategy docs, scoring data, agent state, and content-production files were moved out of the public repo into a separate private archive repo.
+All internal notes, drafts, audits, strategy docs, scoring data, agent state, and content-production files were moved out of the public repo into a separate private archive repo. The legacy GitHub `DraconDev/DraconDev` repo was made private so the old public history is no longer visible.
 
 ## Verification
 
-- Public tracked file count: 6
+- Public tracked file count: 7
 - Private archive file count: 99
 - Secret-pattern scan: 0 findings
 - Sensitive filename scan: 0 findings
