@@ -1,6 +1,6 @@
 # Cleanup Report
 
-This public profile repo now contains only profile-facing files:
+The public custom profile repo (`DraconDev/DraconDev`) contains only profile-facing files. The strategy repo (`DraconDev/dracon-strategy`) is private and should not be published as the public profile surface.
 
 - `README.md`
 - `CONTRIBUTING.md`
@@ -9,7 +9,7 @@ This public profile repo now contains only profile-facing files:
 - `.gitignore`
 - `.gitattributes`
 
-All internal notes, drafts, audits, strategy docs, scoring data, agent state, and content-production files were moved out of the public repo into a separate private archive repo. The legacy GitHub `DraconDev/DraconDev` repo was made private so the old public history is no longer visible.
+All internal notes, drafts, audits, strategy docs, scoring data, agent state, and content-production files were moved out of the public profile repo into a separate private archive repo.
 
 ## Verification
 
