@@ -16,11 +16,11 @@ All internal notes, drafts, audits, strategy docs, scoring data, agent state, an
 ## Verification
 
 - Public tracked file count: 8
-- Private archive file count: 101
+- Private archive file count: 102
 - Secret-pattern scan: 0 findings
 - Sensitive filename scan: 0 findings
 - Relative link check: 0 errors
 - External URL smoke check: 60 URLs checked, 0 failures
-- Draft/placeholder scan: 0 findings
+- Placeholder-like scan: 0 actionable public TODO/FIXME/TBD placeholders; matches are cleanup-report wording, not stale implementation placeholders
 
 This repo is intentionally kept minimal so the public profile stays clean and profile-appropriate.
