@@ -1,0 +1,5 @@
+{"type":"session_rebound","value":{"reason":"startup"},"at":"2026-08-09T21:10:58.367Z"}
+{"type":"session_waiting_for_load","value":{"reason":"startup"},"at":"2026-08-09T21:10:58.370Z"}
+{"type":"model_switch","value":{"from":"kimi-coding/k3-256k","to":"minimax/MiniMax-M3","reason":"manual","at":"2026-08-09T21:11:04.600Z","source":"set"},"at":"2026-08-09T21:11:04.601Z"}
+{"type":"state","value":{"goal":null,"list":[],"loop":null,"mainModelRecovery":null,"lastModelRef":"minimax/MiniMax-M3"},"at":"2026-08-09T21:11:04.601Z"}
+{"type":"session_shutdown","value":{"reason":"quit"},"at":"2026-08-09T21:11:35.920Z"}
