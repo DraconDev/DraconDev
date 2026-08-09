@@ -9,6 +9,17 @@
 - [tiles-tui-file-manager](https://github.com/DraconDev/tiles-tui-file-manager)
 - [kiki-desktop-announcer](https://github.com/DraconDev/kiki-desktop-announcer)
 
+<details><summary>🤖 pi coding-agent extensions — 2</summary>
+
+| Extension | Description |
+|:----------|:------------|
+| [pi-goal-list-loop-audit](https://github.com/DraconDev/pi-goal-list-loop-audit) | supervised long-running work — drafting, queues, loops, with a detached auditor that can't be bamboozled by the implementing agent |
+| [pi-use-last-selected-thinking-level](https://github.com/DraconDev/pi-use-last-selected-thinking-level) | per-model thinking-level memory for pi — picks up where you left off, no settings.json edits |
+
++ more in progress in [pi-plugins](https://github.com/DraconDev/pi-plugins) (incubator)
+
+</details>
+
 <details><summary>📦 Browser extensions — 20 Chrome · 16 Firefox</summary>
 
 | Category | Extension | Description |
