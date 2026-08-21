@@ -1,6 +1,6 @@
 # Cleanup Report
 
-The public custom profile repo (`DraconDev/DraconDev`) contains only profile-facing files, a clean `README_DRAFT.md` baseline, and this cleanup report. The strategy repo (`DraconDev/dracon-strategy`) is private and should not be published as the public profile surface.
+The public custom profile repo (`DraconDev/DraconDev`) tracks 9 files: the profile-facing files below plus a clean `README_DRAFT.md` baseline, this cleanup report, and `.dracon/data/keys/owner_nixos.pub` (an age PUBLIC key — host-state, pending a prune decision). The strategy repo (`DraconDev/dracon-strategy`) is private and should not be published as the public profile surface.
 
 - `README.md`
 - `README_DRAFT.md`
@@ -10,8 +10,9 @@ The public custom profile repo (`DraconDev/DraconDev`) contains only profile-fac
 - `.gitignore`
 - `.gitattributes`
 - `CLEANUP_REPORT.md`
+- `.dracon/data/keys/owner_nixos.pub`
 
-All internal notes, drafts, audits, strategy docs, scoring data, agent state, and content-production files were moved out of the public profile repo into a separate private archive repo. The private strategy workspace also preserves a private copy of those notes under `DraconDev/dracon-strategy/strategy/`.
+All internal notes, audits, strategy docs, scoring data, and content-production files live in the private strategy workspace (`dracon-strategy`, under `strategy/`).
 
 ## Verification
 
