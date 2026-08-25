@@ -9,12 +9,15 @@
 - [tiles-tui-file-manager](https://github.com/DraconDev/tiles-tui-file-manager)
 - [kiki-desktop-announcer](https://github.com/DraconDev/kiki-desktop-announcer)
 
-<details><summary>🤖 pi coding-agent extensions — 2</summary>
+<details><summary>🤖 pi coding-agent extensions — 4 + monorepo</summary>
 
 | Extension | Description |
 |:----------|:------------|
 | [pi-goal-list-loop-audit](https://github.com/DraconDev/pi-goal-list-loop-audit) | supervised long-running work — drafting, queues, loops, with a detached auditor that can't be bamboozled by the implementing agent |
 | [pi-use-last-selected-thinking-level](https://github.com/DraconDev/pi-use-last-selected-thinking-level) | per-model thinking-level memory for pi — picks up where you left off, no settings.json edits |
+| [pi-length-continue](https://github.com/DraconDev/pi-length-continue) | continue past output-length stops without losing the thread |
+| [pi-search-skill](https://github.com/DraconDev/pi-search-skill) | unlimited, local, key-less web search via search-daemon (Rust) + SearXNG |
+| [pi-plugins](https://github.com/DraconDev/pi-plugins) | the factory — plugins, skills, and extensions monorepo |
 
 </details>
 
@@ -79,4 +82,4 @@
 
 </details>
 
-[🌐 dracon.uk](https://dracon.uk) · [🎥 YouTube](https://youtube.com/@DraconDev) · [💰 Sponsor](https://github.com/sponsors/DraconDev)
+[🌐 dracon.uk](https://dracon.uk) · [🎥 YouTube](https://youtube.com/@DraconDev) · [💬 Discord](https://discord.gg/gAjfKwRbtQ) · [💰 Sponsor](https://github.com/sponsors/DraconDev)
