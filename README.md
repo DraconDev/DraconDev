@@ -1,15 +1,6 @@
 # DraconDev
 
-## ✨ Featured tools
-
-- [folder-auto-banner](https://github.com/DraconDev/folder-auto-banner)
-- [dracon-sync-background-auto-commit-multi-remote](https://github.com/DraconDev/dracon-sync-background-auto-commit-multi-remote)
-- [dracon-system-disk-process-guard-doctor](https://github.com/DraconDev/dracon-system-disk-process-guard-doctor)
-- [dracon-warden-secret-encrypt-age-git-filter](https://github.com/DraconDev/dracon-warden-secret-encrypt-age-git-filter)
-- [tiles-tui-file-manager](https://github.com/DraconDev/tiles-tui-file-manager)
-- [kiki-desktop-announcer](https://github.com/DraconDev/kiki-desktop-announcer)
-
-<details><summary>🤖 pi coding-agent extensions — 4 + monorepo</summary>
+<details open><summary>🤖 pi coding-agent extensions — 4 + monorepo</summary>
 
 | Extension | Description |
 |:----------|:------------|
