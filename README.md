@@ -73,4 +73,4 @@
 
 </details>
 
-[🌐 dracon.uk](https://dracon.uk) · [🎥 YouTube](https://youtube.com/@DraconDev) · [💬 Discord](https://discord.gg/gAjfKwRbtQ) · [💰 Sponsor](https://github.com/sponsors/DraconDev)
+[🌐 dracon.uk](https://dracon.uk) · [🎥 YouTube](https://youtube.com/@DraconDev) · [💬 Discord](https://discord.gg/gAjfKwRbtQ) · [🔗 LinkedIn](https://www.linkedin.com/company/dracondev) · [💰 Sponsor](https://github.com/sponsors/DraconDev)
