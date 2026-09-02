@@ -1,5 +1,11 @@
 # DraconDev
 
+## Community
+
+- 💬 [Join the Dracon Discord](https://discord.gg/gAjfKwRbtQ) — community, devlog, Q&A.
+- 🌐 [dracon.uk](https://dracon.uk) — product/platform destination.
+- 🎥 [@DraconDev on YouTube](https://youtube.com/@DraconDev) — weekly multi-model showdowns + devlogs.
+
 <details open><summary>🤖 pi coding-agent extensions — 4 + monorepo</summary>
 
 | Extension | Description |
