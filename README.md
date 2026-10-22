@@ -72,6 +72,9 @@ trusting them.*
 | 🛠️ Git & dev tools | [dracon-sync](https://lib.rs/crates/dracon-sync) | invisible Git sync daemon |
 | ⚙️ Terminal | [dracon-terminal-engine](https://lib.rs/crates/dracon-terminal-engine) | terminal compositor engine |
 
+These are the same libraries Dracon runs on. The projects built with them are
+at [dracon.uk](https://dracon.uk).
+
 </details>
 
 <details><summary>🛠️ Desktop tools — 2</summary>
