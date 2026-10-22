@@ -1,5 +1,13 @@
 # DraconDev
 
+Founder at [Dracon](https://dracon.uk). I build small tools for the browser and
+small libraries for Rust, and I ship all of them.
+
+**20+ browser extensions** for Chrome and Firefox, **10+ Rust crates** on
+crates.io, plus games, music and AI experiments at [dracon.uk](https://dracon.uk).
+
+Everything below is free and open source. Start with the one you need.
+
 <details open><summary>🤖 pi coding-agent extensions — 4 + monorepo</summary>
 
 | Extension | Description |
@@ -13,6 +21,10 @@
 </details>
 
 <details><summary>📦 Browser extensions — 21 Chrome · 21 Firefox</summary>
+
+*Counts verified live against both stores on 2026-10-22. If they look stale,
+they are: check the Chrome Web Store detail pages and the AMO API before
+trusting them.*
 
 | Category | Extension | Description |
 |:---------|:----------|:------------|
