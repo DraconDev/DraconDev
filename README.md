@@ -12,13 +12,15 @@
 
 </details>
 
-<details><summary>📦 Browser extensions — 20 Chrome · 16 Firefox</summary>
+<details><summary>📦 Browser extensions — 21 Chrome · 21 Firefox</summary>
 
 | Category | Extension | Description |
 |:---------|:----------|:------------|
 | 🤖 AI | [SamAI](https://chromewebstore.google.com/detail/samai-summarize-chat-fill/lkdhbmlacakmgjenicbbccdkalojifpk) · [Firefox](https://addons.mozilla.org/en-US/firefox/addon/samai-smart-ai-assistant/) | summarize, chat, fill forms (BYOK) |
 | 🤖 AI | [AI Auto Form Filler](https://chromewebstore.google.com/detail/ai-auto-form-filler-byok/jeaepppjlimcnobjmnlkbckebljhjjkp) · [Firefox](https://addons.mozilla.org/en-US/firefox/addon/ai-auto-form-filler-byok/) | form filling with your own API keys |
-| 🤖 AI | [YouTube Dislike](https://chromewebstore.google.com/detail/youtube-dislike-from-comm/kclenebickklgodlbedflhgebpgbdbca) · [Firefox](https://addons.mozilla.org/en-US/firefox/addon/youtube-dislike-from-comments/) | AI comment sentiment, 100% local |
+| 🤖 AI | [AI Search](https://addons.mozilla.org/en-US/firefox/addon/ai-search-ask-ai-address-bar/) | ask AI from the address bar, streaming answers with clickable results (Firefox only) |
+| 🤖 AI | [YouTube Dislike](https://chromewebstore.google.com/detail/youtube-dislike-from-comm/kclenebickklgodlbedflhgebpgbdbca) · [Firefox](https://addons.mozilla.org/en-US/firefox/addon/youtube-dislike-audience-score/) | AI comment sentiment, 100% local |
+| 🛒 Shopping | [Amazon Price Drop Alerts](https://chromewebstore.google.com/detail/amazon-price-drop-alerts/popfipiodhmfnbkmaegidkjbkmkhcjgc) · [Firefox](https://addons.mozilla.org/en-US/firefox/addon/amazon-price-drop-alerts/) | drop alerts, price history, verdicts and a fake-deal flag (local-first, no account) |
 | 🔒 Privacy & focus | [BugKit](https://chromewebstore.google.com/detail/bugkit-visual-bug-reporti/ocglmnhgcocgcamdeallgieoeeoikafi) · [Firefox](https://addons.mozilla.org/en-US/firefox/addon/bugkit-visual-bug-reporting/) | privacy-first bug reporting dashcam |
 | 🔒 Privacy & focus | [Custom History](https://chromewebstore.google.com/detail/custom-history-%E2%80%94-auto-cle/bddofaibhlkfnnkeooplfpejngbbgkpa) · [Firefox](https://addons.mozilla.org/en-US/firefox/addon/custom-history-auto-clean/) | rule-based history curation |
 | 🔒 Privacy & focus | [Better Search](https://chromewebstore.google.com/detail/better-search-for-google/cpljcfobifeockaahnainecafkfgfobo) · [Firefox](https://addons.mozilla.org/en-US/firefox/addon/better-search-for-google/) | block content farms from Google |
@@ -31,11 +33,14 @@
 | 🎨 Appearance | [Cursor Style](https://chromewebstore.google.com/detail/cursor-style-custom-curso/ihhnelanlghhflpgfmbmhdphkgjldele) · [Firefox](https://addons.mozilla.org/en-US/firefox/addon/custom-cursors-animated-trails/) | custom cursors with animated trails |
 | 🎨 Appearance | [Dracon Black Red](https://chromewebstore.google.com/detail/dracon-black-red/eehkcojepeohgjnfnjgdfmocofjllbki) | almost pure dark with red tint (Chrome theme) |
 | 📑 Tabs & browser | [Dracon New Tab](https://chromewebstore.google.com/detail/dracon-new-tab/bjfiegeaofpnpenfdhenngmikmbkhphp) | customizable new tab page (Chrome only) |
+| 📑 Tabs & browser | [AI New Tab](https://addons.mozilla.org/en-US/firefox/addon/ai-new-tab-page-search/) | cinematic wallpapers, AI answers, quick links and a clock (Firefox only) |
 | 📑 Tabs & browser | [Bookmarks New Tab](https://chromewebstore.google.com/detail/bookmarks-new-tab-page/kbmjpgekdcimbfaijegojcnhlhonmmbf) · [Firefox](https://addons.mozilla.org/en-US/firefox/addon/bookmarks-new-tab-page-dial/) | dark bookmark dashboard |
 | 📑 Tabs & browser | [Auto Fullscreen](https://chromewebstore.google.com/detail/auto-fullscreen-fullscree/liddomimembhlpgehhkhefijckmhkkjn) | fullscreen any page (Chrome only) |
-| 🎬 Media & creator | [VidPro](https://chromewebstore.google.com/detail/vidpro-video-setup-assist/igpkmfpooacbdidccnacoehjoinnjfoi) · [Firefox](https://addons.mozilla.org/en-US/firefox/addon/vidpro-video-setup-assistant/) | YouTube Studio setup and optimization |
-| 🎬 Media & creator | [Volume Video Master](https://chromewebstore.google.com/detail/volume-video-master-1000%/heahbpeacbdcoigcnmiloddggjncheml) · [Firefox](https://addons.mozilla.org/en-US/firefox/addon/volume-video-master-1000/) | advanced audio and video controls, 1000% volume |
+| 🎬 Media & creator | [VidPro](https://chromewebstore.google.com/detail/vidpro-video-setup-assist/igpkmfpooacbdidccnacoehjoinnjfoi) · [Firefox](https://addons.mozilla.org/en-US/firefox/addon/vidpro-ai-titles-descriptions/) | AI titles, descriptions and tags inside YouTube Studio |
+| 🎬 Media & creator | [VidPro v1.13](https://addons.mozilla.org/en-US/firefox/addon/vidpro-video-setup-assistant/) | the previous VidPro listing, still live on Firefox |
+| 🎬 Media & creator | [Volume Video Master](https://chromewebstore.google.com/detail/volume-video-master-1000%25/heahbpeacbdcoigcnmiloddggjncheml) · [Firefox](https://addons.mozilla.org/en-US/firefox/addon/volume-video-master-1000/) | advanced audio and video controls, 1000% volume |
 | 🎬 Media & creator | [Startype](https://chromewebstore.google.com/detail/startype-typing-practice/ljmcpchnoanbbdanegpjbpepgffhbcno) · [Firefox](https://addons.mozilla.org/en-US/firefox/addon/startype-typing-tutor-wpm-game/) | typing practice and WPM game |
+| 🦑 Novelty | [MyTentacles](https://addons.mozilla.org/en-US/firefox/addon/mytentacles/) | tentacles, for people who like tentacles (Firefox only) |
 
 </details>
 
